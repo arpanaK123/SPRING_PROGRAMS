@@ -1375,3 +1375,9 @@ Java Model Exception: Java Model Status [/usr/lib/jvm/java-9-oracle/lib/jrt-fs.j
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2018-07-05 19:03:29.397
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-07-05 19:11:45.111
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-07-05 19:11:45.112
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
