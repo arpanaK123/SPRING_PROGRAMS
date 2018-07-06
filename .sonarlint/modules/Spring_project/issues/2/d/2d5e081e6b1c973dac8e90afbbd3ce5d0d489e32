@@ -1,0 +1,18 @@
+
+p
+squid:S106"9Replace this use of System.out or System.err by a logger.(ˆ¢Ûßüÿÿÿÿ8–»ÁÏÆ,HfRMAJORZ
+CODE_SMELL
+squid:S00116"MRename this field "No" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åçÚò8¦ÏÿÏÆ,HzRMINORZ
+CODE_SMELL
+Šsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎıŸ«ıÿÿÿÿ8¦ÏÿÏÆ,H{RMINORZ
+CODE_SMELL
+k
+squid:S106"9Replace this use of System.out or System.err by a logger.(šÊÆ¼8–»ÁÏÆ,HhRMAJORZ
+CODE_SMELL
+k
+squid:S106"9Replace this use of System.out or System.err by a logger.(ı´ÓÎ8–»ÁÏÆ,HgRMAJORZ
+CODE_SMELL
+Osquid:S1700"Rename field "question"(·î”Ûøÿÿÿÿ8¦ÏÿÏÆ,H|RMAJORZ
+CODE_SMELL
+‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‚†¸—HeRMINORZ
+CODE_SMELL

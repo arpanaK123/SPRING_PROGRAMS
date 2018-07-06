@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="javax.annotation.Resource"/>
+    <fullyQualifiedTypeName name="com.bridgeit.DIByConstructor.Employee"/>
+    <fullyQualifiedTypeName name="com.bridgeit.CIDependentObject.Address"/>
+    <fullyQualifiedTypeName name="com.bridgeit.CIDependentObject.Employee"/>
+    <fullyQualifiedTypeName name="com.bridgeit.CICollection.Question"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.bridgeit.CICollecton2.Question"/>
+    <fullyQualifiedTypeName name="com.bridgeit.CICollecton2.Answer"/>
     <fullyQualifiedTypeName name="org.springframework.core.io.Resource"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
     <fullyQualifiedTypeName name="org.springframework.core.io.ClassPathResource"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.xml.XmlBeanFactory"/>
+    <fullyQualifiedTypeName name="com.bridgeit.CIMap.Question"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="com.bridgeit.CIMap2.Question"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.bridgeit.CIMap2.Answer"/>
 </qualifiedTypeNameHistroy>

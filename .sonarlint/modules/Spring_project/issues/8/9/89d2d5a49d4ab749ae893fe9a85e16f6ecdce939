@@ -1,0 +1,14 @@
+
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(¬ÚïÓüÿÿÿÿ8¬¯ÒÐÆ,HžRMAJORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(ˆ¢Ûßüÿÿÿÿ8¬¯ÒÐÆ,HŸRMAJORZ
+CODE_SMELL
+Psquid:S1700"Rename field "question"(·î”Ûøÿÿÿÿ8¬¯ÒÐÆ,H RMAJORZ
+CODE_SMELL
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¿‹ÞšþÿÿÿÿH¡RMINORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(ã§¸¢8¬¯ÒÐÆ,H¢RMAJORZ
+CODE_SMELL
