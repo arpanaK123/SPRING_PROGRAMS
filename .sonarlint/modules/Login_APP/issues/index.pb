@@ -1,9 +1,21 @@
 
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-L
-src/main/webapp/register.jsp,b/d/bde35d3876092f82f8efadc1a6675aaf6bd96946
 ^
 .src/main/java/com/bridgeit/model/UserPoso.java,5/9/595d62943a55dd47bfb74352679f86bb8567fcdb
 I
 src/main/webapp/index.jsp,8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded
+d
+4src/main/java/com/bridgeit/utility/DBConnection.java,7/5/751f370c1a1a1fe27c88092583bd6a4a71d90966
+m
+=src/main/java/com/bridgeit/controller/RegisterController.java,7/3/737da9971e4222ff988b6472c68a4c6c0edb6a6b
+P
+ src/main/webapp/registration.jsp,d/d/dd51f7041d5a8d7bb17c79a85099a350e198ae09
+k
+;src/main/java/com/bridgeit/controller/LogoutController.java,c/2/c2a4be092e61258f3dcc206c5789c185c24cd5c5
+I
+src/main/webapp/error.jsp,c/b/cba3df22242d379bdb72d00919d2e8d49101d1bf
+K
+src/main/webapp/welcome.jsp,a/9/a9b525d02897189d476c4f767e41ad2f3367abea
+j
+:src/main/java/com/bridgeit/controller/LoginController.java,a/9/a9f7e5f431f07c80fa069cad0877848fd1eb50cc

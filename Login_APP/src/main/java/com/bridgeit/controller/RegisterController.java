@@ -21,14 +21,17 @@ public class RegisterController extends HttpServlet {
 		try {
 			con = DBConnection.getConnection();
 			String firstname = request.getParameter("firstname");
+			System.out.println(firstname);
 			String lastname = request.getParameter("lastname");
 			String number = request.getParameter("mobilenumber");
 			String name = request.getParameter("username");
 			String password = request.getParameter("password");
+			System.out.println(password);
 			String sql = "insert into login values(?,?,?,?,?)";
 			PreparedStatement ps = con.prepareStatement(sql);
 
 			ps.setString(1, firstname);
+			System.out.println(firstname);
 			ps.setString(2, lastname);
 			ps.setString(3, number);
 			ps.setString(4, name);

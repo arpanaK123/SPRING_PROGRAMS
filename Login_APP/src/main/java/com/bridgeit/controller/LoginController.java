@@ -20,7 +20,6 @@ public class LoginController extends HttpServlet {
 			throws ServletException, IOException {
 
 		PrintWriter out = response.getWriter();
-
 		String un = request.getParameter("username");
 		String pw = request.getParameter("password");
 		if (un == "" || pw == "") {
@@ -45,6 +44,7 @@ public class LoginController extends HttpServlet {
 				response.sendRedirect("welcome.jsp");
 				return;
 			}
+			response.sendRedirect("error.jsp");
 
 		} catch (Exception e) {
 			System.out.println(e);
