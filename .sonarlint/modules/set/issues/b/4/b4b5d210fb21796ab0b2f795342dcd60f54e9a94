@@ -1,0 +1,26 @@
+
+q
+squid:S106+"9Replace this use of System.out or System.err by a logger.(ÃÇŒ¹øÿÿÿÿ8à¾óûÆ,HàRMAJORZ
+CODE_SMELL
+\squid:S1481")Remove this unused "set3" local variable.(½­”"8¥õ‹þÆ,HáRMINORZ
+CODE_SMELL
+qsquid:S1854"8Remove this useless assignment to local variable "set2".(ˆ·ÅÀýÿÿÿÿ8»®€þÆ,HâRMAJORZ
+CODE_SMELL
+q
+squid:S106%"9Replace this use of System.out or System.err by a logger.(™‘ÐÜÿÿÿÿÿ8Š¶êûÆ,HãRMAJORZ
+CODE_SMELL
+l
+squid:S106."9Replace this use of System.out or System.err by a logger.(¬‹Åÿ8à¾óûÆ,HäRMAJORZ
+CODE_SMELL
+l
+squid:S1061"9Replace this use of System.out or System.err by a logger.(¸Ê«§8Š¶êûÆ,HåRMAJORZ
+CODE_SMELL
+asquid:S1604"(Make this anonymous inner class a lambda(ˆ·ÅÀýÿÿÿÿ8¢«ˆþÆ,HæRMAJORZ
+CODE_SMELL
+q
+squid:S106("9Replace this use of System.out or System.err by a logger.(”¢ÿ—þÿÿÿÿ8à¾óûÆ,HçRMAJORZ
+CODE_SMELL
+bsquid:S1481")Remove this unused "set2" local variable.(ˆ·ÅÀýÿÿÿÿ8»®€þÆ,HèRMINORZ
+CODE_SMELL
+ksquid:S1854"8Remove this useless assignment to local variable "set3".(½­”"8¥õ‹þÆ,HéRMAJORZ
+CODE_SMELL

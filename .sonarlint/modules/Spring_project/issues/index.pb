@@ -51,3 +51,17 @@ M
 +src/main/java/com/bridgeit/CIMap2/Test.java,1/3/1353b891a2aa95653678ad964b081d7e278040b0
 [
 +src/main/java/com/bridgeit/CIMap2/User.java,4/a/4ad55ac5afb951d5d1e9f0442d793b3ca2959f71
+i
+9src/main/java/com/bridgeit/CIInheritingBean/Employee.java,d/a/daaea193783a8a8eadf9037cd10c1393c9ebac1b
+h
+8src/main/java/com/bridgeit/CIInheritingBean/Address.java,8/0/8047ba684c8d2a27eb3237ad47a3df69ffa2ae2e
+e
+5src/main/java/com/bridgeit/CIInheritingBean/Test.java,5/7/57fdb388e14bb0f06fe74649941d4e25bf897e54
+R
+"src/main/resources/inheritBean.xml,5/3/534e8b74b98426dd06f2d1d705a1b1009923de5e
+V
+&src/main/resources/setterInjection.xml,9/1/917d754365b0aee039f856efd496f5988ab52549
+d
+4src/main/java/com/bridgeit/setterInjection/Test.java,5/4/5497222e5a1bb57deb18933d51ac4872ae131aa9
+h
+8src/main/java/com/bridgeit/setterInjection/Employee.java,3/5/35ba32463e10cbc1200e9dc6569ec1e938e55147

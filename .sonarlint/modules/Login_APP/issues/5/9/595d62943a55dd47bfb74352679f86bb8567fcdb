@@ -1,0 +1,44 @@
+
+ƒsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Â¾å8ì†ˆ¢È,HéRMINORZ
+CODE_SMELL
+squid:S00116"XRename this field "Mobile_Number" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş‡ç8ì†ˆ¢È,HÔRMINORZ
+CODE_SMELL
+squid:S00116"SRename this field "PassWord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ûœ’üÿÿÿÿ8ì†ˆ¢È,HÓRMINORZ
+CODE_SMELL
+‹squid:S00117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç‚°£ùÿÿÿÿ8ì†ˆ¢È,HêRMINORZ
+CODE_SMELL
+†squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Â¾å8ì†ˆ¢È,HëRMINORZ
+CODE_SMELL
+†squid:S00117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©õ³Õ8ì†ˆ¢È,HìRMINORZ
+CODE_SMELL
+ˆsquid:S00100K"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç‚°£ùÿÿÿÿ8ì†ˆ¢È,HíRMINORZ
+CODE_SMELL
+‰squid:S00116"URename this field "First_Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ş»u8ì†ˆ¢È,HĞRMINORZ
+CODE_SMELL
+†squid:S00117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ÎÜ™8ì†ˆ¢È,HÕRMINORZ
+CODE_SMELL
+†squid:S00117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ÎÜ™8ì†ˆ¢È,HÖRMINORZ
+CODE_SMELL
+†squid:S00117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ÎÜ™8ì†ˆ¢È,HÙRMINORZ
+CODE_SMELL
+ˆsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½À–üÿÿÿÿ8ì†ˆ¢È,HîRMINORZ
+CODE_SMELL
+ˆsquid:S00100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûµ úÿÿÿÿ8ì†ˆ¢È,HïRMINORZ
+CODE_SMELL
+†squid:S00117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ÎÜ™8ì†ˆ¢È,HØRMINORZ
+CODE_SMELL
+ƒsquid:S00100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©õ³Õ8ì†ˆ¢È,HğRMINORZ
+CODE_SMELL
+‰squid:S00116"TRename this field "Last_Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åµµü8ì†ˆ¢È,HÑRMINORZ
+CODE_SMELL
+†squid:S00117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ÎÜ™8ì†ˆ¢È,H×RMINORZ
+CODE_SMELL
+ˆsquid:S00100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äÑ‘ÿÿÿÿÿ8ì†ˆ¢È,HñRMINORZ
+CODE_SMELL
+…squid:S00116"PRename this field "Email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áï»‚8óÉó¢È,HòRMINORZ
+CODE_SMELL

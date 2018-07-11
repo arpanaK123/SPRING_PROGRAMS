@@ -4,12 +4,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.bridgeit"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="Spring_project"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -34,6 +32,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -45,6 +44,10 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/bridgeit/SPRING"/>
+			<item value="/home/bridgeit/SPRING/MY_APP"/>
+			<item value="/home/bridgeit/SPRING/my-app"/>
+			<item value="/home/bridgeit/SPRING/set/src/com/bridgeit/set/MainTree.java"/>
 			<item value="/home/bridgeit/SPRING/abc"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -58,10 +61,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.bridgeit.LoginRegister.Login_APP"/>
 		</list>
 		<list key="groupId">
+			<item value="com.bridgeit.LoginRegister"/>
 		</list>
 		<list key="artifactId">
+			<item value="Login_APP"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

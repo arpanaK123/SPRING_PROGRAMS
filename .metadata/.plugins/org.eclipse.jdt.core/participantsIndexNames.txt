@@ -1,3 +1,9 @@
 INDEX VERSION 1.130
+/home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3274903861.index
+/MY_APP/src/main/resources
 /home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2344289812.index
 /abc/src/main/java
+/home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1554464936.index
+/Login_App/src/main/resources
+/home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/792906338.index
+/Login_APP/src/main/resources
