@@ -3,6 +3,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <body>
+	<%
+		String username = (String) session.getAttribute("username");
+		if (username != null) {
+			response.sendRedirect("welcome.jsp");
+		}
+		
+	%>
 	<form method="post" action="LoginController">
 		<center>
 			<table bgcolor="azure" border="1" width="30%" cellpadding="3">
@@ -13,7 +20,7 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>User Name</td>
+						<td>Email</td>
 						<td><input type="text" name="username" value="" /></td>
 					</tr>
 					<tr>

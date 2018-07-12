@@ -1,13 +1,10 @@
 
-gsquid:S1989"+Add a "try/catch" block for "sendRedirect".(©û©„ıÿÿÿÿ8£²–ÂÈ,H›RMINORZVULNERABILITY
+hsquid:S1989 ",Add a "try/catch" block for "getConnection".(ˆŒ¥ûùÿÿÿÿ8àûô»È,H¨RMINORZVULNERABILITY
+gsquid:S1989"+Add a "try/catch" block for "sendRedirect".(©û©„ıÿÿÿÿ8£²–ÂÈ,HªRMINORZVULNERABILITY
 q
-squid:S1062"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ8àûô»È,HªRMAJORZ
+squid:S1061"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ8àûô»È,H¶RMAJORZ
 CODE_SMELL
-psquid:S1854"7Remove this useless assignment to local variable "out".(ïô†úÿÿÿÿ8àûô»È,H¬RMAJORZ
+ssquid:S1161":Add the "@Override" annotation above this method signature(ş³‚”ûÿÿÿÿ8ûùâ»È,H¦RMAJORZ
 CODE_SMELL
-asquid:S1481"(Remove this unused "out" local variable.(ïô†úÿÿÿÿ8àûô»È,H«RMINORZ
-CODE_SMELL
-hsquid:S1989"",Add a "try/catch" block for "getConnection".(ˆŒ¥ûùÿÿÿÿ8àûô»È,H©RMINORZVULNERABILITY
-dsquid:S1989"(Add a "try/catch" block for "getWriter".(ïô†úÿÿÿÿ8àûô»È,H¨RMINORZVULNERABILITY
-ssquid:S1161":Add the "@Override" annotation above this method signature(ş³‚”ûÿÿÿÿ8ûùâ»È,H¢RMAJORZ
+qsquid:UselessImportCheck"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ8®àÌÈ,HĞRMINORZ
 CODE_SMELL

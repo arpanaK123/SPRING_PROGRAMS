@@ -3,15 +3,15 @@ package com.bridgeit.model;
 public class UserPoso {
 	private String First_Name;
 	private String Last_Name;
-	private String Email;
+	private String User_name;
 	private String PassWord;
 	private String Mobile_Number;
 
-	public UserPoso(String First_Name, String Last_Name, String Email, String PassWord, String Mobile_Number) {
+	public UserPoso() {
 
 		this.First_Name = First_Name;
 		this.Last_Name = Last_Name;
-		this.Email = Email;
+		this.User_name = User_name;
 		this.PassWord = PassWord;
 		this.Mobile_Number = Mobile_Number;
 	}
@@ -43,13 +43,13 @@ public class UserPoso {
 
 
 	public String getEmail() {
-		return Email;
+		return User_name;
 	}
 
 
 
 	public void setEmail(String email) {
-		Email = email;
+		User_name = email;
 	}
 
 

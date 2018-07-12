@@ -19,7 +19,6 @@ public class LoginController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		PrintWriter out = response.getWriter();
 		String un = request.getParameter("username");
 		String pw = request.getParameter("password");
 		if (un == "" || pw == "") {
@@ -39,6 +38,7 @@ public class LoginController extends HttpServlet {
 
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
+				
 				HttpSession session = request.getSession();
 				session.setAttribute("username", un);
 				response.sendRedirect("welcome.jsp");

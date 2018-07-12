@@ -30,7 +30,7 @@
 						<td><input type="text" name="mobilenumber" value="" /></td>
 					</tr>
 					<tr>
-						<td>User Name</td>
+						<td>Email</td>
 						<td><input type="text" name="username" value="" /></td>
 					</tr>
 					<tr>
