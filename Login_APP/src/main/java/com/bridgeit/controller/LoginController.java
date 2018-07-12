@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -22,8 +23,13 @@ public class LoginController extends HttpServlet {
 		String un = request.getParameter("username");
 		String pw = request.getParameter("password");
 		if (un == "" || pw == "") {
-			response.sendRedirect("error.jsp");
+			
+			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+			request.setAttribute("message", "Incorrect email or password or not register");
+			rd.include(request, response);
 			return;
+//			response.sendRedirect("error.jsp");
+//			return;
 		}
 
 		try {
@@ -44,7 +50,11 @@ public class LoginController extends HttpServlet {
 				response.sendRedirect("welcome.jsp");
 				return;
 			}
-			response.sendRedirect("error.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+			request.setAttribute("message", "Incorrect email or password or not register");
+			rd.include(request, response);
+			return;
+			//response.sendRedirect("error.jsp");
 
 		} catch (Exception e) {
 			System.out.println(e);

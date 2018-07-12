@@ -24,44 +24,44 @@ public class RegisterController extends HttpServlet {
 
 		ResultSet result = null;
 		PrintWriter out = response.getWriter();
-		
+
 		try {
+			DBConnection database = new DBConnection();
 			String name = request.getParameter("username");
-			DBConnection database=new DBConnection();
-			boolean b=database.checkDatabase(name);
-			if(b==true)
-			{
-		        RequestDispatcher rd=request.getRequestDispatcher("registration.jsp"); 
-		        out.print("allready  registered");
-		        rd.include(request, response);
-		        return;
+			boolean b = database.checkDatabase(name);
+			if (b == true) {
+				RequestDispatcher rd = request.getRequestDispatcher("registration.jsp");
+				request.setAttribute("message", "Already exist");
+				rd.include(request, response);
+				return;
 
 			}
 			
-			
 
-			con = DBConnection.getConnection();
+				 con = DBConnection.getConnection();
 
-			String firstname = request.getParameter("firstname");
-			String lastname = request.getParameter("lastname");
-			String number = request.getParameter("mobilenumber");
-			String name1 = request.getParameter("username");
-			String password = request.getParameter("password");
+				String firstname = request.getParameter("firstname");
+				String lastname = request.getParameter("lastname");
+				String number = request.getParameter("mobilenumber");
+				String name1 = request.getParameter("username");
+				String password = request.getParameter("password");
 
-			String sql = "insert into login values(?,?,?,?,?)";
-			PreparedStatement ps = con.prepareStatement(sql);
+				String sql = "insert into login values(?,?,?,?,?)";
+				PreparedStatement ps = con.prepareStatement(sql);
 
-			ps.setString(1, firstname);
-			ps.setString(2, lastname);
-			ps.setString(3, number);
-			ps.setString(4, name1);
-			ps.setString(5, password);
+				ps.setString(1, firstname);
+				ps.setString(2, lastname);
+				ps.setString(3, number);
+				ps.setString(4, name1);
+				ps.setString(5, password);
 
-			int i = ps.executeUpdate();
-			if (i > 0) {
-				response.sendRedirect("index.jsp");
+				int i = ps.executeUpdate();
+				if (i > 0) {
+					response.sendRedirect("index.jsp");
+				}
+
 			}
-		} catch (Exception e) {
+		catch (Exception e) {
 			e.printStackTrace();
 
 		}

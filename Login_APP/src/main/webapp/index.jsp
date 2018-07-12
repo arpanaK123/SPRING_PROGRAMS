@@ -29,6 +29,14 @@
 					</tr>
 					<tr>
 						<td><input type="submit" value="Login" /></td>
+						
+						<td colspan="2"><% String msg = (String)(request.getAttribute("message"));
+								
+							if(msg!=null){
+								out.print(request.getAttribute("message"));
+							}
+							%>
+						
 					</tr>
 					<tr>
 						<td colspan="2">Yet Not Registered!! <a
