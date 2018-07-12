@@ -95,8 +95,8 @@
 						<td>Email-Id</td>
 						<td><input type="email" class="input-field"
 							autocomplete="off" placeholder="Email Id" id="emailId"
-							oninput="onCheckInput(this, 'username')" name="username" required /> <span
-							class="error-msg" id="emailError">email is required</span></td>
+							oninput="onCheckInput(this, 'username')" name="username" required />
+							<span class="error-msg" id="emailError">email is required</span></td>
 					</tr>
 					<tr>
 						<td>Password</td>
@@ -111,13 +111,15 @@
 							onclick="return isValid()" /></td>
 					</tr>
 					<tr>
-						<td colspan="2"><% String msg = (String)(request.getAttribute("message"));
-								
-							if(msg!=null){
-								out.print(request.getAttribute("message"));
-							}
-						%> <a href="index.jsp">Login
-								Here</a></td>
+						<td colspan="2">
+							<%
+								String msg1 = (String) (request.getAttribute("message"));
+
+								if (msg1 != null) {
+									out.print(request.getAttribute("message"));
+								}
+							%> <a href="index.jsp">Login Here</a>
+						</td>
 					</tr>
 				</tbody>
 			</table>

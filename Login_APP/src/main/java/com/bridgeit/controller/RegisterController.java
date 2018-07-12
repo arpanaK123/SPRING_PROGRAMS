@@ -37,7 +37,6 @@ public class RegisterController extends HttpServlet {
 
 			}
 			
-
 				 con = DBConnection.getConnection();
 
 				String firstname = request.getParameter("firstname");
@@ -60,7 +59,8 @@ public class RegisterController extends HttpServlet {
 					response.sendRedirect("index.jsp");
 				}
 
-			}
+			
+		}
 		catch (Exception e) {
 			e.printStackTrace();
 

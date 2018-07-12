@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,11 +7,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-*....welcome....*
-<br>
-login successful
-  <form method="post" action="LogoutController"><br>
-<input type="submit" value="Logout" />
-</form>
+	<%
+		//allow access only if session exists
+		String user = null;
+		if (session.getAttribute("username") == null) {
+			response.sendRedirect("index.jsp");
+		} else
+			user = (String) session.getAttribute("user");
+	%>
+	*....welcome....*
+	<br> login successful
+	<form method="post" action="LogoutController">
+		<br> <input type="submit" value="Logout" />
+	</form>
 </body>
 </html>
