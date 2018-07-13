@@ -3,8 +3,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<html>
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style>
 .error-msg {
@@ -25,7 +23,6 @@
 		}
 		return true;
 	}
-
 	function onCheckInput(element, label) {
 		if (element.value && label !== 'email') {
 			element.nextElementSibling.innerHTML = "";
@@ -69,7 +66,7 @@
 				<tbody>
 					<tr>
 						<td>First Name</td>
-						<td><input type="text" id="firstName" autocomplete="off"
+						<td><input type="text" id="firstName" 
 							maxlength="20" class="input-field" placeholder="First name"
 							oninput="onCheckInput(this, 'firstname')" name="firstname"
 							required /> <span class="error-msg" id="firstNameError">first
@@ -77,7 +74,7 @@
 					</tr>
 					<tr>
 						<td>Last Name</td>
-						<td><input type="text" autocomplete="off" maxlength="20"
+						<td><input type="text"  maxlength="20"
 							class="input-field" placeholder="Last Name"
 							oninput="onCheckInput(this, 'lastname')" name="lastname" required />
 							<span class="error-msg" id="lastNameError">last name is
@@ -87,21 +84,21 @@
 						<td>Mob No.</td>
 						<td><input type="text" maxlength="10"
 							oninput="onCheckInput(this, 'mobilenumber')" class="input-field"
-							autocomplete="off" placeholder="Mobile Number"
+							 placeholder="Mobile Number"
 							name="mobilenumber" required /> <span class="error-msg"
 							id="mobileNumberError">mobile number is required</span></td>
 					</tr>
 					<tr>
 						<td>Email-Id</td>
 						<td><input type="email" class="input-field"
-							autocomplete="off" placeholder="Email Id" id="emailId"
+							placeholder="Email Id" id="emailId"
 							oninput="onCheckInput(this, 'username')" name="username" required />
 							<span class="error-msg" id="emailError">email is required</span></td>
 					</tr>
 					<tr>
 						<td>Password</td>
 						<td><input type="password" class="input-field"
-							autocomplete="off" placeholder="Password" maxlength="20"
+							 placeholder="Password" maxlength="20"
 							name="password" oninput="onCheckInput(this, 'password')" required />
 							<span class="error-msg" id="passwordError">password is
 								required</span></td>
@@ -114,7 +111,6 @@
 						<td colspan="2">
 							<%
 								String msg1 = (String) (request.getAttribute("message"));
-
 								if (msg1 != null) {
 									out.print(request.getAttribute("message"));
 								}

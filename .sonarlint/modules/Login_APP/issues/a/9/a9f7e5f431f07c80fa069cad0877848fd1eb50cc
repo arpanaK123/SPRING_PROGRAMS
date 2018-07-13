@@ -1,10 +1,15 @@
 
-hsquid:S1989 ",Add a "try/catch" block for "getConnection".(ˆŒ¥ûùÿÿÿÿ8àûô»È,H¨RMINORZVULNERABILITY
-gsquid:S1989"+Add a "try/catch" block for "sendRedirect".(©û©„ýÿÿÿÿ8£²–ÂÈ,HªRMINORZVULNERABILITY
 q
-squid:S1061"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ8àûô»È,H¶RMAJORZ
+squid:S106<"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ8àûô»È,HÝRMAJORZ
 CODE_SMELL
-ssquid:S1161":Add the "@Override" annotation above this method signature(þ³‚”ûÿÿÿÿ8ûùâ»È,H¦RMAJORZ
+qsquid:UselessImportCheck"0Remove this unused import 'java.io.PrintWriter'.(ÓÞÏÛ8®žàÌÈ,HÛRMINORZ
 CODE_SMELL
-qsquid:UselessImportCheck"0Remove this unused import 'java.io.PrintWriter'.(ÓÞÏÛ8®žàÌÈ,HÐRMINORZ
+ssquid:S1161":Add the "@Override" annotation above this method signature(þ³‚”ûÿÿÿÿ8ûùâ»È,HßRMAJORZ
+CODE_SMELL
+hsquid:S1989&",Add a "try/catch" block for "getConnection".(ˆŒ¥ûùÿÿÿÿ8àûô»È,HÞRMINORZVULNERABILITY
+squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ú›ûÕ8‹¯ÜôÈ,H¨RMAJORZ
+CODE_SMELL
+bsquid:S1989"&Add a "try/catch" block for "include".(ß‘†¸üÿÿÿÿ8˜çìôÈ,H¯RMINORZVULNERABILITY
+bsquid:S1989"&Add a "try/catch" block for "include".(ß‘†¸üÿÿÿÿ8˜çìôÈ,H°RMINORZVULNERABILITY
+squid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(ú›ûÕ8˜çìôÈ,H±RMAJORZ
 CODE_SMELL

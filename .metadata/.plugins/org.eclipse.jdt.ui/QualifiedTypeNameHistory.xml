@@ -5,7 +5,6 @@
     <fullyQualifiedTypeName name="com.bridgeit.CIDependentObject.Address"/>
     <fullyQualifiedTypeName name="com.bridgeit.CIDependentObject.Employee"/>
     <fullyQualifiedTypeName name="com.bridgeit.CICollection.Question"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.bridgeit.CICollecton2.Question"/>
     <fullyQualifiedTypeName name="com.bridgeit.CICollecton2.Answer"/>
     <fullyQualifiedTypeName name="com.bridgeit.CIMap.Question"/>
@@ -32,10 +31,14 @@
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
-    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="com.bridgeit.utility.DBConnection"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.bridgeit.model.UserPoso"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 </qualifiedTypeNameHistroy>
