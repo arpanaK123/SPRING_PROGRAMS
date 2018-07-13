@@ -31,7 +31,7 @@ public class RegisterController extends HttpServlet {
 			boolean b = database.checkDatabase(name);
 			if (b == true) {
 				RequestDispatcher rd = request.getRequestDispatcher("registration.jsp");
-				request.setAttribute("message", "Already exist");
+				request.setAttribute("message", "Allready exist");
 				rd.include(request, response);
 				return;
 

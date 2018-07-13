@@ -83,7 +83,6 @@
 							}
 						%>
 					
-					</tr>
 					<tr>
 						<td colspan="2">Yet Not Registered!! <a
 							href="registration.jsp">Register Here</a></td>

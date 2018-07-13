@@ -74,7 +74,7 @@
 					</tr>
 					<tr>
 						<td>Last Name</td>
-						<td><input type="text"  maxlength="20"
+						<td><input type="text" maxlength="20"
 							class="input-field" placeholder="Last Name"
 							oninput="onCheckInput(this, 'lastname')" name="lastname" required />
 							<span class="error-msg" id="lastNameError">last name is
@@ -82,7 +82,7 @@
 					</tr>
 					<tr>
 						<td>Mob No.</td>
-						<td><input type="text" maxlength="10"
+						<td><input type="number" maxlength="10"
 							oninput="onCheckInput(this, 'mobilenumber')" class="input-field"
 							 placeholder="Mobile Number"
 							name="mobilenumber" required /> <span class="error-msg"
