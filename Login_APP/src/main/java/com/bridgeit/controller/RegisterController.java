@@ -33,8 +33,6 @@ public class RegisterController extends HttpServlet {
 				RequestDispatcher rd = request.getRequestDispatcher("registration.jsp");
 				request.setAttribute("message", "Allready exist");
 				rd.include(request, response);
-				return;
-
 			}
 			
 				 con = DBConnection.getConnection();
@@ -42,7 +40,7 @@ public class RegisterController extends HttpServlet {
 				String firstname = request.getParameter("firstname");
 				String lastname = request.getParameter("lastname");
 				String number = request.getParameter("mobilenumber");
-				String name1 = request.getParameter("username");
+				String mail = request.getParameter("username");
 				String password = request.getParameter("password");
 
 				String sql = "insert into login values(?,?,?,?,?)";
@@ -51,7 +49,7 @@ public class RegisterController extends HttpServlet {
 				ps.setString(1, firstname);
 				ps.setString(2, lastname);
 				ps.setString(3, number);
-				ps.setString(4, name1);
+				ps.setString(4, mail);
 				ps.setString(5, password);
 
 				int i = ps.executeUpdate();

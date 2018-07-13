@@ -23,13 +23,10 @@ public class LoginController extends HttpServlet {
 		String un = request.getParameter("username");
 		String pw = request.getParameter("password");
 		if (un == "" || pw == "") {
-			
 			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 			request.setAttribute("message", "Incorrect email or password / not register");
 			rd.include(request, response);
 			return;
-//			response.sendRedirect("error.jsp");
-//			return;
 		}
 
 		try {

@@ -21,21 +21,21 @@
 			return false;
 		}
 		return true;
-
-		function onCheckInput(element, label) {
-			if (element.value && label !== 'email') {
+	}
+	function onCheckInput(element, label) {
+		if (element.value && label !== 'email') {
+			element.nextElementSibling.innerHTML = "";
+		} else {
+			switch (label) {
+			case 'email':
+				element.nextElementSibling.innerHTML = !element.value ? "email is required"
+						: '';
+				break;
+			case 'password':
+				element.nextElementSibling.innerHTML = "password is required";
+				break;
+			default:
 				element.nextElementSibling.innerHTML = "";
-			} else {
-				switch (label) {
-				case 'email':
-					element.nextElementSibling.innerHTML = " email Id is required";
-					break;
-				case 'password':
-					element.nextElementSibling.innerHTML = "password is required";
-					break;
-				default:
-					element.nextElementSibling.innerHTML = "";
-				}
 			}
 		}
 	}
@@ -68,7 +68,7 @@
 					<tr>
 						<td>Password</td>
 						<td><input type="password" class="input-field"
-							placeholder="Password" maxlength="20" name="password"
+							placeholder="Password" name="password"
 							oninput="onCheckInput(this, 'password')" required /> <span
 							class="error-msg" id="passwordError">password is required</span></td>
 					</tr>
@@ -77,12 +77,12 @@
 					<td colspan="2">
 						<%
 							String msg = (String) (request.getAttribute("message"));
-
 							if (msg != null) {
 								out.print(request.getAttribute("message"));
 							}
 						%>
 					
+					</tr>
 					<tr>
 						<td colspan="2">Yet Not Registered!! <a
 							href="registration.jsp">Register Here</a></td>

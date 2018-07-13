@@ -27,11 +27,11 @@ public class DBConnection {
 		return connection;
 	}
 
-	public static boolean checkDatabase(String name) throws SQLException, ClassNotFoundException {
+	public  boolean checkDatabase(String name) throws SQLException, ClassNotFoundException {
 		Connection con = null;
 		con = DBConnection.getConnection();
 
-		List<UserPoso> list = new ArrayList();
+		List<UserPoso> list = new ArrayList<UserPoso>();
 
 		PreparedStatement stmt = con.prepareStatement("select * from login");
 		ResultSet rs = stmt.executeQuery();
