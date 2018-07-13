@@ -25,7 +25,6 @@
 		}
 		return true;
 	}
-
 	function onCheckInput(element, label) {
 		if (element.value && label !== 'email') {
 			element.nextElementSibling.innerHTML = "";
@@ -95,7 +94,7 @@
 					<tr>
 						<td>Email Id</td>
 						<td><input type="email" class="email" placeholder="Email Id"
-							id="emailId" oninput="onCheckInput(this, 'username')"
+							id="emailId" oninput="onCheckInput(this, 'email')"
 							name="username" required /> <span class="error-msg"
 							id="emailError">email is required</span></td>
 					</tr>

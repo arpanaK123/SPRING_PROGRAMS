@@ -33,6 +33,7 @@ public class RegisterController extends HttpServlet {
 				RequestDispatcher rd = request.getRequestDispatcher("registration.jsp");
 				request.setAttribute("message", "Allready exist");
 				rd.include(request, response);
+				return;
 			}
 			
 				 con = DBConnection.getConnection();

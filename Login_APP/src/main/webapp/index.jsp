@@ -62,7 +62,7 @@
 						<td>Email-Id</td>
 						<td><input type="email" class="input-field"
 							placeholder="Email Id" id="emailId"
-							oninput="onCheckInput(this, 'username')" name="username" required />
+							oninput="onCheckInput(this, 'email')" name="username" required />
 							<span class="error-msg" id="emailError">email is required</span></td>
 					</tr>
 					<tr>
