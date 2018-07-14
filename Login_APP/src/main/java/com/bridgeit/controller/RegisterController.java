@@ -20,10 +20,9 @@ public class RegisterController extends HttpServlet {
 			throws ServletException, IOException {
 
 		response.setContentType("text/html");
-		Connection con = null;
+		Connection conection = null;
 
 		ResultSet result = null;
-		PrintWriter out = response.getWriter();
 
 		try {
 			DBConnection database = new DBConnection();
@@ -35,32 +34,34 @@ public class RegisterController extends HttpServlet {
 				rd.include(request, response);
 				return;
 			}
-			
-				 con = DBConnection.getConnection();
 
-				String firstname = request.getParameter("firstname");
-				String lastname = request.getParameter("lastname");
-				String number = request.getParameter("mobilenumber");
-				String mail = request.getParameter("username");
-				String password = request.getParameter("password");
+			conection = DBConnection.getConnection();
 
-				String sql = "insert into login values(?,?,?,?,?)";
-				PreparedStatement ps = con.prepareStatement(sql);
+			String firstname = request.getParameter("firstname");
+			String lastname = request.getParameter("lastname");
+			String number = request.getParameter("mobilenumber");
+			String mail = request.getParameter("username");
+			String password = request.getParameter("password");
 
-				ps.setString(1, firstname);
-				ps.setString(2, lastname);
-				ps.setString(3, number);
-				ps.setString(4, mail);
-				ps.setString(5, password);
+			String sql = "insert into login values(?,?,?,?,?)";
+			PreparedStatement preparestatement = conection.prepareStatement(sql);
 
-				int i = ps.executeUpdate();
-				if (i > 0) {
-					response.sendRedirect("index.jsp");
-				}
+			preparestatement.setString(1, firstname);
+			preparestatement.setString(2, lastname);
+			preparestatement.setString(3, number);
+			preparestatement.setString(4, mail);
+			preparestatement.setString(5, password);
 
-			
-		}
-		catch (Exception e) {
+			int i = preparestatement.executeUpdate();
+			if (i > 0) {
+				RequestDispatcher requestdispatcher = request.getRequestDispatcher("registration.jsp");
+				request.setAttribute("message", "Registration successfull");
+				requestdispatcher.include(request, response);
+
+			}
+
+		} catch (Exception e) {
+
 			e.printStackTrace();
 
 		}

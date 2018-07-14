@@ -20,38 +20,31 @@ public class LoginController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		String un = request.getParameter("username");
-		String pw = request.getParameter("password");
-		if (un == "" || pw == "") {
-			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-			request.setAttribute("message", "Incorrect email or password / not register");
-			rd.include(request, response);
-			return;
-		}
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
 
 		try {
 
-			Connection con = null;
-			con = DBConnection.getConnection();
+			Connection connection = null;
+			connection = DBConnection.getConnection();
 
-			PreparedStatement ps = con
+			PreparedStatement preparestatement = connection
 					.prepareStatement("select User_Name,PassWord from login where User_Name=? and PassWord=?");
-			ps.setString(1, un);
-			ps.setString(2, pw);
+			preparestatement.setString(1, username);
+			preparestatement.setString(2, password);
 
-			ResultSet rs = ps.executeQuery();
-			while (rs.next()) {
-				
+			ResultSet resultset = preparestatement.executeQuery();
+			while (resultset.next()) {
+
 				HttpSession session = request.getSession();
-				session.setAttribute("username", un);
+				session.setAttribute("username", username);
 				response.sendRedirect("welcome.jsp");
 				return;
 			}
-			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-			request.setAttribute("message", "Incorrect email or password / not register");
-			rd.include(request, response);
+			RequestDispatcher requestdispatcher = request.getRequestDispatcher("index.jsp");
+			request.setAttribute("message", "Incorrect email or password ");
+			requestdispatcher.include(request, response);
 			return;
-			//response.sendRedirect("error.jsp");
 
 		} catch (Exception e) {
 			System.out.println(e);

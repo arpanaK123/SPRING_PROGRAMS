@@ -1,15 +1,17 @@
 
+„squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ºà´îøÿÿÿÿ8³ÛŒ¸É,HòRMAJORZ
+CODE_SMELL
 q
-squid:S106<"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ8àûô»È,HÝRMAJORZ
+squid:S106="9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ8àûô»È,HÜRMAJORZ
 CODE_SMELL
-qsquid:UselessImportCheck"0Remove this unused import 'java.io.PrintWriter'.(ÓÞÏÛ8®žàÌÈ,HÛRMINORZ
+hsquid:S1989'",Add a "try/catch" block for "getConnection".(ˆŒ¥ûùÿÿÿÿ8àûô»È,HÝRMINORZVULNERABILITY
+ssquid:S1161":Add the "@Override" annotation above this method signature(þ³‚”ûÿÿÿÿ8ûùâ»È,HÛRMAJORZ
 CODE_SMELL
-ssquid:S1161":Add the "@Override" annotation above this method signature(þ³‚”ûÿÿÿÿ8ûùâ»È,HßRMAJORZ
+qsquid:UselessImportCheck"0Remove this unused import 'java.io.PrintWriter'.(ÓÞÏÛ8®žàÌÈ,H×RMINORZ
 CODE_SMELL
-hsquid:S1989&",Add a "try/catch" block for "getConnection".(ˆŒ¥ûùÿÿÿÿ8àûô»È,HÞRMINORZVULNERABILITY
-squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ú›ûÕ8‹¯ÜôÈ,H¨RMAJORZ
+squid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(ú›ûÕ8ÒÏè›É,HÙRMAJORZ
 CODE_SMELL
-bsquid:S1989"&Add a "try/catch" block for "include".(ß‘†¸üÿÿÿÿ8˜çìôÈ,H¯RMINORZVULNERABILITY
-bsquid:S1989"&Add a "try/catch" block for "include".(ß‘†¸üÿÿÿÿ8˜çìôÈ,H°RMINORZVULNERABILITY
-squid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(ú›ûÕ8˜çìôÈ,H±RMAJORZ
+„squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¤Žá¤ýÿÿÿÿ8³ÛŒ¸É,HñRMAJORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÓŸÊÍýÿÿÿÿ8¼ž‘¸É,HõRMAJORZ
 CODE_SMELL

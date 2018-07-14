@@ -27,7 +27,7 @@ public class DBConnection {
 		return connection;
 	}
 
-	public  boolean checkDatabase(String name) throws SQLException, ClassNotFoundException {
+	public  boolean checkDatabase(String email) throws SQLException, ClassNotFoundException {
 		Connection con = null;
 		con = DBConnection.getConnection();
 
@@ -42,7 +42,7 @@ public class DBConnection {
 
 		}
 		for (UserPoso username : list) {
-			if (username.getEmail().equals(name)) {
+			if (username.getEmail().equals(email)) {
 				return true;
 			}
 		}

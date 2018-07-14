@@ -1,39 +1,39 @@
 
-ˆsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½À–üÿÿÿÿ8ì†ˆ¢È,H”RMINORZ
+ˆsquid:S00100K"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç‚°£ùÿÿÿÿ8ì†ˆ¢È,H³RMINORZ
 CODE_SMELL
-‰squid:S00116"URename this field "First_Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ş»u8ì†ˆ¢È,H‡RMINORZ
+ƒsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Â¾å8ì†ˆ¢È,H´RMINORZ
 CODE_SMELL
-ƒsquid:S00100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©õ³Õ8ì†ˆ¢È,H‰RMINORZ
+ˆsquid:S00100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûµ úÿÿÿÿ8ì†ˆ¢È,HµRMINORZ
 CODE_SMELL
-‹squid:S00117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç‚°£ùÿÿÿÿ8ì†ˆ¢È,HRMINORZ
+ˆsquid:S00100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äÑ‘ÿÿÿÿÿ8ì†ˆ¢È,H¶RMINORZ
 CODE_SMELL
-†squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Â¾å8ì†ˆ¢È,HƒRMINORZ
+squid:S00116"XRename this field "Mobile_Number" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş‡ç8ì†ˆ¢È,H·RMINORZ
 CODE_SMELL
-¡squid:S4165"hRemove this useless assignment; "First_Name" already holds the assigned value along all execution paths.(Ú‚ÏÜûÿÿÿÿ8÷»êçÈ,H°RMAJORZ
+†squid:S00117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©õ³Õ8ì†ˆ¢È,H¸RMINORZ
 CODE_SMELL
-squid:S00116"SRename this field "PassWord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ûœ’üÿÿÿÿ8ì†ˆ¢È,H“RMINORZ
+squid:S00116"SRename this field "PassWord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ûœ’üÿÿÿÿ8ì†ˆ¢È,H¹RMINORZ
 CODE_SMELL
-squid:S00116"XRename this field "Mobile_Number" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş‡ç8ì†ˆ¢È,H‘RMINORZ
+ˆsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½À–üÿÿÿÿ8ì†ˆ¢È,HºRMINORZ
 CODE_SMELL
-ˆsquid:S00100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûµ úÿÿÿÿ8ì†ˆ¢È,HŒRMINORZ
+šsquid:S4165"fRemove this useless assignment; "PassWord" already holds the assigned value along all execution paths.(õÁ¸Ÿ8÷»êçÈ,H»RMAJORZ
 CODE_SMELL
-¤squid:S4165"kRemove this useless assignment; "Mobile_Number" already holds the assigned value along all execution paths.(²û©‹üÿÿÿÿ8÷»êçÈ,H¯RMAJORZ
+¡squid:S4165"hRemove this useless assignment; "First_Name" already holds the assigned value along all execution paths.(Ú‚ÏÜûÿÿÿÿ8÷»êçÈ,H¼RMAJORZ
 CODE_SMELL
-ƒsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Â¾å8ì†ˆ¢È,H„RMINORZ
+ƒsquid:S00100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©õ³Õ8ì†ˆ¢È,H½RMINORZ
 CODE_SMELL
-ˆsquid:S00100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äÑ‘ÿÿÿÿÿ8ì†ˆ¢È,H†RMINORZ
+‰squid:S00116"URename this field "First_Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ş»u8ì†ˆ¢È,H¾RMINORZ
 CODE_SMELL
-šsquid:S4165"fRemove this useless assignment; "PassWord" already holds the assigned value along all execution paths.(õÁ¸Ÿ8÷»êçÈ,H±RMAJORZ
+ˆsquid:S00116"TRename this field "User_Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÍH8ûùİ“É,H¿RMINORZ
 CODE_SMELL
-ˆsquid:S00100K"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç‚°£ùÿÿÿÿ8ì†ˆ¢È,HRMINORZ
+†squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Â¾å8ì†ˆ¢È,HÀRMINORZ
 CODE_SMELL
-†squid:S00117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©õ³Õ8ì†ˆ¢È,H‹RMINORZ
+¤squid:S4165"kRemove this useless assignment; "Mobile_Number" already holds the assigned value along all execution paths.(²û©‹üÿÿÿÿ8÷»êçÈ,HÁRMAJORZ
 CODE_SMELL
- squid:S4165"gRemove this useless assignment; "Last_Name" already holds the assigned value along all execution paths.(Š°¥äşÿÿÿÿ8÷»êçÈ,H³RMAJORZ
+ squid:S4165"gRemove this useless assignment; "Last_Name" already holds the assigned value along all execution paths.(Š°¥äşÿÿÿÿ8÷»êçÈ,HÂRMAJORZ
 CODE_SMELL
-‰squid:S00116"TRename this field "Last_Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åµµü8ì†ˆ¢È,H’RMINORZ
+‹squid:S00117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç‚°£ùÿÿÿÿ8ì†ˆ¢È,HÃRMINORZ
 CODE_SMELL
- squid:S4165"gRemove this useless assignment; "User_name" already holds the assigned value along all execution paths.(’¼¢’øÿÿÿÿ8İööçÈ,H¼RMAJORZ
+‰squid:S00116"TRename this field "Last_Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åµµü8ì†ˆ¢È,HÄRMINORZ
 CODE_SMELL
-‰squid:S00116"TRename this field "User_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì÷·Í8İööçÈ,H½RMINORZ
+›squid:S4165"gRemove this useless assignment; "User_Name" already holds the assigned value along all execution paths.(Åá£ÿ8ûùİ“É,HÅRMAJORZ
 CODE_SMELL

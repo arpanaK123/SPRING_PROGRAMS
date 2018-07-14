@@ -61,9 +61,9 @@
 					<tr>
 						<td>Email-Id</td>
 						<td><input type="email" class="input-field"
-							placeholder="Email Id" id="emailId"
-							oninput="onCheckInput(this, 'email')" name="username" required />
-							<span class="error-msg" id="emailError">email is required</span></td>
+							placeholder="Email Id" oninput="onCheckInput(this, 'email')"
+							name="username" required /> <span class="error-msg"
+							id="emailError">email is required</span></td>
 					</tr>
 					<tr>
 						<td>Password</td>

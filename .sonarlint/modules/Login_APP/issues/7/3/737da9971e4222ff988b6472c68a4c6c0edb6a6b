@@ -1,19 +1,17 @@
 
-hsquid:S1989(",Add a "try/catch" block for "getConnection".(ˆŒ¥ûùÿÿÿÿ8òÒôÈ,H¥RMINORZVULNERABILITY
-_squid:S1481"+Remove this unused "result" local variable.(›ôíı8„¬§åÈ,HöRMINORZ
+lsquid:S1161":Add the "@Override" annotation above this method signature(ş³‚”ûÿÿÿÿHËRMAJORZ
 CODE_SMELL
-_squid:S1148A"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ç™¥¼È,HØRMINORZVULNERABILITY
-lsquid:S1161":Add the "@Override" annotation above this method signature(ş³‚”ûÿÿÿÿHÙRMAJORZ
+asquid:S1481"(Remove this unused "out" local variable.(ïô†úÿÿÿÿ8ÑæƒóÈ,HÇRMINORZ
 CODE_SMELL
-_squid:S2440",Remove this instantiation of "DBConnection".( ÂŒI8šÅÊéÈ,H…	RMAJORZ
+asquid:S1125 "(Remove the literal "true" boolean value.(¾¤ô„şÿÿÿÿ8šÅÊéÈ,HÈRMINORZ
 CODE_SMELL
-csquid:S1989",Add a "try/catch" block for "checkDatabase".(½”îï8šÅÊéÈ,Hƒ	RMINORZVULNERABILITY
-asquid:S1125 "(Remove the literal "true" boolean value.(¾¤ô„şÿÿÿÿ8šÅÊéÈ,H„	RMINORZ
+_squid:S1148G"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ç™¥¼È,HÊRMINORZVULNERABILITY
+hsquid:S1989(",Add a "try/catch" block for "getConnection".(ˆŒ¥ûùÿÿÿÿ8òÒôÈ,HÆRMINORZVULNERABILITY
+_squid:S1481"+Remove this unused "result" local variable.(›ôíı8„¬§åÈ,HÉRMINORZ
 CODE_SMELL
-psquid:S1854"7Remove this useless assignment to local variable "out".(ïô†úÿÿÿÿ8ÑæƒóÈ,HÔRMAJORZ
+csquid:S1989",Add a "try/catch" block for "checkDatabase".(½”îï8šÅÊéÈ,HÌRMINORZVULNERABILITY
+„squid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(Ä·úÔøÿÿÿÿ8­”¶·É,HäRMAJORZ
 CODE_SMELL
-dsquid:S1989"(Add a "try/catch" block for "getWriter".(ïô†úÿÿÿÿ8Ñí‡åÈ,HèRMINORZVULNERABILITY
-isquid:S2209"5Change this instance-reference to a static reference.(½”îï8šÅÊéÈ,H‡	RMAJORZ
-CODE_SMELL
-asquid:S1481"(Remove this unused "out" local variable.(ïô†úÿÿÿÿ8ÑæƒóÈ,HÓRMINORZ
+dsquid:S1989"(Add a "try/catch" block for "getWriter".(ïô†úÿÿÿÿ8Ñí‡åÈ,HÎRMINORZVULNERABILITY
+psquid:S1854"7Remove this useless assignment to local variable "out".(ïô†úÿÿÿÿ8ÑæƒóÈ,HÍRMAJORZ
 CODE_SMELL

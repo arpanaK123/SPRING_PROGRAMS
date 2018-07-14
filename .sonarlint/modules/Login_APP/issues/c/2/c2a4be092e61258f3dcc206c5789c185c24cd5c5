@@ -1,6 +1,6 @@
 
-gsquid:S1989"+Add a "try/catch" block for "sendRedirect".(Šûßıÿÿÿÿ8ÊÙê¾È,H°	RMINORZVULNERABILITY
-qsquid:UselessImportCheck"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ8Îú¾È,H©	RMINORZ
+lsquid:S1161":Add the "@Override" annotation above this method signature(ş³‚”ûÿÿÿÿHœRMAJORZ
 CODE_SMELL
-lsquid:S1161":Add the "@Override" annotation above this method signature(ş³‚”ûÿÿÿÿHª	RMAJORZ
+gsquid:S1989"+Add a "try/catch" block for "sendRedirect".(Šûßıÿÿÿÿ8ÊÙê¾È,HRMINORZVULNERABILITY
+qsquid:UselessImportCheck"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ8Îú¾È,HRMINORZ
 CODE_SMELL

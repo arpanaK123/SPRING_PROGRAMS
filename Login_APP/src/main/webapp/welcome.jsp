@@ -8,7 +8,7 @@
 </head>
 <body>
 	<%
-		//allow access only if session exists
+		
 		String user = null;
 		if (session.getAttribute("username") == null) {
 			response.sendRedirect("index.jsp");
