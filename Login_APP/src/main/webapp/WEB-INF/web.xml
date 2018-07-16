@@ -12,8 +12,14 @@
   </filter>
   <filter-mapping>
   	<filter-name>RegistrationFilter</filter-name>
-  	<url-pattern>/RegistrationFilter</url-pattern>
+  	<url-pattern>/RegisterController</url-pattern>
   </filter-mapping>
+  <listener>
+  	<listener-class>com.bridgeit.listener.UserListener</listener-class>
+  </listener>
+  <listener>
+  	<listener-class>com.bridgeit.listener.UserListener</listener-class>
+  </listener>
   <servlet>
   	<servlet-name>LoginController</servlet-name>
   	<display-name>LoginController</display-name>
@@ -34,7 +40,7 @@
   </servlet>
   <servlet-mapping>
   	<servlet-name>LoginController</servlet-name>
-  	<url-pattern>/LoginController</url-pattern>
+  	<url-pattern>/Login</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>RegisterController</servlet-name>

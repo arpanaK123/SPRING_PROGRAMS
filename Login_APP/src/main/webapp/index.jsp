@@ -49,7 +49,7 @@
 			response.sendRedirect("welcome.jsp");
 		}
 	%>
-	<form method="post" action="LoginController">
+	<form method="post" action="Login">
 		<center>
 			<table bgcolor="azure" border="1" width="30%" cellpadding="3">
 				<thead>

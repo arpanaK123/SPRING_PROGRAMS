@@ -22,7 +22,7 @@ public class RegistrationFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 
-		System.out.println("filter");
+		PrintWriter out = response.getWriter();
 		PrintWriter printWriter = response.getWriter();
 		RequestDispatcher requestDispatcher = null;
 		System.out.println("request");
@@ -31,19 +31,24 @@ public class RegistrationFilter implements Filter {
 				&& request.getParameter("password") != null) {
 			UserPoso userPoso = new UserPoso();
 			String firstName = request.getParameter("firstname");
-			System.out.println("firstName");
 			userPoso.setFirst_Name(firstName);
 			String lastName = request.getParameter("lastname");
 			userPoso.setLast_Name(lastName);
 			String number = request.getParameter("mobilenumber");
 			userPoso.setMobile_Number(number);
 			String mail = request.getParameter("username");
-			System.out.println(mail);
-			RegistrationFilter.validateEmail(mail);
+			boolean b = RegistrationFilter.validateEmail(mail);
+
+			if (b == true) {
+				chain.doFilter(request, response);
+
+			} else {
+				out.print("something wrong");
+
+			}
 			userPoso.setEmail(mail);
 			String passWord = request.getParameter("password");
 			userPoso.setPassWord(passWord);
-			System.out.println(passWord);
 			request.setAttribute("userPoso", userPoso);
 			chain.doFilter(request, response);
 
@@ -51,6 +56,7 @@ public class RegistrationFilter implements Filter {
 			printWriter.print("<p id='errMsg' style='color: red; font-size: larger;'>Something wrong ....!</p>");
 			requestDispatcher = request.getRequestDispatcher("registration.jsp");
 			requestDispatcher.include(request, response);
+			return;
 
 		}
 	}
@@ -66,7 +72,7 @@ public class RegistrationFilter implements Filter {
 	}
 
 	public static boolean validateEmail(String mail) {
-		System.out.println("mail= " + mail);
+		// System.out.println("mail= " + mail);
 		matcher = pattern.matcher(mail);
 		return matcher.matches();
 	}
