@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -22,7 +23,7 @@ public class LoginController extends HttpServlet {
 
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-
+		
 		try {
 
 			Connection connection = null;
@@ -38,7 +39,14 @@ public class LoginController extends HttpServlet {
 
 				HttpSession session = request.getSession();
 				session.setAttribute("username", username);
-				response.sendRedirect("welcome.jsp");
+				Cookie cookie = new Cookie("username", username);
+				cookie.setMaxAge(30*60);
+				response.addCookie(cookie);
+				
+				
+				String url=response.encodeURL("welcome.jsp");
+
+				response.sendRedirect(url);
 				return;
 			}
 			RequestDispatcher requestdispatcher = request.getRequestDispatcher("index.jsp");

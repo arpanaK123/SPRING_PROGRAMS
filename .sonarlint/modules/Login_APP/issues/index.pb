@@ -19,3 +19,5 @@ K
 src/main/webapp/welcome.jsp,a/9/a9b525d02897189d476c4f767e41ad2f3367abea
 j
 :src/main/java/com/bridgeit/controller/LoginController.java,a/9/a9f7e5f431f07c80fa069cad0877848fd1eb50cc
+O
+src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392

@@ -4,6 +4,16 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>RegistrationFilter</filter-name>
+  	<display-name>RegistrationFilter</display-name>
+  	<description></description>
+  	<filter-class>com.bridgeit.filter.RegistrationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>RegistrationFilter</filter-name>
+  	<url-pattern>/RegistrationFilter</url-pattern>
+  </filter-mapping>
   <servlet>
   	<servlet-name>LoginController</servlet-name>
   	<display-name>LoginController</display-name>
@@ -34,4 +44,6 @@
   	<servlet-name>LogoutController</servlet-name>
   	<url-pattern>/LogoutController</url-pattern>
   </servlet-mapping>
+  
+  
 </web-app>
