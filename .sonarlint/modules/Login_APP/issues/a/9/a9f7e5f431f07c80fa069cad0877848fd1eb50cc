@@ -1,9 +1,12 @@
 
-hsquid:S1989",Add a "try/catch" block for "getConnection".(¼‰®şÿÿÿÿ8àûô»È,H¢RMINORZVULNERABILITY
+ssquid:S1161":Add the "@Override" annotation above this method signature(ş³‚”ûÿÿÿÿ8ûùâ»È,HÉRMAJORZ
+CODE_SMELL
+…squid:S1192"IDefine a constant instead of duplicating this literal "username" 3 times.(Ö¡Œ‰ûÿÿÿÿ8’…ëÊ,H¹RCRITICALZ
+CODE_SMELL
+qsquid:UselessImportCheck"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ8®àÌÈ,HÈRMINORZ
+CODE_SMELL
 q
-squid:S1062"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ8àûô»È,H£RMAJORZ
+squid:S106:"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ8àûô»È,HÆRMAJORZ
 CODE_SMELL
-qsquid:UselessImportCheck"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ8®àÌÈ,H RMINORZ
-CODE_SMELL
-ssquid:S1161":Add the "@Override" annotation above this method signature(ş³‚”ûÿÿÿÿ8ûùâ»È,H¥RMAJORZ
-CODE_SMELL
+esquid:S2092*")Add the "secure" attribute to this cookie(”£–±úÿÿÿÿ8’…ëÊ,HºRMINORZVULNERABILITY
+hsquid:S1989",Add a "try/catch" block for "getConnection".(¼‰®şÿÿÿÿ8àûô»È,HÇRMINORZVULNERABILITY

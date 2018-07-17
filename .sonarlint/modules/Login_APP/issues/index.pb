@@ -21,3 +21,7 @@ j
 :src/main/java/com/bridgeit/controller/LoginController.java,a/9/a9f7e5f431f07c80fa069cad0877848fd1eb50cc
 O
 src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+e
+5src/main/java/com/bridgeit/listener/UserListener.java,2/9/29c82261c2a45a73087be9ff755bbb1cd547f555
+i
+9src/main/java/com/bridgeit/filter/RegistrationFilter.java,f/2/f24e5668a6c448f66a219dd67339ca0560087661

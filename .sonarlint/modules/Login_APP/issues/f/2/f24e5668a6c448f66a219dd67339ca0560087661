@@ -1,0 +1,19 @@
+
+l
+squid:S106H"9Replace this use of System.out or System.err by a logger.(ÈıïÍ8ˆ•ÔšÊ,HîRMAJORZ
+CODE_SMELL
+‹squid:S00116A"VRename this field "EMAIL_REGEX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÌ·ÿ8—‘Ô”Ê,HêRMINORZ
+CODE_SMELL
+½squid:S1186Q"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(àä™´ıÿÿÿÿ8ğ©ŠÊ,HñRCRITICALZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(­Ò×¹8ˆ•ÔšÊ,HğRMAJORZ
+CODE_SMELL
+asquid:S1125*"(Remove the literal "true" boolean value.(èœ¤üıÿÿÿÿ8¿ğº˜Ê,HëRMINORZ
+CODE_SMELL
+¸squid:S1186X"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚“¶î8îÌ“Ê,HïRCRITICALZ
+CODE_SMELL
+Xsquid:S3010G"$Remove this assignment of "pattern".(’ëâò8±›‚•Ê,HíRMAJORZ
+CODE_SMELL
+~squid:CommentedOutCodeLineL"<This block of commented-out lines of code should be removed.(¤ş«8‰ŞÛšÊ,HìRMAJORZ
+CODE_SMELL

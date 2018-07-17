@@ -37,9 +37,9 @@ public class RegistrationFilter implements Filter {
 			String number = request.getParameter("mobilenumber");
 			userPoso.setMobile_Number(number);
 			String mail = request.getParameter("username");
-			boolean b = RegistrationFilter.validateEmail(mail);
+			boolean bolean = RegistrationFilter.validateEmail(mail);
 
-			if (b == true) {
+			if (bolean == true) {
 				chain.doFilter(request, response);
 
 			} else {
@@ -51,6 +51,7 @@ public class RegistrationFilter implements Filter {
 			userPoso.setPassWord(passWord);
 			request.setAttribute("userPoso", userPoso);
 			chain.doFilter(request, response);
+			
 
 		} else {
 			printWriter.print("<p id='errMsg' style='color: red; font-size: larger;'>Something wrong ....!</p>");

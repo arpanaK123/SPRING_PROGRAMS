@@ -14,6 +14,7 @@
 		var input = document.getElementsByClassName("input-field");
 		for (i = 0; i < input.length; i++) {
 			if (!input[i].value) {
+      input[i].nextElementSibling.innerHTML = "Please fill the field";
 				count++;
 			}
 		}
@@ -22,23 +23,22 @@
 		}
 		return true;
 	}
-	function onCheckInput(element, label) {
-		if (element.value && label !== 'email') {
-			element.nextElementSibling.innerHTML = "";
-		} else {
-			switch (label) {
-			case 'email':
-				element.nextElementSibling.innerHTML = !element.value ? "email is required"
-						: '';
-				break;
-			case 'password':
-				element.nextElementSibling.innerHTML = "password is required";
-				break;
-			default:
+  function onCheckInput(element, label) {
+			if (element.value && label !== 'email') {
 				element.nextElementSibling.innerHTML = "";
+			} else {
+				switch (label) {
+				case 'email':
+             element.nextElementSibling.innerHTML = !element.value ? "email is required": '';
+					break;
+				case 'password':
+					element.nextElementSibling.innerHTML = "password is required";
+					break;
+				default:
+					element.nextElementSibling.innerHTML = "";
+				}
 			}
 		}
-	}
 </script>
 </head>
 
@@ -61,18 +61,18 @@
 					<tr>
 						<td>Email-Id</td>
 						<td><input type="email" class="input-field"
-							placeholder="Email Id" oninput="onCheckInput(this, 'email')"
-							name="username" required /> <span class="error-msg"
-							id="emailError">email is required</span></td>
+							placeholder="Email Id" id="emailId"
+							oninput="onCheckInput(this, 'email')" name="username" required />
+							<span class="error-msg" id="emailError"></span></td>
 					</tr>
 					<tr>
 						<td>Password</td>
 						<td><input type="password" class="input-field"
-							placeholder="Password" name="password"
-							oninput="onCheckInput(this, 'password')" required /> <span
-							class="error-msg" id="passwordError">password is required</span></td>
+							placeholder="Password" maxlength="20" name="password"
+							oninput="onCheckInput(this, 'password')" required /> 
+              <span class="error-msg" id="passwordError"></span></td>
 					</tr>
-					<td><input type="submit" value="Login" /></td>
+					<td><input type="submit" onclick="return loginvalid()" value="Login" /></td>
 
 					<td colspan="2">
 						<%
