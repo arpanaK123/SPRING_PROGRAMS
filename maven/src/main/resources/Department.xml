@@ -1,0 +1,6 @@
+<beans>
+	<bean id="department"
+		class="com.bridgeit.XMLConfig.beans.Department
+">
+	</bean>
+</beans>

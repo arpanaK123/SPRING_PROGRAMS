@@ -50,7 +50,7 @@ public class RegistrationFilter implements Filter {
 			String passWord = request.getParameter("password");
 			userPoso.setPassWord(passWord);
 			request.setAttribute("userPoso", userPoso);
-			chain.doFilter(request, response);
+		//	chain.doFilter(request, response);
 			
 
 		} else {

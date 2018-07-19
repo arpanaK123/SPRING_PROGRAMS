@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<bean id="student" class="com.bridgeit.DIbyConstructor.Student">
+		<constructor-arg value="1">
+		</constructor-arg>
+		<constructor-arg value="Riya"></constructor-arg>
+	</bean>
+
+
+</beans>
