@@ -5,8 +5,7 @@
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 	<bean id="hello" class="com.bridgeit.singletonScope.HelloWorld" scope = "singleton">
-	<property name="message"  value="Hello bridgelabz"></property>
-	<property name="name" value="from Aniket"></property>
+	
 	</bean>
 
 </beans>

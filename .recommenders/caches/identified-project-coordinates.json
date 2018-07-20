@@ -1,1 +1,1 @@
-[[{"location":"/usr/lib/jvm/java-9-oracle","type":"JRE","hints":{"EXECUTION_ENVIRONMENT":"J2SE-1.5"}},"jre:jre:1.5.0"]]
+[[{"location":"/home/bridgeit/.m2/repository/org/springframework/spring-context/5.0.4.RELEASE/spring-context-5.0.4.RELEASE.jar","type":"JAR","hints":{}},"ABSENT"],[{"location":"/home/bridgeit/SPRING/maven","type":"PROJECT","hints":{"PROJECT_NAME":"maven"}},"com.bridgeit.spring:maven:0.0.1"]]

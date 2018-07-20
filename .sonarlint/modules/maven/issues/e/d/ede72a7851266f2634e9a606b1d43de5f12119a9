@@ -1,0 +1,12 @@
+
+tsquid:S1854";Remove this useless assignment to local variable "factory".(©éß üÿÿÿÿ8¥Ë ®Ë,Hø$RMAJORZ
+CODE_SMELL
+ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(«Hñ$RMINORZ
+CODE_SMELL
+€squid:CallToDeprecatedMethod"6Remove this use of "XmlBeanFactory"; it is deprecated.(©éß üÿÿÿÿ8¥Ë ®Ë,H÷$RMINORZ
+CODE_SMELL
+esquid:S1481",Remove this unused "factory" local variable.(©éß üÿÿÿÿ8¥Ë ®Ë,Hö$RMINORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(˜¤Õƒşÿÿÿÿ8áÓª®Ë,H‡%RMAJORZ
+CODE_SMELL

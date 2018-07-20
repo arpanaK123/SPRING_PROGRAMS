@@ -1,0 +1,13 @@
+
+€squid:CallToDeprecatedMethod"6Remove this use of "XmlBeanFactory"; it is deprecated.(©éß üÿÿÿÿ8É¥³®Ë,H’%RMINORZ
+CODE_SMELL
+msquid:S1854"9Remove this useless assignment to local variable "bean2".(Âé¤‚8É¥³®Ë,H“%RMAJORZ
+CODE_SMELL
+msquid:S1854"9Remove this useless assignment to local variable "bean1".(Çæ’Ã8É¥³®Ë,H”%RMAJORZ
+CODE_SMELL
+^squid:S1481"*Remove this unused "bean2" local variable.(Âé¤‚8É¥³®Ë,H‘%RMINORZ
+CODE_SMELL
+ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(«HŠ%RMINORZ
+CODE_SMELL
+^squid:S1481"*Remove this unused "bean1" local variable.(Çæ’Ã8É¥³®Ë,H%RMINORZ
+CODE_SMELL
