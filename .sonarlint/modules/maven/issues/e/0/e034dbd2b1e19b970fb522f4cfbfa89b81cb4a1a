@@ -1,9 +1,9 @@
 
 Vsquid:S1481
-")Remove this unused "bean" local variable.(ô®“§HÓ"RMINORZ
+")Remove this unused "bean" local variable.(ô®“§Hù"RMINORZ
 CODE_SMELL
 esquid:S1854
-"8Remove this useless assignment to local variable "bean".(ô®“§HÔ"RMAJORZ
+"8Remove this useless assignment to local variable "bean".(ô®“§Hú"RMAJORZ
 CODE_SMELL
-squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„ˆšˆùÿÿÿÿHÕ"RMINORZ
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„ˆšˆùÿÿÿÿHû"RMINORZ
 CODE_SMELL

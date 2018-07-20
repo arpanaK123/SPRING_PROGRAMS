@@ -10,7 +10,6 @@ public class PersonBeanMain {
 		ApplicationContext context = new ClassPathXmlApplicationContext("LifeCycle.xml");
 		PersonBean obj = (PersonBean) context.getBean("personBean");
 		System.out.println(obj.getName());
-		
 		 ((AbstractApplicationContext) context).registerShutdownHook();
 	}
 

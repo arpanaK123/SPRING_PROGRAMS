@@ -8,7 +8,7 @@ public class PersonBean implements InitializingBean, DisposableBean {
 	private String name;
 
 	public PersonBean() {
-		System.out.println("construvtor of person bean");
+		System.out.println("constructor of person bean");
 	}
 
 	

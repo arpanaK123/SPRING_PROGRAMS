@@ -1,0 +1,12 @@
+
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(־ױׁ״שÿÿÿÿ8ש±‎ˆֻ,H—#RMAJORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(‚®תשÿÿÿÿ8‡ב‰ֻ,H«#RMAJORZ
+CODE_SMELL
+€squid:CallToDeprecatedMethod"6Remove this use of "XmlBeanFactory"; it is deprecated.(©יß üÿÿÿÿ8״שיˆֻ,H‹#RMINORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(’׀…ûÿÿÿÿ8ד‰ֻ,H÷#RMAJORZ
+CODE_SMELL

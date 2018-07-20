@@ -5,7 +5,33 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-07-18T13:02:00Z</updated>
+  <updated>2018-07-19T17:28:45Z</updated>
+  <entry>
+    <title>Spring REST Docs 2.0.2.RELEASE</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/07/19/spring-rest-docs-2-0-2-release" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Andy Wilkinson</name>
+    </author>
+    <id>tag:spring.io,2018-07-19:3334</id>
+    <updated>2018-07-19T17:28:45Z</updated>
+    <content type="html">&lt;p&gt;It&amp;rsquo;s my pleasure to announce that &lt;a href="https://github.com/spring-projects/spring-restdocs"&gt;Spring REST Docs&lt;/a&gt; 2.0.2.RELEASE is available from Maven Central, JCenter, and our &lt;a href="https://repo.spring.io/release"&gt;release repository&lt;/a&gt;. My thanks to everyone who contributed to this release by reporting bugs and opening pull requests.&lt;/p&gt;
+&lt;p&gt;This maintenance release includes &lt;a href="https://github.com/spring-projects/spring-restdocs/issues?q=milestone%3A2.0.2.RELEASE"&gt;4 bug fixes and documentation improvements&lt;/a&gt;. It is a recommend upgrade for all Spring REST Docs 2.x users. &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-restdocs"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-restdocs/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-restdocs/docs/2.0.2.RELEASE"&gt;Documentation&lt;/a&gt; | &lt;a href="https://twitter.com/springrestdocs"&gt;Twitter&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-restdocs"&gt;Gitter&lt;/a&gt; | &lt;a href="https://stackoverflow.com/tags/spring-restdocs"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring REST Docs 1.2.5.RELEASE</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/07/19/spring-rest-docs-1-2-5-release" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Andy Wilkinson</name>
+    </author>
+    <id>tag:spring.io,2018-07-19:3333</id>
+    <updated>2018-07-19T15:55:00Z</updated>
+    <content type="html">&lt;p&gt;It&amp;rsquo;s my pleasure to announce that &lt;a href="https://github.com/spring-projects/spring-restdocs"&gt;Spring REST Docs&lt;/a&gt; 1.2.5.RELEASE is available from Maven Central, JCenter, and our &lt;a href="https://repo.spring.io/release"&gt;release repository&lt;/a&gt;. My thanks to everyone who contributed to this release by reporting bugs and opening pull requests.&lt;/p&gt;
+&lt;p&gt;This maintenance release includes a &lt;a href="https://github.com/spring-projects/spring-restdocs/issues?q=milestone%3A1.2.5.RELEASE"&gt;handful of bug fixes and documentation improvements&lt;/a&gt;. It is a recommend upgrade for all Spring REST Docs 1.x users. &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-restdocs"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-restdocs/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-restdocs/docs/1.2.5.RELEASE"&gt;Documentation&lt;/a&gt; | &lt;a href="https://twitter.com/springrestdocs"&gt;Twitter&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-restdocs"&gt;Gitter&lt;/a&gt; | &lt;a href="https://stackoverflow.com/tags/spring-restdocs"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Dependency Management Plugin 1.0.6.RELEASE</title>
     <link rel="alternate" href="https://spring.io/blog/2018/07/18/dependency-management-plugin-1-0-6-release" />
@@ -1280,122 +1306,5 @@ class DocumentService {
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Session for Apache Geode/Pivotal GemFire 2.0.3.RELEASE Released!</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/06/21/spring-session-for-apache-geode-pivotal-gemfire-2-0-3-release-released" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>John Blum</name>
-    </author>
-    <id>tag:spring.io,2018-06-21:3315</id>
-    <updated>2018-06-21T00:41:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;Greetings Spring &amp;amp; Apache Geode/Pivotal GemFire community.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;It is my pleasure to announce the release of Spring Session for Apache Geode &amp;amp; Pivotal GemFire &lt;code&gt;2.0.3.RELEASE&lt;/code&gt;.  This release aligns with Spring Session core &lt;code&gt;2.0.3.RELEASE&lt;/code&gt; and Spring Data &lt;code&gt;Kay-SR7&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Of course, Spring Session core &lt;code&gt;2.0.4.RELEASE&lt;/code&gt; and Spring Data &lt;code&gt;Kay-SR8&lt;/code&gt; are already available and you can expect another release of Spring Session for Apache Geode/Pivotal GemFire in early July.  This is an intermediate release with:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Upgrades to Gradle 4.8, using &lt;a href="https://github.com/spring-gradle-plugins/spring-build-conventions"&gt;Spring Build Conventions&lt;/a&gt; Gradle Plugin &lt;code&gt;0.0.16.RELEASE&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Updated dependencies (as noted above).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Switched dependency management to Spring Boot&amp;#8217;s Dependency BOM, based on Spring Boot &lt;code&gt;2.0.2.RELEASE&lt;/code&gt; to better align with the Spring ecosystem of projects and 3rd party dependencies.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The Spring Session for Apache Geode/Pivotal GemFire &lt;code&gt;2.0.4.RELEASE&lt;/code&gt; will introduce new configuration options and changes to support the new &lt;strong&gt;&lt;em&gt;Spring Boot for Apache Geode/Pivotal GemFire&lt;/em&gt;&lt;/strong&gt; project (&lt;a href="https://github.com/spring-projects/spring-boot-data-geode"&gt;see here&lt;/a&gt;), which will have a first milestone release (i.e. &lt;code&gt;1.0.0.M1&lt;/code&gt;) available very soon.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Therefore, in Spring Boot for Apache Geode/Pivotal GemFire &lt;code&gt;1.0.0.M2&lt;/code&gt;, the new and improved Spring Session for Apache Geode/Pivotal GemFire &lt;code&gt;2.0.4.RELEASE&lt;/code&gt; will be included to offer "&lt;em&gt;auto-configuration&lt;/em&gt;" support to use either Apache Geode or Pivotal GemFire as your Spring Session provider, managing your (HTTP) Session State.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Lots of good things in the works&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="feedback"&gt;&lt;a class="anchor" href="#feedback"&gt;&lt;/a&gt;Feedback&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;As always, any feedback or contributions are alway highly appreciated.  You can contribute by submitting issues using &lt;a href="https://github.com/spring-projects/spring-session-data-geode/issues"&gt;GitHub Issues&lt;/a&gt; or by &lt;a href="https://github.com/spring-projects/spring-session-data-geode/pulls"&gt;submitting a PR&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Thank you!&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tips: Season 4 Recap</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/06/20/spring-tips-season-4-recap" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2018-06-20:3314</id>
-    <updated>2018-06-20T13:26:40Z</updated>
-    <content type="html">&lt;p&gt;Hi Spring fans! We&amp;rsquo;re at the end of another season of &lt;em&gt;Spring Tips&lt;/em&gt;. I&amp;rsquo;ll be back in a few months with even more &lt;em&gt;Spring Tips&lt;/em&gt;, and we&amp;rsquo;ll continue our journey through aspects of the ecosystem large and small. This season, as with all seasons, has been fun for me to put together. It is a mix of brand new stuff and older stuff that we get to review in a new light. As always, I do these for you and am &lt;a href="mailto:josh@joshlong.com"&gt;always&lt;/a&gt; eager &lt;a href="http://twitter.com/Starbuxman"&gt;to hear&lt;/a&gt; about what regions of Springdom you&amp;rsquo;d like illuminated.&lt;/p&gt;
-&lt;p&gt;Anyway, here&amp;rsquo;s a recap of the things we&amp;rsquo;ve looked at in previous installments from seasons 1-4. Enjoy! &lt;/p&gt;&lt;h2&gt;&lt;a href="#season-1" class="anchor" name="season-1"&gt;&lt;/a&gt;Season 1&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2016/10/05/spring-tips-functional-reactive-endpoints-with-spring-framework-5-0"&gt;Functional Reactive Endpoints with Spring Framework 5.0&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2016/10/13/spring-tips-a-gentle-introduction-to-spring-integration"&gt;Spring Integration&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2016/10/19/spring-tips-the-kotlin-programming-language"&gt;The Kotlin Programming Language&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2016/10/27/spring-tips-circuit-breakers"&gt;Circuit Breakers&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2016/11/02/spring-tips-spring-aware-beans"&gt;Spring Aware Beans&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2016/11/09/spring-tips-spring-cloud-stream"&gt;Spring Cloud Stream&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2016/11/16/spring-tips-spring-cloud-data-flow"&gt;Spring Cloud Data Flow&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2016/11/23/spring-tips-cloud-foundry"&gt;Cloud Foundry&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2016/11/30/spring-tips-jta"&gt;JTA&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2016/12/07/spring-tips-bootiful-dashboards"&gt;Bootiful Dashboards&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2016/12/14/spring-tips-demystifying-bootiful-magic"&gt;Demystifying Bootiful Magic&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;h2&gt;&lt;a href="#season-2" class="anchor" name="season-2"&gt;&lt;/a&gt;Season 2&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/01/26/spring-tips-couchbase"&gt;Couchbase&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/02/01/spring-tips-spring-batch"&gt;Spring Batch&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/02/08/spring-tips-distributed-tracing-with-zipkin"&gt;Distributed Tracing with Zipkin&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/02/15/spring-tips-jooq"&gt;JOOQ&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/02/22/spring-tips-mybatis"&gt;MyBatis&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/03/01/spring-tips-programmatic-bean-registration-in-spring-framework-5"&gt;Programmatic Bean Registration in Spring Framework 5&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/03/08/spring-tips-server-sent-events-sse"&gt;Server Sent Events (SSE)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/03/15/spring-tips-the-spring-web-flux-reactive-client"&gt;the Spring Web Flux Reactive Client&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/03/22/spring-tips-servlet-container-deployment-options"&gt;Servlet Container Deployment Options&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/03/29/spring-tips-the-spring-framework-utils-classes"&gt;The Spring Framework *Utils Classes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/04/05/spring-tips-creating-a-spring-security-oauth-auth-service"&gt;Creating a Spring Security OAuth Auth Service&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;h2&gt;&lt;a href="#season-3" class="anchor" name="season-3"&gt;&lt;/a&gt;Season 3&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/09/27/spring-tips-reactive-websockets-with-spring-framework-5"&gt;Reactive WebSockets with Spring Framework 5&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/10/11/spring-tips-bootiful-reactive-scala"&gt;Bootiful, Reactive Scala&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/10/18/spring-tips-bootiful-jax-rs"&gt;Bootiful JAX-RS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/10/25/spring-tips-spring-cloud-contract-http"&gt;Spring Cloud Contract (HTTP)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/11/01/spring-tips-spring-shell"&gt;Spring Shell&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/11/08/spring-tips-bootiful-kotlin-redux"&gt;Bootiful Kotlin Redux&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/11/15/spring-tips-the-spring-boot-build-plugin"&gt;Spring Boot Build Plugin&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/11/22/spring-tips-bootiful-testing"&gt;Bootiful Testing&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/11/29/spring-tips-spring-cloud-gateway"&gt;Spring Cloud Gateway&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/12/04/spring-tips-spring-tool-suite-4"&gt;Spring Tool Suite 4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/12/15/spring-tips-bootiful-banners"&gt;Bootiful Banners&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;h2&gt;&lt;a href="#season-4" class="anchor" name="season-4"&gt;&lt;/a&gt;Season 4&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/04/04/spring-tips-spring-cloud-stream-kafka-streams"&gt;Spring Cloud Stream Kafka Streams&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/05/09/spring-tips-spring-security-5-oauth-clients"&gt;Spring Security 5 OAuth Clients&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/05/16/spring-tips-project-riff-and-spring-cloud-function"&gt;Project Riff and Spring Cloud Function&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/05/02/spring-tips-metrics-collection-in-spring-boot-2-with-micrometer"&gt;Metrics Collection in Spring Boot 2 with Micrometer&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/04/25/spring-tips-spring-statemachine"&gt;Spring Statemachine&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/04/18/spring-tips-redis"&gt;Redis&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/04/11/spring-tips-the-cloud-foundry-java-client"&gt;The Cloud Foundry Java Client&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/05/23/spring-tips-apache-camel"&gt;Apache Camel&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/05/30/spring-tips-jdbc"&gt;JDBC&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/06/06/spring-tips-jpa"&gt;JPA&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/06/13/spring-tips-spring-fu"&gt;Spring Fu&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Thanks for watching, and, as always, we&amp;rsquo;ll see you next time! :)&lt;/p&gt;</content>
   </entry>
 </feed>
