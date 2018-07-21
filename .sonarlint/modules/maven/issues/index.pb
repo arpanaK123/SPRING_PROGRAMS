@@ -109,3 +109,9 @@ c
 3src/main/java/com/bridgeit/singletonScope/Main.java,2/7/275d0bfdf98cb0a238a7de53a38d21d5555040eb
 T
 $src/main/resources/SingletonBean.xml,1/d/1dec76e06738e015ce67a19888355564a2b1a218
+f
+6src/main/java/com/bridgeit/prototypeScope/Student.java,3/2/328717b2b1184a9b0676fc2536b0c9eb4ac0cc6d
+T
+$src/main/resources/PrototypeBean.xml,3/4/34608d214307db8cfe1ca6247b579a79e92f9b7e
+c
+3src/main/java/com/bridgeit/prototypeScope/Main.java,7/8/78c6627d1fcf9f3920708cef4b0874ce5b62ed48

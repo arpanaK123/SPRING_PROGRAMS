@@ -7,10 +7,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class PersonBeanMain {
 
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("LifeCycle.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("LifeCycle.xml");
 		PersonBean obj = (PersonBean) context.getBean("personBean");
 		System.out.println(obj.getName());
-		 ((AbstractApplicationContext) context).registerShutdownHook();
+//	((AbstractApplicationContext) context).registerShutdownHook();
+context.close();
 	}
 
 }

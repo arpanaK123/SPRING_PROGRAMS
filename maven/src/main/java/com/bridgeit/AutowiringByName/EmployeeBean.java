@@ -1,15 +1,15 @@
 package com.bridgeit.AutowiringByName;
 
 public class EmployeeBean {
-	private String fullname;
+	private String fullName;
 	private DepartmentBean departmentBean;
 
 	public String getFullname() {
-		return fullname;
+		return fullName;
 	}
 
 	public void setFullname(String fullname) {
-		this.fullname = fullname;
+		this.fullName = fullname;
 	}
 
 	public DepartmentBean getDepartmentBean() {

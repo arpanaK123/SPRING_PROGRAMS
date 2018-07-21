@@ -9,7 +9,7 @@
 	<context:annotation-config />
 
 	<bean id="customerService" class="com.bridgeit.postConstructPreDestroy.CustomerService">
-		<property name="message" value="i'm property message" />
+		<property name="message" value="Hello bridgelabz" />
 	</bean>
 		
 </beans>

@@ -6,11 +6,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(new String[] { "Annotation.xml"});
+		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("Annotation.xml");
 
-		CustomerService cust = (CustomerService) context.getBean("customerService");
-
-		System.out.println(cust);
+		CustomerService customerService = (CustomerService) context.getBean("customerService");
 
 		context.close();
 	}

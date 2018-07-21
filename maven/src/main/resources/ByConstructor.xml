@@ -9,9 +9,9 @@
 
 
 	<bean id="employee"
-		class="com.bridgeit.AutowireByConstructor.EmployeeBean"
-		autowire="constructor">
+		class="com.bridgeit.AutowireByConstructor.EmployeeBean">
 		<property name="fullname" value="Bridgelabz" />
+		<constructor-arg  ref="departmentBean"></constructor-arg>
 	</bean>
 
 	<bean id="departmentBean"
