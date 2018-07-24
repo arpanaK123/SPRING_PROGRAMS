@@ -1,0 +1,17 @@
+
+Zsquid:S1659"&Declare "password" on a separate line.(è¼¶ª8Èı–ÓÌ,H£(RMINORZ
+CODE_SMELL
+ˆsquid:S00100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªùÎûÿÿÿÿ8Èı–ÓÌ,H§(RMINORZ
+CODE_SMELL
+Šsquid:S00116"URename this field "mobile_num" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è¼¶ª8Èı–ÓÌ,H¨(RMINORZ
+CODE_SMELL
+Ysquid:S1659"%Declare "address" on a separate line.(è¼¶ª8Èı–ÓÌ,H¥(RMINORZ
+CODE_SMELL
+\squid:S1659"(Declare "mobile_num" on a separate line.(è¼¶ª8Èı–ÓÌ,H¤(RMINORZ
+CODE_SMELL
+‹squid:S00117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªùÎûÿÿÿÿ8Èı–ÓÌ,H©(RMINORZ
+CODE_SMELL
+Wsquid:S1659"#Declare "email" on a separate line.(è¼¶ª8Èı–ÓÌ,H¢(RMINORZ
+CODE_SMELL
+ƒsquid:S00100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·„ß8Èı–ÓÌ,H¦(RMINORZ
+CODE_SMELL

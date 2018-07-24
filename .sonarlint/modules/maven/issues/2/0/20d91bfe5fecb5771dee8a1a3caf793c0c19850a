@@ -1,25 +1,25 @@
 
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„ˆšˆùÿÿÿÿHÏ'RMINORZ
+CODE_SMELL
+e
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÕÊâæHĞ'RMAJORZ
+CODE_SMELL
+º%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(ú±œHÑ'RMINORZ
+CODE_SMELL
+j
+squid:S106"9Replace this use of System.out or System.err by a logger.( è—®ùÿÿÿÿHÒ'RMAJORZ
+CODE_SMELL
+º%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(¯¶…œHÓ'RMINORZ
+CODE_SMELL
+j
+squid:S106"9Replace this use of System.out or System.err by a logger.(¹ì´‚üÿÿÿÿHÔ'RMAJORZ
+CODE_SMELL
+e
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÿ­êüHÕ'RMAJORZ
+CODE_SMELL
 d
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ø¤şvHÖ"RMAJORZ
-CODE_SMELL
-j
-squid:S106"9Replace this use of System.out or System.err by a logger.(¹ì´‚üÿÿÿÿH×"RMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ø¤şvHÖ'RMAJORZ
 CODE_SMELL
 e
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÿ­êüHØ"RMAJORZ
-CODE_SMELL
-squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„ˆšˆùÿÿÿÿHÙ"RMINORZ
-CODE_SMELL
-º%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(ú±œHÚ"RMINORZ
-CODE_SMELL
-e
-squid:S106"9Replace this use of System.out or System.err by a logger.(ªáÜHÛ"RMAJORZ
-CODE_SMELL
-e
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÕÊâæHÜ"RMAJORZ
-CODE_SMELL
-j
-squid:S106"9Replace this use of System.out or System.err by a logger.( è—®ùÿÿÿÿHİ"RMAJORZ
-CODE_SMELL
-º%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(¯¶…œHŞ"RMINORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªáÜH×'RMAJORZ
 CODE_SMELL

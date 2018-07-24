@@ -7,7 +7,7 @@
 	<bean id="customLifeCycyleBean"
 		class="com.bridgeit.customInitDestroy.CustomLifeCycleBean"
 		init-method="customInit" destroy-method="customDestroy">
-		<property name="name" value="custom life cycle bean"></property>
+		<property name="name" value="bridgelabz"></property>
 	</bean>
 
 </beans>

@@ -6,7 +6,6 @@ public class EmployeeBean {
 
 	
 	public EmployeeBean( DepartmentBean departmentbean) {
-		super();
 		this.departmentbean = departmentbean;
 	}
 

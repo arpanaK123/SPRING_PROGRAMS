@@ -5,7 +5,58 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-07-19T17:28:45Z</updated>
+  <updated>2018-07-23T17:05:31Z</updated>
+  <entry>
+    <title>Spring Cloud Data Flow 1.6 RC1 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/07/23/spring-cloud-data-flow-1-6-rc1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Mark Pollack</name>
+    </author>
+    <id>tag:spring.io,2018-07-23:3335</id>
+    <updated>2018-07-23T17:05:31Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;a href="https://cloud.spring.io/spring-cloud-dataflow/"&gt;Spring Cloud Data Flow&lt;/a&gt; team is pleased to announce the release of &lt;code&gt;1.6 RC1&lt;/code&gt;. Follow the &lt;em&gt;Getting Started&lt;/em&gt; guides for &lt;a href="https://docs.spring.io/spring-cloud-dataflow/docs/1.6.0.RC1/reference/htmlsingle/#getting-started"&gt;Local Server&lt;/a&gt;, &lt;a href="https://docs.spring.io/spring-cloud-dataflow-server-cloudfoundry/docs/1.6.0.RC1/reference/htmlsingle/#getting-started"&gt;Cloud Foundry&lt;/a&gt;, and &lt;a href="https://docs.spring.io/spring-cloud-dataflow-server-kubernetes/docs/1.6.0.RC1/reference/htmlsingle/#kubernetes-getting-started"&gt;Kubernetes&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="here-are-the-release-highlights"&gt;&lt;a class="anchor" href="#here-are-the-release-highlights"&gt;&lt;/a&gt;Here are the release highlights:&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="pcf-scheduler"&gt;&lt;a class="anchor" href="#pcf-scheduler"&gt;&lt;/a&gt;PCF Scheduler&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The Pivotal Cloud Foundry implementation of Scheduler improved on a few fronts to enhance the developer experience. Validation of the cron-expression and proactive measures to prevent the scheduler service from creating incorrect schedules is now part of this release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="dashboard"&gt;&lt;a class="anchor" href="#dashboard"&gt;&lt;/a&gt;Dashboard&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The stream deployment history is available for review from the Dashboard. It is convenient to review the context-specific history of a stream from a central location; especially, when the CI/CD systems continually deploy new version application artifacts that belong to the stream.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="batch-database-schema-and-optimization"&gt;&lt;a class="anchor" href="#batch-database-schema-and-optimization"&gt;&lt;/a&gt;Batch Database Schema and Optimization&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Thanks to the community for thorough validation and feedback on the database schema. The batch and task schemas have enhanced for the cases when there are large numbers of Task executions for MySQL and PostgreSQL.  Optimizations for other databases are on their way.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="stay-in-touch"&gt;&lt;a class="anchor" href="#stay-in-touch"&gt;&lt;/a&gt;Stay in touch&amp;#8230;&amp;#8203;&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;As always, we welcome feedback and contributions, so please reach out to us on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-dataflow"&gt;Stackoverflow&lt;/a&gt; or &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/issues"&gt;GitHub&lt;/a&gt; or via &lt;a href="https://gitter.im/spring-cloud/spring-cloud-dataflow"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Spring REST Docs 2.0.2.RELEASE</title>
     <link rel="alternate" href="https://spring.io/blog/2018/07/19/spring-rest-docs-2-0-2-release" />
@@ -1143,168 +1194,5 @@ class DocumentService {
   &lt;li&gt;JHipster v5.0.0 has been released, the day before Jhipster Conf, and it features support for Angular 6, React, Webpack 4, Spring Boot 2 &lt;a href="https://twitter.com/springcentral/status/1009599149904314368"&gt;and more&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Is Cloud Foundry still relevant in the age of containers and serverless? Yes. In fact, it&amp;rsquo;s even more relevant. &lt;a href="https://www.youtube.com/watch?v=hU239WlrtBk"&gt;Check out this amazing writeup&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot for Apache Geode &amp; Pivotal GemFire 1.0.0.M1 Released!</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/06/26/spring-boot-for-apache-geode-pivotal-gemfire-1-0-0-m1-released" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>John Blum</name>
-    </author>
-    <id>tag:spring.io,2018-06-26:3316</id>
-    <updated>2018-06-26T02:55:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;Greetings Spring &amp;amp; Apache Geode/Pivotal GemFire communities-&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;I am happy to announce the first milestone release of Spring Boot for Apache Geode &amp;amp; Pivotal GemFire, version 1.0.0.M1.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;This is a great new project building on the work started in Spring Data for Apache Geode/Pivotal GemFire nearly 2 years ago, when we introduced &lt;a href="https://docs.spring.io/spring-data/geode/docs/current/reference/html/#bootstrap-annotation-config"&gt;annotation-based configuration&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;With Spring Boot&amp;#8217;s "&lt;em&gt;convention over configuration&lt;/em&gt;" approach using &lt;em&gt;auto-configuration&lt;/em&gt;, this project takes configuration and development of Spring Boot, Apache Geode &amp;amp; Pivotal GemFire applications to the next level, whether building and running applications in a stand-alone or a managed environment like &lt;a href="https://pivotal.io/platform"&gt;Pivotal CloudFoundry (PCF)&lt;/a&gt;, when using &lt;a href="https://pivotal.io/platform/services-marketplace/data-management/pivotal-cloud-cache"&gt;Pivotal Cloud Cache (PCC)&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="what-s-included"&gt;&lt;a class="anchor" href="#what-s-included"&gt;&lt;/a&gt;What&amp;#8217;s Included&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;This project includes &lt;em&gt;auto-configuration&lt;/em&gt; support for the following features:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="olist arabic"&gt;
-&lt;ol class="arabic"&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://content.pivotal.io/blog/an-introduction-to-look-aside-vs-inline-caching-patterns"&gt;&lt;em&gt;Look-Aside Caching&lt;/em&gt;&lt;/a&gt; using &lt;a href="https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#cache"&gt;Spring&amp;#8217;s Cache Abstraction&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/System_of_record"&gt;System of Record (SOR)&lt;/a&gt; using &lt;a href="https://docs.spring.io/spring-data/commons/docs/current/reference/html/#repositories"&gt;Spring Data Repositories&lt;/a&gt; and &lt;a href="https://docs.spring.io/spring/docs/current/spring-framework-reference/data-access.html#transaction"&gt;Spring Transaction Management&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Distributed Compute using &lt;a href="https://docs.spring.io/spring-data/geode/docs/current/reference/html/#function-annotations"&gt;Function Implementation &amp;amp; Executions&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Event Stream Processing (ESP) using &lt;a href="http://geode.apache.org/docs/guide/16/developing/continuous_querying/chapter_overview.html"&gt;Continuous Query&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Domain Object Versioning/Serialization using &lt;a href="http://geode.apache.org/docs/guide/16/developing/data_serialization/gemfire_pdx_serialization.html"&gt;PDX&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Security&lt;/p&gt;
-&lt;div class="olist loweralpha"&gt;
-&lt;ol class="loweralpha" type="a"&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://docs.spring.io/spring-data/geode/docs/current/reference/html/#bootstrap-annotation-config-security"&gt;Authentication/Authorization&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;TLS using &lt;a href="https://docs.spring.io/spring-data/geode/docs/current/reference/html/#bootstrap-annotation-config-ssl"&gt;SSL&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="what-s-next"&gt;&lt;a class="anchor" href="#what-s-next"&gt;&lt;/a&gt;What&amp;#8217;s Next&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Milestone 2 will add &lt;em&gt;auto-configuration support&lt;/em&gt; for Spring Session, &lt;a href="https://github.com/spring-projects/spring-session-data-geode"&gt;using Apache Geode or Pivotal GemFire&lt;/a&gt; to manage your (HTTP) Session state.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;In Milestone 3, we will begin to explore custom Spring Boot &lt;a href="https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-health"&gt;Health Indicators&lt;/a&gt; along with support for Spring Boot &lt;a href="https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready"&gt;Actuator&lt;/a&gt;, which is powered by &lt;a href="https://micrometer.io/"&gt;Micrometer&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;For additional insight into the direction and progress of this  project, have a look at the &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/issues"&gt;Issues&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="documentation"&gt;&lt;a class="anchor" href="#documentation"&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The Spring Boot for Apache Geode/Pivotal GemFire &lt;a href="https://docs.spring.io/autorepo/docs/spring-boot-data-geode-build/1.0.0.BUILD-SNAPSHOT/reference/htmlsingle/"&gt;Reference Guide&lt;/a&gt; can be found by clicking the link.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="examples"&gt;&lt;a class="anchor" href="#examples"&gt;&lt;/a&gt;Examples&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;There are already a couple of examples available showcasing the use of Spring Boot for Apache Geode &amp;amp; Pivotal GemFire now.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The first example is the &lt;a href="https://github.com/pivotal-cf/PCC-Sample-App-PizzaStore"&gt;Pizza Store&lt;/a&gt;, Spring Boot application meant to show off the capabilities of &lt;a href="https://pivotal.io/platform/services-marketplace/data-management/pivotal-cloud-cache"&gt;Pivotal Cloud Cache (PCC)&lt;/a&gt; when pushing/deploying Spring Boot, Pivotal GemFire &lt;code&gt;ClientCache&lt;/code&gt; applications to &lt;a href="https://pivotal.io/platform"&gt;Pivotal CloudFoundry (PCF).&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The next example (&lt;a href="https://github.com/jxblum/contacts-application/tree/master/boot-example"&gt;boot-example&lt;/a&gt;) is from the Contacts Application Reference Implementation demonstrating Spring Data for Apache Geode/Pivotal GemFire.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="try-it-now"&gt;&lt;a class="anchor" href="#try-it-now"&gt;&lt;/a&gt;Try It Now&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Artifacts are available from the Spring &lt;code&gt;libs-milestone&lt;/code&gt; Maven Repository:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="title"&gt;Maven&lt;/div&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;repositories&amp;gt;
-    &amp;lt;repository&amp;gt;
-        &amp;lt;id&amp;gt;spring-milestone&amp;lt;/id&amp;gt;
-        &amp;lt;url&amp;gt;https://repo.spring.io/libs-milestone&amp;lt;/url&amp;gt;
-    &amp;lt;/repository&amp;gt;
-&amp;lt;/repositories&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="title"&gt;Gradle&lt;/div&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-gradle" data-lang="gradle"&gt;repositories {
-    maven { url: 'https://repo.spring.io/libs-milestone' }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Include either the &lt;code&gt;spring-geode-starter&lt;/code&gt; dependency for developing Spring Boot, Apache Geode applications or the &lt;code&gt;spring-gemfire-starter&lt;/code&gt; dependency when developing Spring Boot, Pivotal GemFire applications.  These dependencies are interchangeable.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="title"&gt;Maven&lt;/div&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;dependencies&amp;gt;
-    &amp;lt;dependency&amp;gt;
-        &amp;lt;groupId&amp;gt;org.springframework.geode&amp;lt;/groupId&amp;gt;
-        &amp;lt;artifactId&amp;gt;spring-geode-starter&amp;lt;/artifactId&amp;gt;
-        &amp;lt;version&amp;gt;1.0.0.M1&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-&amp;lt;/dependencies&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="title"&gt;Gradle&lt;/div&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-gradle" data-lang="gradle"&gt;dependencies {
-  compile 'org.springframework.geode:spring-geode-starter:1.0.0.M1'
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="feedback"&gt;&lt;a class="anchor" href="#feedback"&gt;&lt;/a&gt;Feedback&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Feedback and contributions are always highly appreciated and welcomed.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-boot-data-geode"&gt;GitHub Page&lt;/a&gt; |
-&lt;a href="https://github.com/spring-projects/spring-boot-data-geode/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/pulls"&gt;Pull Requests&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;strong&gt;Thank you.&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content>
   </entry>
 </feed>
