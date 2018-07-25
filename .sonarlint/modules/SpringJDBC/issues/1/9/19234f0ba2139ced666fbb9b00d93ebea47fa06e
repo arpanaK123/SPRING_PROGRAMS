@@ -1,42 +1,44 @@
 
-r
-squid:S106‹"9Replace this use of System.out or System.err by a logger.(„¥×ùÿÿÿÿ8ŠñÕÌ,Hä(RMAJORZ
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëü‹ùÿÿÿÿHİ+RMINORZ
 CODE_SMELL
-_squid:S1148s"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ŠñÕÌ,Hç(RMINORZVULNERABILITY
-`squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ôèËÖÌ,Hı(RMINORZVULNERABILITY
-usquid:S2259‘"GA "NullPointerException" could be thrown; "statement" is nullable here.(³úÀ‹8ùÖ®ÕÌ,HÔ(RMAJORZBUG
-_squid:S1148P"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8²²ÖÌ,Hğ(RMINORZVULNERABILITY
 q
-squid:S106'"9Replace this use of System.out or System.err by a logger.(í‚„êüÿÿÿÿ8²²ÖÌ,Hí(RMAJORZ
+squid:S106M"9Replace this use of System.out or System.err by a logger.(Õƒ—üÿÿÿÿ8£³ĞÔÌ,HØ+RMAJORZ
 CODE_SMELL
-`squid:S1148±"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ùÖ®ÕÌ,HÖ(RMINORZVULNERABILITY
-“squid:S2068`"U'password' detected in this expression, review this potentially hardcoded credential.(í°Ú¦ıÿÿÿÿ8ŠñÕÌ,Hã(RBLOCKERZVULNERABILITY
 m
-squid:S106‰"9Replace this use of System.out or System.err by a logger.(Ô§ª«8²²ÖÌ,Hì(RMAJORZ
+squid:S106‰"9Replace this use of System.out or System.err by a logger.(Ô§ª«8²²ÖÌ,HÛ+RMAJORZ
 CODE_SMELL
-tsquid:S2259v"GA "NullPointerException" could be thrown; "statement" is nullable here.(³úÀ‹8ŠñÕÌ,Hæ(RMAJORZBUG
-„squid:CommentedOutCodeLinek"<This block of commented-out lines of code should be removed.(“º¤¬ıÿÿÿÿ8ùÃÉØÌ,H³)RMAJORZ
+_squid:S1148P"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8²²ÖÌ,HÑ+RMINORZVULNERABILITY
+wsquid:S2259´"DA "NullPointerException" could be thrown; "result" is nullable here.(«Èòêùÿÿÿÿ8ôèËÖÌ,HÊ+RMAJORZBUG
+usquid:S2259‘"GA "NullPointerException" could be thrown; "statement" is nullable here.(³úÀ‹8ùÖ®ÕÌ,H×+RMAJORZBUG
+vsquid:S2259T"DA "NullPointerException" could be thrown; "result" is nullable here.(«Èòêùÿÿÿÿ8ùÖ®ÕÌ,HÏ+RMAJORZBUG
+tsquid:S2259v"GA "NullPointerException" could be thrown; "statement" is nullable here.(³úÀ‹8ŠñÕÌ,HÍ+RMAJORZBUG
+tsquid:S2259S"GA "NullPointerException" could be thrown; "statement" is nullable here.(³úÀ‹8²²ÖÌ,HÈ+RMAJORZBUG
+ysquid:S2259M"GA "NullPointerException" could be thrown; "userModel" is nullable here.(Õƒ—üÿÿÿÿ8ùÖ®ÕÌ,HĞ+RMAJORZBUG
+„squid:CommentedOutCodeLineD"<This block of commented-out lines of code should be removed.(Ö•Ûùúÿÿÿÿ8¸”ŞßÌ,Hä+RMAJORZ
 CODE_SMELL
-wsquid:S2259´"DA "NullPointerException" could be thrown; "result" is nullable here.(«Èòêùÿÿÿÿ8ôèËÖÌ,Hü(RMAJORZBUG
+_squid:S1148s"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ŠñÕÌ,HÓ+RMINORZVULNERABILITY
+`squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ôèËÖÌ,HÙ+RMINORZVULNERABILITY
 q
-squid:S106n"9Replace this use of System.out or System.err by a logger.(·åéËÿÿÿÿÿ8ŠñÕÌ,Hå(RMAJORZ
+squid:S106n"9Replace this use of System.out or System.err by a logger.(·åéËÿÿÿÿÿ8ŠñÕÌ,HÎ+RMAJORZ
 CODE_SMELL
-squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëü‹ùÿÿÿÿH±(RMINORZ
-CODE_SMELL
-q
-squid:S106p"9Replace this use of System.out or System.err by a logger.(ÙÆıßúÿÿÿÿ8ùÖ®ÕÌ,HĞ(RMAJORZ
-CODE_SMELL
-q
-squid:S106M"9Replace this use of System.out or System.err by a logger.(Õƒ—üÿÿÿÿ8£³ĞÔÌ,HÈ(RMAJORZ
-CODE_SMELL
-tsquid:S2259S"GA "NullPointerException" could be thrown; "statement" is nullable here.(³úÀ‹8²²ÖÌ,Hï(RMAJORZBUG
-ysquid:S2259M"GA "NullPointerException" could be thrown; "userModel" is nullable here.(Õƒ—üÿÿÿÿ8ùÖ®ÕÌ,HÒ(RMAJORZBUG
-_squid:S1148*"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£³ĞÔÌ,HÌ(RMINORZVULNERABILITY
+`squid:S1148±"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ùÖ®ÕÌ,HÕ+RMINORZVULNERABILITY
 l
-squid:S106%"9Replace this use of System.out or System.err by a logger.(²©Êæ8ùÖ®ÕÌ,HÑ(RMAJORZ
+squid:S106%"9Replace this use of System.out or System.err by a logger.(²©Êæ8ùÖ®ÕÌ,HÔ+RMAJORZ
 CODE_SMELL
-tsquid:S2259-"GA "NullPointerException" could be thrown; "statement" is nullable here.(³úÀ‹8£³ĞÔÌ,HÊ(RMAJORZBUG
-vsquid:S2259T"DA "NullPointerException" could be thrown; "result" is nullable here.(«Èòêùÿÿÿÿ8ùÖ®ÕÌ,HÓ(RMAJORZBUG
 q
-squid:S106J"9Replace this use of System.out or System.err by a logger.(Ïúªºıÿÿÿÿ8Ù¸ŞÌ,Hã*RMAJORZ
+squid:S106p"9Replace this use of System.out or System.err by a logger.(ÙÆıßúÿÿÿÿ8ùÖ®ÕÌ,HÚ+RMAJORZ
+CODE_SMELL
+tsquid:S2259-"GA "NullPointerException" could be thrown; "statement" is nullable here.(³úÀ‹8£³ĞÔÌ,HÌ+RMAJORZBUG
+q
+squid:S106J"9Replace this use of System.out or System.err by a logger.(Ïúªºıÿÿÿÿ8Ù¸ŞÌ,HÉ+RMAJORZ
+CODE_SMELL
+_squid:S1148*"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£³ĞÔÌ,HÒ+RMINORZVULNERABILITY
+r
+squid:S106‹"9Replace this use of System.out or System.err by a logger.(„¥×ùÿÿÿÿ8ŠñÕÌ,HÜ+RMAJORZ
+CODE_SMELL
+q
+squid:S106'"9Replace this use of System.out or System.err by a logger.(í‚„êüÿÿÿÿ8²²ÖÌ,HÖ+RMAJORZ
+CODE_SMELL
+“squid:S2068`"U'password' detected in this expression, review this potentially hardcoded credential.(í°Ú¦ıÿÿÿÿ8ŠñÕÌ,HË+RBLOCKERZVULNERABILITY
+„squid:CommentedOutCodeLinek"<This block of commented-out lines of code should be removed.(“º¤¬ıÿÿÿÿ8ùÃÉØÌ,HÇ+RMAJORZ
 CODE_SMELL

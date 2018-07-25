@@ -1,5 +1,5 @@
 
-hsquid:EmptyStatementUsageCheck"Remove this empty statement.(ôŸìúÿÿÿÿ8ó½ÓÌ,H¬(RMINORZ
+”squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëü‹ùÿÿÿÿ8‘ĞÃÓÌ,H‡,RMINORZ
 CODE_SMELL
-”squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëü‹ùÿÿÿÿ8‘ĞÃÓÌ,H¯(RMINORZ
+hsquid:EmptyStatementUsageCheck"Remove this empty statement.(ôŸìúÿÿÿÿ8ó½ÓÌ,Hˆ,RMINORZ
 CODE_SMELL

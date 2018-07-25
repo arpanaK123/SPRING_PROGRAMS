@@ -1,8 +1,50 @@
 
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÆÀûı8úÅõßÌ,Hø+RMAJORZ
+CODE_SMELL
+jsquid:S1481"1Remove this unused "userTemplate" local variable.(‚şÎíÿÿÿÿÿ8üà›áÌ,H,RMINORZ
+CODE_SMELL
+~squid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(Ëñ«(8ò‚ëãÌ,H„-RMAJORZ
+CODE_SMELL
 q
-squid:S106$"9Replace this use of System.out or System.err by a logger.(¸Ş§ïùÿÿÿÿ8•òÕŞÌ,Hö*RMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(—›½çıÿÿÿÿ8õçêàÌ,H‘,RMAJORZ
 CODE_SMELL
-squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¬‡®è8Ö¢ÚŞÌ,Hú*RMAJORZ
+q
+squid:S106%"9Replace this use of System.out or System.err by a logger.(ËäÛºúÿÿÿÿ8ÕæèãÌ,Hü,RMAJORZ
 CODE_SMELL
-„squid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(Ãàà©ùÿÿÿÿ8ÿ£ÎßÌ,H¼+RMAJORZ
+l
+squid:S106""9Replace this use of System.out or System.err by a logger.(‡öÚª8õçêàÌ,H,RMAJORZ
+CODE_SMELL
+l
+squid:S106h"9Replace this use of System.out or System.err by a logger.(€÷ö8ÖæèãÌ,H€-RMAJORZ
+CODE_SMELL
+q
+squid:S106W"9Replace this use of System.out or System.err by a logger.(õš‡àúÿÿÿÿ8¡ö„äÌ,H’-RMAJORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(‹°¯­8ãÎ¼áÌ,Hµ,RMAJORZ
+CODE_SMELL
+k
+squid:S106("9Replace this use of System.out or System.err by a logger.(£ô«8ÖæèãÌ,Hı,RMAJORZ
+CODE_SMELL
+ysquid:S1854"@Remove this useless assignment to local variable "userTemplate".(‚şÎíÿÿÿÿÿ8üà›áÌ,HŸ,RMAJORZ
+CODE_SMELL
+q
+squid:S106e"9Replace this use of System.out or System.err by a logger.(¸Ş§ïùÿÿÿÿ8ÖæèãÌ,Hÿ,RMAJORZ
+CODE_SMELL
+„squid:CommentedOutCodeLineX"<This block of commented-out lines of code should be removed.(·ñäáşÿÿÿÿ8ƒÉ‚äÌ,H-RMAJORZ
+CODE_SMELL
+l
+squid:S106]"9Replace this use of System.out or System.err by a logger.(öå‡–8ÕığãÌ,Hˆ-RMAJORZ
+CODE_SMELL
+q
+squid:S106+"9Replace this use of System.out or System.err by a logger.(¢Á•×ıÿÿÿÿ8ÖæèãÌ,Hş,RMAJORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(ŸºÏşùÿÿÿÿ8•òÕŞÌ,H¾+RMAJORZ
+CODE_SMELL
+l
+squid:S106T"9Replace this use of System.out or System.err by a logger.(Ğé½†8ûÀ‰äÌ,H–-RMAJORZ
+CODE_SMELL
+~squid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(Û­à 8ÍùÂäÌ,Hš-RMAJORZ
 CODE_SMELL

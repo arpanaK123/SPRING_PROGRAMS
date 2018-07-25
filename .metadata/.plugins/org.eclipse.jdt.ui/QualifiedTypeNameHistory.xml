@@ -56,8 +56,8 @@
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="com.bridgeit.model.UserModel"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="com.bridgeit.DAO.UserDaoTemplateImple"/>
     <fullyQualifiedTypeName name="com.bridgeit.DAO.UserDAO"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.bridgeit.DAO.UserDaoTemplateImple"/>
 </qualifiedTypeNameHistroy>

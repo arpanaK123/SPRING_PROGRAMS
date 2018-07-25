@@ -25,16 +25,53 @@ public class SpringMain {
 		int choice = scan.nextInt();
 		switch (choice) {
 		case 1:
-
-			user.setId(1);
-			user.setName("Siya");
-			user.setEmail("siya@gmail.com");
-			user.setPassword("siya");
-			user.setMobile_num("909099030");
-			user.setAddress("mumbai");
+			System.out.println("enter id");
+			int id = scan.nextInt();
+			user.setId(id);
+			System.out.println("enter name");
+			String name = scan.next();
+			user.setName(name);
+			System.out.println("enter email");
+			String email = scan.next();
+			user.setEmail(email);
+			System.out.println("enter password");
+			String password = scan.next();
+			user.setPassword(password);
+			System.out.println("enter mobile num.");
+			String mobnum = scan.next();
+			user.setMobile_num(mobnum);
+			System.out.println("enter Address");
+			String address = scan.next();
+			user.setAddress(address);
+			// user.setId(1);
+			// user.setName("Siya");
+			// user.setEmail("siya@gmail.com");
+			// user.setPassword("siya");
+			// user.setMobile_num("909099030");
+			// user.setAddress("mumbai");
 			userdao.saveUserData(user);
 			break;
 		case 2:
+			
+//			System.out.println("Enter new name");
+//		String name1=scan.next();
+//		user.setName(name1);
+//		System.out.println("enter new email");
+//		String email1=scan.next();
+//		user.setEmail(email1);
+//		System.out.println("enter new password");
+//		String password1=scan.next();
+//		user.setPassword(password1);
+//		System.out.println("enetr new mobile num");
+//		String mobnum1=scan.next();
+//		user.setMobile_num(mobnum1);
+//		System.out.println("enter new address");
+//		String address1=scan.next();
+//		user.setAddress(address1);
+//		System.out.println("enetr id to update data");
+//		int idupdate=scan.nextInt();
+//		userdao.updateUserData(user);
+				
 			user.setName("Rakhi");
 			user.setEmail("rakhi@gmail.com");
 			user.setPassword("rakhi");
@@ -44,12 +81,19 @@ public class SpringMain {
 			break;
 
 		case 3:
-			UserModel user1 = userdao.userGetById(3);
-			System.out.println("User Data found :" + user1);
+			System.out.println("enter id to get data");
+			int id1 = scan.nextInt();
+			UserModel user1 = userdao.userGetById(id1);
+			System.out.println(user1);
+			// UserModel user1 = userdao.userGetById(3);
+			// System.out.println("User Data found :" + user1);
 			break;
 
 		case 4:
-			userdao.deleteUserById(3);
+			System.out.println("Enter id to delete data");
+			int id2 = scan.nextInt();
+
+			userdao.deleteUserById(id2);
 			break;
 
 		case 5:
