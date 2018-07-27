@@ -1,0 +1,13 @@
+
+ksquid:S2629'"7Use the built-in formatting to construct this argument.(ÖÏÆå8×ûó¶Í,H©3RMAJORZ
+CODE_SMELL
+^squid:S3457"%String contains no format specifiers.(¼ÎÎõùÿÿÿÿ8×ûó¶Í,Hª3RMAJORZ
+CODE_SMELL
+usquid:S3457'"AFormat specifiers should be used instead of string concatenation.(ÖÏÆå8×ûó¶Í,H«3RMAJORZ
+CODE_SMELL
+Ysquid:S3457."%String contains no format specifiers.(öëÍÄ8×ûó¶Í,H¬3RMAJORZ
+CODE_SMELL
+^squid:S34579"%String contains no format specifiers.(›µÌÎüÿÿÿÿ8×ûó¶Í,H­3RMAJORZ
+CODE_SMELL
+Ysquid:S3457A"%String contains no format specifiers.(øÆÿü8×ûó¶Í,H®3RMAJORZ
+CODE_SMELL

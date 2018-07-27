@@ -1,0 +1,11 @@
+
+zsquid:S3457/"AFormat specifiers should be used instead of string concatenation.(®êºÛùÿÿÿÿ8Õá¸‰Í,H—2RMAJORZ
+CODE_SMELL
+€squid:S00112'"FDefine and throw a dedicated exception instead of using a generic one.(å²‹úÿÿÿÿ8Õá¸‰Í,H˜2RMAJORZ
+CODE_SMELL
+{squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(åì‰Š8Õá¸‰Í,H™2RMAJORZ
+CODE_SMELL
+psquid:S26290"7Use the built-in formatting to construct this argument.(‚ÖÃ½ùÿÿÿÿ8Õá¸‰Í,Hš2RMAJORZ
+CODE_SMELL
+zsquid:S34570"AFormat specifiers should be used instead of string concatenation.(‚ÖÃ½ùÿÿÿÿ8Ö´á´Í,H›2RMAJORZ
+CODE_SMELL

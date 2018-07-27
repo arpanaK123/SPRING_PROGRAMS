@@ -44,6 +44,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/bridgeit/SPRING/SpringMVC"/>
 			<item value="/home/bridgeit/SPRING/maven"/>
 			<item value="/home/bridgeit/SPRING/Spring_Programs/src/com/bridgeit/DI/DIApplicationJUnitTest.java"/>
 			<item value="/home/bridgeit/SPRING"/>
@@ -63,19 +64,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.bridgeit.SpringJdbc.SpringJDBC"/>
-			<item value="com.bridgeit.LoginRegister.SpringJDBC"/>
-			<item value="com.bridgeit.LoginRegister.springBeanLifeCycle"/>
-			<item value="com.bridgeit.LoginRegister.Login_APP"/>
 		</list>
 		<list key="groupId">
-			<item value="com.bridgeit.SpringJdbc"/>
-			<item value="com.bridgeit.LoginRegister"/>
 		</list>
 		<list key="artifactId">
-			<item value="SpringJDBC"/>
-			<item value="springBeanLifeCycle"/>
-			<item value="Login_APP"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

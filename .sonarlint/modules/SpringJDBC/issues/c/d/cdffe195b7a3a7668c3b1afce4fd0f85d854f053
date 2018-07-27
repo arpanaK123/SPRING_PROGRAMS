@@ -1,17 +1,17 @@
 
-_squid:S1659"&Declare "password" on a separate line.(Û¡‰Õşÿÿÿÿ8Èı–ÓÌ,Hƒ,RMINORZ
+ƒsquid:S00100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·„ß8Èı–ÓÌ,HÉ-RMINORZ
 CODE_SMELL
-ƒsquid:S00100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·„ß8Èı–ÓÌ,H,RMINORZ
+‹squid:S00117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªùÎûÿÿÿÿ8Èı–ÓÌ,HÊ-RMINORZ
 CODE_SMELL
-\squid:S1659"#Declare "email" on a separate line.(Û¡‰Õşÿÿÿÿ8Èı–ÓÌ,Hü+RMINORZ
+squid:S00116"URename this field "mobile_num" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û¡‰Õşÿÿÿÿ8Èı–ÓÌ,HË-RMINORZ
 CODE_SMELL
-asquid:S1659"(Declare "mobile_num" on a separate line.(Û¡‰Õşÿÿÿÿ8Èı–ÓÌ,Hÿ+RMINORZ
+\squid:S1659"#Declare "email" on a separate line.(Û¡‰Õşÿÿÿÿ8Èı–ÓÌ,HÌ-RMINORZ
 CODE_SMELL
-ˆsquid:S00100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªùÎûÿÿÿÿ8Èı–ÓÌ,H‚,RMINORZ
+asquid:S1659"(Declare "mobile_num" on a separate line.(Û¡‰Õşÿÿÿÿ8Èı–ÓÌ,HÍ-RMINORZ
 CODE_SMELL
-^squid:S1659"%Declare "address" on a separate line.(Û¡‰Õşÿÿÿÿ8Èı–ÓÌ,Hş+RMINORZ
+ˆsquid:S00100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªùÎûÿÿÿÿ8Èı–ÓÌ,HÎ-RMINORZ
 CODE_SMELL
-‹squid:S00117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªùÎûÿÿÿÿ8Èı–ÓÌ,Hı+RMINORZ
+_squid:S1659"&Declare "password" on a separate line.(Û¡‰Õşÿÿÿÿ8Èı–ÓÌ,HÏ-RMINORZ
 CODE_SMELL
-squid:S00116"URename this field "mobile_num" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û¡‰Õşÿÿÿÿ8Èı–ÓÌ,H€,RMINORZ
+^squid:S1659"%Declare "address" on a separate line.(Û¡‰Õşÿÿÿÿ8Èı–ÓÌ,HĞ-RMINORZ
 CODE_SMELL

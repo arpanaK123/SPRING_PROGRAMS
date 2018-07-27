@@ -1,0 +1,9 @@
+
+psquid:UselessImportCheck"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8Ì±ˆŒÍ,HÂ.RMINORZ
+CODE_SMELL
+†squid:UselessImportCheck"ERemove this unused import 'javax.validation.metadata.BeanDescriptor'.(çûœ­8Ì±ˆŒÍ,HÃ.RMINORZ
+CODE_SMELL
+‡squid:UselessImportCheck"ARemove this unused import 'javax.validation.ConstraintViolation'.(›•¾ƒıÿÿÿÿ8Ì±ˆŒÍ,HÄ.RMINORZ
+CODE_SMELL
+squid:UselessImportCheck"LRemove this unused import 'javax.validation.executable.ExecutableValidator'.(ƒ°­8Ì±ˆŒÍ,HÅ.RMINORZ
+CODE_SMELL

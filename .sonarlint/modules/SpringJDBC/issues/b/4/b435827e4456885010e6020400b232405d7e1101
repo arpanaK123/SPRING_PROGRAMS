@@ -1,24 +1,24 @@
 
-j
-squid:S106R"9Replace this use of System.out or System.err by a logger.(„¥×ùÿÿÿÿHê+RMAJORZ
-CODE_SMELL
-•squid:S1488+"\Immediately return this expression instead of assigning it to the temporary variable "user".(Ÿèï•ıÿÿÿÿ8ÒŒÜÌ,Hó+RMINORZ
-CODE_SMELL
-squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëü‹ùÿÿÿÿHë+RMINORZ
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëü‹ùÿÿÿÿH²-RMINORZ
 CODE_SMELL
 l
-squid:S106P"9Replace this use of System.out or System.err by a logger.(Ô§ª«8¨ü·ÜÌ,H‰,RMAJORZ
-CODE_SMELL
-l
-squid:S106""9Replace this use of System.out or System.err by a logger.(²©Êæ8¨ü·ÜÌ,Hí+RMAJORZ
-CODE_SMELL
-l
-squid:S106E"9Replace this use of System.out or System.err by a logger.(òÙ—Š8¨ü·ÜÌ,Hì+RMAJORZ
-CODE_SMELL
-squid:S2068="U'password' detected in this expression, review this potentially hardcoded credential.(ËòÔô8¨ü·ÜÌ,Hï+RBLOCKERZVULNERABILITY
-l
-squid:S106C"9Replace this use of System.out or System.err by a logger.(Û›ŒŠ8ø§ÀŞÌ,Hğ+RMAJORZ
+squid:S106E"9Replace this use of System.out or System.err by a logger.(òÙ—Š8¨ü·ÜÌ,Hµ-RMAJORZ
 CODE_SMELL
 j
-squid:S106$"9Replace this use of System.out or System.err by a logger.(í‚„êüÿÿÿÿHñ+RMAJORZ
+squid:S106R"9Replace this use of System.out or System.err by a logger.(„¥×ùÿÿÿÿH­-RMAJORZ
+CODE_SMELL
+l
+squid:S106""9Replace this use of System.out or System.err by a logger.(²©Êæ8¨ü·ÜÌ,H´-RMAJORZ
+CODE_SMELL
+squid:S2068="U'password' detected in this expression, review this potentially hardcoded credential.(ËòÔô8¨ü·ÜÌ,H°-RBLOCKERZVULNERABILITY
+•squid:S1488+"\Immediately return this expression instead of assigning it to the temporary variable "user".(Ÿèï•ıÿÿÿÿ8ÒŒÜÌ,H¯-RMINORZ
+CODE_SMELL
+l
+squid:S106C"9Replace this use of System.out or System.err by a logger.(Û›ŒŠ8ø§ÀŞÌ,H³-RMAJORZ
+CODE_SMELL
+l
+squid:S106P"9Replace this use of System.out or System.err by a logger.(Ô§ª«8¨ü·ÜÌ,H®-RMAJORZ
+CODE_SMELL
+j
+squid:S106$"9Replace this use of System.out or System.err by a logger.(í‚„êüÿÿÿÿH±-RMAJORZ
 CODE_SMELL
