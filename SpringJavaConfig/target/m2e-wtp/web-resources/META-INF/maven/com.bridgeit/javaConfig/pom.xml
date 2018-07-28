@@ -22,13 +22,7 @@
 			<version>${org.springframework-version}</version>
 			<exclusions>
 
-				<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
-				<dependency>
-					<groupId>javax.servlet</groupId>
-					<artifactId>javax.servlet-api</artifactId>
-					<version>3.0.1</version>
-					<scope>provided</scope>
-				</dependency>
+			
 
 				<!-- Exclude Commons Logging in favor of SLF4j -->
 				<exclusion>
@@ -42,7 +36,13 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-
+	<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+				<dependency>
+					<groupId>javax.servlet</groupId>
+					<artifactId>javax.servlet-api</artifactId>
+					<version>3.0.1</version>
+					<scope>provided</scope>
+				</dependency>
 		<!-- AspectJ -->
 		<dependency>
 			<groupId>org.aspectj</groupId>

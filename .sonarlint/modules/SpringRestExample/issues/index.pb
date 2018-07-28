@@ -5,3 +5,5 @@ l
 <src/main/java/com/bridgeit/controller/AccountController.java,4/f/4f24f0e953f7b0d3e5d6c4561d908c191a592d17
 m
 =src/main/java/com/bridgeit/config/SimpleWebConfiguration.java,4/5/45cb0e21f29d2a15785ecb486e20d73bd8a48092
+O
+src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392

@@ -27,6 +27,10 @@ INDEX VERSION 1.130
 /springBeanLifeCycle/src/main/resources
 /home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3946728924.index
 /SpringValidation/src/main/java
+/home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2796117344.index
+/TradeFinance/src/main/java
+/home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3448590297.index
+/TradeFinanceApp/src/main/java
 /home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3159050401.index
 /SpringRestCrud/src/main/java
 /home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/844796870.index

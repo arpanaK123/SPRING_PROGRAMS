@@ -1,0 +1,7 @@
+
+gsquid:S1161":Add the "@Override" annotation above this method signature(ŸÑÙH¸CRMAJORZ
+CODE_SMELL
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(š¦°ûÿÿÿÿH¶CRMINORZ
+CODE_SMELL
+squid:UselessImportCheck"QRemove this unused import 'org.springframework.context.annotation.Configuration'.(¬²ÚäşÿÿÿÿH·CRMINORZ
+CODE_SMELL

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="demo"/>
 <aop-project name="SpringValidation"/>
+<aop-project name="demo"/>
 <aop-project name="SpringJavaConfig"/>
 <aop-project name="SpringRestExample"/>
 <aop-project name="SpringRestCrud"/>
 <aop-project name="abc"/>
+<aop-project name="TradeFinance"/>
 <aop-project name="Spring_Exception"/>
 <aop-project name="SpringMVC"/>
 </aop-reference-model>

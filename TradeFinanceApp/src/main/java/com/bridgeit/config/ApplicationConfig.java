@@ -10,12 +10,11 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.bridgeit.controller")
 public class ApplicationConfig {
 
 	public static ComboPooledDataSource getDataSource() throws PropertyVetoException {
 		ComboPooledDataSource cpds = new ComboPooledDataSource();
-		cpds.setDriverClass("com.mysql.jdbc.Driver"); // loads the jdbc driver
+		cpds.setDriverClass("com.mysql.jdbc.Driver"); 
 		cpds.setJdbcUrl("jdbc:mysql://localhost:3306/TradeFinanceLogin");
 		cpds.setUser("root");
 		cpds.setPassword("arpana");

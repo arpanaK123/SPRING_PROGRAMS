@@ -1,0 +1,23 @@
+
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+O
+src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+i
+9src/main/java/com/bridgeit/controller/UserController.java,c/8/c867dd229b3af2746c2a4ea1972b4ee60d773aa5
+h
+8src/main/java/com/bridgeit/config/ApplicationConfig.java,7/c/7c7a26a473915917b9fb5130c709edc30bb385fd
+_
+/src/main/java/com/bridgeit/model/UserModel.java,c/d/cdffe195b7a3a7668c3b1afce4fd0f85d854f053
+[
++src/main/java/com/bridgeit/DAO/UserDAO.java,9/4/94297ade3851d69e244e7b7cbd5eb87071a2bbaa
+c
+3src/main/java/com/bridgeit/service/UserService.java,d/4/d48d7f43a4309fd2b1c368d7dd58433f9971fe85
+^
+.src/main/webapp/WEB-INF/views/Registration.jsp,f/2/f23c340619256b26290888ea99d308ee28b3803b
+m
+=src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml,d/3/d3e54629b9a71e7b6b2949fb63e8fbc3314079cf
+_
+/src/main/webapp/WEB-INF/spring/root-context.xml,5/2/528c08e315052712c6de729d808bc541b1c5b506
+a
+1src/main/java/com/bridgeit/config/JavaConfig.java,1/f/1fb9458bcc7104dca5f93b097b2cd3636b5c20b2

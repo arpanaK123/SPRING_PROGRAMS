@@ -1,0 +1,6 @@
+
+™squid:UselessImportCheck"SRemove this unused import 'org.springframework.web.bind.annotation.RestController'.(±íþ¡þÿÿÿÿ8Ã¥µüÍ,H…CRMINORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÒÒôÅ8Å¥¤ùÍ,H†CRMAJORZ
+CODE_SMELL

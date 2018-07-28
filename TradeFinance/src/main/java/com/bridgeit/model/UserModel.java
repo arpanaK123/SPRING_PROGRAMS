@@ -1,13 +1,27 @@
 package com.bridgeit.model;
 
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
+
 public class UserModel {
+
+	@NotEmpty(message = "name is required")
 	private String name;
+
+	@NotEmpty(message = "email is required")
+	@Email
 	private String email;
+	@NotEmpty(message = "mobile number  is required")
 	private String mobilenumber;
+	@NotEmpty(message = "city is required")
 	private String city;
+	@NotEmpty(message = "role is required")
 	private String role;
-	
-	
+
+	public UserModel() {
+	}
 
 	public UserModel(String name, String email, String mobilenumber, String city, String role) {
 		super();
