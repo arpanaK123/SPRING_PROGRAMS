@@ -1,1 +1,1 @@
-[[{"location":"/home/bridgeit/.m2/repository/org/springframework/spring-jdbc/5.0.5.RELEASE/spring-jdbc-5.0.5.RELEASE.jar","type":"JAR","hints":{}},"ABSENT"]]
+[[{"location":"/home/bridgeit/SPRING/TradeFinance","type":"PROJECT","hints":{"PROJECT_NAME":"TradeFinance"}},"com.bridgeit:tradeFinance:1.0.0"],[{"location":"/usr/lib/jvm/java-9-oracle","type":"JRE","hints":{"EXECUTION_ENVIRONMENT":"JavaSE-1.6"}},"jre:jre:1.6.0"]]

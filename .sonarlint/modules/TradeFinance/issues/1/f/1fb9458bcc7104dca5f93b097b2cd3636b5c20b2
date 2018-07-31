@@ -1,5 +1,3 @@
 
-nsquid:S1161/":Add the "@Override" annotation above this method signature(ŸÑÙ8¾çÆıÍ,H½CRMAJORZ
-CODE_SMELL
-‰squid:CallToDeprecatedMethod"?Remove this use of "WebMvcConfigurerAdapter"; it is deprecated.(ŠÆÅıÿÿÿÿ8¾çÆıÍ,H¼CRMINORZ
+nsquid:S1161+":Add the "@Override" annotation above this method signature(ŸÑÙ8ßÌáÔÎ,H…VRMAJORZ
 CODE_SMELL

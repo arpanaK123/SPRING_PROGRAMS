@@ -9,4 +9,5 @@
 <aop-project name="TradeFinance"/>
 <aop-project name="Spring_Exception"/>
 <aop-project name="SpringMVC"/>
+<aop-project name="SpringTransaction"/>
 </aop-reference-model>

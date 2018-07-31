@@ -1,6 +1,16 @@
 
-™squid:UselessImportCheck"SRemove this unused import 'org.springframework.web.bind.annotation.RestController'.(±íş¡şÿÿÿÿ8Ã¥µüÍ,H…CRMINORZ
+xsquid:UselessImportCheck"7Remove this unused import 'javax.validation.Validator'.(‰ÿù‰8…éœÑÎ,HVRMINORZ
+CODE_SMELL
+„squid:UselessImportCheck"CRemove this unused import 'javax.servlet.http.HttpServletResponse'.(Á¨ïë8…éœÑÎ,HœVRMINORZ
 CODE_SMELL
 l
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÒÒôÅ8Å¥¤ùÍ,H†CRMAJORZ
+squid:S106!"9Replace this use of System.out or System.err by a logger.(ÒÒôÅ8‚ÌòÔÎ,H£VRMAJORZ
+CODE_SMELL
+q
+squid:S106""9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8ÚĞéÓÎ,HŸVRMAJORZ
+CODE_SMELL
+ƒsquid:UselessImportCheck"BRemove this unused import 'javax.servlet.http.HttpServletRequest'.(ø©¹…8…éœÑÎ,HVRMINORZ
+CODE_SMELL
+l
+squid:S106$"9Replace this use of System.out or System.err by a logger.(ú†Õ¾8¡«ÑÕÎ,HïVRMAJORZ
 CODE_SMELL

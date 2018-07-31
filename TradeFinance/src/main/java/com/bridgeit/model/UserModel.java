@@ -1,35 +1,36 @@
 package com.bridgeit.model;
 
-import javax.validation.constraints.NotNull;
+import javax.persistence.Column;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
 public class UserModel {
+	@NotEmpty
+	private String id;
 
 	@NotEmpty(message = "name is required")
 	private String name;
 
-	@NotEmpty(message = "email is required")
-	@Email
-	private String email;
-	@NotEmpty(message = "mobile number  is required")
-	private String mobilenumber;
 	@NotEmpty(message = "city is required")
 	private String city;
 	@NotEmpty(message = "role is required")
 	private String role;
 
-	public UserModel() {
+	@Email(message = "email is invalid")
+	@NotEmpty(message = "city is required")
+	@Column(unique = true)
+	private String email;
+
+	private String password;
+	private boolean verified;
+
+	public String getId() {
+		return id;
 	}
 
-	public UserModel(String name, String email, String mobilenumber, String city, String role) {
-		super();
-		this.name = name;
-		this.email = email;
-		this.mobilenumber = mobilenumber;
-		this.city = city;
-		this.role = role;
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public String getName() {
@@ -38,22 +39,6 @@ public class UserModel {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getMobilenumber() {
-		return mobilenumber;
-	}
-
-	public void setMobilenumber(String mobilenumber) {
-		this.mobilenumber = mobilenumber;
 	}
 
 	public String getCity() {
@@ -72,7 +57,32 @@ public class UserModel {
 		this.role = role;
 	}
 
-	public String toString() {
-		return "name: " + name + " email: " + email + " mobnum: " + mobilenumber + " city: " + city + " role: " + role;
+	public String getEmail() {
+		return email;
 	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public Object setPassword(String password) {
+		return this.password = password;
+	}
+
+	public boolean isVerified() {
+		return verified;
+	}
+
+	public void setVerified(boolean verified) {
+		this.verified = verified;
+	}
+
+	
+
+	
+
 }

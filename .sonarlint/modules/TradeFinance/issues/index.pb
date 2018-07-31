@@ -5,8 +5,6 @@ O
 src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392
 i
 9src/main/java/com/bridgeit/controller/UserController.java,c/8/c867dd229b3af2746c2a4ea1972b4ee60d773aa5
-h
-8src/main/java/com/bridgeit/config/ApplicationConfig.java,7/c/7c7a26a473915917b9fb5130c709edc30bb385fd
 _
 /src/main/java/com/bridgeit/model/UserModel.java,c/d/cdffe195b7a3a7668c3b1afce4fd0f85d854f053
 [
@@ -21,3 +19,9 @@ _
 /src/main/webapp/WEB-INF/spring/root-context.xml,5/2/528c08e315052712c6de729d808bc541b1c5b506
 a
 1src/main/java/com/bridgeit/config/JavaConfig.java,1/f/1fb9458bcc7104dca5f93b097b2cd3636b5c20b2
+V
+&src/main/webapp/WEB-INF/views/home.jsp,1/a/1af60de6709e573f5dad4fe0319db0bb3a87e804
+W
+'src/main/webapp/WEB-INF/views/login.jsp,e/e/ee67263bb367b7874b96d07d6d2eafce3e2c273f
+W
+'src/main/webapp/WEB-INF/views/error.jsp,7/7/771d83808ab698866b1e7d83e01faf76a0a4fe8b

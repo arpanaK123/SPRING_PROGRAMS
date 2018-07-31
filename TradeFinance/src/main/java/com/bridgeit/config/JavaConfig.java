@@ -2,11 +2,9 @@ package com.bridgeit.config;
 
 import java.beans.PropertyVetoException;
 
-import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -35,24 +33,13 @@ public class JavaConfig extends WebMvcConfigurerAdapter {
 	public static ComboPooledDataSource getDataSource() throws PropertyVetoException {
 		ComboPooledDataSource cpds = new ComboPooledDataSource();
 		cpds.setDriverClass("com.mysql.jdbc.Driver"); 
-		cpds.setJdbcUrl("jdbc:mysql://localhost:3306/TradeFinanceLogin");
+		cpds.setJdbcUrl("jdbc:mysql://localhost:3306/TradeFinanceLogin?useSSL=false");
 		cpds.setUser("root");
 		cpds.setPassword("arpana");
 
-		cpds.setMinPoolSize(5);
-		cpds.setAcquireIncrement(5);
-		cpds.setMaxPoolSize(20);
-
 		return cpds;
 	}
-	
-//	  @Bean
-//	    public MessageSource messageSource() {
-//	        ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-//	        messageSource.setBasename("messages");
-//	        return messageSource;
-//	    }
-//	
+
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configure) {
 		configure.enable();
 	}
