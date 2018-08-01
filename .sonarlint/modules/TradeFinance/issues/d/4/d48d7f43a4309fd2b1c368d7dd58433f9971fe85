@@ -1,7 +1,9 @@
 
-squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ú°à¬8«ññÕÎ,H WRMAJORZ
+usquid:S11260"AReplace this if-then-else statement by a single return statement.(šÀ›÷8œôüÎ,Hµ^RMINORZ
 CODE_SMELL
-squid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(Ú°à¬8çÞ¿ÚÎ,HçXRMAJORZ
+asquid:S1125%"(Remove the literal "true" boolean value.(£äìùÿÿÿÿ8œôüÎ,H¶^RMINORZ
 CODE_SMELL
-bsquid:S1068".Remove this unused "dataSource" private field.(â–ŠÐ8«ï¶ÙÎ,HŽXRMAJORZ
+usquid:S1126"AReplace this if-then-else statement by a single return statement.(šÀ›÷8œôüÎ,H·^RMINORZ
+CODE_SMELL
+bsquid:S1068".Remove this unused "dataSource" private field.(â–ŠÐ8«ï¶ÙÎ,H¸^RMAJORZ
 CODE_SMELL

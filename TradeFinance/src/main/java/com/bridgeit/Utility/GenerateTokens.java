@@ -41,13 +41,13 @@ public class GenerateTokens {
 
 	}
 
-	private static void verifyToken(String token) {
-		Claims claim = (Claims) Jwts.parser().setSigningKey("apiKey").parseClaimsJws(token).getBody();
-		System.out.println("id: " + claim.getId());
-		System.out.println("issued: " + claim.getIssuer());
-		System.out.println("subject: " + claim.getIssuer());
-		System.out.println("expiration: " + claim.getExpiration());
-
-	}
+//	private static void verifyToken(String token) {
+//		Claims claim = (Claims) Jwts.parser().setSigningKey("apiKey").parseClaimsJws(token).getBody();
+//		System.out.println("id: " + claim.getId());
+//		System.out.println("issued: " + claim.getIssuer());
+//		System.out.println("subject: " + claim.getIssuer());
+//		System.out.println("expiration: " + claim.getExpiration());
+//
+//	}
 
 }

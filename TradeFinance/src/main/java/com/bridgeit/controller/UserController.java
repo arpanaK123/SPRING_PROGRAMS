@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.bridgeit.Utility.Response;
+import com.bridgeit.Utility.ResponseError;
 import com.bridgeit.model.UserModel;
 import com.bridgeit.service.UserService;
 
@@ -34,36 +34,51 @@ public class UserController {
 	private UserService userService;
 
 	@RequestMapping(value = "/registration", method = RequestMethod.POST)
-	public ResponseEntity<UserModel> registrationUser(@Valid @RequestBody UserModel userModel, BindingResult result) {
+	public ResponseEntity<ResponseError> registrationUser(@Valid @RequestBody UserModel userModel,
+			BindingResult result) {
+		ResponseError responseError = new ResponseError();
 		System.out.println(userModel);
 		System.out.println(result);
 		List<ObjectError> list = result.getAllErrors();
 		System.out.println(list + "------");
 		if (result.hasErrors()) {
-			return new ResponseEntity<UserModel>(userModel, HttpStatus.BAD_REQUEST);
+			responseError.setStatus("registration unsuccessfull");
+			responseError.setErrorCode("400");
+			return new ResponseEntity<ResponseError>(responseError, HttpStatus.BAD_REQUEST);
+
 		}
 		userService.userReg(userModel);
-		return new ResponseEntity<UserModel>(userModel, HttpStatus.OK);
+		responseError.setStatus("registration successfull");
+		responseError.setStatusCode("200");
+
+		return new ResponseEntity<ResponseError>(responseError, HttpStatus.OK);
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public ResponseEntity<Response> userLogin(@RequestParam("email") String email,
+	public ResponseEntity<ResponseError> userLogin(@RequestParam("email") String email,
 			@RequestParam("password") String password) {
+
+		ResponseError responseError = new ResponseError();
+
 		System.out.println("email: " + email + " " + "pwd:" + password);
 		if (userService.login(email, password)) {
-			return new ResponseEntity<Response>(HttpStatus.OK);
+			responseError.setStatus("login successfully");
+			responseError.setStatusCode("200");
+			return new ResponseEntity<ResponseError>(responseError, HttpStatus.OK);
 		} else {
-			return new ResponseEntity<Response>(HttpStatus.BAD_REQUEST);
+			responseError.setStatus("something wrong");
+			responseError.setErrorCode("400");
+			return new ResponseEntity<ResponseError>(responseError, HttpStatus.BAD_REQUEST);
 		}
 	}
 
 	@RequestMapping(value = "/VerifiedEmail/{token}", method = RequestMethod.GET)
 	public String verifyUser(@PathVariable("token") String token, UserModel userModel,
 			RedirectAttributes redirectAttributes) {
-				return token;
+		return token;
 
-		//Optional<UserModel> user=
-	//	return token;
+		// Optional<UserModel> user=
+		// return token;
 
 	}
 

@@ -4,6 +4,7 @@ import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Repository;
 
 import com.bridgeit.Utility.BcryptHash;
@@ -20,7 +21,9 @@ public class UserDAO {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 
 		Object[] args = new Object[] { userModel.getId(), userModel.getName(), userModel.getEmail(),
-				userModel.getCity(), userModel.getRole(), userModel.setPassword(BcryptHash.generatedHashPassword(userModel.getPassword())), userModel.isVerified() };
+				userModel.getCity(), userModel.getRole(),
+				userModel.setPassword(BcryptHash.generatedHashPassword(userModel.getPassword())),
+				userModel.isVerified() };
 
 		int out = jdbcTemplate.update(query, args);
 
@@ -70,14 +73,18 @@ public class UserDAO {
 
 	public boolean checkUser(String userEmail, String userPassword) {
 		System.out.println(userEmail);
-		Object[] args = { userEmail, userPassword };
+		Object[] args = { userEmail };
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 		UserModel user = null;
 		try {
-			String userName = jdbcTemplate.queryForObject("select name from login where email=? and password=?",
-					String.class, args);
 
-			return true;
+			String password = jdbcTemplate.queryForObject("select password from login where email=?", String.class,
+					args);
+			System.out.println(password);
+
+			System.out.println(userPassword);
+			System.out.println(BCrypt.checkpw(userPassword,password));
+			return BCrypt.checkpw(userPassword,password);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
