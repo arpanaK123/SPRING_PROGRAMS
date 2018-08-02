@@ -5640,3 +5640,9 @@ org.eclipse.debug.core.DebugException: Terminate failed
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2018-08-02 19:20:44.185
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-08-02 19:23:54.439
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-08-02 19:23:54.439
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!

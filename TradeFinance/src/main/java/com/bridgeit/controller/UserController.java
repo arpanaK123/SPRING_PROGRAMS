@@ -76,5 +76,11 @@ public class UserController {
 		consumer.sendMessage(rabbitkey);
 
 	}
+	
+	@RequestMapping(value="/generateToken/{key}",method = RequestMethod.POST)
+	public void userToken(@RequestParam("key") String key) {
+		
+		
+	}
 
 }
