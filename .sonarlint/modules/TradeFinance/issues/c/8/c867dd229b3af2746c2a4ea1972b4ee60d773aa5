@@ -1,21 +1,21 @@
 
-k
-squid:S106?"9Replace this use of System.out or System.err by a logger.(“ª¡8¡«ÑÕÎ,H¯]RMAJORZ
+squid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(Ýõä8·ÛžƒÏ,HÉ`RMAJORZ
 CODE_SMELL
-squid:CommentedOutCodeLineO"<This block of commented-out lines of code should be removed.(Ýõä8·ÛžƒÏ,Hª]RMAJORZ
+xsquid:UselessImportCheck	"7Remove this unused import 'javax.validation.Validator'.(‰ÿù‰8…éœÑÎ,HÊ`RMINORZ
 CODE_SMELL
 l
-squid:S106("9Replace this use of System.out or System.err by a logger.(ÒÒôÅ8Ü¾–ýÎ,H©]RMAJORZ
+squid:S106+"9Replace this use of System.out or System.err by a logger.(ú†Õ¾8Ü¾–ýÎ,HÍ`RMAJORZ
 CODE_SMELL
-xsquid:UselessImportCheck	"7Remove this unused import 'javax.validation.Validator'.(‰ÿù‰8…éœÑÎ,H«]RMINORZ
+l
+squid:S106("9Replace this use of System.out or System.err by a logger.(ÒÒôÅ8Ü¾–ýÎ,HÌ`RMAJORZ
 CODE_SMELL
 q
-squid:S106)"9Replace this use of System.out or System.err by a logger.(®ýáëûÿÿÿÿ8‚ÌòÔÎ,H¨]RMAJORZ
+squid:S106)"9Replace this use of System.out or System.err by a logger.(®ýáëûÿÿÿÿ8‚ÌòÔÎ,HÎ`RMAJORZ
 CODE_SMELL
-ƒsquid:UselessImportCheck"BRemove this unused import 'javax.servlet.http.HttpServletRequest'.(ø©¹…8…éœÑÎ,H®]RMINORZ
+„squid:UselessImportCheck"CRemove this unused import 'javax.servlet.http.HttpServletResponse'.(Á¨ïë8…éœÑÎ,HË`RMINORZ
 CODE_SMELL
-l
-squid:S106+"9Replace this use of System.out or System.err by a logger.(ú†Õ¾8Ü¾–ýÎ,H­]RMAJORZ
+ƒsquid:UselessImportCheck"BRemove this unused import 'javax.servlet.http.HttpServletRequest'.(ø©¹…8…éœÑÎ,HÈ`RMINORZ
 CODE_SMELL
-„squid:UselessImportCheck"CRemove this unused import 'javax.servlet.http.HttpServletResponse'.(Á¨ïë8…éœÑÎ,H¬]RMINORZ
+k
+squid:S106?"9Replace this use of System.out or System.err by a logger.(“ª¡8¡«ÑÕÎ,HÏ`RMAJORZ
 CODE_SMELL

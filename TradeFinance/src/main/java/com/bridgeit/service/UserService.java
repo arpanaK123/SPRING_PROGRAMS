@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.bridgeit.DAO.UserDAO;
+import com.bridgeit.Utility.GenerateTokens;
 import com.bridgeit.model.UserModel;
 
 @Service
@@ -36,7 +37,10 @@ public class UserService {
 		boolean status = userDao.presenceUser(user);
 		if (status != true) {
 			userDao.inserData(user);
-
+			long time=20000;
+			String userId = user.getId();
+			GenerateTokens.createVerificationToken(userId, "emailVrify", time);
+			
 			return true;
 		}
 		return false;

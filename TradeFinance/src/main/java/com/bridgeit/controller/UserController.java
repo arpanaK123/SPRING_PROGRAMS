@@ -1,27 +1,21 @@
 package com.bridgeit.controller;
 
 import java.util.List;
-import java.util.Optional;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
-import javax.validation.Validator;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.bridgeit.Utility.Consumer;
+import com.bridgeit.Utility.Producer;
 import com.bridgeit.Utility.ResponseError;
 import com.bridgeit.model.UserModel;
 import com.bridgeit.service.UserService;
@@ -32,7 +26,11 @@ public class UserController {
 
 	@Autowired
 	private UserService userService;
+	@Autowired
+	private Producer producer;
 
+	@Autowired
+	private Consumer consumer;
 	@RequestMapping(value = "/registration", method = RequestMethod.POST)
 	public ResponseEntity<ResponseError> registrationUser(@Valid @RequestBody UserModel userModel,
 			BindingResult result) {
@@ -72,13 +70,10 @@ public class UserController {
 		}
 	}
 
-	@RequestMapping(value = "/VerifiedEmail/{token}", method = RequestMethod.GET)
-	public String verifyUser(@PathVariable("token") String token, UserModel userModel,
-			RedirectAttributes redirectAttributes) {
-		return token;
-
-		// Optional<UserModel> user=
-		// return token;
+	@RequestMapping(value = "/rabbitkey", method = RequestMethod.POST)
+	public void verifyUser(@RequestParam("token") String rabbitkey) {
+		System.out.println("token");
+		consumer.sendMessage(rabbitkey);
 
 	}
 
