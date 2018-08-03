@@ -29,10 +29,6 @@ b
 2src/main/java/com/bridgeit/Utility/BcryptHash.java,f/8/f83479b378850f8e288ab6808a697a70127ee00e
 f
 6src/main/java/com/bridgeit/Utility/GenerateTokens.java,b/8/b8a3f9c7f002eb2dc3568df13970b557ef0b117c
-`
-0src/main/java/com/bridgeit/Utility/Receiver.java,f/f/fff076e5e61d1d3129b7986e90f67839d85c8786
-c
-3src/main/java/com/bridgeit/Utility/Application.java,0/5/059a01453a40c89196ae4c3052946b8bf0186f39
 e
 5src/main/java/com/bridgeit/Utility/ResponseError.java,7/9/7968c630028d28423715c77b8283a06bf4d754e8
 c

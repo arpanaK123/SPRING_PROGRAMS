@@ -9,6 +9,8 @@ INDEX VERSION 1.130
 /MY_APP/src/main/resources
 /home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/724606352.index
 /Maven/src/main/resources
+/home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3376193908.index
+/TradeFinance/src/main/java
 /home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4251318705.index
 /springBeanLifeCycle/src/main/resources
 /home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2796117344.index

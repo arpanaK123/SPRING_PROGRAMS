@@ -1,9 +1,11 @@
 package com.bridgeit.Utility;
 
+import com.bridgeit.model.UserModel;
+
 public class ResponseError {
 	private String status;
 	private String statusCode;
-	private String errorCode;
+	private UserModel usermodel;
 
 	public String getStatus() {
 		return status;
@@ -21,12 +23,14 @@ public class ResponseError {
 		this.statusCode = statusCode;
 	}
 
-	public String getErrorCode() {
-		return errorCode;
+	public UserModel getUsermodel() {
+		return usermodel;
 	}
 
-	public void setErrorCode(String errorCode) {
-		this.errorCode = errorCode;
+	public void setUsermodel(UserModel usermodel) {
+		this.usermodel = usermodel;
 	}
 
+
+	
 }

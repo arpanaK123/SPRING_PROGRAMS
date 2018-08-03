@@ -2,11 +2,12 @@ package com.bridgeit.Utility;
 
 import java.util.Date;
 
-import io.jsonwebtoken.Claims;
+import org.springframework.stereotype.Component;
+
 import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-
+@Component
 public class GenerateTokens {
 	
 	public static String createVerificationToken(String id, String subject, long ttlMillis) {

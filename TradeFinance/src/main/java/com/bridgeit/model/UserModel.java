@@ -1,12 +1,16 @@
 package com.bridgeit.model;
 
 import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
 public class UserModel {
-	@NotEmpty
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private String id;
 
 	@NotEmpty(message = "name is required")
@@ -22,6 +26,8 @@ public class UserModel {
 	@Column(unique = true)
 	private String email;
 
+	String authentication_key;
+	
 	private String password;
 	private boolean verified;
 
@@ -79,6 +85,14 @@ public class UserModel {
 
 	public void setVerified(boolean verified) {
 		this.verified = verified;
+	}
+
+	public String getAuthentication_key() {
+		return authentication_key;
+	}
+
+	public void setAuthentication_key(String authentication_key) {
+		this.authentication_key = authentication_key;
 	}
 
 	

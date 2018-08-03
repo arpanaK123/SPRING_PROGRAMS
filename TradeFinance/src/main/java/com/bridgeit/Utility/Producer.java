@@ -12,8 +12,8 @@ public class Producer {
 	@Autowired
 	RabbitTemplate rabbitTemplate;
 
-	public void sendMessage(Message object) throws IOException {
-		rabbitTemplate.convertSendAndReceive(object);
+	public void sendMessage(String sendMail) throws IOException {
+		rabbitTemplate.convertAndSend(sendMail);
 
 	}
 }
