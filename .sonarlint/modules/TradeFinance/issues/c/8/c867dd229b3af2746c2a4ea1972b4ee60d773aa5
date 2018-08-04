@@ -1,21 +1,21 @@
 
-squid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(İõä8·ÛƒÏ,HÉ`RMAJORZ
+†squid:S00117a"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å±‹ü8ÄØú€Ğ,HÍvRMINORZ
 CODE_SMELL
-xsquid:UselessImportCheck	"7Remove this unused import 'javax.validation.Validator'.(‰ÿù‰8…éœÑÎ,HÊ`RMINORZ
+lsquid:S1854/"8Remove this useless assignment to local variable "list".(Øô¢­8¢¸ÛûÏ,HËsRMAJORZ
 CODE_SMELL
-l
-squid:S106+"9Replace this use of System.out or System.err by a logger.(ú†Õ¾8Ü¾–ıÎ,HÍ`RMAJORZ
+~squid:S3027>"JPut single-quotes around '/' to use the faster "lastIndexOf(char)" method.(‰ù„ú8Ìõ¤úÏ,H£vRMAJORZ
 CODE_SMELL
-l
-squid:S106("9Replace this use of System.out or System.err by a logger.(ÒÒôÅ8Ü¾–ıÎ,HÌ`RMAJORZ
+nsquid:S1854-":Remove this useless assignment to local variable "userId".(®Å°ÿ8Å÷óûÏ,HÕsRMAJORZ
 CODE_SMELL
-q
-squid:S106)"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8‚ÌòÔÎ,HÎ`RMAJORZ
+_squid:S1148E"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‚—¨øÏ,H§oRMINORZVULNERABILITY
+º%squid:RedundantThrowsDeclarationChecka"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(å±‹ü8¸ı€Ğ,HÑvRMINORZ
 CODE_SMELL
-„squid:UselessImportCheck"CRemove this unused import 'javax.servlet.http.HttpServletResponse'.(Á¨ïë8…éœÑÎ,HË`RMINORZ
+]squid:S1481/")Remove this unused "list" local variable.(Øô¢­8¢¸ÛûÏ,HÊsRMINORZ
 CODE_SMELL
-ƒsquid:UselessImportCheck"BRemove this unused import 'javax.servlet.http.HttpServletRequest'.(ø©¹…8…éœÑÎ,HÈ`RMINORZ
+\squid:S11258"(Remove the literal "true" boolean value.(–Şöñ8ã¢³øÏ,H©oRMINORZ
+CODE_SMELL
+_squid:S1481-"+Remove this unused "userId" local variable.(®Å°ÿ8Å÷óûÏ,HÔsRMINORZ
 CODE_SMELL
 k
-squid:S106?"9Replace this use of System.out or System.err by a logger.(“ª¡8¡«ÑÕÎ,HÏ`RMAJORZ
+squid:S106P"9Replace this use of System.out or System.err by a logger.(“ª¡8„’îÏ,HÇsRMAJORZ
 CODE_SMELL

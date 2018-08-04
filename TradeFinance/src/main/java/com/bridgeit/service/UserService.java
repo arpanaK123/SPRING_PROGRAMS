@@ -17,7 +17,6 @@ import com.bridgeit.model.UserModel;
 
 @Service
 public class UserService {
-	//private DataSource dataSource;
 	@Autowired
 	UserDAO userDao;
 	@Autowired
@@ -27,6 +26,8 @@ public class UserService {
 	Producer producer;
 	@Autowired
 	Consumer consumer;
+	@Autowired
+	UserModel user;
 
 	public void callToUserdDAO(UserModel userModel)
 
@@ -54,12 +55,13 @@ public class UserService {
 			userDao.inserData(user);
 			long time = 20000;
 			String userId = user.getId();
-//			String tokngenerate = tokens.createVerificationToken(userId, user.getEmail(), time);
-//			System.out.println("register user:"+userId);
-//			System.out.println(tokngenerate);
+			// String tokngenerate = tokens.createVerificationToken(userId, user.getEmail(),
+			// time);
+			// System.out.println("register user:"+userId);
+			// System.out.println(tokngenerate);
 			String sendThisUrl = "http://192.168.0.68:8080/user/generatetoken/";
-			String sendMail=sendThisUrl;
-			//consumer.sendMessage(sendMail);
+			String sendMail = sendThisUrl;
+			// consumer.sendMessage(sendMail);
 			return true;
 		}
 		return false;
@@ -68,23 +70,55 @@ public class UserService {
 	public boolean login(String email, String password) {
 
 		boolean status = userDao.checkUser(email, password);
-		
+
 		if (status) {
 			return true;
 		}
 		return false;
 	}
-	
-	public UserModel getPersonByEmail(String email)
-	{
+
+	public UserModel getPersonByEmail(String email) {
 		return userDao.getPersonByEmail(email);
 	}
-	
-	
-	public void userVerifiedById(UserModel userModel)
-	{
-		String id=userModel.getId();
-		
+
+	public void userVerifiedById(UserModel userModel) {
+		String id = userModel.getId();
+
+	}
+
+	public UserModel getUserByUniqueKey(String authentication_key) {
+		return userDao.getUserByUniqueKey(authentication_key);
+	}
+
+	public boolean update(UserModel usermodel) {
+		boolean updateUser = userDao.update(usermodel);
+		if (updateUser) {
+			return true;
+		} else {
+			return false;
+		}
+
+	}
+
+	public boolean checkUserVerified(String email) {
+		UserModel user = new UserModel();
+		if (!user.isVerified()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public String userCheckByKey(String authentication_key) {
+
+		boolean status = userDao.checkUserForResetpassword(authentication_key);
+		if (status) {
+			String confirmPassword = user.getResetPassword();
+
+			return confirmPassword;
+		}
+		return null;
+
 	}
 
 }

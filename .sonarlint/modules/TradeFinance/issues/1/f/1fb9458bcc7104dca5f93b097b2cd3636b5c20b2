@@ -1,3 +1,10 @@
 
-nsquid:S1161+":Add the "@Override" annotation above this method signature(ŸÑÙ8ßÌáÔÎ,HÚ^RMAJORZ
+~squid:CommentedOutCodeLinen"<This block of commented-out lines of code should be removed.(¶8Íß›îÏ,H„lRMAJORZ
+CODE_SMELL
+q
+squid:S106o"9Replace this use of System.out or System.err by a logger.(øºÑûúÿÿÿÿ8Íß›îÏ,H…lRMAJORZ
+CODE_SMELL
+—squid:S001159"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(±¹Ù›øÿÿÿÿ8Íß›îÏ,H†lRCRITICALZ
+CODE_SMELL
+’squid:S00115;"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ıŞ˜ñ8Íß›îÏ,H‡lRCRITICALZ
 CODE_SMELL

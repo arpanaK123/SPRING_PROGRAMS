@@ -31,6 +31,7 @@ public class UserController {
 
 	@Autowired
 	private UserService userService;
+
 	@Autowired
 	private Producer producer;
 
@@ -42,11 +43,12 @@ public class UserController {
 	@RequestMapping(value = "/registration", method = RequestMethod.POST)
 	public ResponseEntity<ResponseError> registrationUser(@Valid @RequestBody UserModel userModel, BindingResult result,
 			HttpServletRequest request) throws IOException {
+		System.out.println("error: " + result);
 		String userId = userModel.getId();
 		ResponseError responseError = new ResponseError();
 		List<ObjectError> list = result.getAllErrors();
 		if (result.hasErrors()) {
-			responseError.setStatus("registration unsuccessfull");
+			responseError.setStatus("please enter valid input,registration unsuccessfull");
 			responseError.setStatusCode("400");
 			return new ResponseEntity<ResponseError>(responseError, HttpStatus.BAD_REQUEST);
 
@@ -60,8 +62,8 @@ public class UserController {
 			} else {
 				String url = request.getRequestURL().toString();
 				url = url.substring(0, url.lastIndexOf("/")) + "/" + "userToken/" + userModel.getAuthentication_key();
-				
-				consumer.sendMessage("tradefinancebridgelabz@gmail.com", userModel.getEmail(),url);
+
+				consumer.sendMessage("tradefinancebridgelabz@gmail.com", userModel.getEmail(), url);
 				responseError.setStatus("registration successfull");
 				responseError.setStatusCode("200");
 			}
@@ -76,9 +78,13 @@ public class UserController {
 			@RequestParam("password") String password) {
 
 		ResponseError responseError = new ResponseError();
-
+		// UserModel user1 = new UserModel();
 		System.out.println("email: " + email + " " + "pwd:" + password);
 
+		if (userService.checkUserVerified(email)) {
+			responseError.setStatus("user is not active");
+			responseError.setStatusCode("500");
+		}
 		if (userService.login(email, password)) {
 			UserModel user = userService.getPersonByEmail(email);
 			responseError.setStatus("login successfully");
@@ -90,20 +96,68 @@ public class UserController {
 			responseError.setStatusCode("400");
 			return new ResponseEntity<ResponseError>(responseError, HttpStatus.BAD_REQUEST);
 		}
+
+		// return ResponseEntity<ResponseError>;
 	}
 
-	@RequestMapping(value = "/verifyKey", method = RequestMethod.POST)
-	public void verifyUser(@RequestParam("token") String rabbitkey) {
-		System.out.println("token");
-		// consumer.sendMessage(rabbitkey);
+//	@SuppressWarnings("unused")
+//	@RequestMapping(value = "/login/{authentication_key}", method = RequestMethod.POST)
+//	public ResponseEntity<ResponseError> userLoginCkeck(@RequestParam("email") String email,
+//			String authentication_key) {
+//		ResponseError responseError = new ResponseError();
+//		UserModel user1 = new UserModel();
+//		user1 = null;
+//		if (user1 != null) {
+//			UserModel user = userService.getPersonByEmail(email);
+//			responseError.setStatus("login successfull");
+//			responseError.setStatusCode("200");
+//			responseError.setUsermodel(user);
+//			return new ResponseEntity<ResponseError>(responseError, HttpStatus.OK);
+//		}
+//		responseError.setStatus("user is not active");
+//		responseError.setStatusCode("500");
+//		return new ResponseEntity<ResponseError>(responseError, HttpStatus.BAD_REQUEST);
+//
+//
+//	}
 
+	@RequestMapping(value = "/userToken/{authentication_key:.+}", method = RequestMethod.GET)
+	public ResponseError userToken(@PathVariable("authentication_key") String authentication_key) throws IOException {
+
+		ResponseError responseError = new ResponseError();
+
+		UserModel userModel = userService.getUserByUniqueKey(authentication_key);
+
+		if (userModel != null) {
+
+			userModel.setVerified(true);
+			userService.update(userModel);
+			responseError.setStatus("user is active");
+			responseError.setStatusCode("200");
+		} else {
+			responseError.setStatus("user is In_Activate");
+			responseError.setStatusCode("500");
+		}
+		return responseError;
 	}
 
-	@RequestMapping(value = "/userToken/{token}", method = RequestMethod.POST)
-	public void userToken(@PathVariable("token") String token, UserModel userModel) throws IOException {
-		// userService.userReg(userModel);
-		// token.createVerificationToken()
-		System.out.println(token);
+	@RequestMapping(value = "/resetPassword/{authentication_key}", method = RequestMethod.POST)
+	public ResponseError resetPassword(@PathVariable("authentication_key") String authentication_key,
+			HttpServletRequest request) {
+		ResponseError responseError = new ResponseError();
+		
+        String user=((UserModel) request).getAuthentication_key();
+		boolean status = userService.userCheckByKey(authentication_key) != null;
+		if (status) {
+
+			responseError.setStatus("your password is reset");
+			responseError.setStatusCode("200");
+			// responseError.setUsermodel(userModel);
+		} else {
+			responseError.setStatusCode("something wrong");
+			responseError.setStatusCode("500");
+		}
+		return responseError;
 
 	}
 

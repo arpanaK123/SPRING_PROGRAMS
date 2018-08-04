@@ -12,11 +12,6 @@ public class Consumer {
 
 	@Autowired
 	JavaMailSender javaMailSender;
-	@Autowired
-	GenerateTokens generateTokens;
-	@Autowired
-	UserService userService;
-
 	public void sendMessage(String from, String to,String message) {
 		SimpleMailMessage mailMessage = new SimpleMailMessage();
 		mailMessage.setTo(to);

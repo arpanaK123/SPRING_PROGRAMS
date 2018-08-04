@@ -7,10 +7,11 @@ import javax.persistence.Id;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
-
+import org.springframework.stereotype.Component;
+@Component
 public class UserModel {
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private String id;
 
 	@NotEmpty(message = "name is required")
@@ -22,13 +23,16 @@ public class UserModel {
 	private String role;
 
 	@Email(message = "email is invalid")
-	@NotEmpty(message = "city is required")
+	@NotEmpty(message = "email is required")
 	@Column(unique = true)
 	private String email;
 
 	String authentication_key;
-	
+
 	private String password;
+
+	private String resetPassword;
+
 	private boolean verified;
 
 	public String getId() {
@@ -95,8 +99,13 @@ public class UserModel {
 		this.authentication_key = authentication_key;
 	}
 
-	
+	public String getResetPassword() {
+		return resetPassword;
+	}
 
-	
+	public void setResetPassword(String resetPassword) {
+		this.resetPassword = resetPassword;
+	}
+
 
 }

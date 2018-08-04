@@ -1,9 +1,9 @@
 
-ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãøªHª`RMINORZ
+­squid:S1488"tImmediately return this expression instead of assigning it to the temporary variable "generatedSecuredPasswordHash".(‰©¥üÿÿÿÿ8¼’ûıÎ,H˜lRMINORZ
 CODE_SMELL
-nsquid:S1118	":Add a private constructor to hide the implicit public one.(Ôû¢ö8¼’ûıÎ,H«`RMAJORZ
+ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãøªH™lRMINORZ
 CODE_SMELL
-­squid:S1488"tImmediately return this expression instead of assigning it to the temporary variable "generatedSecuredPasswordHash".(‰©¥üÿÿÿÿ8¼’ûıÎ,H©`RMINORZ
+„squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ö££ûÿÿÿÿ8¯Ö¤®Ï,HšlRMAJORZ
 CODE_SMELL
-„squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ö££ûÿÿÿÿ8¯Ö¤®Ï,H„aRMAJORZ
+nsquid:S1118	":Add a private constructor to hide the implicit public one.(Ôû¢ö8¼’ûıÎ,H›lRMAJORZ
 CODE_SMELL

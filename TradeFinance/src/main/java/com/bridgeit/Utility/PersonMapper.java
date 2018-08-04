@@ -19,6 +19,7 @@ public class PersonMapper implements RowMapper<UserModel> {
 		user.setCity(rs.getString("city"));
 		user.setRole(rs.getString("role"));
 		user.setAuthentication_key(rs.getString("authentication_key"));
+		user.setVerified(rs.getBoolean("verified"));
 		return user;
 	}
 

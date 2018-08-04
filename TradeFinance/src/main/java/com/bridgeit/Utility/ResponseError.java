@@ -31,6 +31,4 @@ public class ResponseError {
 		this.usermodel = usermodel;
 	}
 
-
-	
 }

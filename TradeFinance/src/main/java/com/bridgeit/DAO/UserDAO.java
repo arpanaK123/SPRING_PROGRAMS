@@ -1,12 +1,9 @@
 package com.bridgeit.DAO;
 
-import java.util.UUID;
-
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Repository;
 
@@ -102,13 +99,40 @@ public class UserDAO {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 		return jdbcTemplate.queryForObject(fIND_PERSON, args, new PersonMapper());
 	}
-	public UserModel getUserByUniqueKey(String authentication_key) {
 
-		String fIND_PERSON = "select * from login where authentication_key = ?";
+	public UserModel getUserByUniqueKey(String authentication_key) {
+		System.out.println("key: " + authentication_key);
+
 		Object[] args = { authentication_key };
+		String fIND_PERSON = "select * from login where authentication_key = ?";
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 		return jdbcTemplate.queryForObject(fIND_PERSON, args, new PersonMapper());
 	}
 
-	
+	public boolean update(UserModel person) {
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+		String update_PERSON = "update login set verified = ? where id = ?";
+		return jdbcTemplate.update(update_PERSON, person.isVerified(), person.getId()) > 0;
+	}
+
+	public boolean checkUserForResetpassword(String userEmail) {
+		System.out.println(userEmail);
+		Object[] args = { userEmail };
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+		String email = jdbcTemplate.queryForObject("select email from login where email=?", String.class, args);
+		if (email != null) {
+			
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+//	public boolean resetPassword(UserModel user) {
+//		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+//		String resetPassword = "update login set password = ? where id = ?";
+//		return jdbcTemplate.update(resetPassword,
+//				user.setResetPassword(BcryptHash.generatedHashPassword(user.getResetPassword())));
+//	}
+
 }
