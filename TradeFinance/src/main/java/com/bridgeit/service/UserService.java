@@ -7,12 +7,14 @@ import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Service;
 
 import com.bridgeit.DAO.UserDAO;
 import com.bridgeit.Utility.Consumer;
 import com.bridgeit.Utility.GenerateTokens;
 import com.bridgeit.Utility.Producer;
+import com.bridgeit.Utility.UserMail;
 import com.bridgeit.model.UserModel;
 
 @Service
@@ -28,6 +30,12 @@ public class UserService {
 	Consumer consumer;
 	@Autowired
 	UserModel user;
+
+	@Autowired
+	UserMail mail;
+
+	@Autowired
+	Producer mailsender;
 
 	public void callToUserdDAO(UserModel userModel)
 
@@ -100,25 +108,49 @@ public class UserService {
 
 	}
 
-	public boolean checkUserVerified(String email) {
-		UserModel user = new UserModel();
-		if (!user.isVerified()) {
-			return true;
-		} else {
-			return false;
-		}
+	public boolean isVerifiedUser(String email) {
+		UserModel user = userDao.getPersonByEmail(email);
+		return user.isVerified();
 	}
 
-	public String userCheckByKey(String authentication_key) {
+	public boolean userCheckByKey(String authentication_key) {
 
 		boolean status = userDao.checkUserForResetpassword(authentication_key);
 		if (status) {
-			String confirmPassword = user.getResetPassword();
 
-			return confirmPassword;
+			return true;
 		}
-		return null;
+		return false;
 
+	}
+
+	public boolean verify(String authentication_key) {
+
+		boolean result = userDao.getVerified(authentication_key);
+
+		return result;
+
+	}
+
+	public UserModel getUser(String email) {
+
+		UserModel user = userDao.fetchUserByEmail(email);
+		return user;
+	}
+
+	public String getToken(UserModel user) {
+
+		String userId = user.getId();
+		String jwtToken = tokens.createVerificationToken(userId, user.getEmail(), 720000);
+
+		return jwtToken;
+	}
+
+	public boolean userChangePassword(String authentication_key, String password) {
+		String newPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+		boolean result = userDao.userResetPassword(authentication_key, newPassword);
+
+		return result;
 	}
 
 }

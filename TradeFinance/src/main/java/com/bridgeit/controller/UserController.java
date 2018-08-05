@@ -62,7 +62,6 @@ public class UserController {
 			} else {
 				String url = request.getRequestURL().toString();
 				url = url.substring(0, url.lastIndexOf("/")) + "/" + "userToken/" + userModel.getAuthentication_key();
-
 				consumer.sendMessage("tradefinancebridgelabz@gmail.com", userModel.getEmail(), url);
 				responseError.setStatus("registration successfull");
 				responseError.setStatusCode("200");
@@ -81,11 +80,11 @@ public class UserController {
 		// UserModel user1 = new UserModel();
 		System.out.println("email: " + email + " " + "pwd:" + password);
 
-		if (userService.checkUserVerified(email)) {
+		if (!userService.isVerifiedUser(email)) {
 			responseError.setStatus("user is not active");
 			responseError.setStatusCode("500");
-		}
-		if (userService.login(email, password)) {
+			return new ResponseEntity<ResponseError>(responseError, HttpStatus.INTERNAL_SERVER_ERROR);
+		} else if (userService.login(email, password)) {
 			UserModel user = userService.getPersonByEmail(email);
 			responseError.setStatus("login successfully");
 			responseError.setStatusCode("200");
@@ -97,29 +96,9 @@ public class UserController {
 			return new ResponseEntity<ResponseError>(responseError, HttpStatus.BAD_REQUEST);
 		}
 
-		// return ResponseEntity<ResponseError>;
-	}
+		// return responseError;
 
-//	@SuppressWarnings("unused")
-//	@RequestMapping(value = "/login/{authentication_key}", method = RequestMethod.POST)
-//	public ResponseEntity<ResponseError> userLoginCkeck(@RequestParam("email") String email,
-//			String authentication_key) {
-//		ResponseError responseError = new ResponseError();
-//		UserModel user1 = new UserModel();
-//		user1 = null;
-//		if (user1 != null) {
-//			UserModel user = userService.getPersonByEmail(email);
-//			responseError.setStatus("login successfull");
-//			responseError.setStatusCode("200");
-//			responseError.setUsermodel(user);
-//			return new ResponseEntity<ResponseError>(responseError, HttpStatus.OK);
-//		}
-//		responseError.setStatus("user is not active");
-//		responseError.setStatusCode("500");
-//		return new ResponseEntity<ResponseError>(responseError, HttpStatus.BAD_REQUEST);
-//
-//
-//	}
+	}
 
 	@RequestMapping(value = "/userToken/{authentication_key:.+}", method = RequestMethod.GET)
 	public ResponseError userToken(@PathVariable("authentication_key") String authentication_key) throws IOException {
@@ -139,26 +118,48 @@ public class UserController {
 			responseError.setStatusCode("500");
 		}
 		return responseError;
+
 	}
 
-	@RequestMapping(value = "/resetPassword/{authentication_key}", method = RequestMethod.POST)
-	public ResponseError resetPassword(@PathVariable("authentication_key") String authentication_key,
+	@RequestMapping(value = "/forgotPasword", method = RequestMethod.POST)
+	public ResponseEntity<ResponseError> userResetPassword(@RequestParam("email") String email, UserModel userModel,
 			HttpServletRequest request) {
+		System.out.println("email----" + email);
+		UserModel user = userService.getPersonByEmail(email);
 		ResponseError responseError = new ResponseError();
-		
-        String user=((UserModel) request).getAuthentication_key();
-		boolean status = userService.userCheckByKey(authentication_key) != null;
-		if (status) {
-
-			responseError.setStatus("your password is reset");
+		if (user != null) {
+			System.out.println("------------------");
+			String url = request.getRequestURL().toString();
+			url = url.substring(0, url.lastIndexOf("/")) + "/" + "resetPassword/" + user.getAuthentication_key();
+			consumer.sendMessage("tradefinancebridgelabz@gmail.com", user.getEmail(), url);
+			responseError.setStatus("plz check your mail to change password");
 			responseError.setStatusCode("200");
-			// responseError.setUsermodel(userModel);
-		} else {
-			responseError.setStatusCode("something wrong");
-			responseError.setStatusCode("500");
-		}
-		return responseError;
+			return new ResponseEntity<ResponseError>(responseError, HttpStatus.OK);
 
+		} else {
+			responseError.setStatus("enter email is not correct");
+			responseError.setStatusCode("400");
+			return new ResponseEntity<ResponseError>(responseError, HttpStatus.BAD_REQUEST);
+
+		}
 	}
 
+	@RequestMapping(value = "/resetPassword/{authentication_key:.+}", method = RequestMethod.GET)
+	public ResponseEntity<ResponseError> resetPassword(@PathVariable("authentication_key") String authentication_key,
+			@RequestParam("password") String password) throws IOException {
+
+		ResponseError responseError = new ResponseError();
+
+		if (userService.userChangePassword(authentication_key, password)) {
+			responseError.setStatus("password changed");
+			responseError.setStatusCode("200");
+			return new ResponseEntity<ResponseError>(responseError, HttpStatus.OK);
+		} else {
+			responseError.setStatus("something wrong password cant be change");
+			responseError.setStatusCode("400");
+
+			return new ResponseEntity<ResponseError>(responseError, HttpStatus.BAD_REQUEST);
+		}
+
+	}
 }

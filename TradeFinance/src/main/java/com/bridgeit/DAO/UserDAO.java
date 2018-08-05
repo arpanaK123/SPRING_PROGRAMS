@@ -1,5 +1,7 @@
 package com.bridgeit.DAO;
 
+import java.util.List;
+
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -93,11 +95,15 @@ public class UserDAO {
 	}
 
 	public UserModel getPersonByEmail(String email) {
-
-		String fIND_PERSON = "select * from login where email = ?";
-		Object[] args = { email };
-		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
-		return jdbcTemplate.queryForObject(fIND_PERSON, args, new PersonMapper());
+		System.out.println();
+		try {
+			String fIND_PERSON = "select * from login where email = ?";
+			Object[] args = { email };
+			JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+			return jdbcTemplate.queryForObject(fIND_PERSON, args, new PersonMapper());
+		} catch (Exception e) {
+			return null;
+		}
 	}
 
 	public UserModel getUserByUniqueKey(String authentication_key) {
@@ -121,18 +127,85 @@ public class UserDAO {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 		String email = jdbcTemplate.queryForObject("select email from login where email=?", String.class, args);
 		if (email != null) {
-			
+
 			return true;
 		} else {
 			return false;
 		}
 	}
 
-//	public boolean resetPassword(UserModel user) {
-//		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
-//		String resetPassword = "update login set password = ? where id = ?";
-//		return jdbcTemplate.update(resetPassword,
-//				user.setResetPassword(BcryptHash.generatedHashPassword(user.getResetPassword())));
-//	}
+	public boolean getVerified(String authentication_key) {
+
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+		boolean verified = true;
+		Object[] args = { verified, authentication_key };
+
+		String sql = "update login set verified = ? where authentication_key = ?";
+		try {
+			int res = jdbcTemplate.update(sql, args);
+			System.out.println(res);
+
+			if (res == 1) {
+				return true;
+			} else {
+				return false;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	public UserModel fetchUserByEmail(String email) {
+
+		Object[] args = { email };
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+		String sql = "select * from login where email=?";
+		List<UserModel> user = jdbcTemplate.query(sql, args, new PersonMapper());
+		UserModel user1 = user.get(0);
+		return user1;
+	}
+
+	public boolean userResetPassword(String authentication_key, String newPassword) {
+		Object[] args = {newPassword, authentication_key };
+
+		String sql = "update login set password = ? where authentication_key=?";
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+		try {
+			int status = jdbcTemplate.update(sql, args);
+			System.out.println(status);
+
+			if (status == 1) {
+				return true;
+			} else {
+				return false;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	public String getUniqueId(String email) {
+
+		Object[] args = { email };
+
+		String sql = "select authenticated_user_key from login where email = ?";
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+
+		List<String> userIds = null;
+		userIds = jdbcTemplate.queryForList(sql, String.class, args);
+		System.out.println(userIds);
+
+		if (userIds.isEmpty()) {
+			System.out.println(true);
+			return null;
+		}
+		String uuid = userIds.get(0);
+		System.out.println(uuid);
+		return uuid;
+	}
+
+	
 
 }

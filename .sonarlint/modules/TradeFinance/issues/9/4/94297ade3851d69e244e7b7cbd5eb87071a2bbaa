@@ -1,59 +1,67 @@
 
-l
-squid:S106D"9Replace this use of System.out or System.err by a logger.(«‹Îõ8¬¿ôüÎ,HÔnRMAJORZ
+bsquid:S1481O")Remove this unused "user" local variable.(€Å÷£ùÿÿÿÿ8¬¿ôüÎ,H„wRMINORZ
 CODE_SMELL
-bsquid:S14811")Remove this unused "name" local variable.(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,HĞnRMINORZ
+‹squid:S00117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ıáæûÿÿÿÿ8ì˜‡›Ğ,H„yRMINORZ
 CODE_SMELL
+†squid:S00117g"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Éí¹8Ç²»€Ğ,HˆwRMINORZ
+CODE_SMELL
+_squid:S1148D"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,HwRMINORZVULNERABILITY
+_squid:S1148Z"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,HŠwRMINORZVULNERABILITY
+†squid:CommentedOutCodeLine‡"<This block of commented-out lines of code should be removed.(Â±©şÿÿÿÿ8ˆ…±£Ğ,Hñ€RMAJORZ
+CODE_SMELL
+_squid:S11481"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,H€wRMINORZVULNERABILITY
 q
-squid:S106""9Replace this use of System.out or System.err by a logger.(ı‡÷•ûÿÿÿÿ8˜ÄˆªÏ,HÆnRMAJORZ
-CODE_SMELL
-‹squid:S00117d"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äó¦¸úÿÿÿÿ8Ÿ´ƒÿÏ,HàtRMINORZ
-CODE_SMELL
-l
-squid:S106Y"9Replace this use of System.out or System.err by a logger.(õ¸Äà8 ‡ùÏ,HñpRMAJORZ
-CODE_SMELL
-q
-squid:S106$"9Replace this use of System.out or System.err by a logger.(¹ù¹üşÿÿÿÿ8Şİƒ×Î,HÍnRMAJORZ
-CODE_SMELL
-q
-squid:S106Z"9Replace this use of System.out or System.err by a logger.(Í°‚şÿÿÿÿ8†¾˜ùÏ,HõpRMAJORZ
-CODE_SMELL
-†squid:S00117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Éí¹8Ç²»€Ğ,H®vRMINORZ
-CODE_SMELL
-†squid:S00117k"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öªùß8Ç²»€Ğ,H¯vRMINORZ
-CODE_SMELL
-l
-squid:S106W"9Replace this use of System.out or System.err by a logger.(Éáğè8öÿå­Ï,HÖnRMAJORZ
-CODE_SMELL
-l
-squid:S106,"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8´ĞõßÍ,HÃnRMAJORZ
-CODE_SMELL
-_squid:S11484"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,HËnRMINORZVULNERABILITY
-_squid:S1148G"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,HÅnRMINORZVULNERABILITY
-_squid:S1148]"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,HÁnRMINORZVULNERABILITY
-bsquid:S1481R")Remove this unused "user" local variable.(€Å÷£ùÿÿÿÿ8¬¿ôüÎ,HÑnRMINORZ
-CODE_SMELL
-bsquid:S19051")Remove this unnecessary cast to "String".(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,H×nRMINORZ
-CODE_SMELL
-l
-squid:S106H"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8£òŞ­Ï,HÎnRMAJORZ
-CODE_SMELL
-Šsquid:UselessImportCheck	"DRemove this unused import 'org.springframework.jdbc.core.RowMapper'.(¦¬ÀÙùÿÿÿÿ8Ÿ´ƒÿÏ,HâtRMINORZ
-CODE_SMELL
-qsquid:UselessImportCheck"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿ8ã ¢øÏ,H¤oRMINORZ
-CODE_SMELL
-l
-squid:S106="9Replace this use of System.out or System.err by a logger.(—ÊÇ½8¬¿ôüÎ,HÓnRMAJORZ
+squid:S106h"9Replace this use of System.out or System.err by a logger.(ºÔ”·ûÿÿÿÿ8¬ÙÀĞ,H¡zRMAJORZ
 CODE_SMELL
 k
-squid:S106O"9Replace this use of System.out or System.err by a logger.(ƒ”Ú;8¬¿ôüÎ,HÄnRMAJORZ
+squid:S106L"9Replace this use of System.out or System.err by a logger.(ƒ”Ú;8†¾˜ùÏ,HÿvRMAJORZ
 CODE_SMELL
-squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëü‹ùÿÿÿÿHÂnRMINORZ
+k
+squid:S106w"9Replace this use of System.out or System.err by a logger.(ƒ”Ú;8’ŒğĞ,H«zRMAJORZ
 CODE_SMELL
-†squid:S00117s"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ç£®8£œŠĞ,HçvRMINORZ
+l
+squid:S106E"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8´ĞõßÍ,H‰wRMAJORZ
+CODE_SMELL
+bsquid:S1481.")Remove this unused "name" local variable.(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,H‘wRMINORZ
+CODE_SMELL
+†squid:CommentedOutCodeLineƒ"<This block of commented-out lines of code should be removed.(¸òœûÿÿÿÿ8ˆ…±£Ğ,Hğ€RMAJORZ
 CODE_SMELL
 q
-squid:S106>"9Replace this use of System.out or System.err by a logger.(¡Ï³÷ûÿÿÿÿ8¬¿ôüÎ,HÌnRMAJORZ
+squid:S106!"9Replace this use of System.out or System.err by a logger.(¹ù¹üşÿÿÿÿ8˜ÄˆªÏ,HƒwRMAJORZ
 CODE_SMELL
-qsquid:S18541"8Remove this useless assignment to local variable "name".(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,HÊnRMAJORZ
+l
+squid:S106A"9Replace this use of System.out or System.err by a logger.(«‹Îõ8¬¿ôüÎ,H‹wRMAJORZ
+CODE_SMELL
+l
+squid:S106T"9Replace this use of System.out or System.err by a logger.(Éáğè8¬¿ôüÎ,H›zRMAJORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(ı‡÷•ûÿÿÿÿ8İëÚšĞ,HìxRMAJORZ
+CODE_SMELL
+l
+squid:S106:"9Replace this use of System.out or System.err by a logger.(—ÊÇ½8£òŞ­Ï,HşvRMAJORZ
+CODE_SMELL
+l
+squid:S106)"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8 ‡ùÏ,H†wRMAJORZ
+CODE_SMELL
+q
+squid:S106;"9Replace this use of System.out or System.err by a logger.(¡Ï³÷ûÿÿÿÿ8öÿå­Ï,H‚wRMAJORZ
+CODE_SMELL
+q
+squid:S106W"9Replace this use of System.out or System.err by a logger.(Í°‚şÿÿÿÿ8¬ÙÀĞ,H zRMAJORZ
+CODE_SMELL
+usquid:S1126{"AReplace this if-then-else statement by a single return statement.(œëÓ¿8’ŒğĞ,H¬zRMINORZ
+CODE_SMELL
+bsquid:S1905.")Remove this unnecessary cast to "String".(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,HwRMINORZ
+CODE_SMELL
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëü‹ùÿÿÿÿHıvRMINORZ
+CODE_SMELL
+l
+squid:S106V"9Replace this use of System.out or System.err by a logger.(õ¸Äà8¬ÙÀĞ,HŸzRMAJORZ
+CODE_SMELL
+†squid:S00117k"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öªùß8Ÿ´ƒÿÏ,HäxRMINORZ
+CODE_SMELL
+‹squid:S00117a"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äó¦¸úÿÿÿÿ8Ç²»€Ğ,HüvRMINORZ
+CODE_SMELL
+qsquid:S1854."8Remove this useless assignment to local variable "name".(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,HûvRMAJORZ
 CODE_SMELL

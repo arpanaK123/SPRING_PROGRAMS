@@ -1,35 +1,47 @@
 
-¿%squid:RedundantThrowsDeclarationCheck0"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(«€Áðûÿÿÿÿ8¿ˆÐûÏ,H·sRMINORZ
+Žsquid:UselessImportCheck	"MRemove this unused import 'org.springframework.mail.javamail.JavaMailSender'.(ÕÃ›8‹ÄÝîÏ,H¹wRMINORZ
 CODE_SMELL
-asquid:S11253"(Remove the literal "true" boolean value.(£äìùÿÿÿÿ8œôüÎ,HÿkRMINORZ
+asquid:S11254"(Remove the literal "true" boolean value.(£äìùÿÿÿÿ8œôüÎ,H¼wRMINORZ
 CODE_SMELL
-„squid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(‰œÞ‚ùÿÿÿÿ8¿ˆÐûÏ,H¸sRMAJORZ
+usquid:S1126J"AReplace this if-then-else statement by a single return statement.(šÀ›÷8‹®”›Ð,H¯yRMINORZ
 CODE_SMELL
-fsquid:S1481="-Remove this unused "sendMail" local variable.(’´µØýÿÿÿÿ8¿ˆÐûÏ,H¹sRMINORZ
+†squid:S00117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Éí¹8”ãÜ€Ð,H¸wRMINORZ
 CODE_SMELL
-ssquid:S18548":Remove this useless assignment to local variable "userId".(·Ëƒçøÿÿÿÿ8£Ì™ôÏ,HžnRMAJORZ
+wsquid:UselessImportCheck"1Remove this unused import 'javax.sql.DataSource'.(ÉòÂ¿úÿÿÿÿ8Á•Õ›Ð,HÔyRMINORZ
 CODE_SMELL
-`squid:S1481V"'Remove this unused "id" local variable.(ˆø»Ìûÿÿÿÿ8ôÅ›óÏ,HãmRMINORZ
+lsquid:S18548"8Remove this useless assignment to local variable "time".(Ú™Ç‰8£Ì™ôÏ,H¶wRMAJORZ
 CODE_SMELL
-lsquid:S18547"8Remove this useless assignment to local variable "time".(Ú™Ç‰8£Ì™ôÏ,HŸnRMAJORZ
+vsquid:S1126i"AReplace this if-then-else statement by a single return statement.(ÜÚ×ý8öå°¦Ð,H­RMINORZ
 CODE_SMELL
-usquid:S1854="<Remove this useless assignment to local variable "sendMail".(’´µØýÿÿÿÿ8¿ˆÐûÏ,HºsRMAJORZ
+zsquid:S1126_"AReplace this if-then-else statement by a single return statement.(þäÏ£ÿÿÿÿÿ8œôüÎ,HµwRMINORZ
 CODE_SMELL
-]squid:S14817")Remove this unused "time" local variable.(Ú™Ç‰8£Ì™ôÏ,HœnRMINORZ
+`squid:S1481U"'Remove this unused "id" local variable.(ˆø»Ìûÿÿÿÿ8ôÅ›óÏ,HÀwRMINORZ
 CODE_SMELL
-usquid:S1126H"AReplace this if-then-else statement by a single return statement.(šÀ›÷8œôüÎ,HýkRMINORZ
+ssquid:S18549":Remove this useless assignment to local variable "userId".(·Ëƒçøÿÿÿÿ8£Ì™ôÏ,H³wRMAJORZ
 CODE_SMELL
-squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(øõìµ8ª«ïïÏ,HÂlRMAJORZ
+dsquid:S14819"+Remove this unused "userId" local variable.(·Ëƒçøÿÿÿÿ8£Ì™ôÏ,H½wRMINORZ
 CODE_SMELL
-dsquid:S14818"+Remove this unused "userId" local variable.(·Ëƒçøÿÿÿÿ8£Ì™ôÏ,HnRMINORZ
+]squid:S14818")Remove this unused "time" local variable.(Ú™Ç‰8£Ì™ôÏ,H´wRMINORZ
 CODE_SMELL
-osquid:S1854V"6Remove this useless assignment to local variable "id".(ˆø»Ìûÿÿÿÿ8ôÅ›óÏ,HämRMAJORZ
+asquid:S1172g",Remove this unused method parameter "email".( Š‹Ü8öå°¦Ð,H¯RMAJORZ
 CODE_SMELL
-Žsquid:UselessImportCheck	"MRemove this unused import 'org.springframework.mail.javamail.JavaMailSender'.(ÕÃ›8‹ÄÝîÏ,HªlRMINORZ
+wsquid:HiddenFieldCheckh"8Rename "user" which hides the field declared at line 29.(‚ÿ³w8öå°¦Ð,H®RMAJORZ
 CODE_SMELL
-usquid:S1126("AReplace this if-then-else statement by a single return statement.(šÀ›÷8œôüÎ,HþkRMINORZ
+fsquid:S1481?"-Remove this unused "sendMail" local variable.(’´µØýÿÿÿÿ8¿ˆÐûÏ,HºwRMINORZ
 CODE_SMELL
-~squid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(æÊ¯y8£Ì™ôÏ,H›nRMAJORZ
+usquid:S1854?"<Remove this useless assignment to local variable "sendMail".(’´µØýÿÿÿÿ8¿ˆÐûÏ,H²wRMAJORZ
 CODE_SMELL
-†squid:S00117Z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Éí¹8”ãÜ€Ð,HÇvRMINORZ
+squid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(Ùê£8‹®”›Ð,H®yRMAJORZ
+CODE_SMELL
+osquid:S1854U"6Remove this useless assignment to local variable "id".(ˆø»Ìûÿÿÿÿ8ôÅ›óÏ,H»wRMAJORZ
+CODE_SMELL
+¿%squid:RedundantThrowsDeclarationCheck1"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(«€Áðûÿÿÿÿ8¿ˆÐûÏ,H¿wRMINORZ
+CODE_SMELL
+usquid:S1126)"AReplace this if-then-else statement by a single return statement.(šÀ›÷8œôüÎ,H·wRMINORZ
+CODE_SMELL
+œsquid:S1488t"gImmediately return this expression instead of assigning it to the temporary variable "confirmPassword".(÷¸°8©Ó´£Ð,Hý€RMINORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(‰œÞ‚ùÿÿÿÿ8¿ˆÐûÏ,H±wRMAJORZ
+CODE_SMELL
+‡squid:S00117p"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úŠÁ8šíÿ¨Ð,H…RMINORZ
 CODE_SMELL
