@@ -61,15 +61,6 @@ public class UserService {
 			String uniqueID = UUID.randomUUID().toString();
 			user.setAuthentication_key(uniqueID);
 			userDao.inserData(user);
-			long time = 20000;
-			String userId = user.getId();
-			// String tokngenerate = tokens.createVerificationToken(userId, user.getEmail(),
-			// time);
-			// System.out.println("register user:"+userId);
-			// System.out.println(tokngenerate);
-			String sendThisUrl = "http://192.168.0.68:8080/user/generatetoken/";
-			String sendMail = sendThisUrl;
-			// consumer.sendMessage(sendMail);
 			return true;
 		}
 		return false;
@@ -146,11 +137,16 @@ public class UserService {
 		return jwtToken;
 	}
 
-	public boolean userChangePassword(String authentication_key, String password) {
-		String newPassword = BCrypt.hashpw(password, BCrypt.gensalt());
-		boolean result = userDao.userResetPassword(authentication_key, newPassword);
+//	public boolean userChangePassword(String authentication_key, String password) {
+//		String newPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+//		boolean result = userDao.userResetPassword(authentication_key, newPassword);
+//
+//		return result;
+//	}
 
+	public boolean userChangePassword(String userKey,String password) {
+		String newPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+		boolean result = userDao.userResetPassword(userKey, newPassword);
 		return result;
 	}
-
 }

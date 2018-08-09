@@ -57,18 +57,14 @@ public class UserDAO {
 	public boolean presenceUser(UserModel user) {
 
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
-		System.out.println(user.getId());
-		System.out.println(user.getEmail());
 		Object[] args = { user.getEmail() };
 		String query = "select name from login where email = ?";
 
 		try {
 			String name = jdbcTemplate.queryForObject(query, args, String.class);
-			System.out.println(name);
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println(user);
 			return false;
 		}
 
@@ -142,10 +138,9 @@ public class UserDAO {
 
 		String sql = "update login set verified = ? where authentication_key = ?";
 		try {
-			int res = jdbcTemplate.update(sql, args);
-			System.out.println(res);
+			int result = jdbcTemplate.update(sql, args);
 
-			if (res == 1) {
+			if (result == 1) {
 				return true;
 			} else {
 				return false;
@@ -173,8 +168,6 @@ public class UserDAO {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 		try {
 			int status = jdbcTemplate.update(sql, args);
-			System.out.println(status);
-
 			if (status == 1) {
 				return true;
 			} else {
@@ -184,26 +177,6 @@ public class UserDAO {
 			e.printStackTrace();
 			return false;
 		}
-	}
-
-	public String getUniqueId(String email) {
-
-		Object[] args = { email };
-
-		String sql = "select authenticated_user_key from login where email = ?";
-		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
-
-		List<String> userIds = null;
-		userIds = jdbcTemplate.queryForList(sql, String.class, args);
-		System.out.println(userIds);
-
-		if (userIds.isEmpty()) {
-			System.out.println(true);
-			return null;
-		}
-		String uuid = userIds.get(0);
-		System.out.println(uuid);
-		return uuid;
 	}
 
 	

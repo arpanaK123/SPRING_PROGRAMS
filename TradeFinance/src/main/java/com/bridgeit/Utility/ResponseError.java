@@ -7,6 +7,8 @@ public class ResponseError {
 	private String statusCode;
 	private UserModel usermodel;
 
+	private String generateTokens;
+	
 	public String getStatus() {
 		return status;
 	}
@@ -30,5 +32,15 @@ public class ResponseError {
 	public void setUsermodel(UserModel usermodel) {
 		this.usermodel = usermodel;
 	}
+
+	public String getGenerateTokens() {
+		return generateTokens;
+	}
+
+	public void setGenerateTokens(String generateTokens) {
+		this.generateTokens = generateTokens;
+	}
+
+	
 
 }

@@ -107,7 +107,6 @@ public class JavaConfig extends WebMvcConfigurerAdapter {
 		container.setMessageListener(new MessageListener() {
 			@Override
 			public void onMessage(Message message) {
-				// consumer.receiveMessage(message);
 				System.out.println(message);
 			}
 		});

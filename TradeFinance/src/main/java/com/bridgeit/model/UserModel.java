@@ -31,8 +31,6 @@ public class UserModel {
 
 	private String password;
 
-	private String resetPassword;
-
 	private boolean verified;
 
 	public String getId() {
@@ -99,13 +97,6 @@ public class UserModel {
 		this.authentication_key = authentication_key;
 	}
 
-	public String getResetPassword() {
-		return resetPassword;
-	}
-
-	public void setResetPassword(String resetPassword) {
-		this.resetPassword = resetPassword;
-	}
-
+	
 
 }
