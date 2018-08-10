@@ -1,10 +1,8 @@
 
-“squid:S00115;"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ýÞ˜ñ8Íß›îÏ,HÕ’RCRITICALZ
-CODE_SMELL
-˜squid:S001159"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(±¹Ù›øÿÿÿÿ8Íß›îÏ,HÖ’RCRITICALZ
-CODE_SMELL
-squid:CommentedOutCodeLinen"<This block of commented-out lines of code should be removed.(¶8Íß›îÏ,H×’RMAJORZ
-CODE_SMELL
 r
-squid:S106o"9Replace this use of System.out or System.err by a logger.(øºÑûúÿÿÿÿ8Íß›îÏ,HØ’RMAJORZ
+squid:S106{"9Replace this use of System.out or System.err by a logger.(øºÑûúÿÿÿÿ8Íß›îÏ,Hê£RMAJORZ
+CODE_SMELL
+˜squid:S00115F"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(±¹Ù›øÿÿÿÿ8Íß›îÏ,Hë£RCRITICALZ
+CODE_SMELL
+“squid:S00115H"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ýÞ˜ñ8Íß›îÏ,Hì£RCRITICALZ
 CODE_SMELL

@@ -1,42 +1,53 @@
 
-squid:S3027@"JPut single-quotes around '/' to use the faster "lastIndexOf(char)" method.(‰ù„ú8Ìõ¤úÏ,H¡RMAJORZ
+s
+squid:S106«"9Replace this use of System.out or System.err by a logger.(¶´›§şÿÿÿÿ8ÕÃüÆĞ,H†¤RMAJORZ
 CODE_SMELL
-^squid:S14811")Remove this unused "list" local variable.(Øô¢­8¢¸ÛûÏ,H¤RMINORZ
-CODE_SMELL
-…squid:S3027…"JPut single-quotes around '/' to use the faster "lastIndexOf(char)" method.(—Ğıÿÿÿÿ8¨½ÍĞ,HRMAJORZ
-CODE_SMELL
-_squid:S1481˜")Remove this unused "user" local variable.(Ë°8ÇĞ¡ÎÑ,H­RMINORZ
-CODE_SMELL
-osquid:S1854/":Remove this useless assignment to local variable "userId".(®Å°ÿ8Å÷óûÏ,H¦RMAJORZ
-CODE_SMELL
-»%squid:RedundantThrowsDeclarationCheck•"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(õĞı08Ö•¨Ğ,H˜RMINORZ
-CODE_SMELL
-r
-squid:S106"9Replace this use of System.out or System.err by a logger.(üÌñİùÿÿÿÿ8¾«¤ÍĞ,HŸRMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLineP"<This block of commented-out lines of code should be removed.(¾ÁÈ°8ÀÑò§Ğ,H—RMAJORZ
-CODE_SMELL
-‡squid:S00117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å±‹ü8²ùÅÊĞ,HœRMINORZ
-CODE_SMELL
-squid:S00117”"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ÂúÌûÿÿÿÿ8™µ„ÉĞ,H§RMINORZ
-CODE_SMELL
-`squid:S1148F"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‚—¨øÏ,HšRMINORZVULNERABILITY
-`squid:S1481/"+Remove this unused "userId" local variable.(®Å°ÿ8Å÷óûÏ,HRMINORZ
-CODE_SMELL
-r
-squid:S106."9Replace this use of System.out or System.err by a logger.(ô¼¡Äşÿÿÿÿ8„’îÏ,H RMAJORZ
-CODE_SMELL
-n
-squid:S106ƒ"9Replace this use of System.out or System.err by a logger.(È©ƒ«8œ…ëÊĞ,H›RMAJORZ
-CODE_SMELL
-]squid:S1125:"(Remove the literal "true" boolean value.(–Şöñ8ã¢³øÏ,H™RMINORZ
-CODE_SMELL
-msquid:S18541"8Remove this useless assignment to local variable "list".(Øô¢­8¢¸ÛûÏ,H£RMAJORZ
-CODE_SMELL
-nsquid:S1854˜"8Remove this useless assignment to local variable "user".(Ë°8ÇĞ¡ÎÑ,H®RMAJORZ
+±squid:S1845ª"tRename method "resetPassword" to prevent any misunderstanding/clash with method "resetpassword" defined on line 151.(¸®ã½ÿÿÿÿÿ8óíÍéÑ,Hû£RBLOCKERZ
 CODE_SMELL
 l
-squid:S106Q"9Replace this use of System.out or System.err by a logger.(“ª¡8ÕÃüÆĞ,H¥RMAJORZ
+squid:S106S"9Replace this use of System.out or System.err by a logger.(“ª¡8„’îÏ,Hƒ¤RMAJORZ
 CODE_SMELL
-»%squid:RedundantThrowsDeclarationCheckh"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(å±‹ü8»æªÊĞ,H¢RMINORZ
+msquid:S18543"8Remove this useless assignment to local variable "list".(Øô¢­8¢¸ÛûÏ,Hô£RMAJORZ
+CODE_SMELL
+s
+squid:S106‚"9Replace this use of System.out or System.err by a logger.(üÌñİùÿÿÿÿ8ÌûâïÑ,Hı£RMAJORZ
+CODE_SMELL
+†squid:CommentedOutCodeLine·"<This block of commented-out lines of code should be removed.(…Š·üÿÿÿÿ8åÌòêÑ,Hï£RMAJORZ
+CODE_SMELL
+squid:S3027B"JPut single-quotes around '/' to use the faster "lastIndexOf(char)" method.(‰ù„ú8Ìõ¤úÏ,Hş£RMAJORZ
+CODE_SMELL
+»%squid:RedundantThrowsDeclarationCheck˜"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(‡•Ş;8óíÍéÑ,H€¤RMINORZ
+CODE_SMELL
+Á%squid:RedundantThrowsDeclarationCheckª"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(¸®ã½ÿÿÿÿÿ8»æªÊĞ,Hõ£RMINORZ
+CODE_SMELL
+†squid:CommentedOutCodeLine¹"<This block of commented-out lines of code should be removed.(‘ïîàşÿÿÿÿ8åÌòêÑ,Hñ£RMAJORZ
+CODE_SMELL
+n
+squid:S106†"9Replace this use of System.out or System.err by a logger.(È©ƒ«8¾«¤ÍĞ,H…¤RMAJORZ
+CODE_SMELL
+`squid:S1148H"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‚—¨øÏ,Hü£RMINORZVULNERABILITY
+`squid:S14811"+Remove this unused "userId" local variable.(®Å°ÿ8Å÷óûÏ,Hö£RMINORZ
+CODE_SMELL
+]squid:S1125<"(Remove the literal "true" boolean value.(–Şöñ8ã¢³øÏ,H„¤RMINORZ
+CODE_SMELL
+osquid:S18541":Remove this useless assignment to local variable "userId".(®Å°ÿ8Å÷óûÏ,Hø£RMAJORZ
+CODE_SMELL
+r
+squid:S1060"9Replace this use of System.out or System.err by a logger.(ô¼¡Äşÿÿÿÿ8œ…ëÊĞ,H¤RMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLineÅ"<This block of commented-out lines of code should be removed.(™ºÿD8Šî³ëÑ,Hò£RMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(¾ÁÈ°8ÀÑò§Ğ,Hù£RMAJORZ
+CODE_SMELL
+…squid:S3027ˆ"JPut single-quotes around '/' to use the faster "lastIndexOf(char)" method.(—Ğıÿÿÿÿ8¨½ÍĞ,Hú£RMAJORZ
+CODE_SMELL
+^squid:S14813")Remove this unused "list" local variable.(Øô¢­8¢¸ÛûÏ,Hî£RMINORZ
+CODE_SMELL
+squid:S00117ª"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸®ã½ÿÿÿÿÿ8óíÍéÑ,Hÿ£RMINORZ
+CODE_SMELL
+ˆsquid:S00117—"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚóæÙ8Ç¿òìÑ,Hğ£RMINORZ
+CODE_SMELL
+†squid:CommentedOutCodeLine¼"<This block of commented-out lines of code should be removed.(²…‚“şÿÿÿÿ8åÌòêÑ,Hó£RMAJORZ
+CODE_SMELL
+Œsquid:S00117j"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø’Â‹úÿÿÿÿ8²ùÅÊĞ,Hí£RMINORZ
 CODE_SMELL

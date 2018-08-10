@@ -1,6 +1,4 @@
 INDEX VERSION 1.130+/home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jdt.core
-1468980041.index
-2478341765.index
 2650804470.index
 4134925913.index
 369874676.index
@@ -8,7 +6,6 @@ INDEX VERSION 1.130+/home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jdt.cor
 110043935.index
 1499520381.index
 3865323051.index
-1774679936.index
 679905020.index
 2569780823.index
 1650303338.index
@@ -18,8 +15,6 @@ INDEX VERSION 1.130+/home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jdt.cor
 1493825177.index
 774270955.index
 1500044778.index
-1513968427.index
-2395182687.index
 3804502373.index
 913191918.index
 2362728700.index
@@ -35,7 +30,6 @@ INDEX VERSION 1.130+/home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jdt.cor
 4272461275.index
 811160985.index
 366653797.index
-1758427996.index
 2954506562.index
 2488395339.index
 203096414.index
@@ -74,18 +68,18 @@ INDEX VERSION 1.130+/home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jdt.cor
 1207759493.index
 3871361481.index
 1509599843.index
-1615294974.index
 1160297693.index
+1615294974.index
 2801354782.index
 2714926679.index
 1801479740.index
 879603333.index
+957435704.index
 1448496089.index
 1924484980.index
-4208363796.index
 1869492608.index
 3014750658.index
-957435704.index
+4208363796.index
 1785355103.index
 1119632122.index
 750742112.index
@@ -102,7 +96,6 @@ INDEX VERSION 1.130+/home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jdt.cor
 1079826714.index
 4129378929.index
 1846561691.index
-4232854313.index
 2060329646.index
 3765413551.index
 2509859497.index
@@ -163,7 +156,6 @@ INDEX VERSION 1.130+/home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jdt.cor
 871222858.index
 249729223.index
 2238044832.index
-1955276734.index
 3489103809.index
 2836097012.index
 3467751521.index
@@ -213,7 +205,6 @@ INDEX VERSION 1.130+/home/bridgeit/SPRING/.metadata/.plugins/org.eclipse.jdt.cor
 3233792132.index
 1048315594.index
 3355713355.index
-1986954140.index
 3313213681.index
 1111518636.index
 3089826891.index

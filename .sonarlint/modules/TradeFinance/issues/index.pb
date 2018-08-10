@@ -29,3 +29,5 @@ d
 4src/main/java/com/bridgeit/Utility/PersonMapper.java,1/c/1c41291fbbf9f69248caa5140827ef5d77ab2e7f
 `
 0src/main/java/com/bridgeit/Utility/Consumer.java,6/7/6717c71e19deddbeb8d92a65a891749246e3e896
+_
+/src/main/java/com/bridgeit/model/Usermodel.java,5/b/5b621312803b05bcd6b060e65e90e0f0f9e5e2c3

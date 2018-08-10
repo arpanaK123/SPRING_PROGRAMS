@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -102,7 +103,7 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "/userToken/{authentication_key:.+}", method = RequestMethod.GET)
-	public ResponseError userToken(@PathVariable("authentication_key") String authentication_key) throws IOException {
+	public ResponseError userToken(@PathVariable("authentication_key") String authentication_key,HttpServletResponse response) throws IOException {
 
 		ResponseError responseError = new ResponseError();
 
@@ -114,6 +115,9 @@ public class UserController {
 			userService.update(userModel);
 			responseError.setStatus("user is active");
 			responseError.setStatusCode("200");
+			//response.sendRedirect("http://localhost:8080/tradeFinance/#!/login");
+			response.sendRedirect("http://127.0.0.1:37169/#!/login");
+
 		} else {
 			responseError.setStatus("user is In_Activate");
 			responseError.setStatusCode("500");
@@ -147,12 +151,13 @@ public class UserController {
 
 	@RequestMapping(value = "/resetPassword/{authentication_key:.+}", method = RequestMethod.GET)
 	public ResponseEntity<ResponseError> resetpassword(@PathVariable("authentication_key") String authentication_key,
-			HttpSession session) throws IOException {
+			HttpServletResponse response ) throws IOException {
 
 		ResponseError responseError = new ResponseError();
 		UserModel user = userService.getUserByUniqueKey(authentication_key);
 
 		if (user != null) {
+			response.sendRedirect("http://localhost:8080/tradeFinance/#!/resetPassword");
 			responseError.setStatus("you can set your password");
 			responseError.setStatusCode("200");
 			return new ResponseEntity<ResponseError>(responseError, HttpStatus.OK);
