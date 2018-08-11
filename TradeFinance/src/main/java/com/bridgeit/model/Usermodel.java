@@ -8,6 +8,7 @@ public class Usermodel {
 	private String email;
 	private String password;
 
+
 	public String getEmail() {
 		return email;
 	}
@@ -23,5 +24,7 @@ public class Usermodel {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	
 
 }

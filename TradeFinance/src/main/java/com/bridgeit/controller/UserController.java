@@ -25,6 +25,7 @@ import com.bridgeit.Utility.GenerateTokens;
 import com.bridgeit.Utility.Producer;
 import com.bridgeit.Utility.ResponseError;
 import com.bridgeit.model.UserModel;
+import com.bridgeit.model.Usermodel;
 import com.bridgeit.service.UserService;
 
 @RestController
@@ -75,19 +76,19 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public ResponseEntity<ResponseError> userLogin(@RequestParam("email") String email,
-			@RequestParam("password") String password) {
+	public ResponseEntity<ResponseError> userLogin(@RequestBody Usermodel userModel) {
 
 		ResponseError responseError = new ResponseError();
 		// UserModel user1 = new UserModel();
-		System.out.println("email: " + email + " " + "pwd:" + password);
+		System.out.println("email: " + userModel.getEmail() + " " + "pwd:" + userModel.getPassword());
 
-		if (!userService.isVerifiedUser(email)) {
+		if (!userService.isVerifiedUser(userModel.getEmail())) {
 			responseError.setStatus("user is not active");
 			responseError.setStatusCode("500");
-			return new ResponseEntity<ResponseError>(responseError, HttpStatus.INTERNAL_SERVER_ERROR);
-		} else if (userService.login(email, password)) {
-			UserModel user = userService.getPersonByEmail(email);
+			return new ResponseEntity<ResponseError>(responseError, HttpStatus.BAD_REQUEST);
+		} else 
+			if (userService.login(userModel.getEmail(), userModel.getPassword())) {
+			UserModel user = userService.getPersonByEmail(userModel.getEmail());
 			String generateToken = userService.getToken(user);
 			responseError.setStatus("login successfully");
 			responseError.setStatusCode("200");
@@ -116,7 +117,7 @@ public class UserController {
 			responseError.setStatus("user is active");
 			responseError.setStatusCode("200");
 			//response.sendRedirect("http://localhost:8080/tradeFinance/#!/login");
-			response.sendRedirect("http://127.0.0.1:37169/#!/login");
+			response.sendRedirect("http://127.0.0.1:46223/#!/login");
 
 		} else {
 			responseError.setStatus("user is In_Activate");
@@ -127,10 +128,10 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "/forgotPasword", method = RequestMethod.POST)
-	public ResponseEntity<ResponseError> userResetPassword(@RequestParam("email") String email,
+	public ResponseEntity<ResponseError> userResetPassword(@RequestBody Usermodel userModel,
 			HttpServletRequest request) {
-		System.out.println("email----" + email);
-		UserModel user = userService.getPersonByEmail(email);
+		System.out.println("email----" + userModel.getEmail());
+		UserModel user = userService.getPersonByEmail(userModel.getEmail());
 		ResponseError responseError = new ResponseError();
 		if (user != null) {
 			System.out.println("------------------");
@@ -157,7 +158,7 @@ public class UserController {
 		UserModel user = userService.getUserByUniqueKey(authentication_key);
 
 		if (user != null) {
-			response.sendRedirect("http://localhost:8080/tradeFinance/#!/resetPassword");
+			response.sendRedirect("http://127.0.0.1:46223/#!/resetPassword");
 			responseError.setStatus("you can set your password");
 			responseError.setStatusCode("200");
 			return new ResponseEntity<ResponseError>(responseError, HttpStatus.OK);
@@ -168,17 +169,33 @@ public class UserController {
 			return new ResponseEntity<ResponseError>(responseError, HttpStatus.BAD_REQUEST);
 		}
 	}
-
+	
+	
 	@RequestMapping(value = "/resetPassword", method = RequestMethod.POST)
-	public ResponseEntity<ResponseError> resetPassword(@RequestParam("password") String password,@RequestParam("authentication_key") String authentication_key) throws IOException {
+	public ResponseEntity<ResponseError> resetPassword(@RequestBody UserModel userModel) throws IOException {
 		System.out.println("----------------");
+		System.out.println("usermodel: "+userModel.getPassword());
 		ResponseError responseError = new ResponseError();
-		userService.userChangePassword(authentication_key, password);
+		String key=userModel.getAuthentication_key();
+		System.out.println("key-----> "+key);
+		userService.userChangePassword( userModel.getPassword(),key);
+
+	//	userService.userChangePassword(authentication_key, userModel.getPassword());
 		responseError.setStatus("password changed");
 		responseError.setStatusCode("200");
 		return new ResponseEntity<ResponseError>(responseError, HttpStatus.OK);
-
 	}
+
+//	@RequestMapping(value = "/resetPassword", method = RequestMethod.POST)
+//	public ResponseEntity<ResponseError> resetPassword(@RequestParam("password") String password,@RequestParam("authentication_key") String authentication_key) throws IOException {
+//		System.out.println("----------------");
+//		ResponseError responseError = new ResponseError();
+//		userService.userChangePassword(authentication_key, password);
+//		responseError.setStatus("password changed");
+//		responseError.setStatusCode("200");
+//		return new ResponseEntity<ResponseError>(responseError, HttpStatus.OK);
+//
+//	}
 	// @RequestMapping(value = "/resetPassword/{authentication_key:.+}", method =
 	// RequestMethod.GET)
 	// public ResponseEntity<ResponseError>

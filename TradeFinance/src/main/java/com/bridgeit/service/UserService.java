@@ -149,4 +149,5 @@ public class UserService {
 		boolean result = userDao.userResetPassword(userKey, newPassword);
 		return result;
 	}
+	
 }

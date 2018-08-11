@@ -1,11 +1,11 @@
 
-‰squid:S00100\"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÎÈ²üÿÿÿÿ8ÜÓÁõÏ,HÏ¢RMINORZ
+˜squid:S00116"]Rename this field "authentication_key" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æğ½°ÿÿÿÿÿ8ÜÓÁõÏ,HÍ©RMINORZ
 CODE_SMELL
-‡squid:S00117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ãŠ°8ÜÓÁõÏ,HĞ¢RMINORZ
+‰squid:S00100\"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÎÈ²üÿÿÿÿ8ÜÓÁõÏ,HÎ©RMINORZ
 CODE_SMELL
-„squid:S00100`"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ãŠ°8ÜÓÁõÏ,HÍ¢RMINORZ
+$squid:AssignmentInSubExpressionCheckQ".Extract the assignment out of this expression.(Ûßüÿÿÿÿÿ8˜à’şÎ,HÏ©RMAJORZ
 CODE_SMELL
-˜squid:S00116"]Rename this field "authentication_key" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æğ½°ÿÿÿÿÿ8ÜÓÁõÏ,HÎ¢RMINORZ
+„squid:S00100`"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ãŠ°8ÜÓÁõÏ,HĞ©RMINORZ
 CODE_SMELL
-$squid:AssignmentInSubExpressionCheckQ".Extract the assignment out of this expression.(Ûßüÿÿÿÿÿ8˜à’şÎ,HÌ¢RMAJORZ
+‡squid:S00117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ãŠ°8ÜÓÁõÏ,HÑ©RMINORZ
 CODE_SMELL
