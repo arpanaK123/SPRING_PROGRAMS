@@ -136,7 +136,8 @@ public class UserController {
 		if (user != null) {
 			System.out.println("------------------");
 			String url = request.getRequestURL().toString();
-			url = url.substring(0, url.lastIndexOf("/")) + "/" + "resetPassword/" + user.getAuthentication_key();
+		//	url = url.substring(0, url.lastIndexOf("/")) + "/" + "resetPassword/" + user.getAuthentication_key();
+			url="http://127.0.0.1:34280/#!/resetPassword"+"/"+ user.getAuthentication_key();
 			producer.sendMessage("tradefinancebridgelabz@gmail.com", user.getEmail(), url);
 			responseError.setStatus("plz check your mail and verify to change password");
 			responseError.setStatusCode("200");
@@ -158,7 +159,7 @@ public class UserController {
 		UserModel user = userService.getUserByUniqueKey(authentication_key);
 
 		if (user != null) {
-			response.sendRedirect("http://127.0.0.1:46223/#!/resetPassword");
+			response.sendRedirect("http://127.0.0.1:34280/#!/resetPassword");
 			responseError.setStatus("you can set your password");
 			responseError.setStatusCode("200");
 			return new ResponseEntity<ResponseError>(responseError, HttpStatus.OK);
@@ -180,7 +181,7 @@ public class UserController {
 		System.out.println("key-----> "+key);
 		userService.userChangePassword( userModel.getPassword(),key);
 
-	//	userService.userChangePassword(authentication_key, userModel.getPassword());
+		userService.userChangePassword(key, userModel.getPassword());
 		responseError.setStatus("password changed");
 		responseError.setStatusCode("200");
 		return new ResponseEntity<ResponseError>(responseError, HttpStatus.OK);
