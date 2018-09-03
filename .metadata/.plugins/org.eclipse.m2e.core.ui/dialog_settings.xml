@@ -31,6 +31,20 @@
 		<list key="issueManagementUrl">
 		</list>
 	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/home/bridgeit/trade_Finance_network/fabric-samples/scratch-master"/>
+			<item value="/home/bridgeit/trade_Finance_network/fabric-samples/fabric_sdk_java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
 	<section name="MavenProjectWizardArchetypePage">
 		<item value="All Catalogs" key="catalog"/>
 		<list key="projectNameTemplate">
@@ -44,6 +58,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/bridgeit/trade_Finance_network/fabric-samples/scratch-master/hyperledger/fabric-sdk-java-scratch"/>
 			<item value="/home/bridgeit/SPRING/SpringMVC"/>
 			<item value="/home/bridgeit/SPRING/maven"/>
 			<item value="/home/bridgeit/SPRING/Spring_Programs/src/com/bridgeit/DI/DIApplicationJUnitTest.java"/>
@@ -64,10 +79,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.bridgeit.fabricSDK.Fabric_SDK"/>
 		</list>
 		<list key="groupId">
+			<item value="com.bridgeit.fabricSDK"/>
 		</list>
 		<list key="artifactId">
+			<item value="Fabric_SDK"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
