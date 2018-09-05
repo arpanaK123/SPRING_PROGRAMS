@@ -1,0 +1,17 @@
+
+r
+squid:S106""9Replace this use of System.out or System.err by a logger.(ô¼¡Äþÿÿÿÿ8¹—ÿ¥Ú,H¾ÀRMAJORZ
+CODE_SMELL
+]squid:S1125."(Remove the literal "true" boolean value.(–Þöñ8¹—ÿ¥Ú,H¿ÀRMINORZ
+CODE_SMELL
+^squid:S1481%")Remove this unused "list" local variable.(Øô¢­8¹—ÿ¥Ú,HÁÀRMINORZ
+CODE_SMELL
+`squid:S1481#"+Remove this unused "userId" local variable.(®Å°ÿ8¹—ÿ¥Ú,HÀÀRMINORZ
+CODE_SMELL
+`squid:S1148:"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8¹—ÿ¥Ú,HÄÀRMINORZVULNERABILITY
+…squid:CommentedOutCodeLine3"<This block of commented-out lines of code should be removed.(ç¬¢äùÿÿÿÿ8¹—ÿ¥Ú,H½ÀRMAJORZ
+CODE_SMELL
+osquid:S1854#":Remove this useless assignment to local variable "userId".(®Å°ÿ8¹—ÿ¥Ú,HÃÀRMAJORZ
+CODE_SMELL
+msquid:S1854%"8Remove this useless assignment to local variable "list".(Øô¢­8¹—ÿ¥Ú,HÂÀRMAJORZ
+CODE_SMELL

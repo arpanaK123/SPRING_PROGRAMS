@@ -20,12 +20,13 @@ public class UserDAO {
 
 	public int inserData(UserModel userModel) {
 
-		String query = "insert into login (name, email,city,role,password,verified,Authentication_key) values (?,?,?,?,?,?,?)";
+		String query = "insert into login (name, email,city,role,password,verified,Authentication_key,bankname,useraccount,accountnumber,balance) values (?,?,?,?,?,?,?,?,?,?,?)";
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 
 		Object[] args = new Object[] { userModel.getName(), userModel.getEmail(), userModel.getCity(),
 				userModel.getRole(), userModel.setPassword(BcryptHash.generatedHashPassword(userModel.getPassword())),
-				userModel.isVerified(), userModel.getAuthentication_key() };
+				userModel.isVerified(), userModel.getAuthentication_key(), userModel.getBankname(),
+				userModel.getUseraccount(), userModel.getAccountnumber(), userModel.getBalance() };
 
 		int out = jdbcTemplate.update(query, args);
 
@@ -162,7 +163,7 @@ public class UserDAO {
 	}
 
 	public boolean userResetPassword(String authentication_key, String newPassword) {
-		Object[] args = {newPassword, authentication_key };
+		Object[] args = { newPassword, authentication_key };
 
 		String sql = "update login set password = ? where authentication_key=?";
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
@@ -178,7 +179,5 @@ public class UserDAO {
 			return false;
 		}
 	}
-
-	
 
 }

@@ -1,10 +1,15 @@
 package com.bridgeit.service;
 
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.UUID;
 
 import javax.sql.DataSource;
 
+import org.hyperledger.fabric_ca.sdk.HFCAClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.crypto.bcrypt.BCrypt;
@@ -15,6 +20,7 @@ import com.bridgeit.Utility.Consumer;
 import com.bridgeit.Utility.GenerateTokens;
 import com.bridgeit.Utility.Producer;
 import com.bridgeit.Utility.UserMail;
+import com.bridgeit.model.TradeUser;
 import com.bridgeit.model.UserModel;
 
 @Service
@@ -36,6 +42,9 @@ public class UserService {
 
 	@Autowired
 	Producer mailsender;
+
+	@Autowired
+	HFCAClient caClient;
 
 	public void callToUserdDAO(UserModel userModel)
 
@@ -137,17 +146,37 @@ public class UserService {
 		return jwtToken;
 	}
 
-//	public boolean userChangePassword(String authentication_key, String password) {
-//		String newPassword = BCrypt.hashpw(password, BCrypt.gensalt());
-//		boolean result = userDao.userResetPassword(authentication_key, newPassword);
-//
-//		return result;
-//	}
+	// public boolean userChangePassword(String authentication_key, String password)
+	// {
+	// String newPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+	// boolean result = userDao.userResetPassword(authentication_key, newPassword);
+	//
+	// return result;
+	// }
 
-	public boolean userChangePassword(String userKey,String password) {
+	public boolean userChangePassword(String userKey, String password) {
 		String newPassword = BCrypt.hashpw(password, BCrypt.gensalt());
 		boolean result = userDao.userResetPassword(userKey, newPassword);
 		return result;
 	}
-	
+
+	static TradeUser tryDeserialize(String name) throws Exception {
+		if (Files.exists(Paths.get(name + ".jso"))) {
+			return deserialize(name);
+		}
+		return null;
+	}
+
+	static TradeUser deserialize(String name) throws Exception {
+		try (ObjectInputStream decoder = new ObjectInputStream(Files.newInputStream(Paths.get(name + ".jso")))) {
+			return (TradeUser) decoder.readObject();
+		}
+	}
+
+	static void serialize(TradeUser appUser) throws IOException {
+		try (ObjectOutputStream oos = new ObjectOutputStream(
+				Files.newOutputStream(Paths.get(appUser.getName() + ".jso")))) {
+			oos.writeObject(appUser);
+		}
+	}
 }

@@ -1,13 +1,45 @@
 
-lsquid:S1135€"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8İ‚óûÙ,H‚»RINFOZ
+lsquid:S1135Ç"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8İ‚óûÙ,H»RINFOZ
 CODE_SMELL
-squid:S1192"FDefine a constant instead of duplicating this literal "admin" 3 times.(˜µé8İ‚óûÙ,Hƒ»RCRITICALZ
+‚squid:S00112Æ"FDefine and throw a dedicated exception instead of using a generic one.(™¡©üÿÿÿÿ8İ‚óûÙ,HŒ»RMAJORZ
 CODE_SMELL
-lsquid:S1135º"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8İ‚óûÙ,H„»RINFOZ
+r
+squid:S1065"9Replace this use of System.out or System.err by a logger.(ƒ¡ËÛşÿÿÿÿ8Œ“Ï¦Ú,HçÀRMAJORZ
 CODE_SMELL
-squid:S00112m"FDefine and throw a dedicated exception instead of using a generic one.(Ğó„Îşÿÿÿÿ8İ‚óûÙ,H…»RMAJORZ
+r
+squid:S1061"9Replace this use of System.out or System.err by a logger.(‚Îç…ùÿÿÿÿ8ãäË Ú,H’¿RMAJORZ
 CODE_SMELL
-‚squid:S00112¹"FDefine and throw a dedicated exception instead of using a generic one.(™¡©üÿÿÿÿ8İ‚óûÙ,H†»RMAJORZ
+‚squid:S1192V"JDefine a constant instead of duplicating this literal "mychannel" 3 times.(Õ†Œ¹8Ë¿¢¦Ú,HÉÀRCRITICALZ
 CODE_SMELL
-‚squid:S00112«"FDefine and throw a dedicated exception instead of using a generic one.(ø¡Èîıÿÿÿÿ8ÖğÚıÙ,H‡»RMAJORZ
+‚squid:S00112˜"FDefine and throw a dedicated exception instead of using a generic one.(ø¡Èîıÿÿÿÿ8İ‚óûÙ,H¥¼RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLineê"<This block of commented-out lines of code should be removed.(œÖÿ¬8”ƒ§Ú,HéÀRMAJORZ
+CODE_SMELL
+ssquid:S3878Ü"8Remove this array creation and simply pass the elements.(”Ó¥Ùùÿÿÿÿ8¯ç¨¦Ú,HĞÀRMINORZ
+CODE_SMELL
+squid:S1192˜"FDefine a constant instead of duplicating this literal "admin" 3 times.(˜µé8İ‚óûÙ,HŠ»RCRITICALZ
+CODE_SMELL
+msquid:S1854×"7Remove this useless assignment to local variable "qpr".(–Ü¡Ú8Ê‹»¦Ú,H×ÀRMAJORZ
+CODE_SMELL
+rsquid:S3878p"8Remove this array creation and simply pass the elements.(ß¿˜çÿÿÿÿÿ8éŞâ¤Ú,HÅ¿RMINORZ
+CODE_SMELL
+†squid:CommentedOutCodeLineè"<This block of commented-out lines of code should be removed.(–°êåúÿÿÿÿ8”ƒ§Ú,HèÀRMAJORZ
+CODE_SMELL
+usquid:S3725’":Replace this with a call to the "toFile().exists()" method(€Ô”¢üÿÿÿÿ8ëÈ»¤Ú,H¼¿RMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLinev"<This block of commented-out lines of code should be removed.(ìÁ×ıÿÿÿÿÿ8ÒÉÄœÚ,H³½RMAJORZ
+CODE_SMELL
+^squid:S1481×"(Remove this unused "qpr" local variable.(–Ü¡Ú8Ê‹»¦Ú,HÖÀRMINORZ
+CODE_SMELL
+lsquid:S1135—"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8İ‚óûÙ,H¤¼RINFOZ
+CODE_SMELL
+squid:CommentedOutCodeLineò"<This block of commented-out lines of code should be removed.(ÂØòò8ëÈ»¤Ú,H½¿RMAJORZ
+CODE_SMELL
+s
+squid:S106‡"9Replace this use of System.out or System.err by a logger.(ÕÒãâşÿÿÿÿ8¢¸ç™Ú,H•¿RMAJORZ
+CODE_SMELL
+‚squid:S00112‚"FDefine and throw a dedicated exception instead of using a generic one.(Ğó„Îşÿÿÿÿ8ÖğÚıÙ,H»RMAJORZ
+CODE_SMELL
+m
+squid:S106w"9Replace this use of System.out or System.err by a logger.(áÙÌ8ÆçÎ™Ú,H¡¿RMAJORZ
 CODE_SMELL

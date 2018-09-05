@@ -1,0 +1,7 @@
+
+bsquid:S1125"(Remove the literal "true" boolean value.(£äìùÿÿÿÿ8Ù×ú¥Ú,HµÀRMINORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ˆ¿†Ï8õ•ü¥Ú,H¹ÀRMAJORZ
+CODE_SMELL
+À%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(«€Áğûÿÿÿÿ8Ù×ú¥Ú,H´ÀRMINORZ
+CODE_SMELL

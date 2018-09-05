@@ -1,8 +1,29 @@
 package com.bridgeit.config;
 
 import java.beans.PropertyVetoException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.lang.reflect.InvocationTargetException;
+import java.net.MalformedURLException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Properties;
 
+import org.hyperledger.fabric.sdk.Channel;
+import org.hyperledger.fabric.sdk.Enrollment;
+import org.hyperledger.fabric.sdk.EventHub;
+import org.hyperledger.fabric.sdk.HFClient;
+import org.hyperledger.fabric.sdk.Orderer;
+import org.hyperledger.fabric.sdk.Peer;
+import org.hyperledger.fabric.sdk.exception.CryptoException;
+import org.hyperledger.fabric.sdk.exception.InvalidArgumentException;
+import org.hyperledger.fabric.sdk.exception.TransactionException;
+import org.hyperledger.fabric.sdk.security.CryptoSuite;
+import org.hyperledger.fabric_ca.sdk.HFCAClient;
+import org.hyperledger.fabric_ca.sdk.RegistrationRequest;
+import org.hyperledger.fabric_ca.sdk.exception.EnrollmentException;
+import org.hyperledger.fabric_ca.sdk.exception.RegistrationException;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.DirectExchange;
@@ -27,12 +48,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
+import com.bridgeit.model.TradeUser;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
+
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = { "com.bridgeit" })
 public class JavaConfig extends WebMvcConfigurerAdapter {
-
 
 	@Bean
 	public ViewResolver viewResolver() {
@@ -44,17 +66,17 @@ public class JavaConfig extends WebMvcConfigurerAdapter {
 		return viewResolver;
 
 	}
-	
+
 	@Bean
-    public WebMvcConfigurer corsConfigurer() {
-        return new WebMvcConfigurerAdapter() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**").allowedMethods("GET","POST","PUT","DELETE").allowedOrigins("*").allowedHeaders("*");
-            }
-        };
-    }
-	
+	public WebMvcConfigurer corsConfigurer() {
+		return new WebMvcConfigurerAdapter() {
+			@Override
+			public void addCorsMappings(CorsRegistry registry) {
+				registry.addMapping("/**").allowedMethods("GET", "POST", "PUT", "DELETE").allowedOrigins("*")
+						.allowedHeaders("*");
+			}
+		};
+	}
 
 	@Bean
 	public static ComboPooledDataSource getDataSource() throws PropertyVetoException {
@@ -141,6 +163,54 @@ public class JavaConfig extends WebMvcConfigurerAdapter {
 		properties.put("mail.smtp.starttls.enable", "true");
 		properties.put("mail.debug", "true");
 		return mailImplement;
+	}
+
+	// fabric sdk
+	
+	@Bean
+	 HFCAClient getHfCaClient(String caUrl, Properties caClientProperties) throws IllegalAccessException, InstantiationException, ClassNotFoundException, CryptoException, InvalidArgumentException, NoSuchMethodException, InvocationTargetException, MalformedURLException {
+		CryptoSuite cryptoSuite;
+			cryptoSuite = CryptoSuite.Factory.getCryptoSuite();
+			HFCAClient caClient = HFCAClient.createNewInstance("http://localhost:7054", null);
+			caClient.setCryptoSuite(cryptoSuite);
+			//client.setUserContext(admin);
+		
+		return caClient;
+	}
+
+	// TradeUser admin = getAdmin(caClient);
+	
+	
+	 HFCAClient getAdmin(HFCAClient caClient) {
+		 TradeUser admin = tryDeserialize("admin");
+			if (admin == null) {
+				Enrollment adminEnrollment = caClient.enroll("admin", "adminpw");
+				admin = new TradeUser("admin", "importer", "ImporterMSP", adminEnrollment);
+				serialize(admin);
+
+			}
+			return admin;
+	}
+	
+	static TradeUser tryDeserialize(String name) throws Exception {
+		if (Files.exists(Paths.get(name + ".jso"))) {
+			return deserialize(name);
+		}
+		return null;
+	}
+
+	static TradeUser deserialize(String name) throws Exception {
+		try (ObjectInputStream decoder = new ObjectInputStream(Files.newInputStream(Paths.get(name + ".jso")))) {
+			return (TradeUser) decoder.readObject();
+		}
+	}
+	
+	static void serialize(TradeUser appUser) throws IOException {
+		try (ObjectOutputStream oos = new ObjectOutputStream(
+				Files.newOutputStream(Paths.get(appUser.getName() + ".jso")))) {
+			oos.writeObject(appUser);
+		}
+	
 	}
 
 }

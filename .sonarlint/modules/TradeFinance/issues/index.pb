@@ -33,3 +33,13 @@ _
 /src/main/java/com/bridgeit/model/Usermodel.java,5/b/5b621312803b05bcd6b060e65e90e0f0f9e5e2c3
 d
 4src/main/java/com/bridgeit/Utility/Personmapper.java,1/e/1e45bf3932aad430910c50b4d170823bdac8f1d8
+g
+7src/main/java/com/bridgeit/model/TradeAccountModel.java,b/2/b2d45f5c9b5db0050c4d75108f8007b44ddd8c81
+h
+8src/main/java/com/bridgeit/model/TradeContractModel.java,7/0/703d239d040ddb5dbee62d66616aa748c999513a
+\
+,src/main/java/com/bridgeit/DAO/TradeDAO.java,1/f/1fcd5f955550e96d7eaf0013a66bdc3fc1ba8c36
+d
+4src/main/java/com/bridgeit/service/TradeService.java,f/2/f200ef331fc0fe6b45da0787c337a39061fa6c54
+j
+:src/main/java/com/bridgeit/controller/TradeController.java,b/5/b598c3faa00c59f7d1b3e9950cc3d79dd0e1b98e

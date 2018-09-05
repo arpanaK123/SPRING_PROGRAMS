@@ -1,70 +1,70 @@
 
-rsquid:S18540"8Remove this useless assignment to local variable "name".(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,H¯¬RMAJORZ
-CODE_SMELL
-`squid:S11483"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ì±ÇĞ,HÆ¬RMINORZVULNERABILITY
-r
-squid:S106U"9Replace this use of System.out or System.err by a logger.(Í°‚şÿÿÿÿ8¬ÙÀĞ,Hö¬RMAJORZ
-CODE_SMELL
-csquid:S19050")Remove this unnecessary cast to "String".(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,H¹¬RMINORZ
-CODE_SMELL
-squid:S00117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ééëÿÿÿÿÿ8š¦ĞËÑ,H¶¬RMINORZ
+wsquid:S1126«"AReplace this if-then-else statement by a single return statement.(¯òÑİ8š¦ĞËÑ,HŠÀRMINORZ
 CODE_SMELL
 m
-squid:S106R"9Replace this use of System.out or System.err by a logger.(Éáğè8’ŒğĞ,Hø¯RMAJORZ
+squid:S106R"9Replace this use of System.out or System.err by a logger.(Éáğè8’ŒğĞ,H‹ÀRMAJORZ
 CODE_SMELL
-˜squid:S1488 "]Immediately return this expression instead of assigning it to the temporary variable "user1".(®Å¦Ïøÿÿÿÿ8Ì±ÇĞ,Hµ¬RMINORZ
+`squid:S1148X"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,HŒÀRMINORZVULNERABILITY
+l
+squid:S106J"9Replace this use of System.out or System.err by a logger.(ƒ”Ú;8˜ÄˆªÏ,HÀRMAJORZ
 CODE_SMELL
-`squid:S1148C"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ì±ÇĞ,H°¬RMINORZVULNERABILITY
-squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëü‹ùÿÿÿÿH²¬RMINORZ
-CODE_SMELL
-‡squid:S00117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Éí¹8´°˜ÈĞ,HÁ¬RMINORZ
-CODE_SMELL
-Œsquid:S00117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äó¦¸úÿÿÿÿ8¼ÃÎÇĞ,HÅ¬RMINORZ
-CODE_SMELL
-r
-squid:S106!"9Replace this use of System.out or System.err by a logger.(ı‡÷•ûÿÿÿÿ8Ì±ÇĞ,H½¬RMAJORZ
-CODE_SMELL
-csquid:S1481M")Remove this unused "user" local variable.(€Å÷£ùÿÿÿÿ8¬¿ôüÎ,Hº¬RMINORZ
+csquid:S14810")Remove this unused "name" local variable.(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,HÀRMINORZ
 CODE_SMELL
 l
-squid:S106J"9Replace this use of System.out or System.err by a logger.(ƒ”Ú;8˜ÄˆªÏ,H¼¬RMAJORZ
+squid:S106y"9Replace this use of System.out or System.err by a logger.(ƒ”Ú;8Ì±ÇĞ,HÀRMAJORZ
 CODE_SMELL
-|squid:S1126"AReplace this if-then-else statement by a single return statement.(™¦Ôêøÿÿÿÿ8Ì±ÇĞ,HÃ¬RMINORZ
-CODE_SMELL
-vsquid:S1126}"AReplace this if-then-else statement by a single return statement.(œëÓ¿8Ì±ÇĞ,H±¬RMINORZ
-CODE_SMELL
-asquid:S1148±"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,H·¬RMINORZVULNERABILITY
+`squid:S11483"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ì±ÇĞ,HÀRMINORZVULNERABILITY
 r
-squid:S106#"9Replace this use of System.out or System.err by a logger.(¹ù¹üşÿÿÿÿ8…ÿ™ÍĞ,H¾¬RMAJORZ
+squid:S106#"9Replace this use of System.out or System.err by a logger.(¹ù¹üşÿÿÿÿ8…ÿ™ÍĞ,H‘ÀRMAJORZ
 CODE_SMELL
-lsquid:S1854@"8Remove this useless assignment to local variable "name".(Íè‡88š¦ĞËÑ,H»¬RMAJORZ
+‡squid:S00117m"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öªùß8Ç²»€Ğ,H’ÀRMINORZ
+CODE_SMELL
+Œsquid:S00117t"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ıáæûÿÿÿÿ8ì˜‡›Ğ,H“ÀRMINORZ
 CODE_SMELL
 m
-squid:S106+"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8¬ÙÀĞ,H´¬RMAJORZ
+squid:S106T"9Replace this use of System.out or System.err by a logger.(õ¸Äà8†¾˜ùÏ,H”ÀRMAJORZ
 CODE_SMELL
-r
-squid:S106j"9Replace this use of System.out or System.err by a logger.(ºÔ”·ûÿÿÿÿ8´ĞõßÍ,H®¬RMAJORZ
+˜squid:S1488 "]Immediately return this expression instead of assigning it to the temporary variable "user1".(®Å¦Ïøÿÿÿÿ8Ì±ÇĞ,H•ÀRMINORZ
 CODE_SMELL
-asquid:S1148•"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,HÌ¬RMINORZVULNERABILITY
-Œsquid:S00117t"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ıáæûÿÿÿÿ8ì˜‡›Ğ,HÄ¬RMINORZ
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëü‹ùÿÿÿÿH–ÀRMINORZ
 CODE_SMELL
-l
-squid:S106y"9Replace this use of System.out or System.err by a logger.(ƒ”Ú;8Ì±ÇĞ,H³¬RMAJORZ
+Œsquid:S00117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äó¦¸úÿÿÿÿ8¼ÃÎÇĞ,H—ÀRMINORZ
 CODE_SMELL
-‡squid:S00117m"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öªùß8Ç²»€Ğ,Hù¯RMINORZ
+csquid:S19050")Remove this unnecessary cast to "String".(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,H˜ÀRMINORZ
 CODE_SMELL
-]squid:S1481@")Remove this unused "name" local variable.(Íè‡88š¦ĞËÑ,HË¬RMINORZ
+asquid:S1148•"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,H™ÀRMINORZVULNERABILITY
+csquid:S1481M")Remove this unused "user" local variable.(€Å÷£ùÿÿÿÿ8¬¿ôüÎ,HšÀRMINORZ
 CODE_SMELL
-`squid:S1148X"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,HÍ¬RMINORZVULNERABILITY
-csquid:S14810")Remove this unused "name" local variable.(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,HÉ¬RMINORZ
+vsquid:S1126}"AReplace this if-then-else statement by a single return statement.(œëÓ¿8Ì±ÇĞ,H›ÀRMINORZ
 CODE_SMELL
 m
-squid:S106T"9Replace this use of System.out or System.err by a logger.(õ¸Äà8†¾˜ùÏ,HÇ¬RMAJORZ
+squid:S106+"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8¬ÙÀĞ,HœÀRMAJORZ
 CODE_SMELL
 r
-squid:S106^"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¬ÙÀĞ,HÂ¬RMAJORZ
+squid:S106^"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¬ÙÀĞ,HÀRMAJORZ
 CODE_SMELL
-squid:S00117¤"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìÒš¶úÿÿÿÿ8Ç²»€Ğ,HÈ¬RMINORZ
+squid:S00117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ééëÿÿÿÿÿ8š¦ĞËÑ,HÀRMINORZ
 CODE_SMELL
-wsquid:S1126«"AReplace this if-then-else statement by a single return statement.(¯òÑİ8š¦ĞËÑ,H¿¬RMINORZ
+squid:S00117¤"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìÒš¶úÿÿÿÿ8Ç²»€Ğ,HŸÀRMINORZ
+CODE_SMELL
+asquid:S1148±"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,H ÀRMINORZVULNERABILITY
+r
+squid:S106!"9Replace this use of System.out or System.err by a logger.(ı‡÷•ûÿÿÿÿ8Ì±ÇĞ,H¡ÀRMAJORZ
+CODE_SMELL
+|squid:S1126"AReplace this if-then-else statement by a single return statement.(™¦Ôêøÿÿÿÿ8Ì±ÇĞ,H¢ÀRMINORZ
+CODE_SMELL
+r
+squid:S106U"9Replace this use of System.out or System.err by a logger.(Í°‚şÿÿÿÿ8¬ÙÀĞ,H£ÀRMAJORZ
+CODE_SMELL
+]squid:S1481@")Remove this unused "name" local variable.(Íè‡88š¦ĞËÑ,H¤ÀRMINORZ
+CODE_SMELL
+lsquid:S1854@"8Remove this useless assignment to local variable "name".(Íè‡88š¦ĞËÑ,H¥ÀRMAJORZ
+CODE_SMELL
+`squid:S1148C"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ì±ÇĞ,H¦ÀRMINORZVULNERABILITY
+‡squid:S00117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Éí¹8´°˜ÈĞ,H§ÀRMINORZ
+CODE_SMELL
+r
+squid:S106j"9Replace this use of System.out or System.err by a logger.(ºÔ”·ûÿÿÿÿ8´ĞõßÍ,H¨ÀRMAJORZ
+CODE_SMELL
+rsquid:S18540"8Remove this useless assignment to local variable "name".(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,H©ÀRMAJORZ
 CODE_SMELL

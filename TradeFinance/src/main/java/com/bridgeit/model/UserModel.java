@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.stereotype.Component;
+
 @Component
 public class UserModel {
 	@Id
@@ -26,6 +27,15 @@ public class UserModel {
 	@NotEmpty(message = "email is required")
 	@Column(unique = true)
 	private String email;
+
+	@NotEmpty(message = "bank name is required")
+	private String bankname;
+	private String useraccount;
+
+	private byte[] TradeUser;
+
+	private int accountnumber;
+	private int balance;
 
 	String authentication_key;
 
@@ -97,6 +107,46 @@ public class UserModel {
 		this.authentication_key = authentication_key;
 	}
 
+	public String getBankname() {
+		return bankname;
+	}
+
+	public void setBankname(String bankname) {
+		this.bankname = bankname;
+	}
+
+	public String getUseraccount() {
+		return useraccount;
+	}
+
+	public void setUseraccount(String useraccount) {
+		this.useraccount = useraccount;
+	}
+
 	
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+
+	public byte[] getTradeUser() {
+		return TradeUser;
+	}
+
+	public void setTradeUser(byte[] tradeUser) {
+		TradeUser = tradeUser;
+	}
+
+	public int getAccountnumber() {
+		return accountnumber;
+	}
+
+	public void setAccountnumber(int accountnumber) {
+		this.accountnumber = accountnumber;
+	}
 
 }

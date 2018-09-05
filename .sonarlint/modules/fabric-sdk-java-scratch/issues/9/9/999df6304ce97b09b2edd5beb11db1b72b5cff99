@@ -1,7 +1,7 @@
 
-fsquid:S1068"3Remove this unused "serializationId" private field.(éÑÜùıÿÿÿÿH¹ºRMAJORZ
+‘squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(éÑÜùıÿÿÿÿH´¼RCRITICALZ
 CODE_SMELL
-]squid:S1948",Make "enrollment" transient or serializable.(¤­œH»ºRCRITICALZ
+]squid:S1948",Make "enrollment" transient or serializable.(¤­œHµ¼RCRITICALZ
 CODE_SMELL
-‘squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(éÑÜùıÿÿÿÿHººRCRITICALZ
+fsquid:S1068"3Remove this unused "serializationId" private field.(éÑÜùıÿÿÿÿH¶¼RMAJORZ
 CODE_SMELL

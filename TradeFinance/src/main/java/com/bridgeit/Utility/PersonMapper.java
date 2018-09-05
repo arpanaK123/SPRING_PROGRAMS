@@ -20,6 +20,10 @@ public class PersonMapper implements RowMapper<UserModel> {
 		user.setRole(rs.getString("role"));
 		user.setAuthentication_key(rs.getString("authentication_key"));
 		user.setVerified(rs.getBoolean("verified"));
+		user.setBankname(rs.getString("bankname"));
+		user.setUseraccount(rs.getString("useraccount"));
+		user.setTradeUser(rs.getBytes("tradeuser"));
+		user.setBalance(rs.getInt("balance"));
 		return user;
 	}
 
