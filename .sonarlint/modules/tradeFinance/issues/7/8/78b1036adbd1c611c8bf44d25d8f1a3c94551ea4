@@ -1,0 +1,78 @@
+
+|squid:S1192)"FDefine a constant instead of duplicating this literal "admin" 3 times.(Ñ®ÎüÿÿÿÿH–RCRITICALZ
+CODE_SMELL
+zsquid:S11921"IDefine a constant instead of duplicating this literal "importer" 3 times.(ÜÄ¸«H‚–RCRITICALZ
+CODE_SMELL
+\squid:S1199á"-Extract this nested code block into a method.(ßüßHƒ–RMINORZ
+CODE_SMELL
+\squid:S1199ç"-Extract this nested code block into a method.(–ñ—H„–RMINORZ
+CODE_SMELL
+\squid:S1199ë"-Extract this nested code block into a method.(İÚH…–RMINORZ
+CODE_SMELL
+asquid:S1199ğ"-Extract this nested code block into a method.(Ë§¹œûÿÿÿÿH†–RMINORZ
+CODE_SMELL
+asquid:S1199õ"-Extract this nested code block into a method.(ÌÒù£ÿÿÿÿÿH‡–RMINORZ
+CODE_SMELL
+lsquid:S3878"8Remove this array creation and simply pass the elements.(¯ãşûÿÿÿÿHˆ–RMINORZ
+CODE_SMELL
+msquid:S37259":Replace this with a call to the "toFile().exists()" method(€Ô”¢üÿÿÿÿH‰–RMAJORZ
+CODE_SMELL
+zsquid:CommentedOutCodeLine®"<This block of commented-out lines of code should be removed.(Úú¨ÓHŠ–RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine°"<This block of commented-out lines of code should be removed.(¥ºš±úÿÿÿÿH‹–RMAJORZ
+CODE_SMELL
+zsquid:CommentedOutCodeLine²"<This block of commented-out lines of code should be removed.(Ù¨øHŒ–RMAJORZ
+CODE_SMELL
+zsquid:CommentedOutCodeLine¶"<This block of commented-out lines of code should be removed.(±¯ÁóH–RMAJORZ
+CODE_SMELL
+zsquid:CommentedOutCodeLineÁ"<This block of commented-out lines of code should be removed.(¢¸ùøH–RMAJORZ
+CODE_SMELL
+f
+squid:S1063"9Replace this use of System.out or System.err by a logger.(å‚»‹H–RMAJORZ
+CODE_SMELL
+f
+squid:S106–"9Replace this use of System.out or System.err by a logger.(­±»H–RMAJORZ
+CODE_SMELL
+g
+squid:S106¡"9Replace this use of System.out or System.err by a logger.(è…‹H‘–RMAJORZ
+CODE_SMELL
+l
+squid:S106£"9Replace this use of System.out or System.err by a logger.(ŞÃÆ—øÿÿÿÿH’–RMAJORZ
+CODE_SMELL
+squid:S1488i"\Immediately return this expression instead of assigning it to the temporary variable "data".(†Áˆ·ùÿÿÿÿH“–RMINORZ
+CODE_SMELL
+dsquid:S1135}"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿH”–RINFOZ
+CODE_SMELL
+gsquid:S1172„"8Remove this unused method parameter "chaincodeFunction".(Õœ˜¥H•–RMAJORZ
+CODE_SMELL
+msquid:S2259`"AA "NullPointerException" could be thrown; "oos" is nullable here.(÷èüÿÿÿÿH––RMAJORZBUG
+msquid:S2259š"EA "NullPointerException" could be thrown; "channel" is nullable here.(¼«İıH—–RMAJORZBUG
+hsquid:S2259À"@A "NullPointerException" could be thrown; "is" is nullable here.(òøçH˜–RMAJORZBUG
+[squid:S1602•",Remove useless curly braces around statement(ñşàH™–RMINORZ
+CODE_SMELL
+`squid:S1612’",Replace this lambda with a method reference.(ßä¤˜ıÿÿÿÿHš–RMINORZ
+CODE_SMELL
+‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãøªH›–RMINORZ
+CODE_SMELL
+Ysquid:S1148/"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHœ–RMINORZVULNERABILITY
+Ysquid:S1148E"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH–RMINORZVULNERABILITY
+Ysquid:S1148Q"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH–RMINORZVULNERABILITY
+Ysquid:S1148]"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHŸ–RMINORZVULNERABILITY
+Ysquid:S1148b"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH –RMINORZVULNERABILITY
+Ysquid:S1148g"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH¡–RMINORZVULNERABILITY
+Ysquid:S1148u"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH¢–RMINORZVULNERABILITY
+Ysquid:S1148~"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH£–RMINORZVULNERABILITY
+Zsquid:S1148‡"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH¤–RMINORZVULNERABILITY
+Zsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH¥–RMINORZVULNERABILITY
+Zsquid:S1148—"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH¦–RMINORZVULNERABILITY
+Zsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH§–RMINORZVULNERABILITY
+Zsquid:S1148¤"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH¨–RMINORZVULNERABILITY
+Zsquid:S1148«"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH©–RMINORZVULNERABILITY
+Zsquid:S1148±"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHª–RMINORZVULNERABILITY
+Zsquid:S1148½"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH«–RMINORZVULNERABILITY
+Zsquid:S1148Ã"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH¬–RMINORZVULNERABILITY
+Zsquid:S1148Ï"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH­–RMINORZVULNERABILITY
+Zsquid:S1148Ö"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH®–RMINORZVULNERABILITY
+Zsquid:S1148İ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH¯–RMINORZVULNERABILITY
+Zsquid:S1148›"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH°–RMINORZVULNERABILITY
+Zsquid:S1148¦"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH±–RMINORZVULNERABILITY

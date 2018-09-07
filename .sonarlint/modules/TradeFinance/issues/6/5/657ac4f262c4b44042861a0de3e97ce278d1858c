@@ -1,0 +1,14 @@
+
+osquid:S1141 "5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8Î¸‹èÚ,HÍ“RMAJORZ
+CODE_SMELL
+`squid:S1148;"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8õžˆèÚ,HÎ“RMINORZVULNERABILITY
+`squid:S1148&"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¸‹èÚ,HÏ“RMINORZVULNERABILITY
+tsquid:S37250":Replace this with a call to the "toFile().exists()" method(€Ô”¢üÿÿÿÿ8õžˆèÚ,HÐ“RMAJORZ
+CODE_SMELL
+`squid:S1148#"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¸‹èÚ,HÑ“RMINORZVULNERABILITY
+ysquid:S2147<"DCombine this catch with the one at line 58, which has the same body.(ýàÑÎ8õžˆèÚ,HÒ“RMINORZ
+CODE_SMELL
+`squid:S1148="#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8õžˆèÚ,HÓ“RMINORZVULNERABILITY
+`squid:S1148I"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8õžˆèÚ,HÔ“RMINORZVULNERABILITY
+wsquid:S1192"FDefine a constant instead of duplicating this literal "admin" 3 times.(ô¨€ãHÕ“RCRITICALZ
+CODE_SMELL

@@ -11,7 +11,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 import java.util.logging.Level;
 import java.util.stream.Collectors;
 
@@ -181,7 +183,6 @@ public class FabricSDK {
 			String enrollmentSecret = caClient.register(rr, registrar);
 			Enrollment enrollment = caClient.enroll(userId, enrollmentSecret);
 
-		//	appUser = new AppUser(userId, "exporter", "ExporterMSP", enrollment);
 			appUser = new AppUser(userId, "exporter", "ExporterMSP", enrollment);
 
 			serialize(appUser);
@@ -207,81 +208,46 @@ public class FabricSDK {
 		return caClient;
 	}
 
-	private static final byte[] EXPECTED_EVENT_DATA = "!".getBytes(UTF_8);
-	private static final String EXPECTED_EVENT_NAME = "event";
+	static void invokeBlockChain(HFClient client) {
 
-	static CompletableFuture<TransactionEvent> invokeChainCode(HFClient client)
-			throws ProposalException, InvalidArgumentException {
 		Channel channel = client.getChannel("mychannel");
+		TransactionProposalRequest tqr = client.newTransactionProposalRequest();
+		ChaincodeID tradeFinanceCCId = ChaincodeID.newBuilder().setName("tradefinancecc").build();
+		tqr.setChaincodeID(tradeFinanceCCId);
+		tqr.setFcn("create_Account");
+		tqr.setArgs(new String[] { "102", "importer", "20000", "SBI BANK" });
+		Collection<ProposalResponse> responses = null;
+		try {
+			responses = channel.sendTransactionProposal(tqr);
+			List<ProposalResponse> invalid = responses.stream().filter(res -> res.isInvalid())
+					.collect(Collectors.toList());
+			if (!invalid.isEmpty()) {
 
-		// create chaincode request
-		QueryByChaincodeRequest qpr = client.newQueryProposalRequest();
-		TransactionProposalRequest transactionRequest = client.newTransactionProposalRequest();
-		ChaincodeID chaincodeID = ChaincodeID.newBuilder().setName("tradefinancecc").build();
+				invalid.forEach(response -> {
+					System.out.println(response.getMessage());
+				});
 
-		// ChaincodeID chaincodeID =
-		// ChaincodeID.newBuilder().setName("tradefinancecc").build();
-		transactionRequest.setChaincodeID(chaincodeID);
-		transactionRequest.setFcn("create_Account");
-		transactionRequest.setArgs(new String[] { "100", "Importer", "20000", "SBI" });
-		Map<String, byte[]> tm2 = new HashMap<>();
-		tm2.put("HyperLedgerFabric", "TransactionProposalRequest:JavaSDK".getBytes(UTF_8));
-		tm2.put("result", ":)".getBytes(UTF_8));
-		tm2.put(EXPECTED_EVENT_NAME, EXPECTED_EVENT_DATA);
-		transactionRequest.setTransientMap(tm2);
-
-		Collection<ProposalResponse> responses = channel.sendTransactionProposal(transactionRequest);
-		List<ProposalResponse> invalid = responses.stream().filter(r -> r.isInvalid()).collect(Collectors.toList());
-		if (!invalid.isEmpty()) {
-			invalid.forEach(response -> {
-				System.out.println(response.getMessage());
-				log.error(response.getMessage());
-			});
-
-			throw new RuntimeException("invalid response(s) found");
-
+			}
+		} catch (ProposalException | InvalidArgumentException e) {
+			e.printStackTrace();
 		}
-		//return channel.sendTransaction(responses);
 
-		BlockEvent.TransactionEvent event =channel.sendTransaction(client, channel).get(60, TimeUnit.SECONDS);
-		if (event.isValid()) {
-			System.out.println("Transacion tx: " + event.getTransactionID() + " is completed.");
-			log.info("Transacion tx: " + event.getTransactionID() + " is completed.");
-
-		} else {
-			System.out.println("Transaction tx : " + event.getTransactionID() + "is invalid");
-			log.error("Transaction tx: " + event.getTransactionID() + " is invalid.");
+		try {
+			BlockEvent.TransactionEvent event = channel.sendTransaction(responses).get(60, TimeUnit.SECONDS);
+			if (event.isValid()) {
+				System.out.println(event.getTransactionID() + " transaction is valid ");
+			} else {
+				System.out.println(event.getTransactionID() + " transaction is invalid");
+			}
+		} catch (InterruptedException | ExecutionException | TimeoutException e) {
+			e.printStackTrace();
 		}
-		
-		return channel.sendTransaction(responses);
 
 	}
 
-	// for (ProposalResponse res: responses) {
-	// Status status = res.getStatus();
-	// Logger.getLogger(FabricSDK.class.getName()).log(Level.INFO,"Invoked
-	// create_Account on "+Config.tradefinancecc + ". Status - " + status);
-	// }
-	// List<ProposalResponse> invalid = responses.stream().filter(r ->
-	// r.isInvalid()).collect(Collectors.toList());
-	//
-	// if (!invalid.isEmpty()) {
-	// invalid.forEach(response -> {
-	// log.error(response.getMessage());
-	// });
-	// throw new RuntimeException("invalid response(s) found");
-	// }
-	// return channel.sendTransaction(responses);
-	// display response
-	// for (ProposalResponse pres : responses) {
-	// String stringResponse = new String(pres.getChaincodeActionResponsePayload());
-	// // log.info(stringResponse);
-	// System.out.println(stringResponse);
-	// }
-
 	/**
 	 * Serialize AppUser object to file
-	 *  
+	 * 
 	 * @param appUser
 	 *            The object to be serialized
 	 * @throws IOException

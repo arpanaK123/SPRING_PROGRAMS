@@ -21,8 +21,21 @@ public class PersonMapper implements RowMapper<UserModel> {
 		user.setAuthentication_key(rs.getString("authentication_key"));
 		user.setVerified(rs.getBoolean("verified"));
 		user.setBankname(rs.getString("bankname"));
-		user.setUseraccount(rs.getString("useraccount"));
-		user.setTradeUser(rs.getBytes("tradeuser"));
+		user.setUseraccount(rs.getBytes("useraccount"));
+		user.setAccountnumber(rs.getString("accountnumber"));
+//		Blob userBlob = rs.getBlob("user_account");
+//		byte [] userByte = null;
+//		try {
+//			userByte =userBlob.getBytes(1, (int)userBlob.length());
+//		} catch (SQLException e) {
+//			
+//			e.printStackTrace();
+//		}
+//		user.setUserAccount(userByte);
+		//user.setUserAccount();
+		//return user;
+		
+		
 		user.setBalance(rs.getInt("balance"));
 		return user;
 	}

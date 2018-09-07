@@ -1,8 +1,85 @@
 
-˜squid:S00115F"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(±¹Ù›øÿÿÿÿ8Íß›îÏ,H½¹RCRITICALZ
+xsquid:UselessImportCheck"6Remove this unused import 'java.io.ObjectInputStream'.(Éæéœ8 ¡„çÚ,Hé“RMINORZ
 CODE_SMELL
-“squid:S00115H"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ıŞ˜ñ8Íß›îÏ,H¾¹RCRITICALZ
+“squid:S00115^"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ıŞ˜ñ8Íß›îÏ,Hö“RCRITICALZ
 CODE_SMELL
-r
-squid:S106{"9Replace this use of System.out or System.err by a logger.(øºÑûúÿÿÿÿ8Íß›îÏ,H¿¹RMAJORZ
+asquid:S1148Ä"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8 ¡„çÚ,Hû“RMINORZVULNERABILITY
+lsquid:S1135î"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8Õä”Û,H—¥RINFOZ
 CODE_SMELL
+rsquid:UselessImportCheck	"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8 ¡„çÚ,Hù“RMINORZ
+CODE_SMELL
+œsquid:UselessImportCheck"ZRemove this unused import 'org.hyperledger.fabric_ca.sdk.exception.RegistrationException'.(ıÈ¼ï8æ–ùÎÚ,Hú“RMINORZ
+CODE_SMELL
+{squid:UselessImportCheck3"9Remove this unused import 'com.bridgeit.model.TradeUser'.(–“œ¹8€¢şÛ,H¥RMINORZ
+CODE_SMELL
+asquid:S1148Á"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8 ¡„çÚ,H†”RMINORZVULNERABILITY
+asquid:S1148Í"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8 ¡„çÚ,H„”RMINORZVULNERABILITY
+lsquid:S1135æ"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8Õä”Û,H–¥RINFOZ
+CODE_SMELL
+{squid:S2147Î"ECombine this catch with the one at line 188, which has the same body.(åşáÿ8 ¡„çÚ,Hø“RMINORZ
+CODE_SMELL
+asquid:S1148Ò"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8 ¡„çÚ,Hü“RMINORZVULNERABILITY
+s
+squid:S106‘"9Replace this use of System.out or System.err by a logger.(øºÑûúÿÿÿÿ8¥ÁŒÄÚ,Hê“RMAJORZ
+CODE_SMELL
+asquid:S1148¾"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8 ¡„çÚ,Hş“RMINORZVULNERABILITY
+lsquid:S1135ˆ"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8Õä”Û,H›¥RINFOZ
+CODE_SMELL
+lsquid:S1135‘"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8Õä”Û,H¥RINFOZ
+CODE_SMELL
+•squid:UselessImportCheck"NRemove this unused import 'org.hyperledger.fabric_ca.sdk.RegistrationRequest'.(Ù»¼“úÿÿÿÿ8æ–ùÎÚ,Hó“RMINORZ
+CODE_SMELL
+rsquid:UselessImportCheck
+"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8 ¡„çÚ,H‡”RMINORZ
+CODE_SMELL
+asquid:S1148Ê"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8 ¡„çÚ,Hî“RMINORZVULNERABILITY
+csquid:S1604"(Make this anonymous inner class a lambda(ìÊàŠÿÿÿÿÿ8ƒÆÚçÚ,Hï“RMAJORZ
+CODE_SMELL
+{squid:S2147¿"ECombine this catch with the one at line 188, which has the same body.(¯áè8 ¡„çÚ,Hı“RMINORZ
+CODE_SMELL
+˜squid:S00115\"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(±¹Ù›øÿÿÿÿ8Íß›îÏ,Hÿ“RCRITICALZ
+CODE_SMELL
+asquid:S1148Ğ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8 ¡„çÚ,Hæ“RMINORZVULNERABILITY
+€squid:S2147Å"ECombine this catch with the one at line 188, which has the same body.(¿šÇ¡øÿÿÿÿ8 ¡„çÚ,Hç“RMINORZ
+CODE_SMELL
+wsquid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8 ¡„çÚ,H”RMINORZ
+CODE_SMELL
+Ÿsquid:UselessImportCheck"XRemove this unused import 'org.hyperledger.fabric_ca.sdk.exception.EnrollmentException'.(ìí°úûÿÿÿÿ8‹²ÉÏÚ,H€”RMINORZ
+CODE_SMELL
+asquid:S1148Ç"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8 ¡„çÚ,Hè“RMINORZVULNERABILITY
+~squid:UselessImportCheck"7Remove this unused import 'java.io.ObjectOutputStream'.(é»Óºûÿÿÿÿ8 ¡„çÚ,Hğ“RMINORZ
+CODE_SMELL
+lsquid:S1135‚"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8Õä”Û,Hš¥RINFOZ
+CODE_SMELL
+lsquid:S1135ö"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8Õä”Û,H˜¥RINFOZ
+CODE_SMELL
+}squid:S00112«"FDefine and throw a dedicated exception instead of using a generic one.(”Š©„8‹²ÉÏÚ,H÷“RMAJORZ
+CODE_SMELL
+{squid:S2147Ñ"ECombine this catch with the one at line 188, which has the same body.(à®¿­8 ¡„çÚ,Hò“RMINORZ
+CODE_SMELL
+lsquid:S1135Ş"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8Õä”Û,H•¥RINFOZ
+CODE_SMELL
+lsquid:S1135ü"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8Õä”Û,H™¥RINFOZ
+CODE_SMELL
+{squid:S2147Â"ECombine this catch with the one at line 188, which has the same body.(ıàÑÎ8 ¡„çÚ,Hô“RMINORZ
+CODE_SMELL
+lsquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8Õä”Û,Hœ¥RINFOZ
+CODE_SMELL
+€squid:S2147Ë"ECombine this catch with the one at line 188, which has the same body.(¼¯•¶ùÿÿÿÿ8 ¡„çÚ,Hì“RMINORZ
+CODE_SMELL
+‰squid:UselessImportCheck"BRemove this unused import 'org.hyperledger.fabric.sdk.Enrollment'.(ö¸£¥ıÿÿÿÿ8 ¡„çÚ,Hˆ”RMINORZ
+CODE_SMELL
+zsquid:S2147È"ECombine this catch with the one at line 188, which has the same body.(ÄÜŞc8 ¡„çÚ,H…”RMINORZ
+CODE_SMELL
+tsquid:S2259ú"EA "NullPointerException" could be thrown; "channel" is nullable here.(¼«İı8ëÌÚÛ,H¤§RMAJORZBUG
+€squid:S2147"ECombine this catch with the one at line 269, which has the same body.(²ó«úÿÿÿÿ8ëÌÚÛ,H¥§RMINORZ
+CODE_SMELL
+asquid:S1148ß"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëÌÚÛ,H¦§RMINORZVULNERABILITY
+asquid:S1148ç"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëÌÚÛ,H§§RMINORZVULNERABILITY
+asquid:S1148ï"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëÌÚÛ,H¨§RMINORZVULNERABILITY
+asquid:S1148÷"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëÌÚÛ,H©§RMINORZVULNERABILITY
+asquid:S1148ı"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëÌÚÛ,Hª§RMINORZVULNERABILITY
+asquid:S1148ƒ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëÌÚÛ,H«§RMINORZVULNERABILITY
+asquid:S1148‰"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëÌÚÛ,H¬§RMINORZVULNERABILITY
+asquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëÌÚÛ,H­§RMINORZVULNERABILITY
+asquid:S1148’"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëÌÚÛ,H®§RMINORZVULNERABILITY

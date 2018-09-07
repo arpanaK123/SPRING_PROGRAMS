@@ -33,6 +33,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/bridgeit/trade_Finance_network/fabric-samples/TradeFinance_spring"/>
 			<item value="/home/bridgeit/trade_Finance_network/fabric-samples/scratch-master"/>
 			<item value="/home/bridgeit/trade_Finance_network/fabric-samples/fabric_sdk_java"/>
 		</list>

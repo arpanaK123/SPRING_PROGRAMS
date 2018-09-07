@@ -1,0 +1,72 @@
+
+~squid:S1192-"FDefine a constant instead of duplicating this literal "admin" 3 times.(ô¨€ã8»µÅéÚ,Hà“RCRITICALZ
+CODE_SMELL
+‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãøªHÙ“RMINORZ
+CODE_SMELL
+squid:S11920"IDefine a constant instead of duplicating this literal "importer" 3 times.(ÜÄ¸«8®§¿•Û,HëRCRITICALZ
+CODE_SMELL
+†squid:CommentedOutCodeLineã"<This block of commented-out lines of code should be removed.(êãŒÑÿÿÿÿÿ8óÀ¢ŸÛ,H’¨RMAJORZ
+CODE_SMELL
+ˆsquid:S1192—"JDefine a constant instead of duplicating this literal "insurance" 3 times.(şúšãúÿÿÿÿ8®§¿•Û,HêRCRITICALZ
+CODE_SMELL
+asquid:S1168ß"+Return an empty collection instead of null.(¥¹ï8¤á‡šÛ,HöŸRMAJORZ
+CODE_SMELL
+tsquid:S37259":Replace this with a call to the "toFile().exists()" method(¬Ü–İùÿÿÿÿ8Ô–ÈéÚ,HŞ“RMAJORZ
+CODE_SMELL
+bsquid:S1602·",Remove useless curly braces around statement(ñşà8«¬§òÚ,H×“RMINORZ
+CODE_SMELL
+‡squid:S1192Œ"IDefine a constant instead of duplicating this literal "exporter" 3 times.(ö×Èèøÿÿÿÿ8®§¿•Û,HéRCRITICALZ
+CODE_SMELL
+s
+squid:S106Ä"9Replace this use of System.out or System.err by a logger.(ŞÃÆ—øÿÿÿÿ8«¬§òÚ,Há“RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine÷"<This block of commented-out lines of code should be removed.(¢¸ùø8ı™ƒšÛ,HòŸRMAJORZ
+CODE_SMELL
+‚squid:S1192d"JDefine a constant instead of duplicating this literal "mychannel" 3 times.(Õ†Œ¹8Öıù”Û,HËRCRITICALZ
+CODE_SMELL
+squid:CommentedOutCodeLineç"<This block of commented-out lines of code should be removed.(Ù¨ø8ı™ƒšÛ,HğŸRMAJORZ
+CODE_SMELL
+xsquid:S2259¡"I"NullPointerException" will be thrown when invoking method "serialize()".(ÔÆÎ–8®§¿•Û,HíRMAJORZBUG
+Ÿsquid:S1488V"eImmediately return this expression instead of assigning it to the temporary variable "serializeData".(˜Á˜ÿÿÿÿÿ8×ÉãêÚ,Hä“RMINORZ
+CODE_SMELL
+asquid:S1148½"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8«¬§òÚ,Hİ“RMINORZVULNERABILITY
+¦squid:S11929"iDefine a constant instead of duplicating this literal "//home//bridgeit//SPRING//TradeFinance//" 3 times.(¬Ü–İùÿÿÿÿ8«çù÷Ú,HÜ“RCRITICALZ
+CODE_SMELL
+`squid:S1148T"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”¥µîÚ,HÛ“RMINORZVULNERABILITY
+n
+squid:S106İ"9Replace this use of System.out or System.err by a logger.(áÙÌ8Öıù”Û,HÎRMAJORZ
+CODE_SMELL
+m
+squid:S106¸"9Replace this use of System.out or System.err by a logger.(­±»8«¬§òÚ,HØ“RMAJORZ
+CODE_SMELL
+†squid:CommentedOutCodeLineÜ"<This block of commented-out lines of code should be removed.(ìÁ×ıÿÿÿÿÿ8Öıù”Û,HÍRMAJORZ
+CODE_SMELL
+\squid:S1172¨"&Remove these unused method parameters.(˜¢ê8«¬§òÚ,Hß“RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLineì"<This block of commented-out lines of code should be removed.(±¯Áó8ı™ƒšÛ,HñŸRMAJORZ
+CODE_SMELL
+asquid:S1148Ç"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8«¬§òÚ,Hâ“RMINORZVULNERABILITY
+ssquid:S3878¯"8Remove this array creation and simply pass the elements.(ß…¤Õÿÿÿÿÿ8­÷Ú,HÚ“RMINORZ
+CODE_SMELL
+n
+squid:S106"9Replace this use of System.out or System.err by a logger.(õ§Çÿ8®§¿•Û,HìRMAJORZ
+CODE_SMELL
+bsquid:S1612³",Replace this lambda with a method reference.(ˆ¤¸¼8­÷Ú,HÖ“RMINORZ
+CODE_SMELL
+|squid:S00112?"FDefine and throw a dedicated exception instead of using a generic one.(Ë÷Û8Ô–ÈéÚ,Hå“RMAJORZ
+CODE_SMELL
+nsquid:S1197Ë"8Move the array designator from the variable to the type.(›§•“8½øÕ–Û,H˜ŸRMINORZ
+CODE_SMELL
+†squid:CommentedOutCodeLineé"<This block of commented-out lines of code should be removed.(ûğîáşÿÿÿÿ8óÀ¢ŸÛ,H“¨RMAJORZ
+CODE_SMELL
+n
+squid:S106Â"9Replace this use of System.out or System.err by a logger.(è…‹8«¬§òÚ,Hã“RMAJORZ
+CODE_SMELL
+†squid:CommentedOutCodeLineå"<This block of commented-out lines of code should be removed.(¥ºš±úÿÿÿÿ8ı™ƒšÛ,HïŸRMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLinem"<This block of commented-out lines of code should be removed.(¤Ø¡Åÿÿÿÿÿ8©éÁŸÛ,Hì¨RMAJORZ
+CODE_SMELL
+[squid:S1172l"&Remove these unused method parameters.(÷‰ÕĞ8©éÁŸÛ,Hí¨RMAJORZ
+CODE_SMELL
+‰squid:UselessImportCheck$"BRemove this unused import 'com.bridgeit.model.TradeContractModel'.(İ³˜şÿÿÿÿ8©éÁŸÛ,Hî¨RMINORZ
+CODE_SMELL

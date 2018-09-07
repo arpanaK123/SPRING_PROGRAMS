@@ -1,0 +1,83 @@
+
+”%squid:RedundantThrowsDeclarationCheck7"GRemove the redundant '!unknownSymbol!' thrown exception declaration(s).(œŽÏ‚þÿÿÿÿH›•RMINORZ
+CODE_SMELL
+ysquid:CommentedOutCodeLine["<This block of commented-out lines of code should be removed.(ÜîæÝHœ•RMAJORZ
+CODE_SMELL
+zsquid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(Ú°à¬H•RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine¬"<This block of commented-out lines of code should be removed.(’•îæýÿÿÿÿHž•RMAJORZ
+CODE_SMELL
+zsquid:CommentedOutCodeLineÅ"<This block of commented-out lines of code should be removed.(Øâž²HŸ•RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLineÇ"<This block of commented-out lines of code should be removed.(š½»ÊÿÿÿÿÿH •RMAJORZ
+CODE_SMELL
+zsquid:CommentedOutCodeLineÉ"<This block of commented-out lines of code should be removed.(¾ŠÐžH¡•RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLineÓ"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿH¢•RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLineØ"<This block of commented-out lines of code should be removed.(øæãÃùÿÿÿÿH£•RMAJORZ
+CODE_SMELL
+zsquid:CommentedOutCodeLineÚ"<This block of commented-out lines of code should be removed.(šåŠ¸H¤•RMAJORZ
+CODE_SMELL
+zsquid:CommentedOutCodeLineÝ"<This block of commented-out lines of code should be removed.(Îò¶þH¥•RMAJORZ
+CODE_SMELL
+zsquid:CommentedOutCodeLineß"<This block of commented-out lines of code should be removed.(†€éˆH¦•RMAJORZ
+CODE_SMELL
+zsquid:CommentedOutCodeLineâ"<This block of commented-out lines of code should be removed.(†€éˆH§•RMAJORZ
+CODE_SMELL
+k
+squid:S106Q"9Replace this use of System.out or System.err by a logger.(î÷ÁÏÿÿÿÿÿH¨•RMAJORZ
+CODE_SMELL
+k
+squid:S106R"9Replace this use of System.out or System.err by a logger.(‚Îç…ùÿÿÿÿH©•RMAJORZ
+CODE_SMELL
+f
+squid:S106T"9Replace this use of System.out or System.err by a logger.(òµõ¡Hª•RMAJORZ
+CODE_SMELL
+k
+squid:S106X"9Replace this use of System.out or System.err by a logger.(ôÂŽÿúÿÿÿÿH«•RMAJORZ
+CODE_SMELL
+osquid:S1126@"AReplace this if-then-else statement by a single return statement.(šÀ›÷H¬•RMINORZ
+CODE_SMELL
+osquid:S1126d"AReplace this if-then-else statement by a single return statement.(šÀ›÷H­•RMINORZ
+CODE_SMELL
+tsquid:S1126y"AReplace this if-then-else statement by a single return statement.(þäÏ£ÿÿÿÿÿH®•RMINORZ
+CODE_SMELL
+psquid:S1126‰"AReplace this if-then-else statement by a single return statement.(šÀ›÷H¯•RMINORZ
+CODE_SMELL
+[squid:S1125K"(Remove the literal "true" boolean value.(£äìùÿÿÿÿH°•RMINORZ
+CODE_SMELL
+’squid:S1488“"^Immediately return this expression instead of assigning it to the temporary variable "result".(³¨Ž‘úÿÿÿÿH±•RMINORZ
+CODE_SMELL
+‹squid:S1488›"\Immediately return this expression instead of assigning it to the temporary variable "user".(ÛÃÛµH²•RMINORZ
+CODE_SMELL
+squid:S1488¢"`Immediately return this expression instead of assigning it to the temporary variable "jwtToken".(ƒ¯ÂÓH³•RMINORZ
+CODE_SMELL
+’squid:S1488±"^Immediately return this expression instead of assigning it to the temporary variable "result".(îÃàìÿÿÿÿÿH´•RMINORZ
+CODE_SMELL
+rsquid:HiddenFieldCheck‚"8Rename "user" which hides the field declared at line 36.(æŠµ­Hµ•RMAJORZ
+CODE_SMELL
+rsquid:HiddenFieldCheck›"8Rename "user" which hides the field declared at line 36.(ÛÃÛµH¶•RMAJORZ
+CODE_SMELL
+Zsquid:S1481o"'Remove this unused "id" local variable.(ˆø»ÌûÿÿÿÿH·•RMINORZ
+CODE_SMELL
+Zsquid:S1481¸"+Remove this unused "status" local variable.(íæ‰ƒH¸•RMINORZ
+CODE_SMELL
+dsquid:S2209¢"5Change this instance-reference to a static reference.(ƒ¯ÂÓH¹•RMAJORZ
+CODE_SMELL
+³squid:S1186½"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿Ó´Hº•RCRITICALZ
+CODE_SMELL
+isquid:S1854o"6Remove this useless assignment to local variable "id".(ˆø»ÌûÿÿÿÿH»•RMAJORZ
+CODE_SMELL
+isquid:S1854¸":Remove this useless assignment to local variable "status".(íæ‰ƒH¼•RMAJORZ
+CODE_SMELL
+€squid:S00117s"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Éí¹H½•RMINORZ
+CODE_SMELL
+†squid:S00117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Œª„ûÿÿÿÿH¾•RMINORZ
+CODE_SMELL
+†squid:S00117‘"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ÄÃÉùÿÿÿÿH¿•RMINORZ
+CODE_SMELL
+†squid:S00117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦á˜³ýÿÿÿÿHÀ•RMINORZ
+CODE_SMELL
+ysquid:UselessImportCheck">Remove this unused import 'com.bridgeit.Utility.TradeUtility'.(Ë †‘HÁ•RMINORZ
+CODE_SMELL

@@ -166,51 +166,114 @@ public class JavaConfig extends WebMvcConfigurerAdapter {
 	}
 
 	// fabric sdk
-	
+
 	@Bean
-	 HFCAClient getHfCaClient(String caUrl, Properties caClientProperties) throws IllegalAccessException, InstantiationException, ClassNotFoundException, CryptoException, InvalidArgumentException, NoSuchMethodException, InvocationTargetException, MalformedURLException {
-		CryptoSuite cryptoSuite;
-			cryptoSuite = CryptoSuite.Factory.getCryptoSuite();
-			HFCAClient caClient = HFCAClient.createNewInstance("http://localhost:7054", null);
-			caClient.setCryptoSuite(cryptoSuite);
-			//client.setUserContext(admin);
-		
+	public HFClient getHfClient() throws Exception {
+		// initialize default cryptosuite
+		CryptoSuite cryptoSuite = CryptoSuite.Factory.getCryptoSuite();
+		// setup the client
+		HFClient client = HFClient.createNewInstance();
+		client.setCryptoSuite(cryptoSuite);
+		return client;
+	}
+
+	@Bean
+	HFCAClient getHFCaClient() {
+		CryptoSuite suite = null;
+		HFCAClient caClient = null;
+		try {
+			suite = CryptoSuite.Factory.getCryptoSuite();
+			caClient = HFCAClient.createNewInstance("http://localhost:7054", null);
+			caClient.setCryptoSuite(suite);
+		} catch (IllegalAccessException e) {
+
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+
+			e.printStackTrace();
+		} catch (CryptoException e) {
+
+			e.printStackTrace();
+		} catch (InvalidArgumentException e) {
+
+			e.printStackTrace();
+		} catch (NoSuchMethodException e) {
+
+			e.printStackTrace();
+		} catch (InvocationTargetException e) {
+
+			e.printStackTrace();
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+
 		return caClient;
 	}
 
-	// TradeUser admin = getAdmin(caClient);
-	
-	
-	 HFCAClient getAdmin(HFCAClient caClient) {
-		 TradeUser admin = tryDeserialize("admin");
-			if (admin == null) {
-				Enrollment adminEnrollment = caClient.enroll("admin", "adminpw");
-				admin = new TradeUser("admin", "importer", "ImporterMSP", adminEnrollment);
-				serialize(admin);
-
-			}
-			return admin;
-	}
-	
-	static TradeUser tryDeserialize(String name) throws Exception {
-		if (Files.exists(Paths.get(name + ".jso"))) {
-			return deserialize(name);
-		}
-		return null;
-	}
-
-	static TradeUser deserialize(String name) throws Exception {
-		try (ObjectInputStream decoder = new ObjectInputStream(Files.newInputStream(Paths.get(name + ".jso")))) {
-			return (TradeUser) decoder.readObject();
-		}
-	}
-	
-	static void serialize(TradeUser appUser) throws IOException {
-		try (ObjectOutputStream oos = new ObjectOutputStream(
-				Files.newOutputStream(Paths.get(appUser.getName() + ".jso")))) {
-			oos.writeObject(appUser);
-		}
-	
-	}
-
+//	@Bean
+//	Channel getChannel(HFClient client) {
+//		Peer peer1 = null;
+//		try {
+//			peer1 = client.newPeer("peer0.importer.bridgelabz.com", "grpc://localhost:7051");
+//		} catch (InvalidArgumentException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		// eventhub name and endpoint in fabcar network
+//		EventHub eventHub = null;
+//		try {
+//			eventHub = client.newEventHub("eventhub01", "grpc://localhost:7053");
+//		} catch (InvalidArgumentException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		// orderer name and endpoint in fabcar network
+//		Orderer orderer = null;
+//		try {
+//			orderer = client.newOrderer("orderer.bridgelabz.com", "grpc://localhost:7050");
+//		} catch (InvalidArgumentException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		// channel name in fabcar network
+//		Channel channel = null;
+//		try {
+//			channel = client.newChannel("mychannel");
+//		} catch (InvalidArgumentException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		try {
+//			channel.addPeer(peer1);
+//		} catch (InvalidArgumentException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		try {
+//			channel.addEventHub(eventHub);
+//		} catch (InvalidArgumentException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		try {
+//			channel.addOrderer(orderer);
+//		} catch (InvalidArgumentException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		try {
+//			channel.initialize();
+//		} catch (InvalidArgumentException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (TransactionException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		return channel;
+//
+//	}
 }

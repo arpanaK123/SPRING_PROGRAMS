@@ -30,11 +30,10 @@ public class UserModel {
 
 	@NotEmpty(message = "bank name is required")
 	private String bankname;
-	private String useraccount;
+	private String accountnumber;
 
-	private byte[] TradeUser;
+	private byte[] useraccount;
 
-	private int accountnumber;
 	private int balance;
 
 	String authentication_key;
@@ -115,15 +114,21 @@ public class UserModel {
 		this.bankname = bankname;
 	}
 
-	public String getUseraccount() {
+	public String getAccountnumber() {
+		return accountnumber;
+	}
+
+	public void setAccountnumber(String accountnumber) {
+		this.accountnumber = accountnumber;
+	}
+
+	public byte[] getUseraccount() {
 		return useraccount;
 	}
 
-	public void setUseraccount(String useraccount) {
+	public void setUseraccount(byte[] useraccount) {
 		this.useraccount = useraccount;
 	}
-
-	
 
 	public int getBalance() {
 		return balance;
@@ -133,20 +138,6 @@ public class UserModel {
 		this.balance = balance;
 	}
 
-	public byte[] getTradeUser() {
-		return TradeUser;
-	}
-
-	public void setTradeUser(byte[] tradeUser) {
-		TradeUser = tradeUser;
-	}
-
-	public int getAccountnumber() {
-		return accountnumber;
-	}
-
-	public void setAccountnumber(int accountnumber) {
-		this.accountnumber = accountnumber;
-	}
+	
 
 }

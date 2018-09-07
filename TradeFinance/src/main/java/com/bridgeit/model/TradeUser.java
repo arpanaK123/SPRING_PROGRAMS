@@ -5,7 +5,9 @@ import java.util.Set;
 
 import org.hyperledger.fabric.sdk.Enrollment;
 import org.hyperledger.fabric.sdk.User;
+import org.springframework.stereotype.Component;
 
+@Component
 public class TradeUser implements User, Serializable {
 	private static final long serialVersionUID = 1L;
 	private String name;
