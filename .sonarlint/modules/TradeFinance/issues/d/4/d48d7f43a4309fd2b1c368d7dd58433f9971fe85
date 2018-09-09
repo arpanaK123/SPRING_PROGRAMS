@@ -1,116 +1,148 @@
 
-†squid:CommentedOutCodeLineê"<This block of commented-out lines of code should be removed.(ûµ—ùùÿÿÿÿ8øòšÛ,H† RMAJORZ
-CODE_SMELL
-ksquid:S2209Ï"5Change this instance-reference to a static reference.(ƒ¯ÂÓ8Õá¯ÇĞ,H¾“RMAJORZ
-CODE_SMELL
-ysquid:HiddenFieldCheckÈ"8Rename "user" which hides the field declared at line 40.(ÛÃÛµ8Õá¯ÇĞ,H¶“RMAJORZ
-CODE_SMELL
-_squid:S1125ä")Remove the literal "false" boolean value.(ÖŠÃ8û£•Û,HâRMINORZ
-CODE_SMELL
-wsquid:S1126¶"AReplace this if-then-else statement by a single return statement.(šÀ›÷8‹®”›Ğ,HÇ“RMINORZ
-CODE_SMELL
-jsquid:S1481n"5Remove this unused "tradeUserAccount" local variable.(ìàÇÛ8ÕÅšŸÛ,Hõ§RMINORZ
-CODE_SMELL
-™squid:S1488Ş"^Immediately return this expression instead of assigning it to the temporary variable "result".(îÃàìÿÿÿÿÿ8ºàÖÏÚ,H±“RMINORZ
-CODE_SMELL
-squid:CommentedOutCodeLine…"<This block of commented-out lines of code should be removed.(¾ŠĞ8ğÃÅÛ,HÊ“RMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineŸ"<This block of commented-out lines of code should be removed.(†€éˆ8ğÃÅÛ,H¹“RMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineÕ"<This block of commented-out lines of code should be removed.(Ú°à¬8ÈÊÕëÚ,H¨“RMAJORZ
+m
+squid:S106e"9Replace this use of System.out or System.err by a logger.(òµõ¡8§ÃêçÛ,HòÓRMAJORZ
 CODE_SMELL
 m
-squid:S106\"9Replace this use of System.out or System.err by a logger.(òµõ¡8„ÈìöÚ,H¦“RMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(¶ºò´8ØàêÛ,H–ÙRMAJORZ
 CODE_SMELL
-™squid:S1488À"^Immediately return this expression instead of assigning it to the temporary variable "result".(³¨‘úÿÿÿÿ8Õá¯ÇĞ,H»“RMINORZ
+ˆsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Éí¹8”ãÜ€Ğ,HÍÓRMINORZ
 CODE_SMELL
-qsquid:S1854œ"6Remove this useless assignment to local variable "id".(ˆø»Ìûÿÿÿÿ8ôÅ›óÏ,H¸“RMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Øâ²8«â‘ìÚ,H¼“RMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLine—"<This block of commented-out lines of code should be removed.(šåŠ¸8ğÃÅÛ,H·“RMAJORZ
-CODE_SMELL
+asquid:S1148¢"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8šÅŒéÛ,H¿×RMINORZVULNERABILITY
 r
-squid:S106Y"9Replace this use of System.out or System.err by a logger.(î÷ÁÏÿÿÿÿÿ8Ê¨Ñ–Û,H… RMAJORZ
+squid:S106b"9Replace this use of System.out or System.err by a logger.(¾¹Ìçÿÿÿÿÿ8Ê¨Ñ–Û,HøÓRMAJORZ
 CODE_SMELL
-|squid:S1126¦"AReplace this if-then-else statement by a single return statement.(şäÏ£ÿÿÿÿÿ8‡Î‰œÛ,H¬¢RMINORZ
+hsquid:S1199Ÿ"-Extract this nested code block into a method.(Ë§¹œûÿÿÿÿ8§ÃêçÛ,HŞÓRMINORZ
+CODE_SMELL
+wsquid:S1126Ó"AReplace this if-then-else statement by a single return statement.(ãÏÇ–8‡Î‰œÛ,HÎÓRMINORZ
+CODE_SMELL
+bsquid:S1125X"(Remove the literal "true" boolean value.(£äìùÿÿÿÿ8‚äòºÛ,HúÓRMINORZ
+CODE_SMELL
+jsquid:EmptyStatementUsageCheckÎ"Remove this empty statement.(Åñ­õşÿÿÿÿ8âøåèÛ,H¶ÖRMINORZ
+CODE_SMELL
+|squid:S1126ñ"AReplace this if-then-else statement by a single return statement.(©Ûï©ûÿÿÿÿ8™³âÈĞ,HöÓRMINORZ
+CODE_SMELL
+asquid:S1148È"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8§ÃêçÛ,HİÓRMINORZVULNERABILITY
+usquid:S2259Ê"GA "NullPointerException" could be thrown; "responses" is nullable here.(¤ªùG8Ÿù¯èÛ,HõÓRMAJORZBUG
+…squid:UselessImportCheck"CRemove this unused import 'org.springframework.stereotype.Service'.(¼º¡Ú8¶šÌèÛ,HŞÕRMINORZ
+CODE_SMELL
+|squid:S1126•"AReplace this if-then-else statement by a single return statement.(şäÏ£ÿÿÿÿÿ8‹®”›Ğ,H‚ÔRMINORZ
+CODE_SMELL
+asquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8É±ïçÛ,HíÓRMINORZVULNERABILITY
+esquid:S1172è"/Remove this unused method parameter "jwtToken".(Å—ñ­8šÅŒéÛ,H»×RMAJORZ
+CODE_SMELL
+asquid:S1148»"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8šÅŒéÛ,HÁ×RMINORZVULNERABILITY
+{squid:S2147à"ECombine this catch with the one at line 474, which has the same body.(ï­£Ä8É±ïçÛ,HÕÓRMINORZ
+CODE_SMELL
+›%squid:RedundantThrowsDeclarationCheckE"GRemove the redundant '!unknownSymbol!' thrown exception declaration(s).(œÏ‚şÿÿÿÿ8èÄ˜éÚ,HÖÓRMINORZ
+CODE_SMELL
+squid:S00117¢"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Œª„ûÿÿÿÿ8šíÿ¨Ğ,H‹ÔRMINORZ
+CODE_SMELL
+€squid:UselessImportCheck">Remove this unused import 'com.bridgeit.Utility.TradeUtility'.(Ë †‘8„ÈìöÚ,HŒÔRMINORZ
 CODE_SMELL
 s
-squid:S106í"9Replace this use of System.out or System.err by a logger.(Ûñ¤üÿÿÿÿ8ÏÂÌîÚ,H®“RMAJORZ
+squid:S106Ø"9Replace this use of System.out or System.err by a logger.(ÙÄùÿÿÿÿ8ØàêÛ,H•ÙRMAJORZ
 CODE_SMELL
-–squid:S1488Ï"`Immediately return this expression instead of assigning it to the temporary variable "jwtToken".(ƒ¯ÂÓ8Õá¯ÇĞ,HÌ“RMINORZ
+wsquid:S1126€"AReplace this if-then-else statement by a single return statement.(šÀ›÷8§ÃêçÛ,HäÓRMINORZ
 CODE_SMELL
-squid:S00117¾"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ÄÃÉùÿÿÿÿ8šíÿ¨Ğ,H¿“RMINORZ
+asquid:S1148â"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§ÃêçÛ,HèÓRMINORZVULNERABILITY
+csquid:S1199†"-Extract this nested code block into a method.(ßüß8§ÃêçÛ,HÔÓRMINORZ
 CODE_SMELL
-ˆsquid:S00117â"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°©Ì©8¹È¾‘Û,H«“RMINORZ
+zsquid:UselessImportCheck	"3Remove this unused import 'javax.validation.Valid'.(æ¤ñ÷úÿÿÿÿ8¤¸òŸÛ,HîÓRMINORZ
 CODE_SMELL
-…squid:S00100ö"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğãüÛ8´ü“Û,H££RMINORZ
+asquid:S1148â"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ØàêÛ,H ÙRMINORZVULNERABILITY
+ksquid:S2209¾"5Change this instance-reference to a static reference.(ƒ¯ÂÓ8Õá¯ÇĞ,HÛÓRMAJORZ
 CODE_SMELL
-squid:S00117³"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Œª„ûÿÿÿÿ8ÃÅÎÇĞ,HË“RMINORZ
+asquid:S1148Ü"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ØàêÛ,HŸÙRMINORZVULNERABILITY
+wsquid:S1126¥"AReplace this if-then-else statement by a single return statement.(šÀ›÷8‡Î‰œÛ,HùÓRMINORZ
 CODE_SMELL
-†squid:CommentedOutCodeLine•"<This block of commented-out lines of code should be removed.(øæãÃùÿÿÿÿ8ğÃÅÛ,H©“RMAJORZ
+€squid:S2147İ"ECombine this catch with the one at line 474, which has the same body.(°êã§ıÿÿÿÿ8É±ïçÛ,HåÓRMINORZ
 CODE_SMELL
-lsquid:S1481é"1Remove this unused "userfunction" local variable.(®ëá–ùÿÿÿÿ8øòšÛ,Hˆ RMINORZ
+asquid:S1148÷"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§ÃêçÛ,HçÓRMINORZVULNERABILITY
+™squid:S1488¯"^Immediately return this expression instead of assigning it to the temporary variable "result".(³¨‘úÿÿÿÿ8Õá¯ÇĞ,HÉÓRMINORZ
 CODE_SMELL
-›%squid:RedundantThrowsDeclarationCheck>"GRemove the redundant '!unknownSymbol!' thrown exception declaration(s).(œÏ‚şÿÿÿÿ8èÄ˜éÚ,HÃ“RMINORZ
+asquid:S1148€"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8É±ïçÛ,HşÓRMINORZVULNERABILITY
+csquid:S1199’"-Extract this nested code block into a method.(İÚ8§ÃêçÛ,HğÓRMINORZ
 CODE_SMELL
-€squid:UselessImportCheck"9Remove this unused import 'com.bridgeit.model.Usermodel'.(ÿº§¦üÿÿÿÿ8‡Î‰œÛ,H®¢RMINORZ
+`squid:S1172É"*Remove this unused method parameter "jwt".(‹Âå8£Ğ¯ºÛ,HÓÓRMAJORZ
 CODE_SMELL
-vsquid:S1126G"AReplace this if-then-else statement by a single return statement.(šÀ›÷8œôüÎ,Hª“RMINORZ
+asquid:S1148ú"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8—Ò¹Û,H‚ÚRMINORZVULNERABILITY
+€squid:S2147–"ECombine this catch with the one at line 148, which has the same body.(®¤¯îıÿÿÿÿ8ØàêÛ,HÙRMINORZ
 CODE_SMELL
-wsquid:S1126‡"AReplace this if-then-else statement by a single return statement.(šÀ›÷8œôüÎ,Hµ“RMINORZ
+n
+squid:S106€"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8ØàêÛ,H™ÙRMAJORZ
 CODE_SMELL
-’squid:S1488È"\Immediately return this expression instead of assigning it to the temporary variable "user".(ÛÃÛµ8Õá¯ÇĞ,HÅ“RMINORZ
+s
+squid:S106ş"9Replace this use of System.out or System.err by a logger.(î¸ıÿÿÿÿ8ÏÂÌîÚ,HĞÓRMAJORZ
 CODE_SMELL
-…squid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(şƒ‡­øÿÿÿÿ8º³ÃÛ,Hõ¦RMAJORZ
+ysquid:HiddenFieldCheckÇ"8Rename "user" which hides the field declared at line 47.(Ó´è«8âøåèÛ,H¸ÖRMAJORZ
 CODE_SMELL
-€squid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(Üîæİ8„ÈìöÚ,H´“RMAJORZ
+`squid:S1148q"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8şË¼ºÛ,HìÓRMINORZVULNERABILITY
+qsquid:S1854‹"6Remove this useless assignment to local variable "id".(ˆø»Ìûÿÿÿÿ8ôÅ›óÏ,H„ÔRMAJORZ
 CODE_SMELL
-†squid:CommentedOutCodeLineƒ"<This block of commented-out lines of code should be removed.(š½»Êÿÿÿÿÿ8«â‘ìÚ,HÀ“RMAJORZ
+€squid:S2147ø"ECombine this catch with the one at line 501, which has the same body.(°êã§ıÿÿÿÿ8šÅŒéÛ,H½×RMINORZ
 CODE_SMELL
-lsquid:S1135ü"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8´ü“Û,H¢£RINFOZ
+asquid:S1148ß"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8šÅŒéÛ,HÂ×RMINORZVULNERABILITY
+squid:S00117­"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ÄÃÉùÿÿÿÿ8ÃÅÎÇĞ,HñÓRMINORZ
 CODE_SMELL
-†squid:CommentedOutCodeLine‘"<This block of commented-out lines of code should be removed.(ÚÅØşÿÿÿÿ8øòšÛ,H‡ RMAJORZ
+zsquid:S2147à"ECombine this catch with the one at line 349, which has the same body.(ÄÜŞc8çŸì¹Û,HŠÔRMINORZ
 CODE_SMELL
-]squid:S1125R"(Remove the literal "true" boolean value.(šê 8œôüÎ,HÈ“RMINORZ
+s
+squid:S106š"9Replace this use of System.out or System.err by a logger.(ÔàÊ²ıÿÿÿÿ8»úÍîÚ,HóÓRMAJORZ
 CODE_SMELL
-ysquid:HiddenFieldCheck¯"8Rename "user" which hides the field declared at line 40.(æŠµ­8Õá¯ÇĞ,H³“RMAJORZ
+bsquid:S1481‹"'Remove this unused "id" local variable.(ˆø»Ìûÿÿÿÿ8ôÅ›óÏ,HïÓRMINORZ
+CODE_SMELL
+ysquid:HiddenFieldCheck"8Rename "user" which hides the field declared at line 47.(æŠµ­8Õá¯ÇĞ,HéÓRMAJORZ
+CODE_SMELL
+asquid:S1148µ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8û‰ú¹Û,HËÓRMINORZVULNERABILITY
+bsquid:S1125}"(Remove the literal "true" boolean value.(£äìùÿÿÿÿ8ØàêÛ,HÚRMINORZ
+CODE_SMELL
+wsquid:S1126ö"AReplace this if-then-else statement by a single return statement.(šÀ›÷8ÑšÁÉÛ,HüÓRMINORZ
+CODE_SMELL
+s
+squid:S106Ï"9Replace this use of System.out or System.err by a logger.(æ• õúÿÿÿÿ8ØàêÛ,H—ÙRMAJORZ
+CODE_SMELL
+hsquid:S1199«"-Extract this nested code block into a method.(ÌÒù£ÿÿÿÿÿ8§ÃêçÛ,H‡ÔRMINORZ
+CODE_SMELL
+’squid:S1488·"\Immediately return this expression instead of assigning it to the temporary variable "user".(ÛÃÛµ8Õá¯ÇĞ,HˆÔRMINORZ
+CODE_SMELL
+asquid:S1148™"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8šÅŒéÛ,HÀ×RMINORZVULNERABILITY
+{squid:S2147û"ECombine this catch with the one at line 501, which has the same body.(ï­£Ä8šÅŒéÛ,H¾×RMINORZ
+CODE_SMELL
+asquid:S1148¦"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8É±ïçÛ,HıÓRMINORZVULNERABILITY
+squid:S1488Ê"cImmediately return this expression instead of assigning it to the temporary variable "allContract".(ğÙÈùÿÿÿÿ8£Ğ¯ºÛ,HâÓRMINORZ
+CODE_SMELL
+asquid:S1148ß"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§ÃêçÛ,HêÓRMINORZVULNERABILITY
+asquid:S1148ı"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8û‰ú¹Û,HÿÓRMINORZVULNERABILITY
+n
+squid:S106È"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8§ÃêçÛ,H„ÚRMAJORZ
+CODE_SMELL
+psquid:S1141ñ"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8šÅŒéÛ,Hº×RMAJORZ
+CODE_SMELL
+ysquid:HiddenFieldCheckÿ"8Rename "user" which hides the field declared at line 47.(Ó´è«8§ÃêçÛ,HƒÔRMAJORZ
+CODE_SMELL
+›squid:S1488ï"`Immediately return this expression instead of assigning it to the temporary variable "contract".(¥÷†ùÿÿÿÿ8ÓºèÛ,H½ÕRMINORZ
+CODE_SMELL
+q"squid:SwitchLastCaseIsDefaultCheck„""Add a default case to this switch.(µ•¡s8§ÃêçÛ,H×ÓRCRITICALZ
+CODE_SMELL
+–squid:S1488¾"`Immediately return this expression instead of assigning it to the temporary variable "jwtToken".(ƒ¯ÂÓ8Õá¯ÇĞ,HÑÓRMINORZ
+CODE_SMELL
+vsquid:S1126N"AReplace this if-then-else statement by a single return statement.(šÀ›÷8œôüÎ,HûÓRMINORZ
 CODE_SMELL
 r
-squid:S106a"9Replace this use of System.out or System.err by a logger.(ôÂÿúÿÿÿÿ8“òÖîÚ,HÄ“RMAJORZ
-CODE_SMELL
-€squid:UselessImportCheck">Remove this unused import 'com.bridgeit.Utility.TradeUtility'.(Ë †‘8„ÈìöÚ,HÉ“RMINORZ
-CODE_SMELL
-squid:CommentedOutCodeLineœ"<This block of commented-out lines of code should be removed.(†€éˆ8«â‘ìÚ,Hº“RMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineš"<This block of commented-out lines of code should be removed.(Îò¶ş8«â‘ìÚ,H¯“RMAJORZ
-CODE_SMELL
-†squid:CommentedOutCodeLineÙ"<This block of commented-out lines of code should be removed.(’•îæıÿÿÿÿ8ÈÊÕëÚ,H½“RMAJORZ
-CODE_SMELL
-†squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8«â‘ìÚ,HÁ“RMAJORZ
-CODE_SMELL
-bsquid:S1481œ"'Remove this unused "id" local variable.(ˆø»Ìûÿÿÿÿ8ôÅ›óÏ,H²“RMINORZ
-CODE_SMELL
-ˆsquid:S00117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Éí¹8”ãÜ€Ğ,H­“RMINORZ
-CODE_SMELL
-…squid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(Òß¡õúÿÿÿÿ8ÿï¼Û,H³¦RMAJORZ
+squid:S106k"9Replace this use of System.out or System.err by a logger.(ôÂÿúÿÿÿÿ8âøåèÛ,H·ÖRMAJORZ
 CODE_SMELL
 r
-squid:S106Z"9Replace this use of System.out or System.err by a logger.(‚Îç…ùÿÿÿÿ8»úÍîÚ,HÂ“RMAJORZ
+squid:S106a"9Replace this use of System.out or System.err by a logger.(ÒÈøøÿÿÿÿ8“òÖîÚ,HÊÓRMAJORZ
 CODE_SMELL
-vsquid:S1126~"AReplace this if-then-else statement by a single return statement.(šÀ›÷8™³âÈĞ,H°“RMINORZ
+n
+squid:S106ƒ"9Replace this use of System.out or System.err by a logger.(ËÜ‘ò8§ÃêçÛ,HƒÚRMAJORZ
 CODE_SMELL
-ysquid:S1854n"DRemove this useless assignment to local variable "tradeUserAccount".(ìàÇÛ8ÕÅšŸÛ,Hö§RMAJORZ
+ysquid:HiddenFieldCheck·"8Rename "user" which hides the field declared at line 47.(ÛÃÛµ8Õá¯ÇĞ,H…ÔRMAJORZ
 CODE_SMELL
-wsquid:S1126‘"AReplace this if-then-else statement by a single return statement.(šÀ›÷8‡Î‰œÛ,H­¢RMINORZ
+squid:CommentedOutCodeLine©"<This block of commented-out lines of code should be removed.(ç€ü8²€ºÂÛ,HÜÓRMAJORZ
 CODE_SMELL
-…squid:CommentedOutCodeLine`"<This block of commented-out lines of code should be removed.(Ğ³Ùºşÿÿÿÿ8ò÷ÒÛ,HÒ¤RMAJORZ
+™squid:S1488Å"^Immediately return this expression instead of assigning it to the temporary variable "result".(îÃàìÿÿÿÿÿ8ºàÖÏÚ,HëÓRMINORZ
 CODE_SMELL
-ksquid:S1135u"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ÿ¡ëšÛ,H†¢RINFOZ
+€squid:UselessImportCheck"9Remove this unused import 'com.bridgeit.model.Usermodel'.(ÿº§¦üÿÿÿÿ8‡Î‰œÛ,H†ÔRMINORZ
 CODE_SMELL
-squid:S4144ö"hUpdate this method so that its implementation is not identical to "getContractByContractId" on line 124.(ğãüÛ8¤¸òŸÛ,HË©RMAJORZ
-CODE_SMELL
-|squid:S1126ø"AReplace this if-then-else statement by a single return statement.(µœ·£ıÿÿÿÿ8¤¸òŸÛ,HÌ©RMINORZ
-CODE_SMELL
-zsquid:UselessImportCheck"3Remove this unused import 'javax.validation.Valid'.(æ¤ñ÷úÿÿÿÿ8¤¸òŸÛ,HÍ©RMINORZ
-CODE_SMELL
+asquid:S1148Ş"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8âøåèÛ,H¹ÖRMINORZVULNERABILITY

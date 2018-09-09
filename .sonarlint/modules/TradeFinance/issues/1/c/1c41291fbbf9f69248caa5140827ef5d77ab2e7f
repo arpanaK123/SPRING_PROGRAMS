@@ -1,7 +1,9 @@
 
-€squid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(†€éˆ8æõÐÛ,HåŸRMAJORZ
+€squid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(»·£Ü8³éð¾Û,HÔÃRMAJORZ
 CODE_SMELL
-‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãøªHæŸRMINORZ
+bsquid:S1481"-Remove this unused "userByte" local variable.(ÔäËÃ8³éð¾Û,HÕÃRMINORZ
 CODE_SMELL
-…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(÷Ñïûÿÿÿÿ8æõÐÛ,HçŸRMAJORZ
+‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãøªH×½RMINORZ
+CODE_SMELL
+qsquid:S1854"<Remove this useless assignment to local variable "userByte".(Õ÷²‰8³éð¾Û,HÖÃRMAJORZ
 CODE_SMELL

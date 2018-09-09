@@ -17,17 +17,17 @@ public class ContractMappers implements RowMapper<TradeContractModel> {
 		contractModel.setContractMoney(rs.getInt("contractMoney"));
 
 		contractModel.setExporterId(rs.getString("exporterId"));
-		contractModel.setExporterId(rs.getString("importerId"));
-		contractModel.setExporterId(rs.getString("importerBankId"));
-		contractModel.setExporterId(rs.getString("insuranceId"));
-		contractModel.setExporterId(rs.getString("customId"));
-		contractModel.setPortOfLoadin(rs.getString("portOfLoading"));
+		contractModel.setImporterId(rs.getString("importerId"));
+		contractModel.setImporterBankId(rs.getString("importerBankId"));
+		contractModel.setInsuranceId(rs.getString("insuranceId"));
+		contractModel.setCustomId(rs.getString("customId"));
+		contractModel.setPortOfLoadin(rs.getString("portOfLoadin"));
 		contractModel.setPortOfEntry(rs.getString("portOfEntry"));
 		contractModel.setExporterCheck(rs.getBoolean("exporterCheck"));
-		contractModel.setExporterCheck(rs.getBoolean("importerCheck"));
-		contractModel.setExporterCheck(rs.getBoolean("importerBankCheck"));
-		contractModel.setExporterCheck(rs.getBoolean("insuranceCheck"));
-		contractModel.setExporterCheck(rs.getBoolean("customCheck"));
+		contractModel.setImporterCheck(rs.getBoolean("importerCheck"));
+		contractModel.setImporterBankCheck(rs.getBoolean("importerBankCheck"));
+		contractModel.setInsuranceCheck(rs.getBoolean("insuranceCheck"));
+		contractModel.setCustomCheck(rs.getBoolean("customCheck"));
 
 		return contractModel;
 	}

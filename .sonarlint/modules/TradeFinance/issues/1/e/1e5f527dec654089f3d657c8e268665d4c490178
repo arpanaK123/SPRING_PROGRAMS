@@ -1,70 +1,70 @@
 
-squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëü‹ùÿÿÿÿH†‡RMINORZ
+wsquid:S2094"BRemove this empty class, write its code or make it an "interface".(©È¼8Û¢ˆ‘Û,Hõ¼RMINORZ
 CODE_SMELL
-wsquid:S2094"BRemove this empty class, write its code or make it an "interface".(©È¼8Û¢ˆ‘Û,H‚‰RMINORZ
+…squid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(ªÑıÓşÿÿÿÿ8Û¢ˆ‘Û,Hö¼RMAJORZ
 CODE_SMELL
-€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ß Ù8Û¢ˆ‘Û,Hƒ‰RMAJORZ
+€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(†ÌŞµ8Û¢ˆ‘Û,H÷¼RMAJORZ
 CODE_SMELL
-…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(œé®úÿÿÿÿ8Û¢ˆ‘Û,H„‰RMAJORZ
+€squid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(†€éˆ8Û¢ˆ‘Û,Hø¼RMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine_"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8Û¢ˆ‘Û,Hù¼RMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ß Ù8Û¢ˆ‘Û,Hú¼RMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLineA"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8Û¢ˆ‘Û,Hû¼RMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(Õº»°8Û¢ˆ‘Û,Hü¼RMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(âƒÔÂ8Û¢ˆ‘Û,Hı¼RMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLinee"<This block of commented-out lines of code should be removed.(†€éˆ8Û¢ˆ‘Û,Hş¼RMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(–¢‚€8Û¢ˆ‘Û,Hÿ¼RMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(†€éˆ8Û¢ˆ‘Û,H€½RMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(ÚóÁå8Û¢ˆ‘Û,H½RMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine\"<This block of commented-out lines of code should be removed.(•ß°«ıÿÿÿÿ8Û¢ˆ‘Û,H‚½RMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Û¢ˆ‘Û,Hƒ½RMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(œé®úÿÿÿÿ8Û¢ˆ‘Û,H„½RMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(–®“Äÿÿÿÿÿ8Û¢ˆ‘Û,H…½RMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLineZ"<This block of commented-out lines of code should be removed.(ì–Âüûÿÿÿÿ8Û¢ˆ‘Û,H†½RMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(îŸö¦üÿÿÿÿ8Û¢ˆ‘Û,H‡½RMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLineW"<This block of commented-out lines of code should be removed.(ŞÎÂÚ8Û¢ˆ‘Û,Hˆ½RMAJORZ
 CODE_SMELL
 …squid:CommentedOutCodeLine
-"<This block of commented-out lines of code should be removed.(”¶ş‡ıÿÿÿÿ8Û¢ˆ‘Û,H…‰RMAJORZ
+"<This block of commented-out lines of code should be removed.(”¶ş‡ıÿÿÿÿ8Û¢ˆ‘Û,H‰½RMAJORZ
 CODE_SMELL
-€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(âƒÔÂ8Û¢ˆ‘Û,H†‰RMAJORZ
+…squid:CommentedOutCodeLineL"<This block of commented-out lines of code should be removed.(¾Ù‚¼ûÿÿÿÿ8Û¢ˆ‘Û,HŠ½RMAJORZ
 CODE_SMELL
-€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(–¢‚€8Û¢ˆ‘Û,H‡‰RMAJORZ
+squid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(Ç‡±8Û¢ˆ‘Û,H‹½RMAJORZ
 CODE_SMELL
-€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Üîæİ8Û¢ˆ‘Û,Hˆ‰RMAJORZ
+€squid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(ŠòÖ8Û¢ˆ‘Û,HŒ½RMAJORZ
 CODE_SMELL
-€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ŞÎÂÚ8Û¢ˆ‘Û,H‰‰RMAJORZ
+…squid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(şè¤Úûÿÿÿÿ8Û¢ˆ‘Û,H½RMAJORZ
 CODE_SMELL
-€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(†ÌŞµ8Û¢ˆ‘Û,HŠ‰RMAJORZ
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëü‹ùÿÿÿÿH½RMINORZ
 CODE_SMELL
-€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(é©†à8Û¢ˆ‘Û,H‹‰RMAJORZ
+€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(é©†à8Û¢ˆ‘Û,H½RMAJORZ
 CODE_SMELL
-…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8Û¢ˆ‘Û,HŒ‰RMAJORZ
+€squid:CommentedOutCodeLine7"<This block of commented-out lines of code should be removed.(È£Ë8Û¢ˆ‘Û,H½RMAJORZ
 CODE_SMELL
-€squid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(†€éˆ8Û¢ˆ‘Û,H‰RMAJORZ
+€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ŞÎÂÚ8Û¢ˆ‘Û,H‘½RMAJORZ
 CODE_SMELL
-…squid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Û¢ˆ‘Û,H‰RMAJORZ
+…squid:CommentedOutCodeLine="<This block of commented-out lines of code should be removed.(¢œæåşÿÿÿÿ8Û¢ˆ‘Û,H’½RMAJORZ
 CODE_SMELL
-€squid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(ÚóÁå8Û¢ˆ‘Û,H‰RMAJORZ
+…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8Û¢ˆ‘Û,H“½RMAJORZ
 CODE_SMELL
-…squid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(ªÑıÓşÿÿÿÿ8Û¢ˆ‘Û,H‰RMAJORZ
+€squid:CommentedOutCodeLineh"<This block of commented-out lines of code should be removed.(ŞÎÂÚ8Û¢ˆ‘Û,H”½RMAJORZ
 CODE_SMELL
-€squid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(Õº»°8Û¢ˆ‘Û,H‘‰RMAJORZ
+€squid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(ŞÎÂÚ8Û¢ˆ‘Û,H•½RMAJORZ
 CODE_SMELL
-…squid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(şè¤Úûÿÿÿÿ8Û¢ˆ‘Û,H’‰RMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(†€éˆ8Û¢ˆ‘Û,H“‰RMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLine7"<This block of commented-out lines of code should be removed.(È£Ë8Û¢ˆ‘Û,H”‰RMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(ŠòÖ8Û¢ˆ‘Û,H•‰RMAJORZ
-CODE_SMELL
-…squid:CommentedOutCodeLine="<This block of commented-out lines of code should be removed.(¢œæåşÿÿÿÿ8Û¢ˆ‘Û,H–‰RMAJORZ
-CODE_SMELL
-…squid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(îŸö¦üÿÿÿÿ8Û¢ˆ‘Û,H—‰RMAJORZ
-CODE_SMELL
-…squid:CommentedOutCodeLineA"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8Û¢ˆ‘Û,H˜‰RMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(ŞÎÂÚ8Û¢ˆ‘Û,H™‰RMAJORZ
-CODE_SMELL
-…squid:CommentedOutCodeLineL"<This block of commented-out lines of code should be removed.(¾Ù‚¼ûÿÿÿÿ8Û¢ˆ‘Û,Hš‰RMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(Ç‡±8Û¢ˆ‘Û,H›‰RMAJORZ
-CODE_SMELL
-…squid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(–®“Äÿÿÿÿÿ8Û¢ˆ‘Û,Hœ‰RMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLineW"<This block of commented-out lines of code should be removed.(ŞÎÂÚ8Û¢ˆ‘Û,H‰RMAJORZ
-CODE_SMELL
-…squid:CommentedOutCodeLineZ"<This block of commented-out lines of code should be removed.(ì–Âüûÿÿÿÿ8Û¢ˆ‘Û,H‰RMAJORZ
-CODE_SMELL
-…squid:CommentedOutCodeLine\"<This block of commented-out lines of code should be removed.(•ß°«ıÿÿÿÿ8Û¢ˆ‘Û,HŸ‰RMAJORZ
-CODE_SMELL
-…squid:CommentedOutCodeLine_"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8Û¢ˆ‘Û,H ‰RMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLinee"<This block of commented-out lines of code should be removed.(†€éˆ8Û¢ˆ‘Û,H¡‰RMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLineh"<This block of commented-out lines of code should be removed.(ŞÎÂÚ8Û¢ˆ‘Û,H¢‰RMAJORZ
+€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Üîæİ8Û¢ˆ‘Û,H–½RMAJORZ
 CODE_SMELL

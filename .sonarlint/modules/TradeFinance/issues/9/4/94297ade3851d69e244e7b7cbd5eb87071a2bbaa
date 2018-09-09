@@ -1,188 +1,147 @@
 
-squid:CommentedOutCodeLineé"<This block of commented-out lines of code should be removed.(†ÌŞµ8‡Á…‘Û,H²™RMAJORZ
+–%squid:RedundantThrowsDeclarationCheck0"GRemove the redundant '!unknownSymbol!' thrown exception declaration(s).(¡Á„†8åáÚéÛ,H‘ØRMINORZ
 CODE_SMELL
-†squid:CommentedOutCodeLineÁ"<This block of commented-out lines of code should be removed.(şµäÉúÿÿÿÿ8½ÎßÛ,HŠ™RMAJORZ
+‡squid:S00117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Öê*8‡¯‘Û,HõÔRMINORZ
 CODE_SMELL
-†squid:CommentedOutCodeLine·"<This block of commented-out lines of code should be removed.( …¢„ùÿÿÿÿ8‡¯‘Û,H³™RMAJORZ
+r
+squid:S106:"9Replace this use of System.out or System.err by a logger.(›ò®³ûÿÿÿÿ8¬ÙÀĞ,HİÔRMAJORZ
 CODE_SMELL
-†squid:CommentedOutCodeLine½"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8‡Á…‘Û,H¿™RMAJORZ
+{squid:S2259"GA "NullPointerException" could be thrown; "usersList" is nullable here.(“ì›»úÿÿÿÿ8ªûüçÛ,HüÔRMAJORZBUG
+|squid:S1126ß"AReplace this if-then-else statement by a single return statement.(™¦Ôêøÿÿÿÿ8ÖïÖ›Û,HíÔRMINORZ
 CODE_SMELL
-m
-squid:S106H"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8¬ÙÀĞ,H¥™RMAJORZ
+dsquid:S1481‰")Remove this unused "user" local variable.(€Å÷£ùÿÿÿÿ8¬¿ôüÎ,HÛÔRMINORZ
 CODE_SMELL
-squid:CommentedOutCodeLineŸ"<This block of commented-out lines of code should be removed.(ŞÎÂÚ8‡Á…‘Û,H–™RMAJORZ
+wsquid:S1126ú"AReplace this if-then-else statement by a single return statement.(õ½áŸ8š¦ĞËÑ,HÙÔRMINORZ
 CODE_SMELL
-squid:CommentedOutCodeLine®"<This block of commented-out lines of code should be removed.(ŞÎÂÚ8‡Á…‘Û,H¬™RMAJORZ
+jsquid:S1481æ"/Remove this unused "updatedRow" local variable.(öÓòÜûÿÿÿÿ8ŞéšÛ,HãÔRMINORZ
 CODE_SMELL
 l
-squid:S106g"9Replace this use of System.out or System.err by a logger.(ƒ”Ú;8˜ÄˆªÏ,H·™RMAJORZ
+squid:S106>"9Replace this use of System.out or System.err by a logger.(êÅ8”°¿çÚ,HæÔRMAJORZ
 CODE_SMELL
-squid:CommentedOutCodeLineÉ"<This block of commented-out lines of code should be removed.(Ì´½¯8‡¯‘Û,Hª™RMAJORZ
+—squid:S1488"\Immediately return this expression instead of assigning it to the temporary variable "user".(“ì›»úÿÿÿÿ8ªûüçÛ,HîÔRMINORZ
 CODE_SMELL
-†squid:CommentedOutCodeLineİ"<This block of commented-out lines of code should be removed.(”¶ş‡ıÿÿÿÿ8‡Á…‘Û,HÈ™RMAJORZ
+|squid:S1126Ÿ"AReplace this if-then-else statement by a single return statement.(ğ—ŸÓùÿÿÿÿ8‘ì¹Û,HèÔRMINORZ
 CODE_SMELL
-–%squid:RedundantThrowsDeclarationCheck"GRemove the redundant '!unknownSymbol!' thrown exception declaration(s).(²Õ¶8”°¿çÚ,HØ™RMINORZ
+squid:UselessImportCheck"HRemove this unused import 'org.springframework.dao.DataAccessException'.(·È³÷ûÿÿÿÿ8ô¶ÉÃÛ,HƒÕRMINORZ
 CODE_SMELL
-†squid:CommentedOutCodeLineø"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8‡Á…‘Û,H¾™RMAJORZ
+asquid:S1148å"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¤™©ºÛ,H×ÔRMINORZVULNERABILITY
+ˆsquid:S00117´"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­ïİ8€†êÛ,HüØRMINORZ
 CODE_SMELL
-‡squid:S00117ä"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Öê*8‡¯‘Û,H ™RMINORZ
+wsquid:S1126Í"AReplace this if-then-else statement by a single return statement.(œëÓ¿8Ì±ÇĞ,HŒÕRMINORZ
 CODE_SMELL
-`squid:S1148P"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,H®™RMINORZVULNERABILITY
-squid:CommentedOutCodeLine®"<This block of commented-out lines of code should be removed.(€‰8½ÎßÛ,H—™RMAJORZ
+asquid:S1148”"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”°¿çÚ,HìÔRMINORZVULNERABILITY
+]squid:S1481|")Remove this unused "name" local variable.(Íè‡88š¦ĞËÑ,HáÔRMINORZ
 CODE_SMELL
-m
-squid:S106–"9Replace this use of System.out or System.err by a logger.(ƒ”Ú;8”°¿çÚ,H˜™RMAJORZ
+asquid:S1148À"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8€†êÛ,HıØRMINORZVULNERABILITY
+s
+squid:S106š"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8åáÚéÛ,H”ØRMAJORZ
 CODE_SMELL
-ˆsquid:S00117Š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öªùß8¼ÃÎÇĞ,Hš™RMINORZ
+ysquid:S1854æ">Remove this useless assignment to local variable "updatedRow".(öÓòÜûÿÿÿÿ8ŞéšÛ,HùÔRMAJORZ
 CODE_SMELL
-m
-squid:S106>"9Replace this use of System.out or System.err by a logger.(ùÅÓÏ8´ĞõßÍ,H™RMAJORZ
+squid:S00117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìÒš¶úÿÿÿÿ8´°˜ÈĞ,HêÔRMINORZ
 CODE_SMELL
-†squid:CommentedOutCodeLine•"<This block of commented-out lines of code should be removed.(¶¬¶Ûûÿÿÿÿ8‡¯‘Û,H’™RMAJORZ
+lsquid:S1854O"7Remove this useless assignment to local variable "row".(Ğæ‘¬8©Á–ÁÛ,H‘ÕRMAJORZ
 CODE_SMELL
-›%squid:RedundantThrowsDeclarationCheck/"GRemove the redundant '!unknownSymbol!' thrown exception declaration(s).(œÅ¼øÿÿÿÿ8Ó­»—Û,HßŸRMINORZ
+rsquid:S1854l"8Remove this useless assignment to local variable "name".(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,HøÔRMAJORZ
 CODE_SMELL
-†squid:CommentedOutCodeLineÚ"<This block of commented-out lines of code should be removed.(œé®úÿÿÿÿ8‡Á…‘Û,H™RMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineæ"<This block of commented-out lines of code should be removed.(ŞÎÂÚ8‡Á…‘Û,H¹™RMAJORZ
-CODE_SMELL
-†squid:CommentedOutCodeLine¢"<This block of commented-out lines of code should be removed.(¾Ù‚¼ûÿÿÿÿ8‡Á…‘Û,H‰™RMAJORZ
-CODE_SMELL
-†squid:CommentedOutCodeLine«"<This block of commented-out lines of code should be removed.(«ºÛŒùÿÿÿÿ8½ÎßÛ,H©™RMAJORZ
-CODE_SMELL
-ysquid:S1854Ÿ">Remove this useless assignment to local variable "updatedRow".(öÓòÜûÿÿÿÿ8ŞéšÛ,H€ RMAJORZ
-CODE_SMELL
-r
-squid:S106*"9Replace this use of System.out or System.err by a logger.(¹ù¹üşÿÿÿÿ8¬ÙÀĞ,H™™RMAJORZ
+csquid:S1481l")Remove this unused "name" local variable.(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,HÕRMINORZ
 CODE_SMELL
 m
-squid:S106@"9Replace this use of System.out or System.err by a logger.(—ÍÇ8Ì±ÇĞ,H¸™RMAJORZ
+squid:S106g"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8˜ÄˆªÏ,HğÔRMAJORZ
 CODE_SMELL
-squid:CommentedOutCodeLineÿ"<This block of commented-out lines of code should be removed.(Õº»°8‡Á…‘Û,HÀ™RMAJORZ
+n
+squid:S106¾"9Replace this use of System.out or System.err by a logger.(¹ë«ú8‘ì¹Û,HôÔRMAJORZ
 CODE_SMELL
-†squid:CommentedOutCodeLine¹"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8½ÎßÛ,HÍ™RMAJORZ
-CODE_SMELL
-asquid:S1148²"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ŞéšÛ,H RMINORZVULNERABILITY
-lsquid:S1854]"8Remove this useless assignment to local variable "name".(Íè‡88š¦ĞËÑ,HÊ™RMAJORZ
-CODE_SMELL
-˜squid:S1488½"]Immediately return this expression instead of assigning it to the temporary variable "user1".(®Å¦Ïøÿÿÿÿ8Ì±ÇĞ,H»™RMINORZ
-CODE_SMELL
-squid:CommentedOutCodeLineÄ"<This block of commented-out lines of code should be removed.(–¸‹—8½ÎßÛ,H›™RMAJORZ
-CODE_SMELL
-asquid:S1148Î"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ì±ÇĞ,HË™RMINORZVULNERABILITY
-squid:CommentedOutCodeLine‡"<This block of commented-out lines of code should be removed.(†€éˆ8‡Á…‘Û,H±™RMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLine²"<This block of commented-out lines of code should be removed.(¥Ã¹•8½ÎßÛ,Hœ™RMAJORZ
-CODE_SMELL
-†squid:CommentedOutCodeLine—"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8‡Á…‘Û,H°™RMAJORZ
-CODE_SMELL
-†squid:CommentedOutCodeLine¹"<This block of commented-out lines of code should be removed.(ë°¹İúÿÿÿÿ8‡¯‘Û,H´™RMAJORZ
-CODE_SMELL
-gsquid:S1135À"2Complete the task associated to this TODO comment.(ÉÚõÎ8½ÎßÛ,HŸ™RINFOZ
-CODE_SMELL
-vsquid:S1126ù"AReplace this if-then-else statement by a single return statement.(ĞÛ™18Ì±ÇĞ,HÖ™RMINORZ
+`squid:S1148o"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¦ãÉÛ,HıÔRMINORZVULNERABILITY
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëü‹ùÿÿÿÿHÒÔRMINORZ
 CODE_SMELL
 m
-squid:S106q"9Replace this use of System.out or System.err by a logger.(õ¸Äà8’ŒğĞ,H¤™RMAJORZ
+squid:S106É"9Replace this use of System.out or System.err by a logger.(ƒ”Ú;8åáÚéÛ,H–ØRMAJORZ
 CODE_SMELL
-csquid:S1481M")Remove this unused "name" local variable.(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,HÅ™RMINORZ
-CODE_SMELL
-wsquid:S1126š"AReplace this if-then-else statement by a single return statement.(œëÓ¿8Ì±ÇĞ,HÁ™RMINORZ
-CODE_SMELL
-m
-squid:S106o"9Replace this use of System.out or System.err by a logger.(Éáğè8”°¿çÚ,HÒ™RMAJORZ
-CODE_SMELL
-squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëü‹ùÿÿÿÿHÓ™RMINORZ
-CODE_SMELL
-squid:CommentedOutCodeLineÂ"<This block of commented-out lines of code should be removed.(ŞÎÂÚ8‡Á…‘Û,H¡™RMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLine¤"<This block of commented-out lines of code should be removed.(Ç‡±8‡Á…‘Û,HÌ™RMAJORZ
-CODE_SMELL
-†squid:CommentedOutCodeLineî"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8‡Á…‘Û,H™RMAJORZ
-CODE_SMELL
-r
-squid:S106r"9Replace this use of System.out or System.err by a logger.(Í°‚şÿÿÿÿ8”°¿çÚ,H“™RMAJORZ
-CODE_SMELL
-†squid:CommentedOutCodeLine°"<This block of commented-out lines of code should be removed.(Ş‰úŸşÿÿÿÿ8½ÎßÛ,Hµ™RMAJORZ
-CODE_SMELL
-|squid:S1126ê"AReplace this if-then-else statement by a single return statement.(ğ—ŸÓùÿÿÿÿ8ÖïÖ›Û,Hâ¡RMINORZ
-CODE_SMELL
-†squid:CommentedOutCodeLine±"<This block of commented-out lines of code should be removed.(ì–Âüûÿÿÿÿ8‡Á…‘Û,H™RMAJORZ
-CODE_SMELL
-r
-squid:S106{"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8Ó­»—Û,HàŸRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineô"<This block of commented-out lines of code should be removed.(†€éˆ8‡Á…‘Û,H«™RMAJORZ
-CODE_SMELL
-squid:S00117Á"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìÒš¶úÿÿÿÿ8´°˜ÈĞ,H¨™RMINORZ
-CODE_SMELL
-jsquid:S1481Ÿ"/Remove this unused "updatedRow" local variable.(öÓòÜûÿÿÿÿ8ŞéšÛ,HÿŸRMINORZ
-CODE_SMELL
-csquid:S1481j")Remove this unused "user" local variable.(€Å÷£ùÿÿÿÿ8¬¿ôüÎ,H×™RMINORZ
-CODE_SMELL
-`squid:S1148`"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,H£™RMINORZVULNERABILITY
-squid:CommentedOutCodeLineá"<This block of commented-out lines of code should be removed.(–¢‚€8‡Á…‘Û,H‹™RMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineŠ"<This block of commented-out lines of code should be removed.(È£Ë8‡Á…‘Û,H™RMAJORZ
-CODE_SMELL
-†squid:CommentedOutCodeLineı"<This block of commented-out lines of code should be removed.(ªÑıÓşÿÿÿÿ8‡Á…‘Û,H”™RMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLine¿"<This block of commented-out lines of code should be removed.(†€éˆ8½ÎßÛ,HÔ™RMAJORZ
-CODE_SMELL
-†squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(şè¤Úûÿÿÿÿ8‡Á…‘Û,H¢™RMAJORZ
-CODE_SMELL
-|squid:S1126¬"AReplace this if-then-else statement by a single return statement.(™¦Ôêøÿÿÿÿ8š¦ĞËÑ,H•™RMINORZ
-CODE_SMELL
-csquid:S1905M")Remove this unnecessary cast to "String".(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,H™RMINORZ
-CODE_SMELL
-squid:CommentedOutCodeLineú"<This block of commented-out lines of code should be removed.(ÚóÁå8‡Á…‘Û,H¼™RMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineÎ"<This block of commented-out lines of code should be removed.(†€éˆ8‡Á…‘Û,H‘™RMAJORZ
-CODE_SMELL
-ˆsquid:S00117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Éí¹8Ç²»€Ğ,H¦™RMINORZ
+vsquid:S1126°"AReplace this if-then-else statement by a single return statement.(ĞÛ™18‘ì¹Û,H’ÕRMINORZ
 CODE_SMELL
 s
-squid:S106‡"9Replace this use of System.out or System.err by a logger.(ºÔ”·ûÿÿÿÿ8Ó­»—Û,HáŸRMAJORZ
-CODE_SMELL
-Œsquid:S00117}"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äó¦¸úÿÿÿÿ8Ç²»€Ğ,H½™RMINORZ
-CODE_SMELL
-`squid:S1148u"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,HÇ™RMINORZVULNERABILITY
-squid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(º´‰Ú8‡Á…‘Û,Hº™RMAJORZ
-CODE_SMELL
-asquid:S1148Ş"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”°¿çÚ,HÏ™RMINORZVULNERABILITY
-squid:S00117‘"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ıáæûÿÿÿÿ8ì˜‡›Ğ,H¯™RMINORZ
-CODE_SMELL
-]squid:S1481]")Remove this unused "name" local variable.(Íè‡88š¦ĞËÑ,HÎ™RMINORZ
-CODE_SMELL
-rsquid:S1854M"8Remove this useless assignment to local variable "name".(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,HĞ™RMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineã"<This block of commented-out lines of code should be removed.(Üîæİ8‡Á…‘Û,HÂ™RMAJORZ
+squid:S106¦"9Replace this use of System.out or System.err by a logger.(ºÔ”·ûÿÿÿÿ8åáÚéÛ,H•ØRMAJORZ
 CODE_SMELL
 r
-squid:S106("9Replace this use of System.out or System.err by a logger.(ı‡÷•ûÿÿÿÿ8¬ÙÀĞ,H¶™RMAJORZ
+squid:S106+"9Replace this use of System.out or System.err by a logger.(¹ù¹üşÿÿÿÿ8Ì±ÇĞ,HÔÔRMAJORZ
 CODE_SMELL
-wsquid:S1126È"AReplace this if-then-else statement by a single return statement.(¯òÑİ8‡¯‘Û,H­™RMINORZ
+n
+squid:S106"9Replace this use of System.out or System.err by a logger.(õ¸Äà8Ó­»—Û,HûÔRMAJORZ
 CODE_SMELL
-†squid:CommentedOutCodeLine©"<This block of commented-out lines of code should be removed.(æŞÂ¶úÿÿÿÿ8½ÎßÛ,HÄ™RMAJORZ
+ˆsquid:S00117©"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öªùß8Ç²»€Ğ,H‹ÕRMINORZ
 CODE_SMELL
-†squid:CommentedOutCodeLine‘"<This block of commented-out lines of code should be removed.(Ûö†ºıÿÿÿÿ8‡¯‘Û,HŒ™RMAJORZ
+asquid:S1148æ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,HàÔRMINORZVULNERABILITY
+asquid:S1148ê"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ŞéšÛ,HâÔRMINORZVULNERABILITY
+—squid:S1488Ë"\Immediately return this expression instead of assigning it to the temporary variable "user".(ô±ãøÿÿÿÿ8˜½”Û,HäÔRMINORZ
 CODE_SMELL
-†squid:CommentedOutCodeLine´"<This block of commented-out lines of code should be removed.(à±Ôşÿÿÿÿ8‡¯‘Û,H§™RMAJORZ
+m
+squid:S1066"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8´ĞõßÍ,HĞÔRMAJORZ
 CODE_SMELL
-—squid:S1488„"\Immediately return this expression instead of assigning it to the temporary variable "user".(ô±ãøÿÿÿÿ8˜½”Û,Há™RMINORZ
+ˆsquid:S00117¥"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Éí¹8Ç²»€Ğ,H”ÕRMINORZ
 CODE_SMELL
-squid:CommentedOutCodeLineë"<This block of commented-out lines of code should be removed.(é©†à8‡Á…‘Û,HÉ™RMAJORZ
+squid:S00117œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äó¦¸úÿÿÿÿ8¼ÃÎÇĞ,HÖÔRMINORZ
 CODE_SMELL
-squid:S00117¢"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ééëÿÿÿÿÿ8š¦ĞËÑ,HÃ™RMINORZ
+squid:S00117Õ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ééëÿÿÿÿÿ8š¦ĞËÑ,H€ÕRMINORZ
 CODE_SMELL
-squid:CommentedOutCodeLineß"<This block of commented-out lines of code should be removed.(âƒÔÂ8‡Á…‘Û,HÑ™RMAJORZ
+`squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‘ì¹Û,HÕRMINORZVULNERABILITY
+s
+squid:S106‘"9Replace this use of System.out or System.err by a logger.(Í°‚şÿÿÿÿ8”°¿çÚ,HŞÔRMAJORZ
 CODE_SMELL
-squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ŠòÖ8‡Á…‘Û,HÕ™RMAJORZ
+lsquid:S1854|"8Remove this useless assignment to local variable "name".(Íè‡88„£³Û,H†ÕRMAJORZ
 CODE_SMELL
-squid:CommentedOutCodeLineØ"<This block of commented-out lines of code should be removed.(ß Ù8‡Á…‘Û,HÆ™RMAJORZ
+asquid:S1148”"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‘ì¹Û,HçÔRMINORZVULNERABILITY
+m
+squid:S106†"9Replace this use of System.out or System.err by a logger.(ƒ”Ú;8¬ÙÀĞ,HÓÔRMAJORZ
 CODE_SMELL
-^squid:S1481Û")Remove this unused "name" local variable.(Íè‡88„£³Û,HŠ¦RMINORZ
+—%squid:RedundantThrowsDeclarationCheckµ"GRemove the redundant '!unknownSymbol!' thrown exception declaration(s).(ÿï»¢8€†êÛ,HúØRMINORZ
 CODE_SMELL
-msquid:S1854Û"8Remove this useless assignment to local variable "name".(Íè‡88„£³Û,H‹¦RMAJORZ
+`squid:S1148R"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,HïÔRMINORZVULNERABILITY
+›squid:S1488Õ"`Immediately return this expression instead of assigning it to the temporary variable "contract".(‚ïñ£ÿÿÿÿÿ8‘ì¹Û,H‰ÕRMINORZ
 CODE_SMELL
-asquid:S1148£"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8„£³Û,HŒ¦RMINORZVULNERABILITY
+vsquid:S1126«"AReplace this if-then-else statement by a single return statement.(ĞÛ™18‡¯‘Û,HÑÔRMINORZ
+CODE_SMELL
+wsquid:S1126"AReplace this if-then-else statement by a single return statement.(¯òÑİ8Ì±ÇĞ,HÕRMINORZ
+CODE_SMELL
+s
+squid:S106Š"9Replace this use of System.out or System.err by a logger.(óåÊÅıÿÿÿÿ8€†êÛ,HûØRMAJORZ
+CODE_SMELL
+]squid:S1481O"(Remove this unused "row" local variable.(Ğæ‘¬8©Á–ÁÛ,HéÔRMINORZ
+CODE_SMELL
+‡squid:S00117["QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯­§½8÷ğ—ÈÛ,H“ÕRMINORZ
+CODE_SMELL
+asquid:S1148ş"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¿ôüÎ,HÜÔRMINORZVULNERABILITY
+`squid:S1148="#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‘ì¹Û,HñÔRMINORZVULNERABILITY
+†squid:CommentedOutCodeLine¾"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8×ÅêºÛ,HÂÜRMAJORZ
+CODE_SMELL
+asquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ªûüçÛ,HóÔRMINORZVULNERABILITY
+csquid:S1905l")Remove this unnecessary cast to "String".(¼ˆÛıÿÿÿÿ8¬¿ôüÎ,HÚÔRMINORZ
+CODE_SMELL
+n
+squid:S106"9Replace this use of System.out or System.err by a logger.(Éáğè8’ŒğĞ,HòÔRMAJORZ
+CODE_SMELL
+squid:S00117°"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ıáæûÿÿÿÿ8ì˜‡›Ğ,HåÔRMINORZ
+CODE_SMELL
+m
+squid:S106Y"9Replace this use of System.out or System.err by a logger.(ø²Ç‹8¦ãÉÛ,HßÔRMAJORZ
+CODE_SMELL
+˜squid:S1488ğ"]Immediately return this expression instead of assigning it to the temporary variable "user1".(®Å¦Ïøÿÿÿÿ8Ì±ÇĞ,HşÔRMINORZ
+CODE_SMELL
+asquid:S1148Â"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8åáÚéÛ,H—ØRMINORZVULNERABILITY
+r
+squid:S106)"9Replace this use of System.out or System.err by a logger.(ı‡÷•ûÿÿÿÿ8‘ì¹Û,H÷ÔRMAJORZ
+CODE_SMELL
+–%squid:RedundantThrowsDeclarationCheck"GRemove the redundant '!unknownSymbol!' thrown exception declaration(s).(²Õ¶8”°¿çÚ,H‚ÕRMINORZ
+CODE_SMELL
+†squid:CommentedOutCodeLine·"<This block of commented-out lines of code should be removed.(øÖª±úÿÿÿÿ8œßëÛ,HÃÜRMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLineº"<This block of commented-out lines of code should be removed.(Ç‡±8œßëÛ,HÄÜRMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine¼"<This block of commented-out lines of code should be removed.(´•İ8œßëÛ,HÅÜRMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLineÆ"<This block of commented-out lines of code should be removed.(ŞÎÂÚ8œßëÛ,HÆÜRMAJORZ
+CODE_SMELL
+_squid:S1481¼")Remove this unused "rows" local variable.(Û§ıû8œßëÛ,HÇÜRMINORZ
+CODE_SMELL
+nsquid:S1854¼"8Remove this useless assignment to local variable "rows".(Û§ıû8œßëÛ,HÈÜRMAJORZ
+CODE_SMELL

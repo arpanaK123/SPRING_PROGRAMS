@@ -1,5 +1,5 @@
 
-‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãøªHÓ¢RMINORZ
+’squid:S00116"\Rename this field "TradeAccountModel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜®Í½8ŠÀ¿œÛ,HÎ½RMINORZ
 CODE_SMELL
-’squid:S00116"\Rename this field "TradeAccountModel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜®Í½8ŠÀ¿œÛ,Hú¢RMINORZ
+‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãøªHÏ½RMINORZ
 CODE_SMELL

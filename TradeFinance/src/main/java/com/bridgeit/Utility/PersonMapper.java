@@ -1,5 +1,6 @@
 package com.bridgeit.Utility;
 
+import java.sql.Blob;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -23,14 +24,14 @@ public class PersonMapper implements RowMapper<UserModel> {
 		user.setBankname(rs.getString("bankname"));
 		user.setUseraccount(rs.getBytes("useraccount"));
 		user.setAccountnumber(rs.getString("accountnumber"));
-//		Blob userBlob = rs.getBlob("user_account");
-//		byte [] userByte = null;
-//		try {
-//			userByte =userBlob.getBytes(1, (int)userBlob.length());
-//		} catch (SQLException e) {
-//			
-//			e.printStackTrace();
-//		}
+		Blob userBlob = rs.getBlob("useraccount");
+		byte [] userByte = null;
+		try {
+			userByte =userBlob.getBytes(1, (int)userBlob.length());
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
 //		user.setUserAccount(userByte);
 		//user.setUserAccount();
 		//return user;

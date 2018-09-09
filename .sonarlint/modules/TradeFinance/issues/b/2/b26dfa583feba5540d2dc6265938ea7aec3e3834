@@ -1,7 +1,12 @@
 
-ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãøªH¤lRMINORZ
+‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãøªHĞ½RMINORZ
 CODE_SMELL
-³%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(•¬ûÒH£lRMINORZ
+vsquid:UselessImportCheck"/Remove this unused import 'javax.mail.Message'.(¤©ºóıÿÿÿÿ8ßİîÏ,HÑ½RMINORZ
 CODE_SMELL
-usquid:UselessImportCheck"/Remove this unused import 'javax.mail.Message'.(¤©ºóıÿÿÿÿ8ßİîÏ,H±lRMINORZ
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(Í–Âßüÿÿÿÿ8Œä¼Û,HÒ½RMAJORZ
+CODE_SMELL
+wsquid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8Œä¼Û,HÓ½RMINORZ
+CODE_SMELL
+’squid:UselessImportCheck"PRemove this unused import 'org.springframework.amqp.rabbit.core.RabbitTemplate'.(ŒÏ„¼8Œä¼Û,HÔ½RMINORZ
 CODE_SMELL

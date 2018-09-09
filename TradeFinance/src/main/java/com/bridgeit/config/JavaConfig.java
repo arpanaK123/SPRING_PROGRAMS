@@ -51,6 +51,8 @@ import org.springframework.web.servlet.view.JstlView;
 import com.bridgeit.model.TradeUser;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
+import jdk.internal.jline.internal.Log;
+
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = { "com.bridgeit" })
@@ -178,102 +180,141 @@ public class JavaConfig extends WebMvcConfigurerAdapter {
 	}
 
 	@Bean
-	HFCAClient getHFCaClient() {
+	HFCAClient getHFCaClient() throws IllegalAccessException, InstantiationException, ClassNotFoundException, CryptoException, InvalidArgumentException, NoSuchMethodException, InvocationTargetException, MalformedURLException {
 		CryptoSuite suite = null;
 		HFCAClient caClient = null;
-		try {
+		
 			suite = CryptoSuite.Factory.getCryptoSuite();
 			caClient = HFCAClient.createNewInstance("http://localhost:7054", null);
 			caClient.setCryptoSuite(suite);
-		} catch (IllegalAccessException e) {
-
-			e.printStackTrace();
-		} catch (InstantiationException e) {
-
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-
-			e.printStackTrace();
-		} catch (CryptoException e) {
-
-			e.printStackTrace();
-		} catch (InvalidArgumentException e) {
-
-			e.printStackTrace();
-		} catch (NoSuchMethodException e) {
-
-			e.printStackTrace();
-		} catch (InvocationTargetException e) {
-
-			e.printStackTrace();
-		} catch (MalformedURLException e) {
-			e.printStackTrace();
-		}
+		
 
 		return caClient;
 	}
 
-//	@Bean
-//	Channel getChannel(HFClient client) {
-//		Peer peer1 = null;
-//		try {
-//			peer1 = client.newPeer("peer0.importer.bridgelabz.com", "grpc://localhost:7051");
-//		} catch (InvalidArgumentException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		// eventhub name and endpoint in fabcar network
-//		EventHub eventHub = null;
-//		try {
-//			eventHub = client.newEventHub("eventhub01", "grpc://localhost:7053");
-//		} catch (InvalidArgumentException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		// orderer name and endpoint in fabcar network
-//		Orderer orderer = null;
-//		try {
-//			orderer = client.newOrderer("orderer.bridgelabz.com", "grpc://localhost:7050");
-//		} catch (InvalidArgumentException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		// channel name in fabcar network
-//		Channel channel = null;
-//		try {
-//			channel = client.newChannel("mychannel");
-//		} catch (InvalidArgumentException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		try {
-//			channel.addPeer(peer1);
-//		} catch (InvalidArgumentException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		try {
-//			channel.addEventHub(eventHub);
-//		} catch (InvalidArgumentException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		try {
-//			channel.addOrderer(orderer);
-//		} catch (InvalidArgumentException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		try {
-//			channel.initialize();
-//		} catch (InvalidArgumentException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		} catch (TransactionException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		return channel;
-//
-//	}
+	@Bean
+	public Channel getChannel(HFClient client, TradeUser admin) {
+
+		try {
+			client.setUserContext(admin);
+		} catch (org.hyperledger.fabric.sdk.exception.InvalidArgumentException e) {
+
+			e.printStackTrace();
+		}
+		// client.setUserContext(userContext)
+
+		Peer peer1 = null;
+		try {
+			peer1 = client.newPeer("peer0.importer.bridgelabz.com", "grpc://localhost:7051");
+		} catch (org.hyperledger.fabric.sdk.exception.InvalidArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		EventHub eventHub1 = null;
+		try {
+			eventHub1 = client.newEventHub("eventhub01", "grpc://localhost:7053");
+		} catch (org.hyperledger.fabric.sdk.exception.InvalidArgumentException e) {
+
+			e.printStackTrace();
+		}
+
+		Orderer orderer = null;
+		try {
+			orderer = client.newOrderer("orderer.bridgelabz.com", "grpc://localhost:7050");
+		} catch (org.hyperledger.fabric.sdk.exception.InvalidArgumentException e) {
+
+			e.printStackTrace();
+		}
+
+		Channel channel = null;
+		try {
+			channel = client.newChannel("mychannel");
+		} catch (org.hyperledger.fabric.sdk.exception.InvalidArgumentException e) {
+
+			e.printStackTrace();
+		}
+		try {
+			channel.addPeer(peer1);
+		} catch (org.hyperledger.fabric.sdk.exception.InvalidArgumentException e) {
+
+			e.printStackTrace();
+		}
+
+		try {
+			channel.addEventHub(eventHub1);
+		} catch (org.hyperledger.fabric.sdk.exception.InvalidArgumentException e) {
+
+			e.printStackTrace();
+		}
+
+		try {
+			channel.addOrderer(orderer);
+		} catch (org.hyperledger.fabric.sdk.exception.InvalidArgumentException e) {
+
+			e.printStackTrace();
+		}
+		try {
+			channel.initialize();
+		} catch (org.hyperledger.fabric.sdk.exception.InvalidArgumentException | TransactionException e) {
+
+			e.printStackTrace();
+		}
+		return channel;
+	}
+
+	@Bean
+	public TradeUser getAdmin(HFCAClient caClient) {
+		TradeUser admin = tryDeserialize("admin");
+		System.out.println("admin: "+admin);
+
+		if (admin == null) {
+		//	Log.info("----------------" + admin);
+			Enrollment adminEnrollment = null;
+			try {
+				try {
+					adminEnrollment = caClient.enroll("admin", "adminpw");
+					System.out.println("enroll");
+				} catch (org.hyperledger.fabric_ca.sdk.exception.InvalidArgumentException e) {
+					e.printStackTrace();
+				}
+			} catch (EnrollmentException e) {
+				e.printStackTrace();
+			}
+			admin = new TradeUser("admin", "importer", "ImporterMSP", adminEnrollment);
+			serialize(admin);
+			System.out.println("serializw"+admin);
+		}
+		return admin;
+	}
+
+	public TradeUser tryDeserialize(String name) {
+		if (Files.exists(Paths.get("//home/bridgeit//SPRING//TradeFinance//"+name + ".jso"))) {
+			return deSerialize(name);
+		}
+		return null;
+	}
+
+	public TradeUser deSerialize(String name) {
+		try (ObjectInputStream decoder = new ObjectInputStream(Files.newInputStream(Paths.get("//home/bridgeit//SPRING//TradeFinance//" +name+ ".jso")))) {
+			return (TradeUser) decoder.readObject();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public void serialize(TradeUser tradeUser) {
+		try (ObjectOutputStream oos = new ObjectOutputStream(
+				Files.newOutputStream(Paths.get("//home/bridgeit//SPRING//TradeFinance//"+tradeUser.getName() + ".jso")))) {
+			oos.writeObject(tradeUser);
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
+
+	}
+
 }

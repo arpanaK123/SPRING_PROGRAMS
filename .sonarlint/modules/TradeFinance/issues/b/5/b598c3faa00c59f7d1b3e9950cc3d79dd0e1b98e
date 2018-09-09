@@ -1,159 +1,63 @@
 
-nsquid:S1854Â"8Remove this useless assignment to local variable "list".(Øô¢­8Ë »œÛ,Hó¢RMAJORZ
+€squid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(ŒÆÛ•8ÈÜÖœÛ,H”·RMAJORZ
 CODE_SMELL
-squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÂÀ©«8ˆˆ˜Û,H¾£RMINORZ
+…squid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(´ƒÙàüÿÿÿÿ8Ë »œÛ,Hã¶RMAJORZ
 CODE_SMELL
-squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÿÄø8Ë »œÛ,Hà¢RMINORZ
+€squid:UselessImportCheck"9Remove this unused import 'com.bridgeit.model.Usermodel'.(ÿº§¦üÿÿÿÿ8çÖøÛ,H·RMINORZ
 CODE_SMELL
-squid:CommentedOutCodeLineŞ"<This block of commented-out lines of code should be removed.(Şë²¼8ˆˆ˜Û,HÃ£RMAJORZ
+šsquid:UselessImportCheck"SRemove this unused import 'org.springframework.web.bind.annotation.RestController'.(±íş¡şÿÿÿÿ8Õç‡›Û,H‹·RMINORZ
 CODE_SMELL
-squid:S2293ä"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸›Ç§8ÈÜÖœÛ,H‚£RMINORZ
+…squid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Ê©ášÛ,HÛ¶RMAJORZ
 CODE_SMELL
-`squid:S1481'"+Remove this unused "userId" local variable.(®Å°ÿ8Ë »œÛ,Hï¢RMINORZ
+œsquid:UselessImportCheck"URemove this unused import 'org.springframework.web.bind.annotation.ControllerAdvice'.(¶Í„áüÿÿÿÿ8Õç‡›Û,Hì¶RMINORZ
 CODE_SMELL
-†squid:CommentedOutCodeLine•"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Ê©ášÛ,Hû RMAJORZ
+€squid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(¶•8ÈÜÖœÛ,Hÿ¶RMAJORZ
 CODE_SMELL
-squid:S2293¹"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ö‡‰ñ8 £ŞŸÛ,H“©RMINORZ
+€squid:UselessImportCheck">Remove this unused import 'com.bridgeit.service.TradeService'.(‡Ÿô½8‡°šÛ,H–·RMINORZ
 CODE_SMELL
-†squid:CommentedOutCodeLineî"<This block of commented-out lines of code should be removed.(±°¯œøÿÿÿÿ8ˆˆ˜Û,HÄ£RMAJORZ
+|squid:S2094"BRemove this empty class, write its code or make it an "interface".(Ò´Êµøÿÿÿÿ8—Ê×»Û,HÊºRMINORZ
 CODE_SMELL
-†squid:CommentedOutCodeLineĞ"<This block of commented-out lines of code should be removed.(±°¯œøÿÿÿÿ8ˆˆ˜Û,HÂ£RMAJORZ
+…squid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(£÷’¯øÿÿÿÿ8—Ê×»Û,HËºRMAJORZ
 CODE_SMELL
-¼%squid:RedundantThrowsDeclarationCheckÜ"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Ò®Ñí8¯äâŸÛ,H ©RMINORZ
+€squid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(Ê±À8—Ê×»Û,HÌºRMAJORZ
 CODE_SMELL
-s
-squid:S106Ÿ"9Replace this use of System.out or System.err by a logger.(ô¼¡Äşÿÿÿÿ8ˆˆ˜Û,HÊ£RMAJORZ
+…squid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(†Šì¦şÿÿÿÿ8—Ê×»Û,HÍºRMAJORZ
 CODE_SMELL
-csquid:S1125Ë"(Remove the literal "true" boolean value.(ãéüÍÿÿÿÿÿ8ˆˆ˜Û,HÍ£RMINORZ
+…squid:CommentedOutCodeLineH"<This block of commented-out lines of code should be removed.(š‹—¸ûÿÿÿÿ8—Ê×»Û,HÎºRMAJORZ
 CODE_SMELL
-`squid:S1148A"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ˆˆ˜Û,HØ£RMINORZVULNERABILITY
-À%squid:RedundantThrowsDeclarationCheckH"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ƒÜ¢şÿÿÿÿ8‡ˆ˜Û,H°£RMINORZ
+…squid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8—Ê×»Û,HÏºRMAJORZ
 CODE_SMELL
-_squid:S1481Š")Remove this unused "list" local variable.(Øô¢­8ˆˆ˜Û,HÏ£RMINORZ
+…squid:CommentedOutCodeLineW"<This block of commented-out lines of code should be removed.(†Šì¦şÿÿÿÿ8—Ê×»Û,HĞºRMAJORZ
 CODE_SMELL
-osquid:S1854'":Remove this useless assignment to local variable "userId".(®Å°ÿ8Ë »œÛ,Hô¢RMAJORZ
+€squid:CommentedOutCodeLine\"<This block of commented-out lines of code should be removed.(¤›×8—Ê×»Û,HÑºRMAJORZ
 CODE_SMELL
-asquid:S1148ó"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ë »œÛ,Hø¢RMINORZVULNERABILITY
-squid:CommentedOutCodeLineÀ"<This block of commented-out lines of code should be removed.(Şë²¼8Ë »œÛ,Hæ¢RMAJORZ
+…squid:CommentedOutCodeLineh"<This block of commented-out lines of code should be removed.(Õ»…‹ıÿÿÿÿ8—Ê×»Û,HÒºRMAJORZ
 CODE_SMELL
-Á%squid:RedundantThrowsDeclarationCheck†"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(íÈöÿÿÿÿÿÿ8ˆˆ˜Û,H³£RMINORZ
+…squid:CommentedOutCodeLiner"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8—Ê×»Û,HÓºRMAJORZ
 CODE_SMELL
-…squid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(¶ÏŠøÿÿÿÿÿ8ÈÜÖœÛ,H‡£RMAJORZ
+…squid:CommentedOutCodeLinew"<This block of commented-out lines of code should be removed.(†Šì¦şÿÿÿÿ8—Ê×»Û,HÔºRMAJORZ
 CODE_SMELL
-s
-squid:S106‡"9Replace this use of System.out or System.err by a logger.(ô¼¡Äşÿÿÿÿ8Ë »œÛ,Hì¢RMAJORZ
+†squid:CommentedOutCodeLine†"<This block of commented-out lines of code should be removed.(Õ»…‹ıÿÿÿÿ8—Ê×»Û,HÕºRMAJORZ
 CODE_SMELL
-…squid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(ç¬¢äùÿÿÿÿ8Ë »œÛ,Hå¢RMAJORZ
+†squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8—Ê×»Û,HÖºRMAJORZ
 CODE_SMELL
-squid:S2293-"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÿÄø8Ë »œÛ,Há¢RMINORZ
+squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ó«è8—Ê×»Û,H×ºRMAJORZ
 CODE_SMELL
-¼%squid:RedundantThrowsDeclarationCheck¾"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Ò®Ñí8—ËûÛ,HÄ§RMINORZ
+†squid:CommentedOutCodeLine§"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8—Ê×»Û,HØºRMAJORZ
 CODE_SMELL
-squid:S2293õ"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÂÀ©«8ˆˆ˜Û,H½£RMINORZ
+†squid:CommentedOutCodeLine¬"<This block of commented-out lines of code should be removed.(¶®áÙùÿÿÿÿ8—Ê×»Û,HÙºRMAJORZ
 CODE_SMELL
-msquid:S1854)"8Remove this useless assignment to local variable "list".(Øô¢­8Ë »œÛ,Hö¢RMAJORZ
+†squid:CommentedOutCodeLine´"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8—Ê×»Û,HÚºRMAJORZ
 CODE_SMELL
-À%squid:RedundantThrowsDeclarationCheckh"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(íÈöÿÿÿÿÿÿ8Ë »œÛ,HÜ¢RMINORZ
+squid:CommentedOutCodeLine½"<This block of commented-out lines of code should be removed.(Ó«è8—Ê×»Û,HÛºRMAJORZ
 CODE_SMELL
-]squid:S11252"(Remove the literal "true" boolean value.(–Şöñ8ˆˆ˜Û,HÌ£RMINORZ
+†squid:CommentedOutCodeLineÇ"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8—Ê×»Û,HÜºRMAJORZ
 CODE_SMELL
-asquid:S1148—"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ë »œÛ,Hù¢RMINORZVULNERABILITY
-…squid:S1192&"HDefine a constant instead of duplicating this literal "error: " 7 times.(ô¼¡Äşÿÿÿÿ8Ë »œÛ,HŞ¢RCRITICALZ
+†squid:CommentedOutCodeLineÌ"<This block of commented-out lines of code should be removed.(†Šì¦şÿÿÿÿ8—Ê×»Û,HİºRMAJORZ
 CODE_SMELL
-squid:S2293P"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸›Ç§8ˆˆ˜Û,H»£RMINORZ
+squid:CommentedOutCodeLineÛ"<This block of commented-out lines of code should be removed.(Ó«è8—Ê×»Û,HŞºRMAJORZ
 CODE_SMELL
-]squid:S1125U"(Remove the literal "true" boolean value.(–Şöñ8Ë »œÛ,Hî¢RMINORZ
+†squid:CommentedOutCodeLineå"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8—Ê×»Û,HßºRMAJORZ
 CODE_SMELL
-_squid:S1481Â")Remove this unused "list" local variable.(Øô¢­8Ë »œÛ,Hò¢RMINORZ
-CODE_SMELL
-csquid:S1125«"(Remove the literal "true" boolean value.(ãéüÍÿÿÿÿÿ8Ë »œÛ,Hí¢RMINORZ
-CODE_SMELL
-squid:S2293c"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÂÀ©«8ˆˆ˜Û,H¼£RMINORZ
-CODE_SMELL
-^squid:S1481L")Remove this unused "list" local variable.(Øô¢­8ˆˆ˜Û,HĞ£RMINORZ
-CODE_SMELL
-r
-squid:S106&"9Replace this use of System.out or System.err by a logger.(ô¼¡Äşÿÿÿÿ8Ë »œÛ,Hê¢RMAJORZ
-CODE_SMELL
-–squid:S1192="YDefine a constant instead of duplicating this literal "registration successfull" 3 times.(Ùôúÿÿÿÿ8ˆˆ˜Û,H¶£RCRITICALZ
-CODE_SMELL
-†squid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(¥°ëâÿÿÿÿÿ8Ë »œÛ,Hè¢RMAJORZ
-CODE_SMELL
-msquid:S1854l"8Remove this useless assignment to local variable "list".(Øô¢­8ˆˆ˜Û,HÕ£RMAJORZ
-CODE_SMELL
-msquid:S1854L"8Remove this useless assignment to local variable "list".(Øô¢­8Ë »œÛ,Hõ¢RMAJORZ
-CODE_SMELL
-nsquid:S1854Š"8Remove this useless assignment to local variable "list".(Øô¢­8ˆˆ˜Û,HÓ£RMAJORZ
-CODE_SMELL
-squid:S2293¦"YReplace the type specification in this constructor call with the diamond operator ("<>").(ù‘Ä(8 £ŞŸÛ,H’©RMINORZ
-CODE_SMELL
-…squid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(è£ù’ÿÿÿÿÿ8ÈÜÖœÛ,Hˆ£RMAJORZ
-CODE_SMELL
-nsquid:S1854à"8Remove this useless assignment to local variable "list".(Øô¢­8ˆˆ˜Û,HÔ£RMAJORZ
-CODE_SMELL
-€squid:UselessImportCheck">Remove this unused import 'com.bridgeit.service.TradeService'.(‡Ÿô½8‡°šÛ,HÔ RMINORZ
-CODE_SMELL
-¼%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Ò®Ñí8Ë »œÛ,HÛ¢RMINORZ
-CODE_SMELL
-^squid:S1481l")Remove this unused "list" local variable.(Øô¢­8ˆˆ˜Û,HÑ£RMINORZ
-CODE_SMELL
-s
-squid:S106¿"9Replace this use of System.out or System.err by a logger.(ô¼¡Äşÿÿÿÿ8Ë »œÛ,Hë¢RMAJORZ
-CODE_SMELL
-nsquid:S1854¢"8Remove this useless assignment to local variable "list".(Øô¢­8ˆˆ˜Û,HÒ£RMAJORZ
-CODE_SMELL
-À%squid:RedundantThrowsDeclarationCheck%"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(°Ââèÿÿÿÿÿ8ˆˆ˜Û,H±£RMINORZ
-CODE_SMELL
-€squid:CommentedOutCodeLineZ"<This block of commented-out lines of code should be removed.(ñ®§Â8ÈÜÖœÛ,H†£RMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(Şë²¼8ˆˆ˜Û,HÅ£RMAJORZ
-CODE_SMELL
-squid:S2293Æ"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸›Ç§8ˆˆ˜Û,H¸£RMINORZ
-CODE_SMELL
-`squid:S1148a"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ë »œÛ,H÷¢RMINORZVULNERABILITY
-asquid:S1148·"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ˆˆ˜Û,HÖ£RMINORZVULNERABILITY
-‘squid:S1192N"YDefine a constant instead of duplicating this literal "please enter valid input" 5 times.(åèÌì8ˆˆ˜Û,H´£RCRITICALZ
-CODE_SMELL
-_squid:S1481à")Remove this unused "list" local variable.(Øô¢­8Ë »œÛ,Hñ¢RMINORZ
-CODE_SMELL
-asquid:S1148Õ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ˆˆ˜Û,HÙ£RMINORZVULNERABILITY
-^squid:S1481)")Remove this unused "list" local variable.(Øô¢­8Ë »œÛ,Hğ¢RMINORZ
-CODE_SMELL
-šsquid:UselessImportCheck"SRemove this unused import 'org.springframework.web.bind.annotation.RestController'.(±íş¡şÿÿÿÿ8Õç‡›Û,HÁ¡RMINORZ
-CODE_SMELL
-†squid:CommentedOutCodeLine°"<This block of commented-out lines of code should be removed.(±°¯œøÿÿÿÿ8ˆˆ˜Û,HÆ£RMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLinej"<This block of commented-out lines of code should be removed.(Şë²¼8ˆˆ˜Û,HÁ£RMAJORZ
-CODE_SMELL
-`squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ˆˆ˜Û,H×£RMINORZVULNERABILITY
-†squid:CommentedOutCodeLine’"<This block of commented-out lines of code should be removed.(ÈĞ¬—şÿÿÿÿ8»æĞŸÛ,H‰©RMAJORZ
-CODE_SMELL
-squid:S2293C"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥Çğò8Ë »œÛ,Hß¢RMINORZ
-CODE_SMELL
-squid:S2293p"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸›Ç§8ÈÜÖœÛ,Hƒ£RMINORZ
-CODE_SMELL
-csquid:S1125é"(Remove the literal "true" boolean value.(ãéüÍÿÿÿÿÿ8ˆˆ˜Û,HË£RMINORZ
-CODE_SMELL
-€squid:CommentedOutCodeLineJ"<This block of commented-out lines of code should be removed.(Şë²¼8ˆˆ˜Û,HÀ£RMAJORZ
-CODE_SMELL
-r
-squid:S106I"9Replace this use of System.out or System.err by a logger.(ô¼¡Äşÿÿÿÿ8ˆˆ˜Û,HÇ£RMAJORZ
-CODE_SMELL
-r
-squid:S106i"9Replace this use of System.out or System.err by a logger.(ô¼¡Äşÿÿÿÿ8ˆˆ˜Û,HÉ£RMAJORZ
-CODE_SMELL
-‹squid:S11924"SDefine a constant instead of duplicating this literal "user already exit " 6 times.(ñ‡«ƒ8ˆˆ˜Û,Hµ£RCRITICALZ
-CODE_SMELL
-s
-squid:S106İ"9Replace this use of System.out or System.err by a logger.(ô¼¡Äşÿÿÿÿ8ˆˆ˜Û,HÈ£RMAJORZ
-CODE_SMELL
-_squid:S1481¢")Remove this unused "list" local variable.(Øô¢­8ˆˆ˜Û,HÎ£RMINORZ
-CODE_SMELL
-œsquid:UselessImportCheck"URemove this unused import 'org.springframework.web.bind.annotation.ControllerAdvice'.(¶Í„áüÿÿÿÿ8Õç‡›Û,HÀ¡RMINORZ
-CODE_SMELL
-€squid:UselessImportCheck"9Remove this unused import 'com.bridgeit.model.Usermodel'.(ÿº§¦üÿÿÿÿ8çÖøÛ,H·§RMINORZ
-CODE_SMELL
-squid:S2293×"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÂÀ©«8ˆˆ˜Û,H·£RMINORZ
-CODE_SMELL
-squid:S2293™"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥Çğò8Ë »œÛ,Hâ¢RMINORZ
+†squid:CommentedOutCodeLineê"<This block of commented-out lines of code should be removed.(†Šì¦şÿÿÿÿ8—Ê×»Û,HàºRMAJORZ
 CODE_SMELL

@@ -59,3 +59,11 @@ g
 7src/main/java/com/bridgeit/Utility/ResponseAccount.java,5/f/5f4072e489e6d8fc0ac7af06a1c8593935c36343
 h
 8src/main/java/com/bridgeit/Utility/ContractResponse.java,9/9/99d71bb9559f16498b8a0ae086b178b3ab16b8b0
+`
+0src/main/java/com/bridgeit/Utility/UserMail.java,e/2/e23dbffb09eabed9d9790300e0238f174aa4e2a6
+g
+7src/main/java/com/bridgeit/Utility/BalanceResponce.java,c/4/c4583e05879cab51de5bed764c05606ad37f5a93
+c
+3src/main/java/com/bridgeit/model/ContractLists.java,a/f/af9f231fa72c5b1866f30a6e1a6f75014246ec59
+`
+0src/main/java/com/bridgeit/model/ContractId.java,9/d/9d11d934ec23d67c02e73cec11b1d064f145306c

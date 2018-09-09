@@ -1,6 +1,5 @@
 package com.bridgeit.model;
 
-import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
 import org.hibernate.validator.constraints.NotEmpty;
@@ -9,7 +8,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class TradeContractModel {
 	
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	//
+	//@GeneratedValue(strategy = GenerationType.AUTO)
+	@NotEmpty(message = "contract id is required")
 	private String contractId;
 	
 	@NotEmpty(message = "content descr. is required")

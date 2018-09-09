@@ -1,14 +1,30 @@
 
-osquid:S1141 "5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8Î¸‹èÚ,HÍ“RMAJORZ
+|squid:S2094"BRemove this empty class, write its code or make it an "interface".(§Ýúïúÿÿÿÿ8þ’‘¼Û,HžÒRMINORZ
 CODE_SMELL
-`squid:S1148;"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8õžˆèÚ,HÎ“RMINORZVULNERABILITY
-`squid:S1148&"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¸‹èÚ,HÏ“RMINORZVULNERABILITY
-tsquid:S37250":Replace this with a call to the "toFile().exists()" method(€Ô”¢üÿÿÿÿ8õžˆèÚ,HÐ“RMAJORZ
+ƒsquid:UselessImportCheck"<Remove this unused import 'jdk.internal.jline.internal.Log'.(¢†Ö¹ùÿÿÿÿ8Ðí–èÛ,HÄÒRMINORZ
 CODE_SMELL
-`squid:S1148#"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¸‹èÚ,HÑ“RMINORZVULNERABILITY
-ysquid:S2147<"DCombine this catch with the one at line 58, which has the same body.(ýàÑÎ8õžˆèÚ,HÒ“RMINORZ
+rsquid:UselessImportCheck"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8Ðí–èÛ,HÅÒRMINORZ
 CODE_SMELL
-`squid:S1148="#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8õžˆèÚ,HÓ“RMINORZVULNERABILITY
-`squid:S1148I"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8õžˆèÚ,HÔ“RMINORZVULNERABILITY
-wsquid:S1192"FDefine a constant instead of duplicating this literal "admin" 3 times.(ô¨€ãHÕ“RCRITICALZ
+xsquid:UselessImportCheck"6Remove this unused import 'java.io.ObjectInputStream'.(Éæéœ8Ðí–èÛ,HÆÒRMINORZ
+CODE_SMELL
+šsquid:UselessImportCheck"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡ž¸Îùÿÿÿÿ8Ðí–èÛ,HÇÒRMINORZ
+CODE_SMELL
+wsquid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8Ðí–èÛ,HÈÒRMINORZ
+CODE_SMELL
+{squid:UselessImportCheck"9Remove this unused import 'com.bridgeit.model.TradeUser'.(–“œ¹8Ðí–èÛ,HÉÒRMINORZ
+CODE_SMELL
+‰squid:UselessImportCheck"BRemove this unused import 'com.bridgeit.model.TradeContractModel'.(Ý³˜þÿÿÿÿ8Ðí–èÛ,HÊÒRMINORZ
+CODE_SMELL
+rsquid:UselessImportCheck"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8Ðí–èÛ,HËÒRMINORZ
+CODE_SMELL
+‰squid:UselessImportCheck	"BRemove this unused import 'org.hyperledger.fabric.sdk.Enrollment'.(ö¸£¥ýÿÿÿÿ8Ðí–èÛ,HÌÒRMINORZ
+CODE_SMELL
+…squid:UselessImportCheck"CRemove this unused import 'org.springframework.stereotype.Service'.(¼º¡Ú8Ðí–èÛ,HÍÒRMINORZ
+CODE_SMELL
+~squid:UselessImportCheck"7Remove this unused import 'java.io.ObjectOutputStream'.(é»Óºûÿÿÿÿ8Ðí–èÛ,HÎÒRMINORZ
+CODE_SMELL
+Ÿsquid:UselessImportCheck"XRemove this unused import 'org.hyperledger.fabric_ca.sdk.exception.EnrollmentException'.(ìí°úûÿÿÿÿ8Ðí–èÛ,HÏÒRMINORZ
+CODE_SMELL
+Œsquid:UselessImportCheck
+"ERemove this unused import 'org.hyperledger.fabric_ca.sdk.HFCAClient'.(ÛÜÜ¸ûÿÿÿÿ8Ðí–èÛ,HÐÒRMINORZ
 CODE_SMELL

@@ -9,6 +9,7 @@ import javax.sql.rowset.serial.SerialBlob;
 import javax.sql.rowset.serial.SerialException;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Repository;
@@ -44,26 +45,56 @@ public class UserDAO {
 		return out;
 	}
 
-	public int inserContractData(TradeContractModel contract) throws SerialException, SQLException {
-
-		String query = "insert into User_Contract (name, email,city,role,password,verified,Authentication_key,bankname,useraccount,accountnumber,balance) values (?,?,?,?,?,?,?,?,?,?,?)";
+	public boolean insertBeforeAcc(UserModel user) throws SerialException, SQLException {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
-
-		Object[] args = new Object[] { contract.getContractId(), contract.getContentDescription(),
-				contract.getContractMoney(), contract.getExporterId(), contract.getImporterId(),
-				contract.getImporterBankId(), contract.getInsuranceId(), contract.getCustomId(),
-				contract.isExporterCheck(), contract.isImporterCheck(), contract.isImporterBankCheck(),
-				contract.isInsuranceCheck(), contract.isCustomCheck(), contract.getPortOfLoadin(),
-				contract.getPortOfEntry() };
-
-		int out = jdbcTemplate.update(query, args);
-
-		if (out != 0) {
-			System.out.println("Contract  saved ");
-		} else {
-			System.out.println("Contract save failed");
+		Object[] args = { user.getEmail(), user.getName(), user.setPassword(BcryptHash.generatedHashPassword(user.getPassword())), user.getRole(),
+				user.isVerified(), user.getAuthentication_key(), user.getBalance(), user.getBankname() };
+		int out = 0;
+		try {
+			System.out.println(user);
+			out = jdbcTemplate.update(
+					"insert into login(email,name,password,city,role,verified,authenticated_key,balance,bankname) values (?,?,?,?,?,?,?,?,?)",
+					args);
+			System.out.println("number rows affected " + out);
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("insert template not excuted..");
+			return false;
 		}
-		return out;
+
+	}
+
+	public boolean saveContract(TradeContractModel contract) {
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+		Object[] args = { contract.getContractId(), contract.getContentDescription(), contract.getContractMoney(),
+				contract.getExporterId(), contract.getImporterId(), contract.getImporterBankId(),
+				contract.getInsuranceId(), contract.getCustomId(), contract.getPortOfLoadin(),
+				contract.getPortOfEntry(), contract.isExporterCheck(), contract.isImporterCheck(),
+				contract.isImporterBankCheck(), contract.isInsuranceCheck(), contract.isCustomCheck() };
+
+		String sql = "insert into User_Contract (contractId,contentDescription,contractMoney,exporterId,importerId,importerBankId,insuranceId,customId,portOfLoadin,portOfEntry,exporterCheck,importerCheck,importerBankCheck,insuranceCheck,customCheck) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+
+		try {
+			int row = jdbcTemplate.update(sql, args);
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return false;
+	}
+
+	public TradeContractModel getContractBy(String contractId) {
+		System.out.println(contractId);
+		try {
+			String fIND_PERSON = "select * from User_Contract where contractId = ?";
+			Object[] args = { contractId };
+			JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+			return jdbcTemplate.queryForObject(fIND_PERSON, args, new ContractMappers());
+		} catch (Exception e) {
+			return null;
+		}
 	}
 
 	public boolean existenceUser(UserModel user) {
@@ -146,6 +177,26 @@ public class UserDAO {
 		return jdbcTemplate.update(update_PERSON, person.isVerified(), person.getId()) > 0;
 	}
 
+	public boolean updateUserAccountAndAccountNo(String accountNumber, byte[] Useraccount, String email)
+			throws SerialException, SQLException {
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+
+		Object[] args = { accountNumber, new SerialBlob(Useraccount), email };
+
+		String sql = "update UserLogin set account_number = ? , user_account = ? where email = ?";
+
+		try {
+			int row = jdbcTemplate.update(sql, args);
+			System.out.println(row + " rows affected");
+			return true;
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
+
+		return false;
+	}
+
 	public boolean checkUserForResetpassword(String userEmail) {
 		System.out.println(userEmail);
 		Object[] args = { userEmail };
@@ -190,6 +241,25 @@ public class UserDAO {
 		return user1;
 	}
 
+	public UserModel getUserByEmail(String email) {
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+
+		Object[] args = { email };
+		String sql = "select * from UserLogin where email = ?";
+		List<UserModel> usersList = null;
+		try {
+			usersList = jdbcTemplate.query(sql, args, new PersonMapper());
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
+
+		UserModel user = usersList.get(0);
+
+		return user;
+
+	}
+
 	public boolean userResetPassword(String authentication_key, String newPassword) {
 		Object[] args = { newPassword, authentication_key };
 
@@ -206,22 +276,6 @@ public class UserDAO {
 			e.printStackTrace();
 			return false;
 		}
-	}
-
-	public boolean checkUniqueAccountNumebr(UserModel useraccount) {
-
-		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
-		Object[] args = { useraccount.getAccountnumber() };
-		String query = "select accountnumber from login where accountnumber = ?";
-
-		try {
-			String name = jdbcTemplate.queryForObject(query, args, String.class);
-			return true;
-		} catch (Exception e) {
-			e.printStackTrace();
-			return false;
-		}
-
 	}
 
 	public boolean checkUniqueAccountNumebr(String account_Number) {
@@ -248,14 +302,25 @@ public class UserDAO {
 		return false;
 	}
 
-	public List<TradeContractModel> updateContract(String accountnumber) {
+	public boolean updateContract(TradeContractModel contract) {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
-		Object[] args = { accountnumber };
-		String sql = "update login set contractId = ?,contentDescription=?,contractMoney=?, exporterId=?,importerId=?,importerBankId=?,insuranceId=?,customId=?,portOfLoadin=?,portOfEntry=?,exporterCheck=?,importerCheck=?,importerBankCheck=?,insuranceCheck=?,customCheck=? where contractId=?";
-		List<TradeContractModel> contractList = jdbcTemplate.query(sql, args, new ContractMappers());
 
-		return contractList;
+		Object[] args = { contract.getContentDescription(), contract.getContractMoney(), contract.getExporterId(),
+				contract.getCustomId(), contract.getInsuranceId(), contract.getImporterId(),
+				contract.getImporterBankId(), contract.getPortOfLoadin(), contract.getPortOfEntry(),
+				contract.isExporterCheck(), contract.isCustomCheck(), contract.isInsuranceCheck(),
+				contract.isImporterCheck(), contract.isImporterBankCheck(), contract.getContractId() };
+		String sql = "update User_Contract set contentDescription = ?,contractMoney=?,exporterId=?,importerId=?,importerBankId=?,insuranceId=?,customId=?,portofLoadin=?,portOfEntry=?,exporterCheck=?,importerCheck=?,importerBankCheck=?,insuranceCheck=?,customCheck=? where contract_id =?";
 
+		try {
+			int rows = jdbcTemplate.update(sql, args);
+			return true;
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
+
+		return false;
 	}
 
 	public List<UserModel> getBalanceByAccount(String accountnumber) {
@@ -300,162 +365,128 @@ public class UserDAO {
 
 	}
 
-	// public BaseResponse userReg(User user) {
-	//
-	// boolean outcome=dao.presence(user);
-	// if(outcome!=true) {
-	//
-	// boolean isUniqueAccount = dao.uniqueAccountNumber(user.getAccounNumber());
-	//
-	// if (isUniqueAccount) {
-	//
-	// System.out.println("after presence");
-	// String uuid=UUID.randomUUID().toString();
-	// user.setAuthenticatedUserKey(uuid);
-	// user.setVerified(true);
-	// TradeUser admin = tradeUtil.getAdmin(caClient);
-	// //convertUserAccountToByteArray(user.)
-	// TradeUser userAcc = tradeUtil.makeTradeAccount(caClient, admin,
-	// user.getAccounNumber(), user.getRole());
-	// byte [] userAccountByte =tradeUtil.convertUserAccountToByteArray(userAcc);
-	// user.setUserAccount(userAccountByte);
-	//
-	// try {
-	// dao.insert(user);
-	// } catch (SQLException e1) {
-	// // TODO Auto-generated catch block
-	// e1.printStackTrace();
-	// }
-	//
-	// Channel channel = tradeUtil.getChannel(client, admin);
-	// System.out.println(channel.getName()+" is channel name");
-	// int bal= user.getBalance();
-	// String balance =Integer.toString(bal);
-	// String [] args = new String[]
-	// {user.getAccounNumber(),user.getRole(),balance,user.getBank()};
-	// try {
-	// tradeUtil.transactionInvokeBlockChain(client, "createAccount", args);
-	// } catch (org.hyperledger.fabric.sdk.exception.InvalidArgumentException e) {
-	//
-	// e.printStackTrace();
-	// }
-	// // channel.shutdown(true);
-	// response.setCode(200);
-	// response.setStatus(HttpStatus.OK);
-	// response.setMessage("you are registered successfully...");
-	// response.setErrors(null);
-	//
-	//
+	public boolean uniqueAccountNumber(String accountNumber) {
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 
-	// public boolean uniqueAccountNumber(String accountNumber) {
-	//
-	// Object [] args = {accountNumber};
-	// String sql = "select * from UserLogin where account_number = ?";
-	//
-	// List<User> users = null;
-	//
-	// users = template.query(sql, args, new UserMapper());
-	//
-	// if(users.isEmpty()) {
-	//
-	// return true;
-	// }
-	//
-	// return false;
-	// }
-	//
-	// public boolean updateBalance(String accountNumber,int balance) {
-	//
-	// Object [] args = {balance,accountNumber};
-	// String sql = "update UserLogin set balance = ? where account_number = ?";
-	//
-	// try {
-	// int updatedRow = template.update(sql, args);
-	// System.out.println(updatedRow+" row are affected..");
-	// return true;
-	// } catch (Exception e) {
-	//
-	// e.printStackTrace();
-	// return false;
-	// }
-	//
-	// }
-	//
-	// public byte [] getUserTradeAccount (String accountNumber) {
-	// Object [] args = {accountNumber};
-	//
-	// String sql = "select user_account from UserLogin where account_number = ?";
-	//
-	// List<Blob> userBlobs =template.queryForList(sql, Blob.class, args);
-	//
-	// Blob userBlob =userBlobs.get(0);
-	// byte [] userByte = null;
-	// try {
-	// userByte =userBlob.getBytes(1, (int)userBlob.length());
-	// } catch (SQLException e) {
-	//
-	// e.printStackTrace();
-	// }
-	//
-	// return userByte;
-	// }
-	//
-	//
-	// public boolean saveContract (Contract contract) {
-	//
-	// Object [] args =
-	// {contract.getContractId(),contract.getContractDescription(),contract.getValue(),contract.getExporterId(),contract.getCustomId(),contract.getInsuranceId(),contract.getImporterId(),contract.getImporterBankId(),contract.getPortOfLoading(),contract.getPortOfEntry(),contract.isExporterCheck(),contract.isCustomCheck(),contract.isInsuranceCheck(),contract.isImporterCheck(),contract.isImporterBankCheck()};
-	//
-	// String sql ="insert into UserContract
-	// (contract_id,contract_description,value,exporter_id,custom_id,insurance_id,importer_id,importerBank_id,port_of_loading,port_of_entry,exporterCheck,customCheck,insuranceCheck,importerCheck,importerBankCheck)
-	// values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-	//
-	// try {
-	// int row = template.update(sql, args);
-	// System.out.println(row+" rows affected...");
-	// return true;
-	// } catch (DataAccessException e) {
-	// e.printStackTrace();
-	// }
-	//
-	// return false;
-	// }
-	//
-	// public boolean uniqueContract(String contractId) {
-	//
-	// Object [] args = {contractId};
-	// String sql = "select * from UserContract where contract_id = ?";
-	//
-	// List<Contract> contractList = template.query(sql, args, new
-	// ContractMapper());
-	// if (contractList.isEmpty()) {
-	// return true;
-	// }
-	//
-	//
-	// return false;
-	// }
-	//
-	// public boolean updateContract(Contract contract) {
-	//
-	// Object [] args =
-	// {contract.getContractDescription(),contract.getValue(),contract.getExporterId(),contract.getCustomId(),contract.getInsuranceId(),contract.getImporterId(),contract.getImporterBankId(),contract.getPortOfLoading(),contract.getPortOfEntry(),contract.isExporterCheck(),contract.isCustomCheck(),contract.isInsuranceCheck(),contract.isImporterCheck(),contract.isImporterBankCheck(),contract.getContractId()};
-	// String sql= "update UserContract set contract_description =
-	// ?,value=?,exporter_id=?,custom_id=?,insurance_id=?,importer_id=?,importerBank_id=?,port_of_loading=?,port_of_entry=?,exporterCheck=?,customCheck=?,insuranceCheck=?,importerCheck=?,importerBankCheck=?
-	// where contract_id =?";
-	//
-	// try {
-	// int rows = template.update(sql, args);
-	// System.out.println(rows+" rows affected..");
-	// return true;
-	// } catch (Exception e) {
-	//
-	// e.printStackTrace();
-	// }
-	//
-	// return false;
-	// }
-	//
-	//
+		Object[] args = { accountNumber };
+		String sql = "select * from login where accountnumber = ?";
+
+		List<UserModel> users = null;
+
+		users = jdbcTemplate.query(sql, args, new PersonMapper());
+
+		if (users.isEmpty()) {
+
+			return true;
+		}
+
+		return false;
+	}
+
+	public boolean updateBalance(String accountNumber, int balance) {
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+
+		Object[] args = { balance, accountNumber };
+		String sql = "update login set balance = ? where accountnumber = ?";
+
+		try {
+			int updatedRow = jdbcTemplate.update(sql, args);
+			System.out.println(updatedRow + " row are affected..");
+			return true;
+		} catch (Exception e) {
+
+			e.printStackTrace();
+			return false;
+		}
+
+	}
+
+	public byte[] getUserTradeAccount(String accountNumber) {
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+
+		Object[] args = { accountNumber };
+
+		String sql = "select useraccount from UserLogin where accountnumber = ?";
+
+		List<Blob> userBlobs = jdbcTemplate.queryForList(sql, Blob.class, args);
+
+		Blob userBlob = userBlobs.get(0);
+		byte[] userByte = null;
+		try {
+			userByte = userBlob.getBytes(1, (int) userBlob.length());
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+
+		return userByte;
+	}
+
+	public boolean uniqueContract(String contractId) {
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+
+		Object[] args = { contractId };
+		String sql = "select * from UserContract where contract_id = ?";
+
+		List<TradeContractModel> contractList = jdbcTemplate.query(sql, args, new ContractMappers());
+		if (contractList.isEmpty()) {
+			return true;
+		}
+
+		return false;
+	}
+
+//	public boolean deleteContract(String contractId) {
+//		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+//
+//		Object[] args = { contractId };
+//
+//		String sql = "delete from UserContract where contract_id =?";
+//
+//		try {
+//			int rows = jdbcTemplate.update(sql, args);
+//			System.out.println(rows + " rows affected");
+//			return true;
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//
+//		return false;
+//	}
+
+	public TradeContractModel getContract(String contractId) {
+
+		Object[] args = { contractId };
+
+		String sql = "select * from UserContract where contract_id = ?";
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+
+		List<TradeContractModel> contractList = jdbcTemplate.query(sql, args, new ContractMappers());
+		if (contractList.isEmpty()) {
+			return null;
+		}
+
+		TradeContractModel contract = contractList.get(0);
+
+		return contract;
+	}
+
+	public List<TradeContractModel> gellAllContract(String userId) {
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+
+		Object[] args = { userId };
+
+		String sql = "select * from User_Contract where exporteId = ?";
+
+		List<TradeContractModel> contractList = null;
+		try {
+			contractList = jdbcTemplate.query(sql, args, new ContractMappers());
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
+
+		return contractList;
+	}
 
 }
