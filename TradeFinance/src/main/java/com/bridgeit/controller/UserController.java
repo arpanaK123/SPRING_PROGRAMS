@@ -211,29 +211,30 @@ public class UserController {
 		}
 		response.setStatusCode("400");
 		response.setStatus("something wrong");
-		response.setContractModel(null);
 		return new ResponseEntity<ContractResponse>(response, HttpStatus.BAD_REQUEST);
 
 	}
-	@RequestMapping(value="/createContractToken" , method = RequestMethod.POST)
-	public ResponseEntity<ContractResponse> createContract(@RequestBody TradeContractModel contract,@RequestHeader("token") String jwtToken){
+
+	@RequestMapping(value = "/createContractToken", method = RequestMethod.POST)
+	public ResponseEntity<ContractResponse> createContract(@RequestBody TradeContractModel contract,
+			@RequestHeader("token") String jwtToken) {
+		System.out.println("token:"+token);
 		ContractResponse response = new ContractResponse();
-		
-		boolean saved = userService.createContract(contract,jwtToken);
-	
+
+		boolean saved = userService.createContract(contract, jwtToken);
+
 		if (saved) {
 			response.setStatusCode("200");
 			response.setStatus("success");
 			response.setContractModel(contract);
-			return new ResponseEntity<ContractResponse>(response,HttpStatus.OK);
+			return new ResponseEntity<ContractResponse>(response, HttpStatus.OK);
 		}
 		response.setStatusCode("400");
 		response.setStatus("something wrong");
-		response.setContractModel(null);
-		return new ResponseEntity<ContractResponse>(response,HttpStatus.BAD_REQUEST);
-		
-		
+		return new ResponseEntity<ContractResponse>(response, HttpStatus.BAD_REQUEST);
+
 	}
+
 	@RequestMapping(value = "/getContractByContractId", method = RequestMethod.POST)
 	public ResponseEntity<ContractResponse> getContractBy(@RequestBody TradeContractModel contractModel) {
 		System.out.println("contract: " + contractModel);
@@ -248,54 +249,46 @@ public class UserController {
 		}
 		response.setStatusCode("400");
 		response.setStatus("something wrong");
-		response.setContractModel(null);
 		return new ResponseEntity<ContractResponse>(response, HttpStatus.BAD_REQUEST);
 
 	}
-	
-	@RequestMapping(value="/getContractById" , method = RequestMethod.POST)
-	public ResponseEntity<ContractResponse> getContract(@RequestBody ContractId contractId ,@RequestHeader("token") String jwtToken) throws InvalidArgumentException{
-		
+
+	@RequestMapping(value = "/getContractById", method = RequestMethod.POST)
+	public ResponseEntity<ContractResponse> getContract(@RequestBody ContractId contractId,
+			@RequestHeader("token") String jwtToken) throws InvalidArgumentException {
+
 		TradeContractModel contract = userService.getContractFromBlockChain(contractId.getContractId(), jwtToken);
 		ContractResponse response = new ContractResponse();
-		if(contract==null) {
+		if (contract == null) {
 			response.setStatusCode("400");
 			response.setStatus("something wrong");
-			response.setContractModel(null);
-			return new ResponseEntity<ContractResponse>(response,HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<ContractResponse>(response, HttpStatus.BAD_REQUEST);
 		}
-		response.setContractModel(contract);
 		response.setStatusCode("200");
 		response.setStatus("success");
-		
-		return new ResponseEntity<ContractResponse>(response,HttpStatus.OK);	
+		response.setContractModel(contract);
+		return new ResponseEntity<ContractResponse>(response, HttpStatus.OK);
 	}
 
-	
-
-	@RequestMapping(value="/updateContractByToken" , method = RequestMethod.POST)
-	public ResponseEntity<ContractResponse> updateContract(@RequestBody TradeContractModel contract,@RequestHeader("token") String jwtToken) throws InvalidArgumentException{
-		
-		System.out.println(jwtToken);
-		System.out.println(contract);
+	@RequestMapping(value = "/updateContractByToken", method = RequestMethod.POST)
+	public ResponseEntity<ContractResponse> updateContract(@RequestBody TradeContractModel contract,
+			@RequestHeader("token") String jwtToken) throws InvalidArgumentException {
+		System.out.println("token"+token);
 		ContractResponse response = new ContractResponse();
 		boolean saved = userService.updateContract(jwtToken, contract);
-	
+
 		if (saved) {
 			response.setStatus("success");
 			response.setStatusCode("200");
-			TradeContractModel contractResponse =userService.getContractResponse(contract.getContractId());
+			TradeContractModel contractResponse = userService.getContractResponse(contract.getContractId());
 			response.setContractModel(contractResponse);
-			return new ResponseEntity<ContractResponse>(response,HttpStatus.OK);
+			return new ResponseEntity<ContractResponse>(response, HttpStatus.OK);
 		}
 		response.setStatusCode("400");
 		response.setStatus("something wrong");
-		response.setContractModel(null);
-		return new ResponseEntity<ContractResponse>(response,HttpStatus.BAD_REQUEST);
-		
-		
-	}
+		return new ResponseEntity<ContractResponse>(response, HttpStatus.BAD_REQUEST);
 
+	}
 
 	@RequestMapping(value = "getBalance/{accountnumber}", method = RequestMethod.GET)
 	public ResponseEntity<BalanceResponce> getBalance(@PathVariable("accountnumber") String accountNumber) {
@@ -313,10 +306,8 @@ public class UserController {
 		return new ResponseEntity<BalanceResponce>(response, HttpStatus.BAD_REQUEST);
 	}
 
-	
-
-	@RequestMapping(value = "/getAllContract", method = RequestMethod.POST)
-	public ResponseEntity<ContractLists> getContract(@RequestHeader("token") String jwtToken) {
+	@RequestMapping(value = "/getAllContractBytoken", method = RequestMethod.POST)
+	public ResponseEntity<ContractLists> getAllContracts(@RequestHeader("token") String jwtToken) {
 
 		List<TradeContractModel> usersContracts = userService.getAllContract(jwtToken);
 		ContractLists contractsResponse = new ContractLists();
@@ -330,30 +321,9 @@ public class UserController {
 
 		contractsResponse.setCode(200);
 		contractsResponse.setContracts(usersContracts);
-		contractsResponse.setStatus("something wrong");
-		return new ResponseEntity<ContractLists>(contractsResponse, HttpStatus.BAD_REQUEST);
+		contractsResponse.setStatus("success");
+		return new ResponseEntity<ContractLists>(contractsResponse, HttpStatus.OK);
 
-	}
-
-	@RequestMapping(value="/getAllContractBytoken" , method = RequestMethod.POST)
-	public ResponseEntity<ContractLists> getAllContracts(@RequestHeader("token") String jwtToken){
-		
-	 List<TradeContractModel> usersContracts = userService.getAllContract(jwtToken);
-	 ContractLists contractsResponse = new ContractLists();
-	 
-	 if(usersContracts.isEmpty()||usersContracts==null) {
-		 contractsResponse.setCode(400);
-		 contractsResponse.setContracts(null);
-		 contractsResponse.setStatus("something wrong");
-		 return new ResponseEntity<ContractLists>(contractsResponse ,HttpStatus.BAD_REQUEST);
-	 }
-	 
-	 
-	 contractsResponse.setCode(200);
-	 contractsResponse.setContracts(usersContracts);
-	 contractsResponse.setStatus("success");
-	 return new ResponseEntity<ContractLists>(contractsResponse ,HttpStatus.OK);
-		
 	}
 
 }

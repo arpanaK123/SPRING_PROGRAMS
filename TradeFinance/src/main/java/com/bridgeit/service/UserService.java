@@ -29,9 +29,12 @@ import com.bridgeit.model.TradeContractModel;
 import com.bridgeit.model.TradeUser;
 import com.bridgeit.model.UserModel;
 import com.bridgeit.model.Usermodel;
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.introspect.VisibilityChecker;
 
 @Component
 public class UserService {
@@ -194,9 +197,9 @@ public class UserService {
 
 	public boolean createContract(TradeContractModel contract, String jwtToken) {
 
-		String email = tokens.getJwtId(jwtToken);
+		String email = tokens.getJwtBYEmail(jwtToken);
 
-		UserModel user = userDao.getUserByEmail(email);
+		UserModel user = userDao.fetchUserByEmail(email);
 		System.out.println(user);
 		if (user == null) {
 			return false;
@@ -360,13 +363,13 @@ public class UserService {
 
 	public boolean updateContract(String jwtToken, TradeContractModel contract) throws InvalidArgumentException {
 
-		boolean updatedInBc = updateContractInBlockChain(jwtToken, contract);
+		boolean updatedInBlockChain = updateContractInBlockChain(jwtToken, contract);
 
-		if (updatedInBc) {
+		if (updatedInBlockChain) {
 
-			boolean updatedInDb = updateContractInDB(contract.getContractId());
+			boolean updateInDatabase = updateContractInDataBase(contract.getContractId());
 
-			if (updatedInDb) {
+			if (updateInDatabase) {
 				return true;
 			} else {
 				return false;
@@ -377,19 +380,21 @@ public class UserService {
 	}
 
 	public boolean updateContractInBlockChain(String jwtToken, TradeContractModel contract) {
-
-		String email = tokens.getJwtId(jwtToken);
-		System.out.println(email);
-		UserModel user = userDao.getUserByEmail(email);
+		System.out.println("token---" + jwtToken);
+		String email = tokens.getJwtBYEmail(jwtToken);
+		System.out.println("-------------" + tokens.getJwtBYEmail(jwtToken));
+		System.out.println("email:---"+email);
+		UserModel user = userDao.fetchUserByEmail(email);
 		System.out.println(user);
 
 		String[] args = { user.getAccountnumber(), contract.getContractId() };
-		System.out.println(user.getAccountnumber() + "---- " + contract.getContractId());
+		System.out.println("acc num----"+user.getAccountnumber()+"----"+contract.getContractId());
 		switch (user.getRole()) {
 
 		case "importer": {
 
 			try {
+				System.out.println("importer");
 				tradeFunction.transactionInvokeBlockChain(client, "accept_By_Importer", args, channel);
 				return true;
 			} catch (InvalidArgumentException e) {
@@ -402,6 +407,7 @@ public class UserService {
 		case "custom": {
 
 			try {
+				System.out.println("custom");
 				tradeFunction.transactionInvokeBlockChain(client, "accept_By_Custom", args, channel);
 				return true;
 			} catch (InvalidArgumentException e) {
@@ -415,6 +421,7 @@ public class UserService {
 		case "importerBank": {
 
 			try {
+				System.out.println("importerbank");
 				tradeFunction.transactionInvokeBlockChain(client, "accept_By_ImporterBank", args, channel);
 				return true;
 			} catch (InvalidArgumentException e) {
@@ -427,6 +434,7 @@ public class UserService {
 		case "insurance": {
 
 			try {
+				System.out.println("insurance");
 				tradeFunction.transactionInvokeBlockChain(client, "accept_By_Insurance", args, channel);
 				getUserBalance(contract.getExporterId());
 				getUserBalance(contract.getImporterId());
@@ -445,7 +453,7 @@ public class UserService {
 		return false;
 	}
 
-	public boolean updateContractInDB(String contractId) throws InvalidArgumentException {
+	public boolean updateContractInDataBase(String contractId) throws InvalidArgumentException {
 
 		String[] args = { contractId };
 		ObjectMapper mapper = new ObjectMapper();
@@ -459,6 +467,13 @@ public class UserService {
 		try {
 
 			TradeContractModel contract = mapper.readValue(response, TradeContractModel.class);
+			// TradeContractModel contract=
+			// mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+			// mapper.configure(DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES,
+			// false);
+
+			// TradeContractModel
+			// contracts=mapper.setVisibilityChecker(VisibilityChecker.Std.defaultInstance().withFieldVisibility(JsonAutoDetect.Visibility.ANY));
 
 			System.out.println(contract);
 

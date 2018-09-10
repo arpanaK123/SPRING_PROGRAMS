@@ -24,11 +24,11 @@ public class GenerateTokens {
 				"signingKey");
 
 		// if it has been specified, let's add the expiration
-		 if (ttlMillis >= 0) {
-		 long expMillis = nowMillis + ttlMillis;
-		 Date exp = new Date(expMillis);
-		 builder.setExpiration(exp);
-		 }
+		if (ttlMillis >= 0) {
+			long expMillis = nowMillis + ttlMillis;
+			Date exp = new Date(expMillis);
+			builder.setExpiration(exp);
+		}
 		// Builds the JWT and serializes it to a compact, URL-safe string
 		return builder.compact();
 
@@ -41,11 +41,12 @@ public class GenerateTokens {
 		return claims;
 	}
 
-	public String getJwtId(String jwt) {
+	public String getJwtBYEmail(String jwt) {
 
 		Claims claims = Jwts.parser().setSigningKey("signingKey").parseClaimsJws(jwt).getBody();
-
-		return claims.getId();
+		System.out.println("claims: " + claims);
+		System.out.println(claims.getId());
+		return claims.getSubject();
 
 	}
 

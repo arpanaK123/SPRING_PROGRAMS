@@ -45,26 +45,6 @@ public class UserDAO {
 		return out;
 	}
 
-	public boolean insertBeforeAcc(UserModel user) throws SerialException, SQLException {
-		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
-		Object[] args = { user.getEmail(), user.getName(), user.setPassword(BcryptHash.generatedHashPassword(user.getPassword())), user.getRole(),
-				user.isVerified(), user.getAuthentication_key(), user.getBalance(), user.getBankname() };
-		int out = 0;
-		try {
-			System.out.println(user);
-			out = jdbcTemplate.update(
-					"insert into login(email,name,password,city,role,verified,authenticated_key,balance,bankname) values (?,?,?,?,?,?,?,?,?)",
-					args);
-			System.out.println("number rows affected " + out);
-			return true;
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("insert template not excuted..");
-			return false;
-		}
-
-	}
-
 	public boolean saveContract(TradeContractModel contract) {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 		Object[] args = { contract.getContractId(), contract.getContentDescription(), contract.getContractMoney(),
@@ -183,7 +163,7 @@ public class UserDAO {
 
 		Object[] args = { accountNumber, new SerialBlob(Useraccount), email };
 
-		String sql = "update UserLogin set account_number = ? , user_account = ? where email = ?";
+		String sql = "update login set accountnumber = ? , useraccount = ? where email = ?";
 
 		try {
 			int row = jdbcTemplate.update(sql, args);
@@ -232,7 +212,7 @@ public class UserDAO {
 	}
 
 	public UserModel fetchUserByEmail(String email) {
-
+		System.out.println("email:" + email);
 		Object[] args = { email };
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 		String sql = "select * from login where email=?";
@@ -243,9 +223,9 @@ public class UserDAO {
 
 	public UserModel getUserByEmail(String email) {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
-
+		System.out.println("email:" + email);
 		Object[] args = { email };
-		String sql = "select * from UserLogin where email = ?";
+		String sql = "select * from login where email = ?";
 		List<UserModel> usersList = null;
 		try {
 			usersList = jdbcTemplate.query(sql, args, new PersonMapper());
@@ -306,11 +286,11 @@ public class UserDAO {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 
 		Object[] args = { contract.getContentDescription(), contract.getContractMoney(), contract.getExporterId(),
-				contract.getCustomId(), contract.getInsuranceId(), contract.getImporterId(),
-				contract.getImporterBankId(), contract.getPortOfLoadin(), contract.getPortOfEntry(),
-				contract.isExporterCheck(), contract.isCustomCheck(), contract.isInsuranceCheck(),
-				contract.isImporterCheck(), contract.isImporterBankCheck(), contract.getContractId() };
-		String sql = "update User_Contract set contentDescription = ?,contractMoney=?,exporterId=?,importerId=?,importerBankId=?,insuranceId=?,customId=?,portofLoadin=?,portOfEntry=?,exporterCheck=?,importerCheck=?,importerBankCheck=?,insuranceCheck=?,customCheck=? where contract_id =?";
+				contract.getExporterId(), contract.getImporterId(), contract.getImporterBankId(),
+				contract.getInsuranceId(), contract.getCustomId(), contract.getPortOfLoadin(),
+				contract.getPortOfEntry(), contract.isExporterCheck(), contract.isImporterCheck(),
+				contract.isImporterBankCheck(), contract.isInsuranceCheck(), contract.isCustomCheck() };
+		String sql = "update User_Contract set contentDescription = ?,contractMoney=?,exporterId=?,importerId=?,importerBankId=?,insuranceId=?,customId=?,portofLoadin=?,portOfEntry=?,exporterCheck=?,importerCheck=?,importerBankCheck=?,insuranceCheck=?,customCheck=? where contractId =?";
 
 		try {
 			int rows = jdbcTemplate.update(sql, args);
@@ -391,7 +371,6 @@ public class UserDAO {
 
 		try {
 			int updatedRow = jdbcTemplate.update(sql, args);
-			System.out.println(updatedRow + " row are affected..");
 			return true;
 		} catch (Exception e) {
 
@@ -406,7 +385,7 @@ public class UserDAO {
 
 		Object[] args = { accountNumber };
 
-		String sql = "select useraccount from UserLogin where accountnumber = ?";
+		String sql = "select useraccount from login where accountnumber = ?";
 
 		List<Blob> userBlobs = jdbcTemplate.queryForList(sql, Blob.class, args);
 
@@ -426,7 +405,7 @@ public class UserDAO {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 
 		Object[] args = { contractId };
-		String sql = "select * from UserContract where contract_id = ?";
+		String sql = "select * from User_Contract where contractId = ?";
 
 		List<TradeContractModel> contractList = jdbcTemplate.query(sql, args, new ContractMappers());
 		if (contractList.isEmpty()) {
@@ -436,29 +415,11 @@ public class UserDAO {
 		return false;
 	}
 
-//	public boolean deleteContract(String contractId) {
-//		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
-//
-//		Object[] args = { contractId };
-//
-//		String sql = "delete from UserContract where contract_id =?";
-//
-//		try {
-//			int rows = jdbcTemplate.update(sql, args);
-//			System.out.println(rows + " rows affected");
-//			return true;
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//
-//		return false;
-//	}
-
 	public TradeContractModel getContract(String contractId) {
 
 		Object[] args = { contractId };
 
-		String sql = "select * from UserContract where contract_id = ?";
+		String sql = "select * from User_Contract where contractId = ?";
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 
 		List<TradeContractModel> contractList = jdbcTemplate.query(sql, args, new ContractMappers());
@@ -487,6 +448,27 @@ public class UserDAO {
 		}
 
 		return contractList;
+	}
+
+	public boolean insertBeforeAcc(UserModel user) throws SerialException, SQLException {
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+		Object[] args = { user.getEmail(), user.getName(),
+				user.setPassword(BcryptHash.generatedHashPassword(user.getPassword())), user.getRole(),
+				user.isVerified(), user.getAuthentication_key(), user.getBalance(), user.getBankname() };
+		int out = 0;
+		try {
+			System.out.println(user);
+			out = jdbcTemplate.update(
+					"insert into login(email,name,password,city,role,verified,authenticated_key,balance,bankname) values (?,?,?,?,?,?,?,?,?)",
+					args);
+			System.out.println("number rows affected " + out);
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("insert template not excuted..");
+			return false;
+		}
+
 	}
 
 }

@@ -5,38 +5,34 @@ import javax.persistence.GenerationType;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.stereotype.Component;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Component
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class TradeContractModel {
 	
 	//
 	//@GeneratedValue(strategy = GenerationType.AUTO)
+
 	@NotEmpty(message = "contract id is required")
 	private String contractId;
-	
 	@NotEmpty(message = "content descr. is required")
 	private String contentDescription;
 	
 	@NotEmpty(message = "contract money. is required")
 	private int contractMoney;
-	
 	@NotEmpty(message = "exporter id is required")
 	private String exporterId;
-	
 	@NotEmpty(message = "importer id is required")
 	private String importerId;
-	
 	@NotEmpty(message = "importer bank id is required")
 	private String importerBankId;
-	
 	@NotEmpty(message = "insurance id is required")
 	private String insuranceId;
-	
 	@NotEmpty(message = "custom id is required")
 	private String customId;
-	
 	@NotEmpty(message = "port of loading is required")
 	private String portOfLoadin;
-	
 	@NotEmpty(message = "port of entry is required")
 	private String portOfEntry;
 	

@@ -1,10 +1,16 @@
 
-‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãøªHéÎRMINORZ
+r
+squid:S106/"9Replace this use of System.out or System.err by a logger.(»ó¨Ïşÿÿÿÿ8³ØÜ,HˆëRMAJORZ
+CODE_SMELL
+˜squid:S1488'"^Immediately return this expression instead of assigning it to the temporary variable "claims".(ä¦¿§ùÿÿÿÿ8˜¦êçÛ,H‰ëRMINORZ
+CODE_SMELL
+‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãøªHŠëRMINORZ
+CODE_SMELL
+ˆsquid:S1192"KDefine a constant instead of duplicating this literal "signingKey" 4 times.(¼•İ‰ûÿÿÿÿ8˜¦êçÛ,H‹ëRCRITICALZ
+CODE_SMELL
+m
+squid:S1060"9Replace this use of System.out or System.err by a logger.(òú…ğ8³ØÜ,HŒëRMAJORZ
 CODE_SMELL
 r
-squid:S106"9Replace this use of System.out or System.err by a logger.(ŞÙô‚úÿÿÿÿ8‰‹Ù‚Ï,HëÎRMAJORZ
-CODE_SMELL
-ˆsquid:S1192"KDefine a constant instead of duplicating this literal "signingKey" 4 times.(¼•İ‰ûÿÿÿÿ8˜¦êçÛ,H„ÏRCRITICALZ
-CODE_SMELL
-˜squid:S1488'"^Immediately return this expression instead of assigning it to the temporary variable "claims".(ä¦¿§ùÿÿÿÿ8˜¦êçÛ,H…ÏRMINORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(ŞÙô‚úÿÿÿÿ8‰‹Ù‚Ï,HëRMAJORZ
 CODE_SMELL

@@ -135,6 +135,7 @@ public class TradeFunctionUtility {
 
 		try {
 			BlockEvent.TransactionEvent event = channel.sendTransaction(responses).get(60, TimeUnit.SECONDS);
+			System.out.println("event______"+event);
 			if (event.isValid()) {
 				System.out.println(event.getTransactionID() + " transaction is valid ");
 				return true;
