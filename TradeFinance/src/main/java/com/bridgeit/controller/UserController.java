@@ -9,6 +9,7 @@ import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.hyperledger.fabric.sdk.exception.InvalidArgumentException;
+import org.hyperledger.fabric.sdk.exception.ProposalException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -35,6 +36,8 @@ import com.bridgeit.model.TradeContractModel;
 import com.bridgeit.model.UserModel;
 import com.bridgeit.model.Usermodel;
 import com.bridgeit.service.UserService;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 
 @RestController
 @ControllerAdvice
@@ -253,11 +256,13 @@ public class UserController {
 
 	}
 
-	@RequestMapping(value = "/getContractById", method = RequestMethod.POST)
+	@RequestMapping(value = "/getContractByToken", method = RequestMethod.POST)
 	public ResponseEntity<ContractResponse> getContract(@RequestBody ContractId contractId,
-			@RequestHeader("token") String jwtToken) throws InvalidArgumentException {
-
+			@RequestHeader("token") String jwtToken) throws InvalidArgumentException, JsonParseException, JsonMappingException, ProposalException, IOException {
+		System.out.println("token "+jwtToken);
+System.out.println("contract_id"+contractId.getContractId());
 		TradeContractModel contract = userService.getContractFromBlockChain(contractId.getContractId(), jwtToken);
+		System.out.println("contract"+contract);
 		ContractResponse response = new ContractResponse();
 		if (contract == null) {
 			response.setStatusCode("400");
@@ -280,6 +285,7 @@ public class UserController {
 		if (saved) {
 			response.setStatus("success");
 			response.setStatusCode("200");
+			response.setContractModel(contract);
 			TradeContractModel contractResponse = userService.getContractResponse(contract.getContractId());
 			response.setContractModel(contractResponse);
 			return new ResponseEntity<ContractResponse>(response, HttpStatus.OK);

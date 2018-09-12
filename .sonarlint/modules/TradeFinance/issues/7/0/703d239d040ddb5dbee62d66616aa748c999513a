@@ -1,0 +1,7 @@
+
+lsquid:S1068%"2Remove this unused "rejectContract" private field.(†ΘµΌψÿÿÿÿ8λλ©μά,H·RMAJORZ
+CODE_SMELL
+isquid:S1068$"4Remove this unused "completeContract" private field.(¶εΐ²8λλ©μά,H¶RMAJORZ
+CODE_SMELL
+”squid:UselessImportCheck"RRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnoreProperties'.(τ’ξ8ε©ήξά,HΞ‹RMINORZ
+CODE_SMELL

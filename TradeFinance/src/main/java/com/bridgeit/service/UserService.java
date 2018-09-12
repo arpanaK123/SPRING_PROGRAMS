@@ -6,8 +6,6 @@ import java.util.List;
 import java.util.UUID;
 
 import javax.sql.rowset.serial.SerialException;
-import javax.validation.Valid;
-
 import org.hyperledger.fabric.sdk.Channel;
 import org.hyperledger.fabric.sdk.HFClient;
 import org.hyperledger.fabric.sdk.exception.InvalidArgumentException;
@@ -16,25 +14,19 @@ import org.hyperledger.fabric_ca.sdk.HFCAClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-
 import com.bridgeit.DAO.UserDAO;
 import com.bridgeit.Utility.Consumer;
 import com.bridgeit.Utility.GenerateTokens;
 import com.bridgeit.Utility.Producer;
 import com.bridgeit.Utility.TradeFunctionUtility;
-import com.bridgeit.Utility.TradeUtility;
 import com.bridgeit.Utility.UserMail;
 import com.bridgeit.model.TradeContractModel;
 import com.bridgeit.model.TradeUser;
 import com.bridgeit.model.UserModel;
-import com.bridgeit.model.Usermodel;
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.introspect.VisibilityChecker;
 
 @Component
 public class UserService {
@@ -206,7 +198,7 @@ public class UserService {
 		}
 
 		contract.setExporterCheck(true);
-		;
+		
 		boolean insertion = userDao.saveContract(contract);
 
 		if (insertion) {
@@ -383,12 +375,12 @@ public class UserService {
 		System.out.println("token---" + jwtToken);
 		String email = tokens.getJwtBYEmail(jwtToken);
 		System.out.println("-------------" + tokens.getJwtBYEmail(jwtToken));
-		System.out.println("email:---"+email);
+		System.out.println("email:---" + email);
 		UserModel user = userDao.fetchUserByEmail(email);
 		System.out.println(user);
 
 		String[] args = { user.getAccountnumber(), contract.getContractId() };
-		System.out.println("acc num----"+user.getAccountnumber()+"----"+contract.getContractId());
+		System.out.println("acc num----" + user.getAccountnumber() + "----" + contract.getContractId());
 		switch (user.getRole()) {
 
 		case "importer": {
@@ -467,14 +459,6 @@ public class UserService {
 		try {
 
 			TradeContractModel contract = mapper.readValue(response, TradeContractModel.class);
-			// TradeContractModel contract=
-			// mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
-			// mapper.configure(DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES,
-			// false);
-
-			// TradeContractModel
-			// contracts=mapper.setVisibilityChecker(VisibilityChecker.Std.defaultInstance().withFieldVisibility(JsonAutoDetect.Visibility.ANY));
-
 			System.out.println(contract);
 
 			boolean contractUpdated = userDao.updateContract(contract);
@@ -501,33 +485,21 @@ public class UserService {
 	}
 
 	public TradeContractModel getContractFromBlockChain(String contractId, String jwtToken)
-			throws InvalidArgumentException {
+			throws InvalidArgumentException, ProposalException, JsonParseException, JsonMappingException, IOException {
 
 		String[] args = { contractId };
-		ObjectMapper mapper = new ObjectMapper();
-		TradeContractModel contract = null;
-		try {
-			List<String> responses = tradeFunction.queryBlockChain(client, "get_Contract_By", args, channel);
-			String response = responses.get(0);
-			try {
+		ObjectMapper objectMapper = new ObjectMapper();
+		// Jackson code to convert JSON String to Java object
+		//ObjectMapper objectMapper = new ObjectMapper();
+		//objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+		List<String> responses = tradeFunction.queryBlockChain(client, "get_Contract_By", args, channel);
+		String response = responses.get(0);
 
-				contract = mapper.readValue(response, TradeContractModel.class);
+		TradeContractModel contract = objectMapper.readValue(response, TradeContractModel.class);
+		System.out.println("service " + contract);
 
-			} catch (JsonParseException e) {
-
-				e.printStackTrace();
-			} catch (JsonMappingException e) {
-
-				e.printStackTrace();
-			} catch (IOException e) {
-
-				e.printStackTrace();
-			}
-		} catch (ProposalException e) {
-			e.printStackTrace();
-		}
+	System.out.println("-----"+contract);
 
 		return contract;
 	}
-
 }

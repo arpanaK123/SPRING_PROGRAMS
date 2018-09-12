@@ -1,24 +1,16 @@
 package com.bridgeit.model;
 
-import javax.persistence.GenerationType;
-
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Component
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class TradeContractModel {
-	
-	//
-	//@GeneratedValue(strategy = GenerationType.AUTO)
-
 	@NotEmpty(message = "contract id is required")
 	private String contractId;
 	@NotEmpty(message = "content descr. is required")
 	private String contentDescription;
-	
 	@NotEmpty(message = "contract money. is required")
 	private int contractMoney;
 	@NotEmpty(message = "exporter id is required")
@@ -41,6 +33,8 @@ public class TradeContractModel {
 	private boolean customCheck;
 	private boolean importerBankCheck;
 	private boolean insuranceCheck;
+	private boolean completeContract;
+	private boolean rejectContract;
 	public String getContractId() {
 		return contractId;
 	}

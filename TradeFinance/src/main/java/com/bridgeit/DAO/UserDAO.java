@@ -415,6 +415,18 @@ public class UserDAO {
 		return false;
 	}
 
+	public boolean copleteContract(String contractId) {
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+
+		Object[] args = { true, contractId };
+		String sql = "update User_Contract set completeContract = ? where contractId = ?";
+		int status = jdbcTemplate.update(sql, args);
+		if (status == 1) {
+			return true;
+		}
+		return false;
+	}
+
 	public TradeContractModel getContract(String contractId) {
 
 		Object[] args = { contractId };

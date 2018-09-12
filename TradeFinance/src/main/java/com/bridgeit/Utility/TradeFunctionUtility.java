@@ -198,7 +198,9 @@ public class TradeFunctionUtility {
 			throws ProposalException, InvalidArgumentException {
 
 		QueryByChaincodeRequest qpr = client.newQueryProposalRequest();
+		System.out.println("qpr: "+qpr);
 		ChaincodeID tradeFinanceCCId = ChaincodeID.newBuilder().setName("tradefinancecc").build();
+		System.out.println("tradecc "+tradeFinanceCCId);
 		qpr.setChaincodeID(tradeFinanceCCId);
 		qpr.setFcn(function);
 		qpr.setArgs(args);
@@ -216,12 +218,14 @@ public class TradeFunctionUtility {
 			String stringResponse = null;
 			try {
 				stringResponse = new String(pres.getChaincodeActionResponsePayload());
+				System.out.println("string response: "+stringResponse);
 			} catch (org.hyperledger.fabric.sdk.exception.InvalidArgumentException e) {
 				e.printStackTrace();
 			}
 			System.out.println(stringResponse);
 			list.add(stringResponse);
 		}
+		System.out.println("list "+list);
 		return list;
 	}
 

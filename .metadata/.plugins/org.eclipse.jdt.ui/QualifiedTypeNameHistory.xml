@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.hyperledger.fabric.sdk.ChaincodeID"/>
-    <fullyQualifiedTypeName name="java.util.Collection"/>
-    <fullyQualifiedTypeName name="org.hyperledger.fabric.sdk.ProposalResponse"/>
-    <fullyQualifiedTypeName name="org.hyperledger.fabric.sdk.BlockEvent"/>
-    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
     <fullyQualifiedTypeName name="com.bridgeit.Utility.ResponseError"/>
     <fullyQualifiedTypeName name="com.bridgeit.Utility.TradeUtility"/>
@@ -37,7 +32,6 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="org.hyperledger.fabric.sdk.exception.ProposalException"/>
     <fullyQualifiedTypeName name="org.hyperledger.fabric.sdk.exception.InvalidArgumentException"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.apache.http.HttpStatus"/>
     <fullyQualifiedTypeName name="org.springframework.dao.DataAccessException"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
@@ -58,6 +52,12 @@
     <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
     <fullyQualifiedTypeName name="com.bridgeit.Utility.PersonMapper"/>
     <fullyQualifiedTypeName name="com.bridgeit.model.ContractId"/>
-    <fullyQualifiedTypeName name="com.bridgeit.model.TradeContractModel"/>
     <fullyQualifiedTypeName name="com.bridgeit.model.UserModel"/>
+    <fullyQualifiedTypeName name="com.bridgeit.model.TradeContractModel"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonAutoDetect"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.introspect.VisibilityChecker"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.DeserializationFeature"/>
+    <fullyQualifiedTypeName name="com.bridgeit.Utility.Contract"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnoreProperties"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
