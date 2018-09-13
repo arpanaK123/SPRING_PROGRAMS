@@ -296,18 +296,18 @@ System.out.println("contract_id"+contractId.getContractId());
 
 	}
 
-	@RequestMapping(value = "getBalance/{accountnumber}", method = RequestMethod.GET)
-	public ResponseEntity<BalanceResponce> getBalance(@PathVariable("accountnumber") String accountNumber) {
+	@RequestMapping(value = "/getBalance", method = RequestMethod.POST)
+	public ResponseEntity<BalanceResponce> getBalance(@RequestHeader("token") String token) {
 
 		BalanceResponce response = new BalanceResponce();
-		int balance = userService.getUserBalance(accountNumber);
+		int balance = userService.getUserBalance(token);
 		if (balance != -1) {
-			response.setAccountNumber(accountNumber);
+			//response.setAccountNumber(token);
 			response.setBalance(balance);
 			return new ResponseEntity<BalanceResponce>(response, HttpStatus.OK);
 		}
 
-		response.setAccountNumber(accountNumber);
+		//response.setAccountNumber(accountNumber);
 		response.setBalance(balance);
 		return new ResponseEntity<BalanceResponce>(response, HttpStatus.BAD_REQUEST);
 	}

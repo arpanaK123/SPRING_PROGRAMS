@@ -198,7 +198,7 @@ public class UserService {
 		}
 
 		contract.setExporterCheck(true);
-		
+
 		boolean insertion = userDao.saveContract(contract);
 
 		if (insertion) {
@@ -321,13 +321,55 @@ public class UserService {
 		return result;
 	}
 
+	// public List<TradeContractModel> getAllContract(String jwt) {
+	// List<TradeContractModel> allContract =
+	// userDao.gellAllContract(user.getAccountnumber());
+	// return allContract;
+	// }
 	public List<TradeContractModel> getAllContract(String jwt) {
-		List<TradeContractModel> allContract = userDao.gellAllContract(user.getAccountnumber());
+
+		String tokenId = tokens.getJwtBYEmail(jwt);
+		UserModel user = userDao.fetchUserByEmail(tokenId);
+
+		List<TradeContractModel> allContract = userDao.gellAllContract(user.getAccountnumber(), user.getRole());
+
 		return allContract;
 	}
+	//
+	// public int getUserBalance(String token) {
+	//
+	// boolean result = userDao.uniqueAccountNumber(accountNumber);
+	//
+	// if (!result) {
+	// String[] args = new String[] { accountNumber };
+	//
+	// try {
+	// List<String> responses = tradeFunction.queryBlockChain(client,
+	// "get_Balance_By", args, channel);
+	// String response = responses.get(0);
+	// System.out.println(response + " is response balance");
+	// int balance = Integer.parseInt(response);
+	// userDao.updateBalance(accountNumber, balance);
+	// return balance;
+	//
+	// } catch (ProposalException e) {
+	//
+	// e.printStackTrace();
+	// } catch (InvalidArgumentException e) {
+	//
+	// e.printStackTrace();
+	// }
+	// }
+	// return -1;
+	//
+	// }
 
-	public int getUserBalance(String accountNumber) {
+	public int getUserBalance(String jwt) {
 
+		String email = tokens.getJwtBYEmail(jwt);
+		UserModel user = userDao.fetchUserByEmail(email);
+
+		String accountNumber = user.getAccountnumber();
 		boolean result = userDao.uniqueAccountNumber(accountNumber);
 
 		if (!result) {
@@ -336,8 +378,10 @@ public class UserService {
 			try {
 				List<String> responses = tradeFunction.queryBlockChain(client, "get_Balance_By", args, channel);
 				String response = responses.get(0);
-				System.out.println(response + " is response balance");
+				System.out.println(response + " is response for query");
+
 				int balance = Integer.parseInt(response);
+
 				userDao.updateBalance(accountNumber, balance);
 				return balance;
 
@@ -490,15 +534,15 @@ public class UserService {
 		String[] args = { contractId };
 		ObjectMapper objectMapper = new ObjectMapper();
 		// Jackson code to convert JSON String to Java object
-		//ObjectMapper objectMapper = new ObjectMapper();
-		//objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+		// ObjectMapper objectMapper = new ObjectMapper();
+		// objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 		List<String> responses = tradeFunction.queryBlockChain(client, "get_Contract_By", args, channel);
 		String response = responses.get(0);
 
 		TradeContractModel contract = objectMapper.readValue(response, TradeContractModel.class);
 		System.out.println("service " + contract);
 
-	System.out.println("-----"+contract);
+		System.out.println("-----" + contract);
 
 		return contract;
 	}

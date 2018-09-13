@@ -443,25 +443,66 @@ public class UserDAO {
 
 		return contract;
 	}
+public List<TradeContractModel> gellAllContract(String userId,String role) {
+	JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 
-	public List<TradeContractModel> gellAllContract(String userId) {
-		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
-
-		Object[] args = { userId };
-
-		String sql = "select * from User_Contract where exporteId = ?";
-
+		Object [] args = {userId};
+		String sql =null;
+		
+		
+		switch (role) {
+		
+		case "exporter" :{
+			
+			sql = "select * from User_Contract where exporterId = ?";
+			break;
+		} 
+		case "custom" :{
+			sql = "select * from User_Contract where customId = ?";
+			break;
+			
+		}
+		
+		case "insurance" :{
+			sql = "select * from User_Contract where insuranceId = ?";
+			break;
+			
+		}
+		
+		case "importer" : {
+			
+			sql = "select * from User_Contract where importerId = ?";
+			break;
+			
+		}
+		
+		case "importerBank" : {
+			
+			sql = "select * from User_Contract where importerBankId = ?";
+			break;
+			
+		}
+		
+		default:{
+			
+			break;
+		}
+		
+		
+		}
+		
 		List<TradeContractModel> contractList = null;
 		try {
+			
 			contractList = jdbcTemplate.query(sql, args, new ContractMappers());
 		} catch (Exception e) {
-
+		
 			e.printStackTrace();
 		}
-
+		
 		return contractList;
 	}
-
+	
 	public boolean insertBeforeAcc(UserModel user) throws SerialException, SQLException {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 		Object[] args = { user.getEmail(), user.getName(),
