@@ -49,6 +49,14 @@ public class GenerateTokens {
 		return claims.getSubject();
 
 	}
+	public String getJwtBYId(String jwt) {
+
+		Claims claims = Jwts.parser().setSigningKey("signingKey").parseClaimsJws(jwt).getBody();
+		System.out.println("claims: " + claims);
+		System.out.println(claims.getId());
+		return claims.getId();
+
+	}
 
 	public String getJwtSubject(String jwt) {
 

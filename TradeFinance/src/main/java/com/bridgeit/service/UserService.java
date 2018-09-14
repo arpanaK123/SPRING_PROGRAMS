@@ -378,7 +378,7 @@ public class UserService {
 			try {
 				List<String> responses = tradeFunction.queryBlockChain(client, "get_Balance_By", args, channel);
 				String response = responses.get(0);
-				System.out.println(response + " is response for query");
+				System.out.println("balance = " + response);
 
 				int balance = Integer.parseInt(response);
 
@@ -399,15 +399,17 @@ public class UserService {
 
 	public boolean updateContract(String jwtToken, TradeContractModel contract) throws InvalidArgumentException {
 
-		boolean updatedInBlockChain = updateContractInBlockChain(jwtToken, contract);
+		boolean updatBlockChain = updateContractInBlockChain(jwtToken, contract);
+		System.out.println("updateblockchain");
+		if (updatBlockChain) {
+			System.out.println("------");
+			boolean updateDatabase = updateContractInDataBase(contract.getContractId());
 
-		if (updatedInBlockChain) {
-
-			boolean updateInDatabase = updateContractInDataBase(contract.getContractId());
-
-			if (updateInDatabase) {
+			if (updateDatabase) {
+				System.out.println("update database");
 				return true;
 			} else {
+				// userDao.copleteContract(contract.getContractId());
 				return false;
 			}
 		}
@@ -416,49 +418,22 @@ public class UserService {
 	}
 
 	public boolean updateContractInBlockChain(String jwtToken, TradeContractModel contract) {
-		System.out.println("token---" + jwtToken);
-		String email = tokens.getJwtBYEmail(jwtToken);
-		System.out.println("-------------" + tokens.getJwtBYEmail(jwtToken));
-		System.out.println("email:---" + email);
-		UserModel user = userDao.fetchUserByEmail(email);
-		System.out.println(user);
 
-		String[] args = { user.getAccountnumber(), contract.getContractId() };
-		System.out.println("acc num----" + user.getAccountnumber() + "----" + contract.getContractId());
-		switch (user.getRole()) {
+		String user = tokens.getJwtBYEmail(jwtToken);
+		System.out.println("from token" + user);
+		UserModel userModel = userDao.getUserByEmail(user);
+		System.out.println("from database" + user);
 
-		case "importer": {
+		String[] args = { userModel.getAccountnumber(), contract.getContractId() };
+		System.out.println("acc no: " + userModel.getAccountnumber() + "---- id: " + contract.getContractId());
+		switch (userModel.getRole()) {
 
-			try {
-				System.out.println("importer");
-				tradeFunction.transactionInvokeBlockChain(client, "accept_By_Importer", args, channel);
-				return true;
-			} catch (InvalidArgumentException e) {
-
-				e.printStackTrace();
-				return false;
-			}
-
-		}
 		case "custom": {
 
 			try {
-				System.out.println("custom");
+				System.out.println("channel: "+channel.getName());
 				tradeFunction.transactionInvokeBlockChain(client, "accept_By_Custom", args, channel);
-				return true;
-			} catch (InvalidArgumentException e) {
-
-				e.printStackTrace();
-				return false;
-			}
-
-		}
-
-		case "importerBank": {
-
-			try {
-				System.out.println("importerbank");
-				tradeFunction.transactionInvokeBlockChain(client, "accept_By_ImporterBank", args, channel);
+				System.out.println("custom");
 				return true;
 			} catch (InvalidArgumentException e) {
 
@@ -470,11 +445,12 @@ public class UserService {
 		case "insurance": {
 
 			try {
+				System.out.println("channel: " + channel);
+				System.out.println("client: " + client);
+				System.out.println("args: " + args);
 				System.out.println("insurance");
 				tradeFunction.transactionInvokeBlockChain(client, "accept_By_Insurance", args, channel);
-				getUserBalance(contract.getExporterId());
-				getUserBalance(contract.getImporterId());
-
+				System.out.println("insurance");
 				return true;
 			} catch (InvalidArgumentException e) {
 
@@ -484,9 +460,46 @@ public class UserService {
 
 		}
 
+		case "importer": {
+
+			try {
+				tradeFunction.transactionInvokeBlockChain(client, "accept_By_Importer", args, channel);
+				System.out.println("importer");
+				return true;
+			} catch (InvalidArgumentException e) {
+
+				e.printStackTrace();
+				return false;
+			}
+
+		}
+		case "importerBank": {
+
+			try {
+				tradeFunction.transactionInvokeBlockChain(client, "accept_By_ImporterBank", args, channel);
+				contract.setCheckUser(true);
+				getUserBalance(contract.getExporterId());
+				System.out.println("exporter balance: " + getUserBalance(contract.getExporterId()));
+				getUserBalance(contract.getImporterId());
+				System.out.println("importer bal: " + getUserBalance(contract.getImporterId()));
+				boolean result = userDao.copleteContract(contract.getContractId());
+				if (result) {
+					return true;
+				} else {
+					return false;
+				}
+
+			} catch (InvalidArgumentException e) {
+
+				e.printStackTrace();
+				return false;
+			}
+
 		}
 
+		}
 		return false;
+
 	}
 
 	public boolean updateContractInDataBase(String contractId) throws InvalidArgumentException {
@@ -527,6 +540,51 @@ public class UserService {
 
 		return false;
 	}
+
+	// public boolean updateContractInDB(String contractId) {
+	//
+	// String [] args = {contractId};
+	// ObjectMapper mapper = new ObjectMapper();
+	// try {
+	// List<String> responses = tradeUtil.queryBlockChain(client, "getContract",
+	// args, channel);
+	// String response = responses.get(0);
+	// try {
+	//
+	// Contract contract = mapper.readValue(response, Contract.class);
+	//
+	// System.out.println(contract);
+	//
+	// boolean contractUpdated = dao.updateContract(contract);
+	//
+	// if(contractUpdated) {
+	//
+	// return true;
+	// }else {
+	// return false;
+	// }
+	//
+	// } catch (JsonParseException e) {
+	//
+	// e.printStackTrace();
+	// } catch (JsonMappingException e) {
+	//
+	// e.printStackTrace();
+	// } catch (IOException e) {
+	//
+	// e.printStackTrace();
+	// }
+	// } catch (ProposalException e) {
+	// e.printStackTrace();
+	// } catch (org.hyperledger.fabric_ca.sdk.exception.InvalidArgumentException e)
+	// {
+	// e.printStackTrace();
+	// }
+	//
+	//
+	// return false;
+	// }
+	//
 
 	public TradeContractModel getContractFromBlockChain(String contractId, String jwtToken)
 			throws InvalidArgumentException, ProposalException, JsonParseException, JsonMappingException, IOException {

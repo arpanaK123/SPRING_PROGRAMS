@@ -1,16 +1,9 @@
 package com.bridgeit.Utility;
 
 public class BalanceResponce {
-	private String accountNumber;
 	private int Balance;
 
-	public String getAccountNumber() {
-		return accountNumber;
-	}
-
-	public void setAccountNumber(String accountNumber) {
-		this.accountNumber = accountNumber;
-	}
+	
 
 	public int getBalance() {
 		return Balance;
@@ -22,6 +15,6 @@ public class BalanceResponce {
 
 	@Override
 	public String toString() {
-		return "BalanceResponse [accountNumber=" + accountNumber + ", Balance=" + Balance + "]";
+		return "BalanceResponse Balance=" + Balance + "]";
 	}
 }

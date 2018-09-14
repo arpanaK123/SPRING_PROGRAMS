@@ -417,14 +417,19 @@ public class UserDAO {
 
 	public boolean copleteContract(String contractId) {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
-
 		Object[] args = { true, contractId };
-		String sql = "update User_Contract set completeContract = ? where contractId = ?";
-		int status = jdbcTemplate.update(sql, args);
-		if (status == 1) {
+		String sql = "update User_Contract set completeContract = ? where contractId =?";
+
+		try {
+			int rows = jdbcTemplate.update(sql, args);
+			System.out.println(rows + " rows affected");
 			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+
+			return false;
 		}
-		return false;
+
 	}
 
 	public TradeContractModel getContract(String contractId) {
@@ -443,66 +448,65 @@ public class UserDAO {
 
 		return contract;
 	}
-public List<TradeContractModel> gellAllContract(String userId,String role) {
-	JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 
-		Object [] args = {userId};
-		String sql =null;
-		
-		
+	public List<TradeContractModel> gellAllContract(String userId, String role) {
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
+
+		Object[] args = { userId };
+		String sql = null;
+
 		switch (role) {
-		
-		case "exporter" :{
-			
+
+		case "exporter": {
+
 			sql = "select * from User_Contract where exporterId = ?";
 			break;
-		} 
-		case "custom" :{
+		}
+		case "custom": {
 			sql = "select * from User_Contract where customId = ?";
 			break;
-			
+
 		}
-		
-		case "insurance" :{
+
+		case "insurance": {
 			sql = "select * from User_Contract where insuranceId = ?";
 			break;
-			
+
 		}
-		
-		case "importer" : {
-			
+
+		case "importer": {
+
 			sql = "select * from User_Contract where importerId = ?";
 			break;
-			
+
 		}
-		
-		case "importerBank" : {
-			
+
+		case "importerBank": {
+
 			sql = "select * from User_Contract where importerBankId = ?";
 			break;
-			
+
 		}
-		
-		default:{
-			
+
+		default: {
+
 			break;
 		}
-		
-		
+
 		}
-		
+
 		List<TradeContractModel> contractList = null;
 		try {
-			
+
 			contractList = jdbcTemplate.query(sql, args, new ContractMappers());
 		} catch (Exception e) {
-		
+
 			e.printStackTrace();
 		}
-		
+
 		return contractList;
 	}
-	
+
 	public boolean insertBeforeAcc(UserModel user) throws SerialException, SQLException {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 		Object[] args = { user.getEmail(), user.getName(),

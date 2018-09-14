@@ -110,21 +110,25 @@ public class TradeFunctionUtility {
 
 	public boolean transactionInvokeBlockChain(HFClient client, String chaincodeFunction, String[] args,
 			Channel channel) throws org.hyperledger.fabric.sdk.exception.InvalidArgumentException {
-
+System.out.println("invoke blockchain");
 		TransactionProposalRequest tqr = client.newTransactionProposalRequest();
+		System.out.println("twr: "+tqr);
 		ChaincodeID tradeFinanceCCId = ChaincodeID.newBuilder().setName("tradefinancecc").build();
+		System.out.println("tradeFinanceCCId: "+tradeFinanceCCId);
 		tqr.setChaincodeID(tradeFinanceCCId);
 		tqr.setFcn(chaincodeFunction);
 		tqr.setArgs(args);
 		Collection<ProposalResponse> responses = null;
+		System.out.println("Proposel-Response: "+responses);
 		try {
 			responses = channel.sendTransactionProposal(tqr);
+			System.out.println("responses: "+responses);
 			List<ProposalResponse> invalid = responses.stream().filter(res -> res.isInvalid())
 					.collect(Collectors.toList());
 			if (!invalid.isEmpty()) {
 
 				invalid.forEach(response -> {
-					System.out.println(response.getMessage());
+					System.out.println("message---> "+response.getMessage());
 				});
 
 			}
@@ -132,6 +136,7 @@ public class TradeFunctionUtility {
 			e.printStackTrace();
 			return false;
 		}
+		System.out.println("---------------------");
 
 		try {
 			BlockEvent.TransactionEvent event = channel.sendTransaction(responses).get(60, TimeUnit.SECONDS);
@@ -222,7 +227,7 @@ public class TradeFunctionUtility {
 			} catch (org.hyperledger.fabric.sdk.exception.InvalidArgumentException e) {
 				e.printStackTrace();
 			}
-			System.out.println(stringResponse);
+			System.out.println("string response"+stringResponse);
 			list.add(stringResponse);
 		}
 		System.out.println("list "+list);

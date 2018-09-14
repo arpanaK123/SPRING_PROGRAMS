@@ -42,7 +42,6 @@
     <fullyQualifiedTypeName name="com.bridgeit.Utility.ContractMappers"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="com.bridgeit.model.ContractLists"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestHeader"/>
     <fullyQualifiedTypeName name="com.bridgeit.model.Usermodel"/>
     <fullyQualifiedTypeName name="com.bridgeit.Utility.ContractResponse"/>
     <fullyQualifiedTypeName name="io.jsonwebtoken.Claims"/>
@@ -52,12 +51,13 @@
     <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
     <fullyQualifiedTypeName name="com.bridgeit.Utility.PersonMapper"/>
     <fullyQualifiedTypeName name="com.bridgeit.model.ContractId"/>
-    <fullyQualifiedTypeName name="com.bridgeit.model.UserModel"/>
-    <fullyQualifiedTypeName name="com.bridgeit.model.TradeContractModel"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonAutoDetect"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.introspect.VisibilityChecker"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.DeserializationFeature"/>
     <fullyQualifiedTypeName name="com.bridgeit.Utility.Contract"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnoreProperties"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestHeader"/>
+    <fullyQualifiedTypeName name="com.bridgeit.model.TradeContractModel"/>
+    <fullyQualifiedTypeName name="com.bridgeit.model.UserModel"/>
 </qualifiedTypeNameHistroy>

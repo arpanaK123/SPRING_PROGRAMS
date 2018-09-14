@@ -280,9 +280,9 @@ System.out.println("contract_id"+contractId.getContractId());
 			@RequestHeader("token") String jwtToken) throws InvalidArgumentException {
 		System.out.println("token"+token);
 		ContractResponse response = new ContractResponse();
-		boolean saved = userService.updateContract(jwtToken, contract);
+		boolean status = userService.updateContract(jwtToken, contract);
 
-		if (saved) {
+		if (status) {
 			response.setStatus("success");
 			response.setStatusCode("200");
 			response.setContractModel(contract);
@@ -302,12 +302,9 @@ System.out.println("contract_id"+contractId.getContractId());
 		BalanceResponce response = new BalanceResponce();
 		int balance = userService.getUserBalance(token);
 		if (balance != -1) {
-			//response.setAccountNumber(token);
 			response.setBalance(balance);
 			return new ResponseEntity<BalanceResponce>(response, HttpStatus.OK);
 		}
-
-		//response.setAccountNumber(accountNumber);
 		response.setBalance(balance);
 		return new ResponseEntity<BalanceResponce>(response, HttpStatus.BAD_REQUEST);
 	}
