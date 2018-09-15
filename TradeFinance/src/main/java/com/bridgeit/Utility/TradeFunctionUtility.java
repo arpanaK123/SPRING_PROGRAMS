@@ -39,6 +39,8 @@ import com.bridgeit.model.TradeContractModel;
 import com.bridgeit.model.TradeUser;
 import com.bridgeit.model.UserModel;
 
+import io.jsonwebtoken.lang.Arrays;
+
 @Component
 public class TradeFunctionUtility {
 
@@ -118,6 +120,8 @@ System.out.println("invoke blockchain");
 		tqr.setChaincodeID(tradeFinanceCCId);
 		tqr.setFcn(chaincodeFunction);
 		tqr.setArgs(args);
+	
+		System.out.println("args: "+java.util.Arrays.toString(args));
 		Collection<ProposalResponse> responses = null;
 		System.out.println("Proposel-Response: "+responses);
 		try {

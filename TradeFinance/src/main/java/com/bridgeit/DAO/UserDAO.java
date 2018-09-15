@@ -285,12 +285,12 @@ public class UserDAO {
 	public boolean updateContract(TradeContractModel contract) {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 
-		Object[] args = { contract.getContentDescription(), contract.getContractMoney(), contract.getExporterId(),
+		Object[] args = {contract.getContentDescription(), contract.getContractMoney(),
 				contract.getExporterId(), contract.getImporterId(), contract.getImporterBankId(),
 				contract.getInsuranceId(), contract.getCustomId(), contract.getPortOfLoadin(),
 				contract.getPortOfEntry(), contract.isExporterCheck(), contract.isImporterCheck(),
-				contract.isImporterBankCheck(), contract.isInsuranceCheck(), contract.isCustomCheck() };
-		String sql = "update User_Contract set contentDescription = ?,contractMoney=?,exporterId=?,importerId=?,importerBankId=?,insuranceId=?,customId=?,portofLoadin=?,portOfEntry=?,exporterCheck=?,importerCheck=?,importerBankCheck=?,insuranceCheck=?,customCheck=? where contractId =?";
+				contract.isImporterBankCheck(), contract.isInsuranceCheck(), contract.isCustomCheck(),contract.isCompleteContract(),contract.getContractId()};
+		String sql = "update User_Contract set contentDescription = ?,contractMoney=?,exporterId=?,importerId=?,importerBankId=?,insuranceId=?,customId=?,portofLoadin=?,portOfEntry=?,exporterCheck=?,importerCheck=?,importerBankCheck=?,insuranceCheck=?,customCheck=?,completeContract=? where contractId =?";
 
 		try {
 			int rows = jdbcTemplate.update(sql, args);
@@ -416,13 +416,14 @@ public class UserDAO {
 	}
 
 	public boolean copleteContract(String contractId) {
+		System.out.println("competecontract: ");
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(datasource);
 		Object[] args = { true, contractId };
 		String sql = "update User_Contract set completeContract = ? where contractId =?";
 
 		try {
 			int rows = jdbcTemplate.update(sql, args);
-			System.out.println(rows + " rows affected");
+			System.out.println("updated");
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();

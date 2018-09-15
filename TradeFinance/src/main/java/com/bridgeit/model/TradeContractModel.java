@@ -34,7 +34,7 @@ public class TradeContractModel {
 	private boolean importerBankCheck;
 	private boolean insuranceCheck;
 	private boolean completeContract;
-	private boolean checkUser;
+
 	
 	public String getContractId() {
 		return contractId;
@@ -131,12 +131,6 @@ public class TradeContractModel {
 	}
 	public void setCompleteContract(boolean completeContract) {
 		this.completeContract = completeContract;
-	}
-	public boolean isCheckUser() {
-		return checkUser;
-	}
-	public void setCheckUser(boolean checkUser) {
-		this.checkUser = checkUser;
 	}
 	
 

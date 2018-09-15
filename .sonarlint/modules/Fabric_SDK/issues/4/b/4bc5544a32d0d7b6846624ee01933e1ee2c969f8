@@ -1,64 +1,64 @@
 
-bsquid:S1612Ş",Replace this lambda with a method reference.(ˆ¤¸¼8Ğá¦çÚ,Hõ¹RMINORZ
-CODE_SMELL
-usquid:UselessImportCheck	".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8‰È“èÚ,H÷¹RMINORZ
-CODE_SMELL
-squid:S1192›"FDefine a constant instead of duplicating this literal "admin" 3 times.(˜µé8İ‚óûÙ,H„ºRCRITICALZ
-CODE_SMELL
-‚squid:S1192Y"JDefine a constant instead of duplicating this literal "mychannel" 3 times.(Õ†Œ¹8èëÉÚ,Hô¹RCRITICALZ
-CODE_SMELL
-…squid:UselessImportCheck"CRemove this unused import 'java.util.concurrent.CompletableFuture'.(ôŞä´8‰È“èÚ,HˆºRMINORZ
-CODE_SMELL
-’squid:UselessImportCheck"PRemove this unused import 'org.hyperledger.fabric.sdk.ChaincodeResponse.Status'.(Î§ü¼8‰È“èÚ,Hù¹RMINORZ
-CODE_SMELL
-bsquid:S1602â",Remove useless curly braces around statement(ñşà8Ğá¦çÚ,H€ºRMINORZ
-CODE_SMELL
-‚squid:S00112…"FDefine and throw a dedicated exception instead of using a generic one.(Ğó„Îşÿÿÿÿ8İ‚óûÙ,Hü¹RMAJORZ
-CODE_SMELL
-usquid:S3725":Replace this with a call to the "toFile().exists()" method(€Ô”¢üÿÿÿÿ8ëÈ»¤Ú,H‰ºRMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLineD"<This block of commented-out lines of code should be removed.(¯î¡Ş8†ıÃÚ,Hÿ¹RMAJORZ
-CODE_SMELL
-m
-squid:S106z"9Replace this use of System.out or System.err by a logger.(áÙÌ8Ğá¦çÚ,H†ºRMAJORZ
-CODE_SMELL
-ssquid:S3878Ú"8Remove this array creation and simply pass the elements.(¢ıÿÿùÿÿÿÿ8Ğá¦çÚ,Hò¹RMINORZ
+‚squid:S00112…"FDefine and throw a dedicated exception instead of using a generic one.(Ğó„Îşÿÿÿÿ8İ‚óûÙ,H©RMAJORZ
 CODE_SMELL
 r
-squid:S1068"9Replace this use of System.out or System.err by a logger.(ƒ¡ËÛşÿÿÿÿ8Œ“Ï¦Ú,HƒºRMAJORZ
+squid:S1068"9Replace this use of System.out or System.err by a logger.(ƒ¡ËÛşÿÿÿÿ8Œ“Ï¦Ú,H‚©RMAJORZ
 CODE_SMELL
-‚squid:S00112•"FDefine and throw a dedicated exception instead of using a generic one.(ø¡Èîıÿÿÿÿ8İ‚óûÙ,Hú¹RMAJORZ
+squid:S1192›"FDefine a constant instead of duplicating this literal "admin" 3 times.(˜µé8İ‚óûÙ,Hƒ©RCRITICALZ
 CODE_SMELL
-vsquid:UselessImportCheck"4Remove this unused import 'java.util.logging.Level'.(…µÛ¶8‰È“èÚ,H‹ºRMINORZ
-CODE_SMELL
-m
-squid:S106ã"9Replace this use of System.out or System.err by a logger.(­±»8Û×„ÊÚ,Hğ¹RMAJORZ
-CODE_SMELL
-…squid:CommentedOutCodeLiney"<This block of commented-out lines of code should be removed.(ìÁ×ıÿÿÿÿÿ8ÒÉÄœÚ,HŒºRMAJORZ
-CODE_SMELL
-‚squid:S00112Ë"FDefine and throw a dedicated exception instead of using a generic one.(™¡©üÿÿÿÿ8ÖğÚıÙ,H‚ºRMAJORZ
-CODE_SMELL
-lsquid:S1135š"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8İ‚óûÙ,H…ºRINFOZ
-CODE_SMELL
-asquid:S1148è"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8½¤èÚ,Hó¹RMINORZVULNERABILITY
-r
-squid:S1064"9Replace this use of System.out or System.err by a logger.(‚Îç…ùÿÿÿÿ8Û×„ÊÚ,HºRMAJORZ
-CODE_SMELL
-qsquid:UselessImportCheck"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8‰È“èÚ,Hø¹RMINORZ
-CODE_SMELL
-lsquid:S1135Ì"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8İ‚óûÙ,Hñ¹RINFOZ
-CODE_SMELL
-asquid:S1148ó"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ğá¦çÚ,Hö¹RMINORZVULNERABILITY
 s
-squid:S106Š"9Replace this use of System.out or System.err by a logger.(ÕÒãâşÿÿÿÿ8èëÉÚ,Hş¹RMAJORZ
+squid:S106ğ"9Replace this use of System.out or System.err by a logger.(ŞÃÆ—øÿÿÿÿ8ãäË Ú,H„©RMAJORZ
+CODE_SMELL
+‚squid:S00112Ë"FDefine and throw a dedicated exception instead of using a generic one.(™¡©üÿÿÿÿ8ÖğÚıÙ,H…©RMAJORZ
+CODE_SMELL
+bsquid:S1602â",Remove useless curly braces around statement(ñşà8Ğá¦çÚ,H†©RMINORZ
+CODE_SMELL
+m
+squid:S106ã"9Replace this use of System.out or System.err by a logger.(­±»8Û×„ÊÚ,H‡©RMAJORZ
+CODE_SMELL
+ssquid:S3878Ú"8Remove this array creation and simply pass the elements.(¢ıÿÿùÿÿÿÿ8Ğá¦çÚ,Hˆ©RMINORZ
+CODE_SMELL
+qsquid:UselessImportCheck"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8‰È“èÚ,H‰©RMINORZ
+CODE_SMELL
+‚squid:S00112•"FDefine and throw a dedicated exception instead of using a generic one.(ø¡Èîıÿÿÿÿ8İ‚óûÙ,HŠ©RMAJORZ
+CODE_SMELL
+lsquid:S1135Ì"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8İ‚óûÙ,H‹©RINFOZ
+CODE_SMELL
+usquid:UselessImportCheck	".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8‰È“èÚ,HŒ©RMINORZ
+CODE_SMELL
+vsquid:UselessImportCheck"4Remove this unused import 'java.util.logging.Level'.(…µÛ¶8‰È“èÚ,H©RMINORZ
+CODE_SMELL
+…squid:CommentedOutCodeLiney"<This block of commented-out lines of code should be removed.(ìÁ×ıÿÿÿÿÿ8ÒÉÄœÚ,H©RMAJORZ
+CODE_SMELL
+rsquid:S3878s"8Remove this array creation and simply pass the elements.(ß¿˜çÿÿÿÿÿ8éŞâ¤Ú,H©RMINORZ
+CODE_SMELL
+lsquid:S1135š"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8İ‚óûÙ,H©RINFOZ
+CODE_SMELL
+‚squid:S1192Y"JDefine a constant instead of duplicating this literal "mychannel" 3 times.(Õ†Œ¹8èëÉÚ,H‘©RCRITICALZ
+CODE_SMELL
+…squid:UselessImportCheck"CRemove this unused import 'java.util.concurrent.CompletableFuture'.(ôŞä´8‰È“èÚ,H’©RMINORZ
+CODE_SMELL
+m
+squid:S106z"9Replace this use of System.out or System.err by a logger.(áÙÌ8Ğá¦çÚ,H“©RMAJORZ
+CODE_SMELL
+šsquid:UselessImportCheck"SRemove this unused import 'org.hyperledger.fabric.sdk.BlockEvent.TransactionEvent'.(—Ñ•úÿÿÿÿ8‰È“èÚ,H”©RMINORZ
+CODE_SMELL
+€squid:CommentedOutCodeLineD"<This block of commented-out lines of code should be removed.(¯î¡Ş8†ıÃÚ,H•©RMAJORZ
 CODE_SMELL
 n
-squid:S106î"9Replace this use of System.out or System.err by a logger.(è…‹8¢¸ç™Ú,Hû¹RMAJORZ
+squid:S106î"9Replace this use of System.out or System.err by a logger.(è…‹8¢¸ç™Ú,H–©RMAJORZ
 CODE_SMELL
-rsquid:S3878s"8Remove this array creation and simply pass the elements.(ß¿˜çÿÿÿÿÿ8éŞâ¤Ú,Hı¹RMINORZ
+asquid:S1148ó"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ğá¦çÚ,H—©RMINORZVULNERABILITY
+r
+squid:S1064"9Replace this use of System.out or System.err by a logger.(‚Îç…ùÿÿÿÿ8Û×„ÊÚ,H˜©RMAJORZ
+CODE_SMELL
+bsquid:S1612Ş",Replace this lambda with a method reference.(ˆ¤¸¼8Ğá¦çÚ,H™©RMINORZ
+CODE_SMELL
+usquid:S3725":Replace this with a call to the "toFile().exists()" method(€Ô”¢üÿÿÿÿ8ëÈ»¤Ú,Hš©RMAJORZ
 CODE_SMELL
 s
-squid:S106ğ"9Replace this use of System.out or System.err by a logger.(ŞÃÆ—øÿÿÿÿ8ãäË Ú,H‡ºRMAJORZ
+squid:S106Š"9Replace this use of System.out or System.err by a logger.(ÕÒãâşÿÿÿÿ8èëÉÚ,H›©RMAJORZ
 CODE_SMELL
-šsquid:UselessImportCheck"SRemove this unused import 'org.hyperledger.fabric.sdk.BlockEvent.TransactionEvent'.(—Ñ•úÿÿÿÿ8‰È“èÚ,HŠºRMINORZ
+’squid:UselessImportCheck"PRemove this unused import 'org.hyperledger.fabric.sdk.ChaincodeResponse.Status'.(Î§ü¼8‰È“èÚ,Hœ©RMINORZ
 CODE_SMELL
+asquid:S1148è"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8½¤èÚ,H©RMINORZVULNERABILITY

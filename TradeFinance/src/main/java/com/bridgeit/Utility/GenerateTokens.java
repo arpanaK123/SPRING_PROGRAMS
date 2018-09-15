@@ -2,6 +2,8 @@ package com.bridgeit.Utility;
 
 import java.util.Date;
 
+import javax.crypto.SecretKey;
+
 import org.springframework.stereotype.Component;
 
 import io.jsonwebtoken.Claims;
@@ -45,10 +47,12 @@ public class GenerateTokens {
 
 		Claims claims = Jwts.parser().setSigningKey("signingKey").parseClaimsJws(jwt).getBody();
 		System.out.println("claims: " + claims);
-		System.out.println(claims.getId());
+		System.out.println("id:" + claims.getId());
+		System.out.println("subject: " + claims.getSubject());
 		return claims.getSubject();
 
 	}
+
 	public String getJwtBYId(String jwt) {
 
 		Claims claims = Jwts.parser().setSigningKey("signingKey").parseClaimsJws(jwt).getBody();
@@ -57,6 +61,11 @@ public class GenerateTokens {
 		return claims.getId();
 
 	}
+
+//	public String getjwtFOrUpdate(String jwt) {
+//
+//		Claims claims = Jwts.parser().setSigningKey(SecretKey.getBytes("UTF-8")).parseClaimsJws(jwt).getBody();
+//	}
 
 	public String getJwtSubject(String jwt) {
 

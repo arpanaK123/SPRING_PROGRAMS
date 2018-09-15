@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
-    <fullyQualifiedTypeName name="com.bridgeit.Utility.ResponseError"/>
-    <fullyQualifiedTypeName name="com.bridgeit.Utility.TradeUtility"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="org.hyperledger.fabric_ca.sdk.exception.EnrollmentException"/>
     <fullyQualifiedTypeName name="java.util.concurrent.ExecutionException"/>
     <fullyQualifiedTypeName name="java.util.concurrent.TimeoutException"/>
@@ -58,6 +54,10 @@
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnoreProperties"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestHeader"/>
-    <fullyQualifiedTypeName name="com.bridgeit.model.TradeContractModel"/>
     <fullyQualifiedTypeName name="com.bridgeit.model.UserModel"/>
+    <fullyQualifiedTypeName name="com.bridgeit.model.TradeContractModel"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="org.hyperledger.fabric.sdk.ProposalResponse"/>
+    <fullyQualifiedTypeName name="io.jsonwebtoken.lang.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

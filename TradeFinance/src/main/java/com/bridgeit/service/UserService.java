@@ -204,8 +204,8 @@ public class UserService {
 		if (insertion) {
 			String value = Integer.toString(contract.getContractMoney());
 			String[] args = { contract.getContractId(), contract.getContentDescription(), value,
-					contract.getExporterId(), contract.getCustomId(), contract.getInsuranceId(),
-					contract.getImporterId(), contract.getImporterBankId(), contract.getPortOfLoadin(),
+					contract.getExporterId(), contract.getImporterId(), contract.getImporterBankId(),
+					contract.getInsuranceId(), contract.getCustomId(), contract.getPortOfLoadin(),
 					contract.getPortOfEntry() };
 			try {
 
@@ -321,11 +321,6 @@ public class UserService {
 		return result;
 	}
 
-	// public List<TradeContractModel> getAllContract(String jwt) {
-	// List<TradeContractModel> allContract =
-	// userDao.gellAllContract(user.getAccountnumber());
-	// return allContract;
-	// }
 	public List<TradeContractModel> getAllContract(String jwt) {
 
 		String tokenId = tokens.getJwtBYEmail(jwt);
@@ -335,34 +330,6 @@ public class UserService {
 
 		return allContract;
 	}
-	//
-	// public int getUserBalance(String token) {
-	//
-	// boolean result = userDao.uniqueAccountNumber(accountNumber);
-	//
-	// if (!result) {
-	// String[] args = new String[] { accountNumber };
-	//
-	// try {
-	// List<String> responses = tradeFunction.queryBlockChain(client,
-	// "get_Balance_By", args, channel);
-	// String response = responses.get(0);
-	// System.out.println(response + " is response balance");
-	// int balance = Integer.parseInt(response);
-	// userDao.updateBalance(accountNumber, balance);
-	// return balance;
-	//
-	// } catch (ProposalException e) {
-	//
-	// e.printStackTrace();
-	// } catch (InvalidArgumentException e) {
-	//
-	// e.printStackTrace();
-	// }
-	// }
-	// return -1;
-	//
-	// }
 
 	public int getUserBalance(String jwt) {
 
@@ -370,9 +337,9 @@ public class UserService {
 		UserModel user = userDao.fetchUserByEmail(email);
 
 		String accountNumber = user.getAccountnumber();
-		boolean result = userDao.uniqueAccountNumber(accountNumber);
+		boolean status = userDao.uniqueAccountNumber(accountNumber);
 
-		if (!result) {
+		if (!status) {
 			String[] args = new String[] { accountNumber };
 
 			try {
@@ -409,8 +376,8 @@ public class UserService {
 				System.out.println("update database");
 				return true;
 			} else {
-				// userDao.copleteContract(contract.getContractId());
-				return false;
+				 userDao.copleteContract(contract.getContractId());
+				return true;
 			}
 		}
 
@@ -424,14 +391,14 @@ public class UserService {
 		UserModel userModel = userDao.getUserByEmail(user);
 		System.out.println("from database" + user);
 
-		String[] args = { userModel.getAccountnumber(), contract.getContractId() };
+		String[] args = { contract.getContractId(),userModel.getAccountnumber()};
 		System.out.println("acc no: " + userModel.getAccountnumber() + "---- id: " + contract.getContractId());
 		switch (userModel.getRole()) {
 
 		case "custom": {
 
 			try {
-				System.out.println("channel: "+channel.getName());
+				System.out.println("channel: " + channel.getName());
 				tradeFunction.transactionInvokeBlockChain(client, "accept_By_Custom", args, channel);
 				System.out.println("custom");
 				return true;
@@ -476,14 +443,15 @@ public class UserService {
 		case "importerBank": {
 
 			try {
+				System.out.println("importerBank");
 				tradeFunction.transactionInvokeBlockChain(client, "accept_By_ImporterBank", args, channel);
-				contract.setCheckUser(true);
 				getUserBalance(contract.getExporterId());
 				System.out.println("exporter balance: " + getUserBalance(contract.getExporterId()));
 				getUserBalance(contract.getImporterId());
 				System.out.println("importer bal: " + getUserBalance(contract.getImporterId()));
 				boolean result = userDao.copleteContract(contract.getContractId());
 				if (result) {
+					System.out.println("true");
 					return true;
 				} else {
 					return false;
@@ -540,51 +508,6 @@ public class UserService {
 
 		return false;
 	}
-
-	// public boolean updateContractInDB(String contractId) {
-	//
-	// String [] args = {contractId};
-	// ObjectMapper mapper = new ObjectMapper();
-	// try {
-	// List<String> responses = tradeUtil.queryBlockChain(client, "getContract",
-	// args, channel);
-	// String response = responses.get(0);
-	// try {
-	//
-	// Contract contract = mapper.readValue(response, Contract.class);
-	//
-	// System.out.println(contract);
-	//
-	// boolean contractUpdated = dao.updateContract(contract);
-	//
-	// if(contractUpdated) {
-	//
-	// return true;
-	// }else {
-	// return false;
-	// }
-	//
-	// } catch (JsonParseException e) {
-	//
-	// e.printStackTrace();
-	// } catch (JsonMappingException e) {
-	//
-	// e.printStackTrace();
-	// } catch (IOException e) {
-	//
-	// e.printStackTrace();
-	// }
-	// } catch (ProposalException e) {
-	// e.printStackTrace();
-	// } catch (org.hyperledger.fabric_ca.sdk.exception.InvalidArgumentException e)
-	// {
-	// e.printStackTrace();
-	// }
-	//
-	//
-	// return false;
-	// }
-	//
 
 	public TradeContractModel getContractFromBlockChain(String contractId, String jwtToken)
 			throws InvalidArgumentException, ProposalException, JsonParseException, JsonMappingException, IOException {
