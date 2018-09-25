@@ -1,140 +1,149 @@
 
-”squid:S2293Â"YReplace the type specification in this constructor call with the diamond operator ("<>").(»‰Šªúÿÿÿÿ8å‹‹ºÛ,H¨RMINORZ
-CODE_SMELL
-}squid:UselessImportCheck";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô8Çº–ŸÒ,H¨RMINORZ
-CODE_SMELL
-rsquid:S1854—"7Remove this useless assignment to local variable "url".(ÂÎ²øÿÿÿÿ8–Úï‹Ó,H¨RMAJORZ
-CODE_SMELL
-±squid:S1845½"tRename method "resetPassword" to prevent any misunderstanding/clash with method "resetpassword" defined on line 169.(ã¹ş…ıÿÿÿÿ8óíÍéÑ,H‘¨RBLOCKERZ
-CODE_SMELL
-Ş%squid:RedundantThrowsDeclarationCheck…"ˆRemove the declaration of thrown exception 'com.fasterxml.jackson.core.JsonParseException' which is a subclass of 'java.io.IOException'.(¶ö·˜ıÿÿÿÿ8ÃËƒéÜ,H’¨RMINORZ
-CODE_SMELL
-squid:S2293µ"YReplace the type specification in this constructor call with the diamond operator ("<>").(÷ŒÎ8Âªú¹Û,H“¨RMINORZ
-CODE_SMELL
-…squid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(è£ù’ÿÿÿÿÿ8ß£êÈÛ,H”¨RMAJORZ
+squid:S2293È"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥Çğò8¿ùğÃÚ,H‰ÙRMINORZ
 CODE_SMELL
 s
-squid:S106†"9Replace this use of System.out or System.err by a logger.(ù®ïóıÿÿÿÿ8½ŸßÜ,H•¨RMAJORZ
+squid:S106’"9Replace this use of System.out or System.err by a logger.(Ã‹Äøÿÿÿÿ8¼“”Ü,HüØRMAJORZ
 CODE_SMELL
-squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ªÙ—×8½­ÅÉÛ,H–¨RMINORZ
+squid:S2293Õ"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜÏ×œ8á·…éÛ,HáØRMINORZ
 CODE_SMELL
-†squid:S1192Ó"HDefine a constant instead of duplicating this literal "success" 6 times.(“‡…ùÿÿÿÿ8½­ÅÉÛ,H—¨RCRITICALZ
+^squid:S1481?")Remove this unused "list" local variable.(Øô¢­8¢¸ÛûÏ,HğØRMINORZ
 CODE_SMELL
-squid:S2293£"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜÏ×œ8½­ÅÉÛ,H˜¨RMINORZ
+squid:S2293í"YReplace the type specification in this constructor call with the diamond operator ("<>").(ªÙ—×8ƒşÿ¹Û,HşØRMINORZ
 CODE_SMELL
-`squid:S1481="+Remove this unused "userId" local variable.(®Å°ÿ8Å÷óûÏ,H™¨RMINORZ
+n
+squid:S106¿"9Replace this use of System.out or System.err by a logger.(•€·8é”êçÛ,HÙRMAJORZ
+CODE_SMELL
+ssquid:S2589¾"8Remove this expression which always evaluates to "false"(ì›Îìÿÿÿÿÿ8ÑóèÛ,HöØRMAJORZ
+CODE_SMELL
+ˆsquid:S00117©"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚóæÙ8Ç¿òìÑ,HñØRMINORZ
+CODE_SMELL
+squid:S2293µ"YReplace the type specification in this constructor call with the diamond operator ("<>").(÷ŒÎ8Âªú¹Û,HƒÙRMINORZ
+CODE_SMELL
+squid:S2293ÿ"YReplace the type specification in this constructor call with the diamond operator ("<>").(ªÙ—×8á·…éÛ,HÙØRMINORZ
+CODE_SMELL
+n
+squid:S106–"9Replace this use of System.out or System.err by a logger.(È©ƒ«8ºˆÈÒ,HéØRMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLineO"<This block of commented-out lines of code should be removed.(¶ÏŠøÿÿÿÿÿ8ß£êÈÛ,H‡ÙRMAJORZ
+CODE_SMELL
+squid:S2293Ù"YReplace the type specification in this constructor call with the diamond operator ("<>").(ªÙ—×8ÆüàÈÛ,H—ÙRMINORZ
+CODE_SMELL
+squid:S2293e"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÿÄø8¿ùğÃÚ,HëØRMINORZ
+CODE_SMELL
+n
+squid:S106™"9Replace this use of System.out or System.err by a logger.(ûô§ù8Ç¢±ßÜ,HîØRMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(è£ù’ÿÿÿÿÿ8ß£êÈÛ,H‹ÙRMAJORZ
+CODE_SMELL
+squid:S2293£"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜÏ×œ8½­ÅÉÛ,H„ÙRMINORZ
+CODE_SMELL
+squid:S2293“"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜÏ×œ8¥íçèÛ,HÓØRMINORZ
+CODE_SMELL
+squid:S2293C"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÿÄø8¿ùğÃÚ,HúØRMINORZ
+CODE_SMELL
+s
+squid:S106Â"9Replace this use of System.out or System.err by a logger.(³à§¤ıÿÿÿÿ8ÌûâïÑ,H…ÙRMAJORZ
+CODE_SMELL
+squid:S1192o"PDefine a constant instead of duplicating this literal "something wrong" 8 times.(›¾‹êüÿÿÿÿ8Û›ÈºÛ,H™ÙRCRITICALZ
+CODE_SMELL
+squid:S2293X"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥Çğò8¿ùğÃÚ,HùØRMINORZ
+CODE_SMELL
+`squid:S1481="+Remove this unused "userId" local variable.(®Å°ÿ8Å÷óûÏ,HÙRMINORZ
+CODE_SMELL
+squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ªÙ—×8½­ÅÉÛ,HÿØRMINORZ
+CODE_SMELL
+r
+squid:S106<"9Replace this use of System.out or System.err by a logger.(ô¼¡Äşÿÿÿÿ8½­ÅÉÛ,HÕØRMAJORZ
+CODE_SMELL
+squid:S2293m"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥Çğò8¿ùğÃÚ,HôØRMINORZ
+CODE_SMELL
+msquid:S1854?"8Remove this useless assignment to local variable "list".(Øô¢­8¢¸ÛûÏ,HŠÙRMAJORZ
+CODE_SMELL
+s
+squid:S106¾"9Replace this use of System.out or System.err by a logger.(¶´›§şÿÿÿÿ8ÄÒ‹Ü,HıØRMAJORZ
+CODE_SMELL
+s
+squid:S106ó"9Replace this use of System.out or System.err by a logger.(ÍÁÕâÿÿÿÿÿ8„’îÏ,HÙRMAJORZ
+CODE_SMELL
+n
+squid:S106‰"9Replace this use of System.out or System.err by a logger.(Æšëå8÷õ†ßÜ,H‚ÙRMAJORZ
+CODE_SMELL
+squid:S2293q"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÿÄø8¿ùğÃÚ,HˆÙRMINORZ
+CODE_SMELL
+r
+squid:S106`"9Replace this use of System.out or System.err by a logger.(Æİ©ùÿÿÿÿ8¾«¤ÍĞ,H”ÙRMAJORZ
+CODE_SMELL
+À%squid:RedundantThrowsDeclarationCheck;"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(°Ââèÿÿÿÿÿ8®îøÆÒ,HÍØRMINORZ
+CODE_SMELL
+”squid:S2293È"YReplace the type specification in this constructor call with the diamond operator ("<>").(¤Óš¼úÿÿÿÿ8ÑóèÛ,HøØRMINORZ
+CODE_SMELL
+s
+squid:S106†"9Replace this use of System.out or System.err by a logger.(ù®ïóıÿÿÿÿ8½ŸßÜ,HÙRMAJORZ
+CODE_SMELL
+squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥Çğò8¿ùğÃÚ,H€ÙRMINORZ
+CODE_SMELL
+}squid:UselessImportCheck";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô8Çº–ŸÒ,HìØRMINORZ
+CODE_SMELL
+squid:S2293£"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÿÄø8¿ùğÃÚ,HšÙRMINORZ
+CODE_SMELL
+ä%squid:RedundantThrowsDeclarationCheck…"Remove the declaration of thrown exception 'com.fasterxml.jackson.databind.JsonMappingException' which is a subclass of 'java.io.IOException'.(¶ö·˜ıÿÿÿÿ8ÃËƒéÜ,H’ÙRMINORZ
+CODE_SMELL
+squid:S2293²"YReplace the type specification in this constructor call with the diamond operator ("<>").(õ·šÒ8Âªú¹Û,H˜ÙRMINORZ
+CODE_SMELL
+±squid:S1845½"tRename method "resetPassword" to prevent any misunderstanding/clash with method "resetpassword" defined on line 169.(ã¹ş…ıÿÿÿÿ8óíÍéÑ,H•ÙRBLOCKERZ
+CODE_SMELL
+rsquid:S1854—"7Remove this useless assignment to local variable "url".(ÂÎ²øÿÿÿÿ8–Úï‹Ó,H–ÙRMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine„"<This block of commented-out lines of code should be removed.(È›Ì†8É‚ ŸÒ,HŒÙRMAJORZ
+CODE_SMELL
+”squid:S2293Â"YReplace the type specification in this constructor call with the diamond operator ("<>").(»‰Šªúÿÿÿÿ8å‹‹ºÛ,H×ØRMINORZ
+CODE_SMELL
+Á%squid:RedundantThrowsDeclarationCheck½"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ã¹ş…ıÿÿÿÿ8¤”íÚ,HåØRMINORZ
+CODE_SMELL
+†squid:S1192Ó"HDefine a constant instead of duplicating this literal "success" 7 times.(“‡…ùÿÿÿÿ8½­ÅÉÛ,H†ÙRCRITICALZ
+CODE_SMELL
+squid:S2293é"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜÏ×œ8¥íçèÛ,HÙRMINORZ
+CODE_SMELL
+squid:CommentedOutCodeLine™"<This block of commented-out lines of code should be removed.(Ê°Ç›8ß£êÈÛ,HİØRMAJORZ
+CODE_SMELL
+Ş%squid:RedundantThrowsDeclarationCheck…"ˆRemove the declaration of thrown exception 'com.fasterxml.jackson.core.JsonParseException' which is a subclass of 'java.io.IOException'.(¶ö·˜ıÿÿÿÿ8ÃËƒéÜ,HßØRMINORZ
 CODE_SMELL
 m
-squid:S106à"9Replace this use of System.out or System.err by a logger.(³Ë‘G8¤¢ıÆÒ,Hš¨RMAJORZ
+squid:S106à"9Replace this use of System.out or System.err by a logger.(³Ë‘G8¤¢ıÆÒ,HïØRMAJORZ
 CODE_SMELL
-osquid:S1854=":Remove this useless assignment to local variable "userId".(®Å°ÿ8Å÷óûÏ,H›¨RMAJORZ
-CODE_SMELL
-squid:S2293§"YReplace the type specification in this constructor call with the diamond operator ("<>").(ªÙ—×8ƒşÿ¹Û,Hœ¨RMINORZ
-CODE_SMELL
-squid:S2293¸"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÿÄø8¿ùğÃÚ,H¨RMINORZ
+˜squid:UselessImportCheck"QRemove this unused import 'org.springframework.web.bind.annotation.RequestParam'.(Â¬À·ùÿÿÿÿ8ßŒÀèÛ,HãØRMINORZ
 CODE_SMELL
 s
-squid:S106ó"9Replace this use of System.out or System.err by a logger.(ÍÁÕâÿÿÿÿÿ8„’îÏ,H¨RMAJORZ
+squid:S106Í"9Replace this use of System.out or System.err by a logger.(¦Ã¦ÿÿÿÿÿ8ÕÃüÆĞ,HÑØRMAJORZ
 CODE_SMELL
-squid:S2293û"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜÏ×œ8ÆüàÈÛ,HŸ¨RMINORZ
-CODE_SMELL
-€squid:CommentedOutCodeLine_"<This block of commented-out lines of code should be removed.(¾ÁÈ°8ÀÑò§Ğ,H ¨RMAJORZ
-CODE_SMELL
-r
-squid:S106<"9Replace this use of System.out or System.err by a logger.(ô¼¡Äşÿÿÿÿ8½­ÅÉÛ,H¡¨RMAJORZ
-CODE_SMELL
-n
-squid:S106‰"9Replace this use of System.out or System.err by a logger.(Æšëå8÷õ†ßÜ,H¢¨RMAJORZ
-CODE_SMELL
-squid:S2293q"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÿÄø8¿ùğÃÚ,H£¨RMINORZ
-CODE_SMELL
-squid:S2293e"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÿÄø8¿ùğÃÚ,H¤¨RMINORZ
-CODE_SMELL
-squid:S2293í"YReplace the type specification in this constructor call with the diamond operator ("<>").(ªÙ—×8ƒşÿ¹Û,H¥¨RMINORZ
-CODE_SMELL
-…squid:CommentedOutCodeLineO"<This block of commented-out lines of code should be removed.(¶ÏŠøÿÿÿÿÿ8ß£êÈÛ,H¦¨RMAJORZ
-CODE_SMELL
-n
-squid:S106¿"9Replace this use of System.out or System.err by a logger.(•€·8é”êçÛ,H§¨RMAJORZ
+Œsquid:S00117w"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ı””üÿÿÿÿ8²ùÅÊĞ,HíØRMINORZ
 CODE_SMELL
 s
-squid:S106Í"9Replace this use of System.out or System.err by a logger.(¦Ã¦ÿÿÿÿÿ8ÕÃüÆĞ,H¨¨RMAJORZ
+squid:S106‡"9Replace this use of System.out or System.err by a logger.(¬œÓ»ıÿÿÿÿ8¸˜§ÂÛ,H“ÙRMAJORZ
 CODE_SMELL
-`squid:S1148V"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‚—¨øÏ,H©¨RMINORZVULNERABILITY
-ˆsquid:S00117©"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚóæÙ8Ç¿òìÑ,Hª¨RMINORZ
+squid:S2293§"YReplace the type specification in this constructor call with the diamond operator ("<>").(ªÙ—×8ƒşÿ¹Û,H‘ÙRMINORZ
 CODE_SMELL
-s
-squid:S106Â"9Replace this use of System.out or System.err by a logger.(³à§¤ıÿÿÿÿ8ÌûâïÑ,H«¨RMAJORZ
+…squid:CommentedOutCodeLineM"<This block of commented-out lines of code should be removed.(ç¬¢äùÿÿÿÿ8ÇğÀÛ,HõØRMAJORZ
 CODE_SMELL
-s
-squid:S106‡"9Replace this use of System.out or System.err by a logger.(¬œÓ»ıÿÿÿÿ8¸˜§ÂÛ,H¬¨RMAJORZ
+osquid:S1854=":Remove this useless assignment to local variable "userId".(®Å°ÿ8Å÷óûÏ,HÏØRMAJORZ
 CODE_SMELL
-s
-squid:S106¾"9Replace this use of System.out or System.err by a logger.(¶´›§şÿÿÿÿ8ÄÒ‹Ü,H­¨RMAJORZ
+squid:S2293³"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥Çğò8¿ùğÃÚ,HòØRMINORZ
 CODE_SMELL
-]squid:S1125H"(Remove the literal "true" boolean value.(–Şöñ8ã¢³øÏ,H®¨RMINORZ
+squid:S2293¸"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÿÄø8¿ùğÃÚ,HçØRMINORZ
 CODE_SMELL
-…squid:CommentedOutCodeLineM"<This block of commented-out lines of code should be removed.(ç¬¢äùÿÿÿÿ8ÇğÀÛ,H¯¨RMAJORZ
+€squid:CommentedOutCodeLine_"<This block of commented-out lines of code should be removed.(¾ÁÈ°8ÀÑò§Ğ,HÛØRMAJORZ
 CODE_SMELL
-n
-squid:S106–"9Replace this use of System.out or System.err by a logger.(È©ƒ«8ºˆÈÒ,H°¨RMAJORZ
+`squid:S1148V"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‚—¨øÏ,H÷ØRMINORZVULNERABILITY
+squid:S2293û"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜÏ×œ8ÆüàÈÛ,HûØRMINORZ
 CODE_SMELL
-Á%squid:RedundantThrowsDeclarationCheck½"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ã¹ş…ıÿÿÿÿ8¤”íÚ,H±¨RMINORZ
+]squid:S1125H"(Remove the literal "true" boolean value.(–Şöñ8ã¢³øÏ,HóØRMINORZ
 CODE_SMELL
-squid:S2293Ù"YReplace the type specification in this constructor call with the diamond operator ("<>").(ªÙ—×8ÆüàÈÛ,H²¨RMINORZ
+squid:S2293Ù"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜÏ×œ8¤ü„Úà,H›ÙRMINORZ
 CODE_SMELL
-squid:S2293“"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜÏ×œ8¥íçèÛ,H³¨RMINORZ
+squid:S2293İ"YReplace the type specification in this constructor call with the diamond operator ("<>").(ªÙ—×8¤ü„Úà,HœÙRMINORZ
 CODE_SMELL
-squid:CommentedOutCodeLine™"<This block of commented-out lines of code should be removed.(Ê°Ç›8ß£êÈÛ,H´¨RMAJORZ
+•squid:S4144Î"_Update this method so that its implementation is not identical to "createContract" on line 222.(Õ‚¿º8¤ü„Úà,HÙRMAJORZ
 CODE_SMELL
-msquid:S1854?"8Remove this useless assignment to local variable "list".(Øô¢­8¢¸ÛûÏ,Hµ¨RMAJORZ
-CODE_SMELL
-squid:S2293X"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥Çğò8¿ùğÃÚ,H¶¨RMINORZ
-CODE_SMELL
-À%squid:RedundantThrowsDeclarationCheck;"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(°Ââèÿÿÿÿÿ8®îøÆÒ,H·¨RMINORZ
-CODE_SMELL
-squid:S1192o"PDefine a constant instead of duplicating this literal "something wrong" 7 times.(›¾‹êüÿÿÿÿ8Û›ÈºÛ,H¸¨RCRITICALZ
-CODE_SMELL
-ä%squid:RedundantThrowsDeclarationCheck…"Remove the declaration of thrown exception 'com.fasterxml.jackson.databind.JsonMappingException' which is a subclass of 'java.io.IOException'.(¶ö·˜ıÿÿÿÿ8ÃËƒéÜ,H¹¨RMINORZ
-CODE_SMELL
-squid:S2293£"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÿÄø8¿ùğÃÚ,Hº¨RMINORZ
-CODE_SMELL
-n
-squid:S106™"9Replace this use of System.out or System.err by a logger.(ûô§ù8Ç¢±ßÜ,H»¨RMAJORZ
-CODE_SMELL
-squid:S2293³"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥Çğò8¿ùğÃÚ,H¼¨RMINORZ
-CODE_SMELL
-squid:CommentedOutCodeLine„"<This block of commented-out lines of code should be removed.(È›Ì†8É‚ ŸÒ,H½¨RMAJORZ
-CODE_SMELL
-squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥Çğò8¿ùğÃÚ,H¾¨RMINORZ
-CODE_SMELL
-˜squid:UselessImportCheck"QRemove this unused import 'org.springframework.web.bind.annotation.RequestParam'.(Â¬À·ùÿÿÿÿ8ßŒÀèÛ,H¿¨RMINORZ
-CODE_SMELL
-ssquid:S2589¾"8Remove this expression which always evaluates to "false"(ì›Îìÿÿÿÿÿ8ÑóèÛ,HÀ¨RMAJORZ
-CODE_SMELL
-squid:S2293m"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥Çğò8¿ùğÃÚ,HÁ¨RMINORZ
-CODE_SMELL
-”squid:S2293È"YReplace the type specification in this constructor call with the diamond operator ("<>").(¤Óš¼úÿÿÿÿ8ÑóèÛ,HÂ¨RMINORZ
-CODE_SMELL
-Œsquid:S00117w"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ı””üÿÿÿÿ8²ùÅÊĞ,HÃ¨RMINORZ
-CODE_SMELL
-squid:S2293Õ"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜÏ×œ8á·…éÛ,HÄ¨RMINORZ
-CODE_SMELL
-squid:S2293ÿ"YReplace the type specification in this constructor call with the diamond operator ("<>").(ªÙ—×8á·…éÛ,HÅ¨RMINORZ
-CODE_SMELL
-squid:S2293é"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜÏ×œ8¥íçèÛ,HÆ¨RMINORZ
-CODE_SMELL
-squid:S2293C"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÿÄø8¿ùğÃÚ,HÇ¨RMINORZ
-CODE_SMELL
-squid:S2293²"YReplace the type specification in this constructor call with the diamond operator ("<>").(õ·šÒ8Âªú¹Û,HÈ¨RMINORZ
-CODE_SMELL
-s
-squid:S106’"9Replace this use of System.out or System.err by a logger.(Ã‹Äøÿÿÿÿ8¼“”Ü,HÉ¨RMAJORZ
-CODE_SMELL
-r
-squid:S106`"9Replace this use of System.out or System.err by a logger.(Æİ©ùÿÿÿÿ8¾«¤ÍĞ,HÊ¨RMAJORZ
-CODE_SMELL
-squid:S2293È"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥Çğò8¿ùğÃÚ,HË¨RMINORZ
-CODE_SMELL
-^squid:S1481?")Remove this unused "list" local variable.(Øô¢­8¢¸ÛûÏ,HÌ¨RMINORZ
+m
+squid:S106Ğ"9Replace this use of System.out or System.err by a logger.(³Ë‘G8¤ü„Úà,HÙRMAJORZ
 CODE_SMELL

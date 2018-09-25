@@ -51,9 +51,9 @@ public class UserDAO {
 				contract.getExporterId(), contract.getImporterId(), contract.getImporterBankId(),
 				contract.getInsuranceId(), contract.getCustomId(), contract.getPortOfLoadin(),
 				contract.getPortOfEntry(), contract.isExporterCheck(), contract.isImporterCheck(),
-				contract.isImporterBankCheck(), contract.isInsuranceCheck(), contract.isCustomCheck() };
+				contract.isImporterBankCheck(), contract.isInsuranceCheck(), contract.isCustomCheck(),contract.getBilloflading(),contract.getLetterofcredit() };
 
-		String sql = "insert into User_Contract (contractId,contentDescription,contractMoney,exporterId,importerId,importerBankId,insuranceId,customId,portOfLoadin,portOfEntry,exporterCheck,importerCheck,importerBankCheck,insuranceCheck,customCheck) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+		String sql = "insert into User_Contract (contractId,contentDescription,contractMoney,exporterId,importerId,importerBankId,insuranceId,customId,portOfLoadin,portOfEntry,exporterCheck,importerCheck,importerBankCheck,insuranceCheck,customCheck,billoflading,letterofcredit) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
 		try {
 			int row = jdbcTemplate.update(sql, args);

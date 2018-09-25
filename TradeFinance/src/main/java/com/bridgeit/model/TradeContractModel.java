@@ -35,6 +35,8 @@ public class TradeContractModel {
 	private boolean insuranceCheck;
 	private boolean completeContract;
 
+	private String billoflading;
+	private String letterofcredit;
 	
 	public String getContractId() {
 		return contractId;
@@ -131,6 +133,18 @@ public class TradeContractModel {
 	}
 	public void setCompleteContract(boolean completeContract) {
 		this.completeContract = completeContract;
+	}
+	public String getBilloflading() {
+		return billoflading;
+	}
+	public void setBilloflading(String billoflading) {
+		this.billoflading = billoflading;
+	}
+	public String getLetterofcredit() {
+		return letterofcredit;
+	}
+	public void setLetterofcredit(String letterofcredit) {
+		this.letterofcredit = letterofcredit;
 	}
 	
 

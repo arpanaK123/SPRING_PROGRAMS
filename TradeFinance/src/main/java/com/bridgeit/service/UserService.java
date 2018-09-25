@@ -1,7 +1,11 @@
 package com.bridgeit.service;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.SQLException;
+import java.util.Base64;
 import java.util.List;
 import java.util.UUID;
 
@@ -187,7 +191,64 @@ public class UserService {
 		return false;
 	}
 
-	public boolean createContract(TradeContractModel contract, String jwtToken) {
+	public boolean createContract(TradeContractModel contract, String jwtToken) throws IOException {
+
+		String email = tokens.getJwtBYEmail(jwtToken);
+
+		UserModel user = userDao.fetchUserByEmail(email);
+		System.out.println(user);
+		if (user == null) {
+			return false;
+		}
+		// byte[] billofladingAsByte =
+		// Base64.getDecoder().decode(contract.getBilloflading());
+		// byte[] letterofcreditAsByte =
+		// Base64.getDecoder().decode(contract.getLetterofcredit());
+		//
+		// String billoflading = Base64.getEncoder().encodeToString(billofladingAsByte);
+		// String letterofcredit =
+		// Base64.getEncoder().encodeToString(letterofcreditAsByte);
+		//
+		contract.setExporterCheck(true);
+		// contract.setBilloflading(billoflading);
+		// contract.setLetterofcredit(letterofcredit);
+
+		// Path pathToFile = Paths.get("//home//bridgeit//BlockchainImage");
+		// Files.createDirectories(pathToFile);
+		// Files.createFile(pathToFile);
+		//
+		// Path path1 = Paths.get("//home//bridgeit//BlockchainImage//" +
+		// contract.getContractId());
+		// Path path2 = Paths
+		// .get("//home//bridgeit//BlockchainImage//" + contract.getContractId() +
+		// contract.getBilloflading());
+
+		boolean insertion = userDao.saveContract(contract);
+
+		if (insertion) {
+			String value = Integer.toString(contract.getContractMoney());
+			String[] args = { contract.getContractId(), contract.getContentDescription(), value,
+					contract.getExporterId(), contract.getImporterId(), contract.getImporterBankId(),
+					contract.getInsuranceId(), contract.getCustomId(), contract.getPortOfLoadin(),
+					contract.getPortOfEntry() };
+			try {
+
+				tradeFunction.transactionInvokeBlockChain(client, "create_Contract", args, channel);
+
+				return true;
+			} catch (InvalidArgumentException e) {
+
+				e.printStackTrace();
+				return false;
+			}
+
+		}
+		return false;
+
+	}
+
+	public boolean createConsensusContract(TradeContractModel contract, String jwtToken)
+			throws IOException, ProposalException {
 
 		String email = tokens.getJwtBYEmail(jwtToken);
 
@@ -209,9 +270,17 @@ public class UserService {
 					contract.getPortOfEntry() };
 			try {
 
-				tradeFunction.transactionInvokeBlockChain(client, "create_Contract", args, channel);
+				boolean status = tradeFunction.transactionInvokeBlockChain(client, "create_Contract", args, channel);
+				if (status) {
+					boolean updateblockchain = updateConsensusContractInBlockChain( contract,jwtToken);
+					if (updateblockchain) {
+						updateContractInDataBase(contract.getContractId());
 
-				return true;
+						return true;
+					}
+				}
+				// if(updateblockchain)
+				// return true;
 			} catch (InvalidArgumentException e) {
 
 				e.printStackTrace();
@@ -331,9 +400,10 @@ public class UserService {
 		return allContract;
 	}
 
-	public int getUserBalance(String jwt) {
+	public int getUserBalance(String id) {
+		System.out.println("id: " + id);
 
-		String email = tokens.getJwtBYEmail(jwt);
+		String email = tokens.getJwtBYEmail(id);
 		UserModel user = userDao.fetchUserByEmail(email);
 
 		String accountNumber = user.getAccountnumber();
@@ -364,7 +434,8 @@ public class UserService {
 
 	}
 
-	public boolean updateContract(String jwtToken, TradeContractModel contract) throws InvalidArgumentException {
+	public boolean updateContract(String jwtToken, TradeContractModel contract)
+			throws InvalidArgumentException, ProposalException {
 
 		boolean updatBlockChain = updateContractInBlockChain(jwtToken, contract);
 		System.out.println("updateblockchain");
@@ -376,7 +447,7 @@ public class UserService {
 				System.out.println("update database");
 				return true;
 			} else {
-				 userDao.copleteContract(contract.getContractId());
+				userDao.copleteContract(contract.getContractId());
 				return true;
 			}
 		}
@@ -384,14 +455,14 @@ public class UserService {
 		return false;
 	}
 
-	public boolean updateContractInBlockChain(String jwtToken, TradeContractModel contract) {
+	public boolean updateContractInBlockChain(String jwtToken, TradeContractModel contract) throws ProposalException {
 
 		String user = tokens.getJwtBYEmail(jwtToken);
 		System.out.println("from token" + user);
 		UserModel userModel = userDao.getUserByEmail(user);
 		System.out.println("from database" + user);
 
-		String[] args = { contract.getContractId(),userModel.getAccountnumber()};
+		String[] args = { contract.getContractId(), userModel.getAccountnumber() };
 		System.out.println("acc no: " + userModel.getAccountnumber() + "---- id: " + contract.getContractId());
 		switch (userModel.getRole()) {
 
@@ -445,12 +516,115 @@ public class UserService {
 			try {
 				System.out.println("importerBank");
 				tradeFunction.transactionInvokeBlockChain(client, "accept_By_ImporterBank", args, channel);
-				getUserBalance(contract.getExporterId());
-				System.out.println("exporter balance: " + getUserBalance(contract.getExporterId()));
-				getUserBalance(contract.getImporterId());
-				System.out.println("importer bal: " + getUserBalance(contract.getImporterId()));
+				tradeFunction.queryBlockChain(client, "get_Balance_By", args, channel);
+				// try {
+				// getUserBalance(contract.getExporterId());
+				// System.out.println("exporter balance: " +
+				// getUserBalance(contract.getExporterId()));
+				// getUserBalance(contract.getImporterId());
+				// System.out.println("importer bal: " +
+				// getUserBalance(contract.getImporterId()));
 				boolean result = userDao.copleteContract(contract.getContractId());
 				if (result) {
+
+					System.out.println("true");
+					return true;
+				} else {
+					return false;
+				}
+
+				// } catch (Exception e) {
+				// e.printStackTrace();
+				// }
+				// getUserBalance(contract.getExporterId());
+				// System.out.println("exporter balance: " +
+				// getUserBalance(contract.getExporterId()));
+				// getUserBalance(contract.getImporterId());
+				// System.out.println("importer bal: " +
+				// getUserBalance(contract.getImporterId()));
+				// boolean result = userDao.copleteContract(contract.getContractId());
+				// if (result) {
+				//
+				// System.out.println("true");
+				// return true;
+				// } else {
+				// return false;
+				// }
+
+			} catch (InvalidArgumentException e) {
+
+				e.printStackTrace();
+				return false;
+			}
+
+		}
+
+		}
+		return false;
+
+	}
+
+	//////////////
+	public boolean updateConsensusContractInBlockChain( TradeContractModel contract,String jwtToken)
+			throws ProposalException {
+
+		String user = tokens.getJwtBYEmail(jwtToken);
+		UserModel userModel = userDao.getUserByEmail(user);
+
+		String[] customArgs = { contract.getContractId(), contract.getCustomId() };
+		String[] insuranceArgs = { contract.getContractId(), contract.getInsuranceId() };
+		String[] importerArgs = { contract.getContractId(), contract.getImporterId() };
+		String[] importerBankArgs = { contract.getContractId(), contract.getImporterBankId() };
+		switch (userModel.getRole()) {
+		case "exporter":{
+			System.out.println("Accepted by exporter");
+		}
+
+		case "custom": {
+
+			try {
+				tradeFunction.transactionInvokeBlockChain(client, "accept_By_Custom", customArgs, channel);
+				System.out.println("Accepted by Custom");
+
+			} catch (InvalidArgumentException e) {
+				System.out.println("Rejected by custom");
+				return false;
+			}
+
+		}
+		case "insurance": {
+
+			try {
+				tradeFunction.transactionInvokeBlockChain(client, "accept_By_Insurance", insuranceArgs, channel);
+				System.out.println("Accepted by Insurance");
+			} catch (InvalidArgumentException e) {
+				System.out.println("Rejected by Insurance");
+				return false;
+			}
+
+		}
+
+		case "importer": {
+
+			try {
+				tradeFunction.transactionInvokeBlockChain(client, "accept_By_Importer", importerArgs, channel);
+				System.out.println("Accepted by Importer");
+			} catch (InvalidArgumentException e) {
+				System.out.println("Rejected By Importer");
+				return false;
+			}
+
+		}
+		case "importerBank": {
+
+			try {
+				tradeFunction.transactionInvokeBlockChain(client, "accept_By_ImporterBank", importerBankArgs, channel);
+				tradeFunction.queryBlockChain(client, "get_Balance_By", importerBankArgs, channel);
+				System.out.println("Accepted by ImporterBank");
+
+				boolean result = userDao.copleteContract(contract.getContractId());
+				if (result) {
+
 					System.out.println("true");
 					return true;
 				} else {
@@ -458,7 +632,7 @@ public class UserService {
 				}
 
 			} catch (InvalidArgumentException e) {
-
+				System.out.println("Rejected by ImporterBank");
 				e.printStackTrace();
 				return false;
 			}

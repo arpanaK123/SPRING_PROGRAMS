@@ -1,130 +1,130 @@
 
-l
-squid:S106l"9Replace this use of System.out or System.err by a logger.(Òß³P8ÑÜèÛ,Hó¨RMAJORZ
+‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãøªHÉÊRMINORZ
 CODE_SMELL
-bsquid:S1602†",Remove useless curly braces around statement(ñşà8«¬§òÚ,Hø¨RMINORZ
-CODE_SMELL
-n
-squid:S106Ô"9Replace this use of System.out or System.err by a logger.(ƒĞ8­ÈÍ½İ,HÏ¨RMAJORZ
-CODE_SMELL
-rsquid:UselessImportCheck	"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8µ¢¤¼Û,H×¨RMINORZ
+‰squid:UselessImportCheck&"BRemove this unused import 'com.bridgeit.model.TradeContractModel'.(İ³˜şÿÿÿÿ8©éÁŸÛ,HÊÊRMINORZ
 CODE_SMELL
 n
-squid:S106¯"9Replace this use of System.out or System.err by a logger.(°ÎÚß8ä·¿Û,Hû¨RMAJORZ
+squid:S106¯"9Replace this use of System.out or System.err by a logger.(°ÎÚß8ä·¿Û,HËÊRMAJORZ
+CODE_SMELL
+n
+squid:S106"9Replace this use of System.out or System.err by a logger.(¨³Ë8ê——ÃÛ,HÌÊRMAJORZ
+CODE_SMELL
+squid:S00112J"FDefine and throw a dedicated exception instead of using a generic one.(èİÎÑşÿÿÿÿ8Ô–ÈéÚ,HÍÊRMAJORZ
+CODE_SMELL
+r
+squid:S106s"9Replace this use of System.out or System.err by a logger.(å¸¡£üÿÿÿÿ8«¬§òÚ,HÎÊRMAJORZ
+CODE_SMELL
+`squid:S11487"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8«¬§òÚ,HÏÊRMINORZVULNERABILITY
+lsquid:S2589N"7Remove this expression which always evaluates to "true"(ß—Ê¹8˜·“¿Û,HĞÊRMAJORZ
+CODE_SMELL
+n
+squid:S106•"9Replace this use of System.out or System.err by a logger.(è…‹8ÑÜèÛ,HÑÊRMAJORZ
+CODE_SMELL
+r
+squid:S106w"9Replace this use of System.out or System.err by a logger.(ÅƒØûÿÿÿÿ8ê——ÃÛ,HÒÊRMAJORZ
+CODE_SMELL
+n
+squid:S106Â"9Replace this use of System.out or System.err by a logger.(è…‹8åà¢éÜ,HÓÊRMAJORZ
 CODE_SMELL
 s
-squid:S106˜"9Replace this use of System.out or System.err by a logger.(ŞÃÆ—øÿÿÿÿ8íÇÀİ,Hí¨RMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(ò ÿ”øÿÿÿÿ8¿•¤éÜ,HÔÊRMAJORZ
 CODE_SMELL
-asquid:S1148É"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÑÜèÛ,HÕ¨RMINORZVULNERABILITY
-€squid:UselessImportCheck("9Remove this unused import 'com.bridgeit.model.UserModel'.(İ· Öùÿÿÿÿ8ÑÜèÛ,Hş¨RMINORZ
+n
+squid:S106Ô"9Replace this use of System.out or System.err by a logger.(ƒĞ8­ÈÍ½İ,HÕÊRMAJORZ
+CODE_SMELL
+s
+squid:S106˜"9Replace this use of System.out or System.err by a logger.(ŞÃÆ—øÿÿÿÿ8íÇÀİ,HÖÊRMAJORZ
+CODE_SMELL
+s
+squid:S106æ"9Replace this use of System.out or System.err by a logger.(Òê¤ùÿÿÿÿ8åà¢éÜ,H×ÊRMAJORZ
+CODE_SMELL
+n
+squid:S106§"9Replace this use of System.out or System.err by a logger.(üÖ¤Ğ8«¬§òÚ,HØÊRMAJORZ
+CODE_SMELL
+s
+squid:S106°"9Replace this use of System.out or System.err by a logger.(÷ôº—úÿÿÿÿ8•úš¿Û,HÙÊRMAJORZ
+CODE_SMELL
+bsquid:S1612±",Replace this lambda with a method reference.(ˆ¤¸¼8­÷Ú,HÚÊRMINORZ
+CODE_SMELL
+m
+squid:S106u"9Replace this use of System.out or System.err by a logger.(Ê¢ÛÚ8­ÈÍ½İ,HÛÊRMAJORZ
+CODE_SMELL
+asquid:S1148Œ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8«¬§òÚ,HÜÊRMINORZVULNERABILITY
+asquid:S1148œ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÑÜèÛ,HİÊRMINORZVULNERABILITY
+m
+squid:S106Ò"9Replace this use of System.out or System.err by a logger.(£‹®n8Ÿèÿ¾Û,HŞÊRMAJORZ
+CODE_SMELL
+s
+squid:S106‡"9Replace this use of System.out or System.err by a logger.(ë„Ô£ıÿÿÿÿ8ÑÜèÛ,HßÊRMAJORZ
+CODE_SMELL
+Œsquid:S1192v"ODefine a constant instead of duplicating this literal "tradefinancecc" 3 times.(ŸÙÉøÿÿÿÿÿ8ÑÜèÛ,HàÊRCRITICALZ
+CODE_SMELL
+‚squid:UselessImportCheck"@Remove this unused import 'org.hyperledger.fabric.sdk.EventHub'.(óÎ¦8“ë¶¼Û,HáÊRMINORZ
+CODE_SMELL
+l
+squid:S106l"9Replace this use of System.out or System.err by a logger.(Òß³P8ÑÜèÛ,HâÊRMAJORZ
+CODE_SMELL
+s
+squid:S106Å"9Replace this use of System.out or System.err by a logger.(ŞÃÆ—øÿÿÿÿ8­ÈÍ½İ,HãÊRMAJORZ
+CODE_SMELL
+squid:UselessImportCheck"?Remove this unused import 'org.hyperledger.fabric.sdk.Orderer'.(€óæ¦8“ë¶¼Û,HäÊRMINORZ
+CODE_SMELL
+n
+squid:S106í"9Replace this use of System.out or System.err by a logger.(’Áê©8åà¢éÜ,HåÊRMAJORZ
+CODE_SMELL
+bsquid:S1602µ",Remove useless curly braces around statement(ñşà8ÑÜèÛ,HæÊRMINORZ
+CODE_SMELL
+~squid:UselessImportCheck"<Remove this unused import 'org.hyperledger.fabric.sdk.Peer'.(ˆä¤š8“ë¶¼Û,HçÊRMINORZ
+CODE_SMELL
+m
+squid:S106f"9Replace this use of System.out or System.err by a logger.(õ§Çÿ8«¬§òÚ,HèÊRMAJORZ
 CODE_SMELL
 rsquid:UselessImportCheck
-"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8µ¢¤¼Û,Hå¨RMINORZ
+"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8µ¢¤¼Û,HéÊRMINORZ
+CODE_SMELL
+asquid:S1148è"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£îÕ¹Û,HêÊRMINORZVULNERABILITY
+m
+squid:S106|"9Replace this use of System.out or System.err by a logger.(¢¬ôŒ8®§¿•Û,HëÊRMAJORZ
+CODE_SMELL
+s
+squid:S106ê"9Replace this use of System.out or System.err by a logger.(éè§ˆøÿÿÿÿ8÷İ¢äİ,HìÊRMAJORZ
+CODE_SMELL
+s
+squid:S106“"9Replace this use of System.out or System.err by a logger.(áÆôÿÿÿÿÿ8Öıù”Û,HíÊRMAJORZ
+CODE_SMELL
+bsquid:S1612‚",Replace this lambda with a method reference.(ˆ¤¸¼8ÑÜèÛ,HîÊRMINORZ
+CODE_SMELL
+asquid:S1148Ş"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”¥µîÚ,HïÊRMINORZVULNERABILITY
+€squid:UselessImportCheck("9Remove this unused import 'com.bridgeit.model.UserModel'.(İ· Öùÿÿÿÿ8ÑÜèÛ,HğÊRMINORZ
+CODE_SMELL
+s
+squid:S106¤"9Replace this use of System.out or System.err by a logger.(©Æ˜—ÿÿÿÿÿ8í–×šÜ,HñÊRMAJORZ
+CODE_SMELL
+”squid:S2293Ø"YReplace the type specification in this constructor call with the diamond operator ("<>").(çâîÀıÿÿÿÿ8£îÕ¹Û,HòÊRMINORZ
+CODE_SMELL
+m
+squid:S106M"9Replace this use of System.out or System.err by a logger.(ÍÔ‰­8­ÈÍ½İ,HóÊRMAJORZ
+CODE_SMELL
+zsquid:UselessImportCheck*"8Remove this unused import 'io.jsonwebtoken.lang.Arrays'.(˜Õü¯8œÀ«äİ,HôÊRMINORZ
+CODE_SMELL
+rsquid:UselessImportCheck	"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8µ¢¤¼Û,HõÊRMINORZ
+CODE_SMELL
+m
+squid:S106:"9Replace this use of System.out or System.err by a logger.(Á °ï8ßßœÄÛ,HöÊRMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLinei"<This block of commented-out lines of code should be removed.(Ú—øõ8™—Ä¼Û,H÷ÊRMAJORZ
+CODE_SMELL
+bsquid:S1602†",Remove useless curly braces around statement(ñşà8«¬§òÚ,HøÊRMINORZ
+CODE_SMELL
+asquid:S1148É"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÑÜèÛ,HùÊRMINORZVULNERABILITY
+asquid:S1148»"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£îÕ¹Û,HúÊRMINORZVULNERABILITY
+m
+squid:S106¶"9Replace this use of System.out or System.err by a logger.(­±»8®óŠÃÛ,HûÊRMAJORZ
 CODE_SMELL
 r
-squid:S106~"9Replace this use of System.out or System.err by a logger.(¡Ÿ Üşÿÿÿÿ8­ÈÍ½İ,HÚ¨RMAJORZ
+squid:S106~"9Replace this use of System.out or System.err by a logger.(¡Ÿ Üşÿÿÿÿ8­ÈÍ½İ,HüÊRMAJORZ
 CODE_SMELL
-s
-squid:S106Å"9Replace this use of System.out or System.err by a logger.(ŞÃÆ—øÿÿÿÿ8­ÈÍ½İ,Hæ¨RMAJORZ
+šsquid:UselessImportCheck#"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8ÕÚàëÛ,HıÊRMINORZ
 CODE_SMELL
-‰squid:UselessImportCheck&"BRemove this unused import 'com.bridgeit.model.TradeContractModel'.(İ³˜şÿÿÿÿ8©éÁŸÛ,Hñ¨RMINORZ
-CODE_SMELL
-n
-squid:S106í"9Replace this use of System.out or System.err by a logger.(’Áê©8åà¢éÜ,Hß¨RMAJORZ
-CODE_SMELL
-šsquid:UselessImportCheck#"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8ÕÚàëÛ,Hé¨RMINORZ
-CODE_SMELL
-m
-squid:S106Ò"9Replace this use of System.out or System.err by a logger.(£‹®n8Ÿèÿ¾Û,Hù¨RMAJORZ
-CODE_SMELL
-m
-squid:S106M"9Replace this use of System.out or System.err by a logger.(ÍÔ‰­8­ÈÍ½İ,Hÿ¨RMAJORZ
-CODE_SMELL
-m
-squid:S106|"9Replace this use of System.out or System.err by a logger.(¢¬ôŒ8®§¿•Û,Hô¨RMAJORZ
-CODE_SMELL
-asquid:S1148Œ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8«¬§òÚ,H€©RMINORZVULNERABILITY
-`squid:S11487"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8«¬§òÚ,HÔ¨RMINORZVULNERABILITY
-m
-squid:S106¶"9Replace this use of System.out or System.err by a logger.(­±»8®óŠÃÛ,HÜ¨RMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLinei"<This block of commented-out lines of code should be removed.(Ú—øõ8™—Ä¼Û,HĞ¨RMAJORZ
-CODE_SMELL
-bsquid:S1612±",Replace this lambda with a method reference.(ˆ¤¸¼8­÷Ú,Hç¨RMINORZ
-CODE_SMELL
-n
-squid:S106§"9Replace this use of System.out or System.err by a logger.(üÖ¤Ğ8«¬§òÚ,HŞ¨RMAJORZ
-CODE_SMELL
-s
-squid:S106"9Replace this use of System.out or System.err by a logger.(ò ÿ”øÿÿÿÿ8¿•¤éÜ,Hê¨RMAJORZ
-CODE_SMELL
-r
-squid:S106w"9Replace this use of System.out or System.err by a logger.(ÅƒØûÿÿÿÿ8ê——ÃÛ,Hö¨RMAJORZ
-CODE_SMELL
-s
-squid:S106ê"9Replace this use of System.out or System.err by a logger.(éè§ˆøÿÿÿÿ8÷İ¢äİ,Hú«RMAJORZ
-CODE_SMELL
-squid:S00112J"FDefine and throw a dedicated exception instead of using a generic one.(èİÎÑşÿÿÿÿ8Ô–ÈéÚ,HÍ¨RMAJORZ
-CODE_SMELL
-squid:UselessImportCheck "VRemove this unused import 'org.hyperledger.fabric.sdk.exception.TransactionException'.(‡¬»ûÿÿÿÿ8“ë¶¼Û,Hü¨RMINORZ
-CODE_SMELL
-s
-squid:S106°"9Replace this use of System.out or System.err by a logger.(÷ôº—úÿÿÿÿ8•úš¿Û,Hò¨RMAJORZ
-CODE_SMELL
-bsquid:S1602µ",Remove useless curly braces around statement(ñşà8ÑÜèÛ,HÛ¨RMINORZ
-CODE_SMELL
-asquid:S1148»"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£îÕ¹Û,Hâ¨RMINORZVULNERABILITY
-s
-squid:S106æ"9Replace this use of System.out or System.err by a logger.(Òê¤ùÿÿÿÿ8åà¢éÜ,Hë¨RMAJORZ
-CODE_SMELL
-‚squid:UselessImportCheck"@Remove this unused import 'org.hyperledger.fabric.sdk.EventHub'.(óÎ¦8“ë¶¼Û,Hğ¨RMINORZ
-CODE_SMELL
-Œsquid:S1192v"ODefine a constant instead of duplicating this literal "tradefinancecc" 3 times.(ŸÙÉøÿÿÿÿÿ8ÑÜèÛ,Hî¨RCRITICALZ
-CODE_SMELL
-asquid:S1148è"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£îÕ¹Û,Hà¨RMINORZVULNERABILITY
-n
-squid:S106•"9Replace this use of System.out or System.err by a logger.(è…‹8ÑÜèÛ,Hİ¨RMAJORZ
-CODE_SMELL
-bsquid:S1612‚",Replace this lambda with a method reference.(ˆ¤¸¼8ÑÜèÛ,Hú¨RMINORZ
-CODE_SMELL
-asquid:S1148Ş"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”¥µîÚ,HÑ¨RMINORZVULNERABILITY
-~squid:UselessImportCheck"<Remove this unused import 'org.hyperledger.fabric.sdk.Peer'.(ˆä¤š8“ë¶¼Û,Hï¨RMINORZ
-CODE_SMELL
-squid:UselessImportCheck"?Remove this unused import 'org.hyperledger.fabric.sdk.Orderer'.(€óæ¦8“ë¶¼Û,Hè¨RMINORZ
-CODE_SMELL
-s
-squid:S106“"9Replace this use of System.out or System.err by a logger.(áÆôÿÿÿÿÿ8Öıù”Û,HØ¨RMAJORZ
-CODE_SMELL
-r
-squid:S106s"9Replace this use of System.out or System.err by a logger.(å¸¡£üÿÿÿÿ8«¬§òÚ,HÖ¨RMAJORZ
-CODE_SMELL
-n
-squid:S106"9Replace this use of System.out or System.err by a logger.(¨³Ë8ê——ÃÛ,HÙ¨RMAJORZ
-CODE_SMELL
-s
-squid:S106‡"9Replace this use of System.out or System.err by a logger.(ë„Ô£ıÿÿÿÿ8ÑÜèÛ,Há¨RMAJORZ
-CODE_SMELL
-‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãøªHÒ¨RMINORZ
-CODE_SMELL
-lsquid:S2589N"7Remove this expression which always evaluates to "true"(ß—Ê¹8˜·“¿Û,Hä¨RMAJORZ
-CODE_SMELL
-n
-squid:S106Â"9Replace this use of System.out or System.err by a logger.(è…‹8åà¢éÜ,Hì¨RMAJORZ
-CODE_SMELL
-m
-squid:S106u"9Replace this use of System.out or System.err by a logger.(Ê¢ÛÚ8­ÈÍ½İ,H÷¨RMAJORZ
-CODE_SMELL
-s
-squid:S106¤"9Replace this use of System.out or System.err by a logger.(©Æ˜—ÿÿÿÿÿ8í–×šÜ,Hı¨RMAJORZ
-CODE_SMELL
-m
-squid:S106:"9Replace this use of System.out or System.err by a logger.(Á °ï8ßßœÄÛ,HÓ¨RMAJORZ
-CODE_SMELL
-asquid:S1148œ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÑÜèÛ,Hã¨RMINORZVULNERABILITY
-m
-squid:S106f"9Replace this use of System.out or System.err by a logger.(õ§Çÿ8«¬§òÚ,HÎ¨RMAJORZ
-CODE_SMELL
-”squid:S2293Ø"YReplace the type specification in this constructor call with the diamond operator ("<>").(çâîÀıÿÿÿÿ8£îÕ¹Û,Hõ¨RMINORZ
-CODE_SMELL
-zsquid:UselessImportCheck*"8Remove this unused import 'io.jsonwebtoken.lang.Arrays'.(˜Õü¯8œÀ«äİ,H†¬RMINORZ
+squid:UselessImportCheck "VRemove this unused import 'org.hyperledger.fabric.sdk.exception.TransactionException'.(‡¬»ûÿÿÿÿ8“ë¶¼Û,HşÊRMINORZ
 CODE_SMELL

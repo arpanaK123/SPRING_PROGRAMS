@@ -220,7 +220,7 @@ public class UserController {
 
 	@RequestMapping(value = "/createContractToken", method = RequestMethod.POST)
 	public ResponseEntity<ContractResponse> createContract(@RequestBody TradeContractModel contract,
-			@RequestHeader("token") String jwtToken) {
+			@RequestHeader("token") String jwtToken) throws IOException {
 		System.out.println("token:"+token);
 		ContractResponse response = new ContractResponse();
 
@@ -277,7 +277,7 @@ System.out.println("contract_id"+contractId.getContractId());
 
 	@RequestMapping(value = "/updateContractByToken", method = RequestMethod.POST)
 	public ResponseEntity<ContractResponse> updateContract(@RequestBody TradeContractModel contract,
-			@RequestHeader("token") String jwtToken) throws InvalidArgumentException {
+			@RequestHeader("token") String jwtToken) throws InvalidArgumentException, ProposalException {
 		System.out.println("token"+token);
 		ContractResponse response = new ContractResponse();
 		boolean status = userService.updateContract(jwtToken, contract);
@@ -329,4 +329,27 @@ System.out.println("contract_id"+contractId.getContractId());
 
 	}
 
+	
+	@RequestMapping(value = "/createContractConsensusToken", method = RequestMethod.POST)
+	public ResponseEntity<ContractResponse> createContractConsensus(@RequestBody TradeContractModel contract,
+			@RequestHeader("token") String jwtToken) throws IOException, ProposalException {
+		System.out.println("token:"+token);
+		ContractResponse response = new ContractResponse();
+
+		boolean saved = userService.createConsensusContract(contract,jwtToken);
+
+		if (saved) {
+			response.setStatusCode("200");
+			response.setStatus("success");
+			TradeContractModel contractResponse = userService.getContractResponse(contract.getContractId());
+			response.setContractModel(contractResponse);
+			return new ResponseEntity<ContractResponse>(response, HttpStatus.OK);
+		}
+		response.setStatusCode("400");
+		response.setStatus("something wrong");
+		return new ResponseEntity<ContractResponse>(response, HttpStatus.BAD_REQUEST);
+
+	}
+	
+	
 }

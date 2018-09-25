@@ -112,27 +112,27 @@ public class TradeFunctionUtility {
 
 	public boolean transactionInvokeBlockChain(HFClient client, String chaincodeFunction, String[] args,
 			Channel channel) throws org.hyperledger.fabric.sdk.exception.InvalidArgumentException {
-System.out.println("invoke blockchain");
+		System.out.println("invoke blockchain");
 		TransactionProposalRequest tqr = client.newTransactionProposalRequest();
-		System.out.println("twr: "+tqr);
+		System.out.println("twr: " + tqr);
 		ChaincodeID tradeFinanceCCId = ChaincodeID.newBuilder().setName("tradefinancecc").build();
-		System.out.println("tradeFinanceCCId: "+tradeFinanceCCId);
+		System.out.println("tradeFinanceCCId: " + tradeFinanceCCId);
 		tqr.setChaincodeID(tradeFinanceCCId);
 		tqr.setFcn(chaincodeFunction);
 		tqr.setArgs(args);
-	
-		System.out.println("args: "+java.util.Arrays.toString(args));
+
+		System.out.println("args: " + java.util.Arrays.toString(args));
 		Collection<ProposalResponse> responses = null;
-		System.out.println("Proposel-Response: "+responses);
+		System.out.println("Proposel-Response: " + responses);
 		try {
 			responses = channel.sendTransactionProposal(tqr);
-			System.out.println("responses: "+responses);
+			System.out.println("responses: " + responses);
 			List<ProposalResponse> invalid = responses.stream().filter(res -> res.isInvalid())
 					.collect(Collectors.toList());
 			if (!invalid.isEmpty()) {
 
 				invalid.forEach(response -> {
-					System.out.println("message---> "+response.getMessage());
+					System.out.println("message---> " + response.getMessage());
 				});
 
 			}
@@ -144,12 +144,14 @@ System.out.println("invoke blockchain");
 
 		try {
 			BlockEvent.TransactionEvent event = channel.sendTransaction(responses).get(60, TimeUnit.SECONDS);
-			System.out.println("event______"+event);
+			System.out.println("event______" + event);
 			if (event.isValid()) {
 				System.out.println(event.getTransactionID() + " transaction is valid ");
+				System.out.println("transaction accepted");
 				return true;
 			} else {
 				System.out.println(event.getTransactionID() + " transaction is invalid");
+				System.out.println("transaction rejected");
 				return false;
 			}
 		} catch (InterruptedException | ExecutionException | TimeoutException e) {
@@ -207,9 +209,9 @@ System.out.println("invoke blockchain");
 			throws ProposalException, InvalidArgumentException {
 
 		QueryByChaincodeRequest qpr = client.newQueryProposalRequest();
-		System.out.println("qpr: "+qpr);
+		System.out.println("qpr: " + qpr);
 		ChaincodeID tradeFinanceCCId = ChaincodeID.newBuilder().setName("tradefinancecc").build();
-		System.out.println("tradecc "+tradeFinanceCCId);
+		System.out.println("tradecc " + tradeFinanceCCId);
 		qpr.setChaincodeID(tradeFinanceCCId);
 		qpr.setFcn(function);
 		qpr.setArgs(args);
@@ -227,14 +229,14 @@ System.out.println("invoke blockchain");
 			String stringResponse = null;
 			try {
 				stringResponse = new String(pres.getChaincodeActionResponsePayload());
-				System.out.println("string response: "+stringResponse);
+				System.out.println("string response: " + stringResponse);
 			} catch (org.hyperledger.fabric.sdk.exception.InvalidArgumentException e) {
 				e.printStackTrace();
 			}
-			System.out.println("string response"+stringResponse);
+			System.out.println("string response" + stringResponse);
 			list.add(stringResponse);
 		}
-		System.out.println("list "+list);
+		System.out.println("list " + list);
 		return list;
 	}
 

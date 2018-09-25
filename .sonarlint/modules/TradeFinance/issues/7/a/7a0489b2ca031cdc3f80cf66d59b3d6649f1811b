@@ -1,0 +1,28 @@
+
+r
+squid:S106 "9Replace this use of System.out or System.err by a logger.(¯¡ñúüÿÿÿÿ8€¹‚­ß,HñÔRMAJORZ
+CODE_SMELL
+r
+squid:S1061"9Replace this use of System.out or System.err by a logger.(ù†Ş›ıÿÿÿÿ8·ÜÏ¬ß,HòÔRMAJORZ
+CODE_SMELL
+m
+squid:S106,"9Replace this use of System.out or System.err by a logger.( ³¿±8€¹‚­ß,HóÔRMAJORZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(Á„…‰8“ÃÊ¬ß,HôÔRMAJORZ
+CODE_SMELL
+r
+squid:S106/"9Replace this use of System.out or System.err by a logger.(¯¡ñúüÿÿÿÿ8±Õ­ß,HõÔRMAJORZ
+CODE_SMELL
+xsquid:S2674"JCheck the return value of the "read" call to see how many bytes were read.(Úíß8¦€Å¬ß,HöÔRMINORZBUG
+‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãøªH÷ÔRMINORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(›É´Ùüÿÿÿÿ8¦€Å¬ß,HøÔRMAJORZ
+CODE_SMELL
+r
+squid:S106""9Replace this use of System.out or System.err by a logger.(ù†Ş›ıÿÿÿÿ8€¹‚­ß,HùÔRMAJORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(„íØùıÿÿÿÿ8›ËÆ¬ß,HúÔRMAJORZ
+CODE_SMELL

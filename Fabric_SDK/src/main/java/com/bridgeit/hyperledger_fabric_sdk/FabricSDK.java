@@ -15,13 +15,17 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.logging.Level;
+import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 import java.util.stream.Collectors;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 import org.apache.log4j.Logger;
 import org.hyperledger.fabric.sdk.BlockEvent;
+import org.hyperledger.fabric.sdk.ChaincodeEvent;
 import org.hyperledger.fabric.sdk.BlockEvent.TransactionEvent;
+import org.hyperledger.fabric.sdk.ChaincodeEventListener;
 import org.hyperledger.fabric.sdk.ChaincodeID;
 import org.hyperledger.fabric.sdk.ChaincodeResponse.Status;
 import org.hyperledger.fabric.sdk.Channel;
@@ -64,8 +68,9 @@ public class FabricSDK {
 		log.info("Channel: " + channel.getName());
 
 		// call query blockchain example
+	
+		invokeBlockChain(client);
 		queryBlockChain(client);
-		// invokeChainCode(client);
 	}
 
 	/**
@@ -111,8 +116,8 @@ public class FabricSDK {
 		ChaincodeID tradefinanceccId = ChaincodeID.newBuilder().setName("tradefinancecc").build();
 		qpr.setChaincodeID(tradefinanceccId);
 		// CC function to be called
-		qpr.setFcn("get_Contract_By");
-		qpr.setArgs(new String[] { "1" });
+		qpr.setFcn("get_Account");
+		qpr.setArgs(new String[] { "222" });
 
 		Collection<ProposalResponse> res = channel.queryByChaincode(qpr);
 		// display response
@@ -208,14 +213,29 @@ public class FabricSDK {
 		return caClient;
 	}
 
-	static void invokeBlockChain(HFClient client) {
+	static void invokeBlockChain(HFClient client) throws InvalidArgumentException {
 
 		Channel channel = client.getChannel("mychannel");
 		TransactionProposalRequest tqr = client.newTransactionProposalRequest();
 		ChaincodeID tradeFinanceCCId = ChaincodeID.newBuilder().setName("tradefinancecc").build();
 		tqr.setChaincodeID(tradeFinanceCCId);
 		tqr.setFcn("create_Account");
-		tqr.setArgs(new String[] { "102", "importer", "20000", "SBI BANK" });
+		tqr.setArgs(new String[] { "222", "importer", "20000", "SBI" });
+
+		ChaincodeEventListener chaincodeEventListener = new ChaincodeEventListener() {
+			@Override
+			public void received(String handle, BlockEvent blockEvent, ChaincodeEvent chaincodeEvent) {
+				System.out.println("chaincode even listener");
+				System.out.println(chaincodeEvent.getEventName());
+				System.out.println(chaincodeEvent.getPayload());
+				System.out.println(chaincodeEvent.getChaincodeId());
+				
+			}
+		};
+		Pattern pattern1 = Pattern.compile(".*");
+		Pattern pattern2 = Pattern.compile(".*");
+		String chaincodeeventlistener = channel.registerChaincodeEventListener(pattern1, pattern2,
+				chaincodeEventListener);
 		Collection<ProposalResponse> responses = null;
 		try {
 			responses = channel.sendTransactionProposal(tqr);

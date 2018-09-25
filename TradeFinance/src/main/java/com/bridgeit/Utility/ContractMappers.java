@@ -29,6 +29,8 @@ public class ContractMappers implements RowMapper<TradeContractModel> {
 		contractModel.setInsuranceCheck(rs.getBoolean("insuranceCheck"));
 		contractModel.setCustomCheck(rs.getBoolean("customCheck"));
 		contractModel.setCompleteContract(rs.getBoolean("completeContract"));
+		contractModel.setBilloflading(rs.getString("billoflading"));
+		contractModel.setLetterofcredit(rs.getString("letterofcredit"));
 
 		return contractModel;
 	}

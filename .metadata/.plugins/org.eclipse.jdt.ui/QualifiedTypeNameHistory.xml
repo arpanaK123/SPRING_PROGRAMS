@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.hyperledger.fabric_ca.sdk.exception.EnrollmentException"/>
-    <fullyQualifiedTypeName name="java.util.concurrent.ExecutionException"/>
-    <fullyQualifiedTypeName name="java.util.concurrent.TimeoutException"/>
-    <fullyQualifiedTypeName name="org.hyperledger.fabric.sdk.exception.TransactionException"/>
-    <fullyQualifiedTypeName name="javax.sql.rowset.serial.SerialBlob"/>
-    <fullyQualifiedTypeName name="org.hyperledger.fabric_ca.sdk.HFCAClient"/>
-    <fullyQualifiedTypeName name="java.io.ByteArrayOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.ByteArrayInputStream"/>
-    <fullyQualifiedTypeName name="java.io.ObjectInput"/>
-    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
-    <fullyQualifiedTypeName name="org.hyperledger.fabric_ca.sdk.RegistrationRequest"/>
-    <fullyQualifiedTypeName name="com.bridgeit.Utility.TradeFunctionUtility"/>
     <fullyQualifiedTypeName name="ch.qos.logback.core.net.server.Client"/>
     <fullyQualifiedTypeName name="org.hyperledger.fabric.sdk.Enrollment"/>
     <fullyQualifiedTypeName name="jdk.internal.jline.internal.Log"/>
@@ -60,4 +47,17 @@
     <fullyQualifiedTypeName name="org.hyperledger.fabric.sdk.ProposalResponse"/>
     <fullyQualifiedTypeName name="io.jsonwebtoken.lang.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="javax.swing.filechooser.FileNameExtensionFilter"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.util.Base64"/>
+    <fullyQualifiedTypeName name="java.util.regex.PatternSyntaxException"/>
+    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+    <fullyQualifiedTypeName name="org.hyperledger.fabric.sdk.ChaincodeEventListener"/>
+    <fullyQualifiedTypeName name="org.apache.derby.impl.store.raw.data.ContainerHandleActionOnCommit"/>
+    <fullyQualifiedTypeName name="java.nio.file.Path"/>
+    <fullyQualifiedTypeName name="java.nio.file.Paths"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
 </qualifiedTypeNameHistroy>
